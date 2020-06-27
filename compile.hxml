@@ -1,0 +1,6 @@
+
+-lib pixijs
+-cp src
+-main Main
+-D js-es=6
+-js dist/kiniita.js
