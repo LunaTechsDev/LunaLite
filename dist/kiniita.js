@@ -3,8 +3,13 @@
 class Main {
 	static main() {
 		let SceneBase = Scene_Base;
+		let sceneBaseCreate = SceneBase.prototype.createWindow;
 		SceneBase.prototype.initialize = function() {
-			console.log("src/Main.hx:8:","Hello World");
+			let self = this;
+			self.createWindow = function() {
+				console.log("src/Main.hx:12:","Update Create Window");
+			};
+			console.log("src/Main.hx:14:","Hello World");
 		};
 		Main.main();
 	}
