@@ -2,16 +2,14 @@
 (function ($global) { "use strict";
 class Main {
 	static main() {
-		let SceneBase = Scene_Base;
-		let sceneBaseCreate = SceneBase.prototype.createWindow;
-		SceneBase.prototype.initialize = function() {
-			let self = this;
-			self.createWindow = function() {
-				console.log("src/Main.hx:12:","Update Create Window");
-			};
-			console.log("src/Main.hx:14:","Hello World");
-		};
-		Main.main();
+		let SceneBase =   {
+      stat:{}
+    }
+		utils_FnUtils.setProp(SceneBase,"stat",function(self) {
+			let scene = this;
+			scene.start();
+			console.log("src/Main.hx:17:","Hello World");
+		});
 	}
 }
 class haxe_iterators_ArrayIterator {
@@ -24,6 +22,14 @@ class haxe_iterators_ArrayIterator {
 	}
 	next() {
 		return this.array[this.current++];
+	}
+}
+class utils_FnUtils {
+	static jsThis() {
+		return this;
+	}
+	static setProp(obj,propName,value) {
+		return Object.defineProperty(obj,propName,{ value : value});
 	}
 }
 Main.main();
