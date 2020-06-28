@@ -21,4 +21,4 @@
 # --each
 -js dist/kiniita.js
 -main Main
-
+--macro macros.MacroTools.getSourceOutput()
