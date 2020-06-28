@@ -9,6 +9,8 @@ extern class Scene_Base {
   private var _fadeDuration:Int;
   private var _imageReservationId:EitherType<Dynamic, Int>;
 
+  public function new():Void;
+
   /**
    * Initializes the scene.
    * @return Void 
