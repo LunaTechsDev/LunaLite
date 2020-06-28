@@ -1,7 +1,24 @@
 
 -lib pixijs
 -cp src
--main Main
+
 -D js-es=6
--js dist/kiniita.js
+
+# Static Code Analysis For Removing  Unnecessary Code
+-D analyzer-optimize 
+-D js_source_map
+# Haxe Source Map
+-D source-map-content
+# Generate Documentation
+# -D doc_gen
+# -D js_classic
 -dce full
+
+# Note you can call an hxml file inside an hxml file for build purposes.
+
+# For Compiling Separate JavaScript Files
+
+# --each
+-js dist/kiniita.js
+-main Main
+
