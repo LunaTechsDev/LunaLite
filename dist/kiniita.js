@@ -2,15 +2,15 @@
 (function ($global) { "use strict";
 class Main {
 	static main() {
-		// Build Date: 2020-06-28 18:46:50 ;
+		// Build Date: 2020-06-28 19:47:12 ;
 		//=============================================================================
     // Kiniitta
-    //=============================================================================
+    //=============================================================================;
 		/*:
     @author Kino 
     @plugindesc This plugin allows you to use Haxe in your RPGMakerMV code.
     @param haxeVersion
-    */
+    */;
 		Scene_Base.prototype;
 		let abc = { hello : "Hello World", test : 3};
 		abc.Yes = 3;
@@ -23,11 +23,11 @@ class Main {
 		/*
     Multiline Haxe Comment
      NiceJob
-    */
+    */;
 		/*
     Does this still work in JavaScript?
     I hope it continues to work.
-    */
+    */;
 	}
 }
 class haxe_iterators_ArrayIterator {
@@ -45,4 +45,4 @@ class haxe_iterators_ArrayIterator {
 Main.main();
 })({});
 
-//# sourceMappingURL=kiniita-temp.js.map
+//# sourceMappingURL=kiniita.js.map

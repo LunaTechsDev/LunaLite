@@ -5,6 +5,9 @@
 ## How To Use
 
 
+## Cleaning Output
+> Run clean-js-compile.js to clean the output for the comments and plugin parameters.
+
 
 ## RoadMap
 
