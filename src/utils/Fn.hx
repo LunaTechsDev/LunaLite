@@ -8,7 +8,7 @@ typedef Self=String;
 
 class Fn {
 
-  public static var self(get, null):Dynamic;
+  public static var self(get, null):Any;
   /**
    * Wrapper for JavaScript this
    */
