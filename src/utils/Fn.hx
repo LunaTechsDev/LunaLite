@@ -24,6 +24,10 @@ class Fn {
     return Syntax.code("{0}.{1} = {2}", prototype(obj), Syntax.plainCode(fieldName), value);
   }
 
+  public static inline function getPrProp(obj, fieldName:String):Any {
+    return Syntax.code("{0}.{1}", prototype(obj), Syntax.plainCode(fieldName));
+  }
+
   @:analyzer(local_dce)
   public static inline function setField(obj, fieldName:String, value:Any) {
     return Syntax.code("{0} = {1}",Syntax.field(obj, fieldName), value);

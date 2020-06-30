@@ -1,10 +1,8 @@
-import js.Syntax;
-import core.TestScene;
-import mz.scenes.Scene_Title;
+import js.html.Window;
+import js.lib.Function;
 import mz.scenes.Scene_Base;
 import utils.Fn;
 import utils.Comment;
-import macros.FnMacros;
 import macros.MacroTools;
 
 class Main {
@@ -15,10 +13,13 @@ class Main {
     Comment.pluginParams("@author Kino 
     @plugindesc This plugin allows you to use Haxe in your RPGMakerMV code.
     @param haxeVersion");
-    var SceneBaseFn = Fn.setPrProp(Scene_Base, "update", () -> {
+    var sceneTitleStart:Function = Fn.getPrProp(Scene_Base, "start");
+    var SceneBaseFn = Fn.setPrProp(Scene_Base, "start", () -> {
       var self:Scene_Base = Fn.self;
-      self.create();
-      trace("Creating Windows");
+      sceneTitleStart.call(self);
+      Fn.setField(Window, "Haxe", "Version 4.2.0");
+      trace("Running Console Log From Haxe Added haxe Version");
     });
   }
+  
 }

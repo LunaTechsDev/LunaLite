@@ -11,11 +11,17 @@ macro function pipe(exprs:Array<Expr>) :Expr {
 }
 
 function main() {
+  final attributionStr = File.read("Attribution.txt")
+    .readAll().toString();
   final distDir = "dist";
   final allFiles = FileSystem.readDirectory(distDir);
   allFiles
   .filter((file) -> !file.contains(".map"))
   .iter((file) -> {
+    final fileNameStr = 
+'//=============================================================================
+// $file
+//=============================================================================\n';
     final filePath = '$distDir/$file';
     final contents = File.read(filePath).readAll().toString();
     final cleanContents = pipe(
@@ -23,7 +29,8 @@ function main() {
       ~/(==);/g.replace(_, "$1"),
       ~/(\/\/.+\s*);/g.replace(_, "$1")
     );
-    File.write(filePath).writeString(cleanContents);
+    final newContent = fileNameStr + attributionStr + "\n" + cleanContents;
+    File.write(filePath).writeString(newContent);
     trace("Cleaned Output File: " + filePath);
   });
 }
