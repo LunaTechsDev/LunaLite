@@ -5,9 +5,15 @@
 ## How To Use
 
 
-## Cleaning Output
-> Run clean-js-compile.js to clean the output for the comments and plugin parameters.
+## Build Process 
+> Simply run haxe compile.hxml
 
+## Features
+* Full access to the Haxe Standard Library
+* Easily add your contact information through the attribution text
+* Change your build process for each and every plugin you create
+* Type inference and code completion while creating your plugins
+* Compile time checks to prevent null errors in your code
 
 ## RoadMap
 

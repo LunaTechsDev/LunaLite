@@ -24,7 +24,7 @@
 (function ($global) { "use strict";
 class Main {
 	static main() {
-		// Build Date: 2020-06-30 19:52:03 
+		// Build Date: 2020-06-30 21:11:50 
 		//=============================================================================
     // Kiniitta
     //=============================================================================
@@ -33,12 +33,14 @@ class Main {
     @plugindesc This plugin allows you to use Haxe in your RPGMakerMV code.
     @param haxeVersion
     */
+		// This is a test of the watcher 
+		console.log("src/Main.hx:18:",3);
 		let sceneTitleStart = Scene_Base.prototype.start;
 		Scene_Base.prototype.start = function() {
 			let self = this;
 			sceneTitleStart.call(self);
 			Window.Haxe = "Version 4.2.0";
-			console.log("src/Main.hx:21:","Running Console Log From Haxe Added haxe Version");
+			console.log("src/Main.hx:24:","Running Console Log From Haxe Added haxe Version");
 		};
 	}
 }

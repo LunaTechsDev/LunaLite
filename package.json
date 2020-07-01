@@ -1,0 +1,27 @@
+{
+  "name": "kiniitta",
+  "version": "1.0.0",
+  "description": "> Core Engine for RPGMaker MZ Haxe Development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon --watch src -e hx,hxml --exec haxe compile.hxml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KinoAR/kiniitta.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KinoAR/kiniitta/issues"
+  },
+  "homepage": "https://github.com/KinoAR/kiniitta#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "execMap" : {
+    "hxml": "haxe",
+    "hx": "haxe"
+  }
+}

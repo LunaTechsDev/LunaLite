@@ -1,6 +1,7 @@
 
 -lib pixijs
 -lib hxnodejs
+-lib haxe-files
 -cp src
 
 -D js-es=6

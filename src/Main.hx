@@ -13,6 +13,9 @@ class Main {
     Comment.pluginParams("@author Kino 
     @plugindesc This plugin allows you to use Haxe in your RPGMakerMV code.
     @param haxeVersion");
+    Comment.singleLine("This is a test of the watcher");
+    var abc = 3;
+    trace(abc);
     var sceneTitleStart:Function = Fn.getPrProp(Scene_Base, "start");
     var SceneBaseFn = Fn.setPrProp(Scene_Base, "start", () -> {
       var self:Scene_Base = Fn.self;
