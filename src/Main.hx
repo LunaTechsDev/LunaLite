@@ -1,3 +1,4 @@
+import js.Syntax;
 import js.html.Window;
 import js.lib.Function;
 import mz.scenes.Scene_Base;
@@ -8,14 +9,13 @@ import macros.MacroTools;
 class Main {
 
   public static function main() {
+    MacroTools.includeJsLib("libs/test.js");
     Comment.singleLine(MacroTools.generateBuildDate());
     Comment.titleComment("Kiniitta");
     Comment.pluginParams("@author Kino 
     @plugindesc This plugin allows you to use Haxe in your RPGMakerMV code.
     @param haxeVersion");
     Comment.singleLine("This is a test of the watcher");
-    var abc = 3;
-    trace(abc);
     var sceneTitleStart:Function = Fn.getPrProp(Scene_Base, "start");
     var SceneBaseFn = Fn.setPrProp(Scene_Base, "start", () -> {
       var self:Scene_Base = Fn.self;

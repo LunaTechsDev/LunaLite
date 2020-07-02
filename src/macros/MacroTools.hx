@@ -1,7 +1,9 @@
 package macros;
 import haxe.macro.Expr;
 import haxe.macro.Compiler;
-
+import haxe.macro.PositionTools;
+import sys.io.File;
+import sys.FileSystem;
 /**
  * Tool Level Macros for Kiniitta
  */
@@ -16,5 +18,14 @@ class MacroTools {
     //Clean Output and remove extra semicolons
     trace($v{"Compiled File To -> " + output});
     return macro $v{output};
+  }
+
+  macro public static function includeJsLib(path:String) {
+    return switch(FileSystem.exists(path)) {
+      case true:
+        Compiler.includeFile(path, "top");
+      case false:
+        return macro throw "Fail to find file";
+    }
   }
 }

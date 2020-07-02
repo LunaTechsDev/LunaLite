@@ -1,5 +1,7 @@
 package mz.types;
 
+import haxe.display.Display.Metadata;
+
 typedef Dict = {key:String}
 
 typedef MetaData = {
@@ -127,7 +129,30 @@ typedef Map = {
 	var events:Array<Event>;
 }
 
-typedef AudioFile = {};
+ /**
+     * The data class for audio file.
+     */
+		 typedef AudioFile = {
+			/**
+			 * The sound file name.
+			 */
+			var name: String;
+
+			/**
+			 * The pan.
+			 */
+var			pan: Int;
+
+			/**
+			 * The sound's pitch (50..150). The default value is 100.
+			 */
+			var pitch: Int;
+
+			/**
+			 * The sound's volume (0..100). The default values are 100 for BGM and ME and 80 for BGS and SE.
+			 */
+			var volume: Int;
+	}
 
 typedef MapEncounter = {
 	/**
@@ -467,38 +492,37 @@ typedef Damage = {
 	var critical:Bool;
 }
 
- typedef Trait = {
-  /**
-   * The trait code.
-   */
-  var code: Int;
+typedef Trait = {
+	/**
+	 * The trait code.
+	 */
+	var code:Int;
 
-  /**
-   * The ID of the data (such as elements or states) according to the type of the trait.
-   */
-  var dataId: Int;
+	/**
+	 * The ID of the data (such as elements or states) according to the type of the trait.
+	 */
+	var dataId:Int;
 
-  /**
-   * The value set according to the type of the trait.
-   */
-  var value: Int;
+	/**
+	 * The value set according to the type of the trait.
+	 */
+	var value:Int;
 
-  /**
-   * The map tree expansion flag, which is used internally.
-   */
-  var expanded: Bool;
+	/**
+	 * The map tree expansion flag, which is used internally.
+	 */
+	var expanded:Bool;
 
-  /**
-   * The x-axis scroll position, which is used internally.
-   */
-  var scrollX: Int;
+	/**
+	 * The x-axis scroll position, which is used internally.
+	 */
+	var scrollX:Int;
 
-  /**
-   * The y-axis scroll position, which is used internally.
-   */
-  var scrollY: Int;
+	/**
+	 * The y-axis scroll position, which is used internally.
+	 */
+	var scrollY:Int;
 }
-
 
 /**
  * The data class for use effects.
@@ -766,4 +790,652 @@ typedef Armor = {
 	 * The armor type ID.
 	 */
 	var atypeId:Int;
+}
+
+typedef TroopMember = {
+	/**
+	 * The enemy ID.
+	 */
+	var enemyId:Int;
+
+	/**
+	 * The troop member's x-coordinate.
+	 */
+	var x:Int;
+
+	/**
+	 * The troop member's y-coordinate.
+	 */
+	var y:Int;
+
+	/**
+	 * The truth value of the [Appear Halfway] option.
+	 */
+	var hidden:Bool;
+}
+
+/**
+ * The data class for battle events (pages).
+ */
+typedef Page = {
+	/**
+	 * Condition (RPG.Troop.Page.Condition).
+	 */
+	var condition:PageCondition;
+
+	/**
+	 * Span (0: battle, 1: turn, 2: moment).
+	 */
+	var span:Int;
+
+	/**
+	 * Program contents. An RPG.EventCommand array.
+	 */
+	var list:Array<EventCommand>;
+}
+
+/**
+ * The data class of battle event [Conditions].
+ */
+typedef PageCondition = {
+	/**
+	 * The truth value indicating whether the [At End of Turn] condition is valid.
+	 */
+	var turnEnding:Bool;
+
+	/**
+	 * The truth value indicating whether the [Turn No.] condition is valid.
+	 */
+	var turnValid:Bool;
+
+	/**
+	 * The truth value indicating whether the [Enemy] condition is valid.
+	 */
+	var enemyValid:Bool;
+
+	/**
+	 * The truth value indicating whether the [Actor] condition is valid.
+	 */
+	var actorValid:Bool;
+
+	/**
+	 * The truth value indicating whether the [Switch] condition is valid.
+	 */
+	var switchValid:Bool;
+
+	/**
+	 * The a and b values specified in the [Turn No.] condition. To be input in the form A + B * X.
+	 */
+	var turnA:Int;
+
+	/**
+	 * The a and b values specified in the [Turn No.] condition. To be input in the form A + B * X.
+	 */
+	var turnB:Int;
+
+	/**
+	 * The troop member index specified in the [Enemy] condition (0..7).
+	 */
+	var enemyIndex:Int;
+
+	/**
+	 * The HP percentage specified in the [Enemy] condition.
+	 */
+	var enemyHp:Int;
+
+	/**
+	 * The actor ID specified in the [Actor] condition.
+	 */
+	var actorId:Int;
+
+	/**
+	 * The HP percentage specified in the [Actor] condition.
+	 */
+	var actorHp:Int;
+
+	/**
+	 * The switch ID specified in the [Switch] condition.
+	 */
+	var switchId:Int;
+}
+
+/**
+ * The data class for animation.
+ */
+typedef Animation = {
+	/**
+	 * The animation ID.
+	 */
+	var id:Int;
+
+	/**
+	 * The animation name.
+	 */
+	var name:String;
+
+	/**
+	 * The file name of the first animation's graphic.
+	 */
+	var animation1Name:String;
+
+	/**
+	 * The adjustment value for the hue of the first animation's graphic (0..360).
+	 */
+	var animation1Hue:String;
+
+	/**
+	 * The file name of the second animation's graphic.
+	 */
+	var animation2Name:String;
+
+	/**
+	 * The adjustment value for the hue of the second animation's graphic (0..360).
+	 */
+	var animation2Hue:Int;
+
+	/**
+	 * The base position (0: head, 1: center, 2: feet, 3: screen).
+	 */
+	var position:Int;
+
+	/**
+	 * Number of frames.
+	 */
+	var frameMax:Int;
+
+	/**
+	 * The three-dimensional array containing the frame contents.
+	 */
+	var frames:Array<Array<Array<Int>>>;
+
+	/**
+	 * Timing for SE and flash effects. An RPG.Animation.Timing array.
+	 */
+	var timings:Array<AnimationTiming>;
+}
+
+/**
+ * The data class for tile sets.
+ */
+typedef Tileset = {
+	> Metadata,
+
+	/**
+	 * The ID of the tile set.
+	 */
+	var id:Int;
+
+	/**
+	 * The name of the tile set.
+	 */
+	var name:String;
+
+	/**
+	 * The mode of the tile set (0: Field type, 1: Area type, 2: VX compatible type).
+	 */
+	var mode:Int;
+
+	/**
+	 * The file name of the graphic used as the number index (0-8) tile set.
+	 *
+	 * The correspondence between numbers and sets is illustrated in the table below.
+	 *
+	 * 0 TileA1
+	 * 1 TileA2
+	 * 2 TileA3
+	 * 3 TileA4
+	 * 4 TileA5
+	 * 5 TileB
+	 * 6 TileC
+	 * 7 TileD
+	 * 8 TileE
+	 */
+	var tilesetNames:Array<String>;
+
+	/**
+	 * The flags table. A 1-dimensional array containing a variety of flags (Table).
+	 *
+	 * Uses tile IDs as subscripts. The correspondence of each bit is as shown below:
+	 *
+	 * 0x0001: Impassable downward
+	 * 0x0002: Impassable leftward
+	 * 0x0004: Impassable rightward
+	 * 0x0008: Impassable upward
+	 * 0x0010: Display on normal character
+	 * 0x0020: Ladder
+	 * 0x0040: Bush
+	 * 0x0080: Counter
+	 * 0x0100: Damage floor
+	 * 0x0200: Impassable by boat
+	 * 0x0400: Impassable by ship
+	 * 0x0800: Airship cannot land
+	 * 0xF000: Terrain tag
+	 * This manual does not discuss bit operations, but they are similar to those in C.
+	 * We recommend an Internet search using keywords such as "hexadecimal bit operations" when necessary.
+	 */
+	var flags:Array<Int>;
+}
+
+/**
+ * The data class for the timing of an animation's SE and flash effects.
+ */
+typedef AnimationTiming = {
+	/**
+	 * The frame number. 1 less than the number displayed in RPG Maker.
+	 */
+	var frame:Int;
+
+	/**
+	 * The sound effect or SE (RPG.AudioFile).
+	 */
+	var se:AudioFile;
+
+	/**
+	 * The flash area (0: none, 1: target, 2: screen; 3: hide target).
+	 */
+	var flashScope:Int;
+
+	/**
+	 * The color of the flash (Color).
+	 */
+	var flashColor:Array<Int>;
+
+	/**
+	 * The duration of the flash.
+	 */
+	var flashDuration:Int;
+}
+
+/**
+ * The data class for common events.
+ */
+typedef CommonEvent = {
+	/**
+	 * The event ID.
+	 */
+	var id:Int;
+
+	/**
+	 * The event name.
+	 */
+	var name:String;
+
+	/**
+	 * The event trigger (0: none, 1: autorun; 2: parallel).
+	 */
+	var trigger:Int;
+
+	/**
+	 * The condition switch ID.
+	 */
+	var switchId:Int;
+
+	/**
+	 * A list of event commands. An RPG.EventCommand array.
+	 */
+	var list:Array<EventCommand>;
+}
+
+typedef System = {
+	/**
+	 * The game title.
+	 */
+	var gameTitle:String;
+
+	/**
+	 * A random number used for update checks. The number changes every time data is saved in RPG Maker.
+	 */
+	var versionId:Int;
+
+	/**
+	 * The locale string such as "ja_JP" and "en_US".
+	 */
+	var locale:String;
+
+	/**
+	 * The initial party. An array of actor IDs.
+	 */
+	var partyMembers:Array<Int>;
+
+	/**
+	 * The unit of currency.
+	 */
+	var currencyUnit:String;
+
+	/**
+	 * The window color.
+	 */
+	var windowTone:Array<Int>;
+
+	/**
+	 * The array of System.AttackMotion data.
+	 */
+	var attackMotions:Array<SystemAttackMotion>;
+
+	/**
+	 * A list of elements. A string array using element IDs as subscripts, with the element in the 0 position being nil.
+	 */
+	var elements:Array<String>;
+
+	/**
+	 * he equipment type. A string array with the following subscripts:
+	 * 1: Weapon
+	 * 2: Shield
+	 * 3: Head
+	 * 4: Body
+	 * 5: Accessory
+	 */
+	var equipTypes:Array<String>;
+
+	/**
+	 * A list of skill types. A string array using skill type IDs as subscripts, with the element in the 0 position being nil.
+	 */
+	var skillTypes:Array<String>;
+
+	/**
+	 * A list of weapon types. A string array using weapon type IDs as subscripts, with the element in the 0 position being nil.
+	 */
+	var weaponTypes:Array<String>;
+
+	/**
+	 * A list of armor types. A string array using armor type IDs as subscripts, with the element in the 0 position being nil.
+	 */
+	var armorTypes:Array<String>;
+
+	/**
+	 * A switch name list. A string array using switch IDs as subscripts, with the element in the 0 position being nil.
+	 */
+	var switches:Array<String>;
+
+	/**
+	 * A variable name list. A string array using variable IDs as subscripts, with the element in the 0 position being nil.
+	 */
+	var variables:Array<String>;
+
+	/**
+	 * Boat settings (RPG.System.Vehicle).
+	 */
+	var boat:SystemVehicle;
+
+	/**
+	 * Ship settings (RPG.System.Vehicle).
+	 */
+	var ship:SystemVehicle;
+
+	/**
+	 * Airship settings (RPG.System.Vehicle).
+	 */
+	var airship:SystemVehicle;
+
+	/**
+	 * The file name of the title (background) graphic.
+	 */
+	var title1Name:String;
+
+	/**
+	 * The file name of the title (frame) graphic.
+	 */
+	var title2Name:String;
+
+	/**
+	 * The truth value of the [Draw Game Title] option.
+	 */
+	var optDrawTitle:Bool;
+
+	/**
+	 * The truth value of the [Start Transparent] option.
+	 */
+	var optTransparent:Bool;
+
+	/**
+	 * The truth value of the [Show Player Followers] option.
+	 */
+	var optFollowers:Bool;
+
+	/**
+	 * The truth value of the [K.O. by Slip Damage] option.
+	 */
+	var optSlipDeath:Bool;
+
+	/**
+	 * The truth value of the [K.O. by Floor Damage] option.
+	 */
+	var optFloorDeath:Bool;
+
+	/**
+	 * The truth value of the [Display TP in Battle] option.
+	 */
+	var optDisplayTp:Bool;
+
+	/**
+	 * The truth value of the [Reserve Members' EXP] option.
+	 */
+	var optExtraExp:Bool;
+
+	/**
+	 * The truth value of the [use side-view battle] option.
+	 */
+	var optSideView:Bool;
+
+	/**
+	 * The title BGM (RPG.AudioFile).
+	 */
+	var titleBgm:AudioFile;
+
+	/**
+	 * The battle BGM (RPG.AudioFile).
+	 */
+	var battleBgm:AudioFile;
+
+	/**
+	 * The battle end ME (RPG.AudioFile).
+	 */
+	var battleEndMe:AudioFile;
+
+	/**
+	 * The gameover ME (RPG.AudioFile).
+	 */
+	var gameoverMe:AudioFile;
+
+	/**
+	 * Sound effects. An RPG.SE array.
+	 */
+	var sounds:Array<AudioFile>;
+
+	/**
+	 * The map ID of the player's initial position.
+	 */
+	var startMapId:Int;
+
+	/**
+	 * The map's x-coordinate of the player's initial position.
+	 */
+	var startX:Int;
+
+	/**
+	 * The map's y-coordinate of the player's initial position.
+	 */
+	var startY:Int;
+
+	/**
+	 * Terms (RPG.System.Terms).
+	 */
+	var terms:SystemTerms;
+
+	/**
+	 * Party settings for battle tests. An RPG.System.TestBattler array.
+	 */
+	var testBattlers:Array<SystemTestBattler>;
+
+	/**
+	 * The enemy troop ID for battle tests.
+	 */
+	var testTroopId:Int;
+
+	/**
+	 * The file name of the battle background (floor) graphic for use in editing enemy troops and battle tests.
+	 */
+	var battleback1Name:String;
+
+	/**
+	 * The file name of the battle background (wall) graphic for use in editing enemy troops and battle tests.
+	 */
+	var battleback2Name:String;
+
+	/**
+	 * The battler graphic file name for use in editing animations.
+	 */
+	var battlerName:String;
+
+	/**
+	 * The adjustment value for the battler graphic's hue (0..360) for use in editing animations.
+	 */
+	var battlerHue:Int;
+
+	/**
+	 * The ID of the map currently being edited. For internal use.
+	 */
+	var editMapId:Int;
+}
+
+/**
+ * The data class for vehicles.
+ */
+typedef SystemVehicle = {
+	/**
+	 * The file name of the vehicle's walking graphic.
+	 */
+	var characterName:String;
+
+	/**
+	 * The index of the vehicle's walking graphic (0..7).
+	 */
+	var characterIndex:Int;
+
+	/**
+	 * The vehicle's BGM (RPG.AudioFile).
+	 */
+	var bgm:AudioFile;
+
+	/**
+	 * The map ID of the vehicle's initial position.
+	 */
+	var startMapId:Int;
+
+	/**
+	 * The map's x-coordinate of the vehicle's initial position.
+	 */
+	var startX:Int;
+
+	/**
+	 * The map's y-coordinate of the vehicle's initial position.
+	 */
+	var startY:Int;
+}
+
+typedef SystemTerms = {
+	/**
+	 * The basic status. A string array with the following subscripts:
+	 *
+	 * 0: Level
+	 * 1: Level (short)
+	 * 2: HP
+	 * 3: HP (short)
+	 * 4: MP
+	 * 5: MP (short)
+	 * 6: TP
+	 * 7: TP (short)
+	 * 8: EXP
+	 * 9: EXP (short)
+	 */
+	var basic:Array<String>;
+
+	/**
+	 * Parameters. A string array with the following subscripts:
+	 *
+	 * 0: Maximum hit points
+	 * 1: Maximum magic points
+	 * 2: Attack power
+	 * 3: Defense power
+	 * 4: Magic attack power
+	 * 5: Magic defense power
+	 * 6: Agility
+	 * 7: Luck
+	 * 8: Hit
+	 * 9: Evasion
+	 */
+	var params:Array<String>;
+
+	/**
+	 * 0: Fight
+	 * 1: Escape
+	 * 2: Attack
+	 * 3: Defend
+	 * 4: Item
+	 * 5: Skill
+	 * 6: Equip
+	 * 7: Status
+	 * 8: Sort
+	 * 9: Save
+	 * 10: Exit Game
+	 * 11: Option
+	 * 12: Weapon
+	 * 13: Armor
+	 * 14: Key Item
+	 * 15: Change Equipment
+	 * 16: Ultimate Equipment
+	 * 17: Remove All
+	 * 18: New Game
+	 * 19: Continue
+	 * 20: (not used)
+	 * 21: Go to Title
+	 * 22: Cancel
+	 * 23: (not used)
+	 * 24: Buy
+	 * 25: Sell
+	 */
+	var commands:Array<String>;
+
+	/**
+	 * The messages.
+	 */
+	var messages:Dict;
+}
+
+/**
+ * The data class for the actors used in battle tests.
+ */
+typedef SystemTestBattler = {
+	/**
+	 * The actor ID.
+	 */
+	var actorId:Int;
+
+	/**
+	 * The actor's level.
+	 */
+	var level:Int;
+
+	/**
+	 * The actor's equipment. An array of weapon IDs or armor IDs with the following subscripts:
+	 *
+	 * 0: Weapon
+	 * 1: Shield
+	 * 2: Head
+	 * 3: Body
+	 * 4: Accessory
+	 */
+	var equips:Array<Int>;
+}
+
+typedef SystemAttackMotion = {
+	/**
+	 * The type of the motion.
+	 */
+	var type:Int;
+
+	/**
+	 * The ID of the weapon image.
+	 */
+	var weaponImageId:Int;
 }
