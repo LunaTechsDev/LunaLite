@@ -14,6 +14,10 @@
 * Change your build process for each and every plugin you create
 * Type inference and code completion while creating your plugins
 * Compile time checks to prevent null errors in your code
+* Dead Code Elimination
+* Add Prepend JS libraries to your code as part of a plugin
+* Sreate plugins in parts
+ * No longer deal with the monolithic plugin file
 
 ## RoadMap
 
