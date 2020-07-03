@@ -1709,4 +1709,147 @@ var	gold: Int;
 			var ?description:String;
 	}
 
+	 /**
+     * The data class for actors.
+     */
+		   typedef Actor = {
+				 > Metadata,
+			/**
+			 * The ID.
+			 */
+			var id: String;
+
+			/**
+			 * The name.
+			 */
+			var name: String;
+
+			/**
+			 * The actor's nickname.
+			 */
+			var nickname: String;
+
+			/**
+			 * The actor's class ID.
+			 */
+			var classId: Int;
+
+			/**
+			 * The actor's initial level.
+			 */
+			var initialLevel: Int;
+
+			/**
+			 * The actor's max level
+			 */
+			var maxLevel: Int;
+
+			/**
+			 * The file name of the actor's walking graphic.
+			 */
+			var characterName: String;
+
+			/**
+			 * The index (0..7) of the actor's walking graphic.
+			 */
+			var characterIndex: Int;
+
+			/**
+			 * The file name of the actor's face graphic.
+			 */
+			var faceName: String;
+
+			/**
+			 * The index (0..7) of the actor's face graphic.
+			 */
+			var faceIndex: Int;
+
+			/**
+			 * The file name of the actor's battler graphic.
+			 */
+			var battlerName: String;
+
+			/**
+			 * The actor's initial equipment. An array of weapon IDs or armor IDs with the following subscripts:
+			 */
+			var equips: Array<Int>;
+
+			/**
+			 * The profile.
+			 */
+			var profile: String;
+
+			/**
+			 * The array of Trait data.
+			 */
+			var traits: Array<Trait>;
+	}
+
+	/**
+     * The data class for class.
+     */
+		  typedef RPGClass = {
+				> Metadata,
+			/**
+			 * The ID.
+			 */
+			var id: Int;
+
+			/**
+			 * The name.
+			 */
+			var name: String;
+
+			/**
+			 * An array of values that decides the experience curve. The subscripts are as follows:
+			 *
+			 * 0: Base value
+			 * 1: Extra value
+			 * 2: Acceleration A
+			 * 3: Acceleration B
+			 */
+			var expParams: Array<Int>;
+
+			/**
+			 * The parameter development curve. A 2-dimensional array containing ordinary parameters according to level (Table).
+			 *
+			 * The format is params[param_id, level], and param_id is assigned as follows:
+			 *
+			 * 0: Maximum hit points
+			 * 1: Maximum magic points
+			 * 2: Attack power
+			 * 3: Defense power
+			 * 4: Magic attack power
+			 * 5: Magic defense power
+			 * 6: Agility
+			 * 7: Luck
+			 */
+			var params: Array<Array<Int>>;
+
+			/**
+			 * The skills to learn. An array of RPG.Class.Learning.
+			 */
+			var learnings: Array<ClassLearning>;
+
+			/**
+			 * The array of Trait data.
+			 */
+			var traits: Array<Trait>;
+	}
+
+	 /**
+         * The data class for a class's [Skills to Learn].
+         */
+				 typedef ClassLearning = {
+					 > Metadata,
+					/**
+					 * The data class for a class's [Skills to Learn].
+					 */
+					var level: Int;
+
+					/**
+					 * The ID of the skill to learn.
+					 */
+					var skillId: Int;
+			}
 	
