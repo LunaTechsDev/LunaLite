@@ -24,11 +24,10 @@
 
 /** JS Lib */
 const a = 3;
-console.log(a);
 ;(function ($global) { "use strict";
 class Main {
 	static main() {
-		// Build Date: 2020-07-01 20:00:20 
+		// Build Date: 2020-07-03 11:10:08 
 		//=============================================================================
     // Kiniitta
     //=============================================================================
@@ -42,8 +41,9 @@ class Main {
 		Scene_Base.prototype.start = function() {
 			let self = this;
 			sceneTitleStart.call(self);
+			$gameVariables.setValue(1,3);
 			Window.Haxe = "Version 4.2.0";
-			console.log("src/Main.hx:24:","Running Console Log From Haxe Added haxe Version");
+			console.log("src/Main.hx:26:","Running Console Log From Haxe Added haxe Version");
 		};
 	}
 }
@@ -59,6 +59,7 @@ class haxe_iterators_ArrayIterator {
 		return this.array[this.current++];
 	}
 }
+var $gameVariables = null;
 {
 }
 Main.main();

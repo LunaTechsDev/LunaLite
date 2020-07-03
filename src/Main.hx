@@ -1,3 +1,4 @@
+import mz.Globals.GameVariables;
 import js.Syntax;
 import js.html.Window;
 import js.lib.Function;
@@ -20,6 +21,7 @@ class Main {
     var SceneBaseFn = Fn.setPrProp(Scene_Base, "start", () -> {
       var self:Scene_Base = Fn.self;
       sceneTitleStart.call(self);
+      GameVariables.setValue(1, 3);
       Fn.setField(Window, "Haxe", "Version 4.2.0");
       trace("Running Console Log From Haxe Added haxe Version");
     });

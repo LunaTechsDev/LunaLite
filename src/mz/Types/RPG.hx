@@ -9,7 +9,7 @@ typedef MetaData = {
 	meta:Dict
 }
 
-typedef Map = {
+typedef RPGMap = {
 	> MetaData,
 
 	/**
