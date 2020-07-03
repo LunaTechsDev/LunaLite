@@ -54,10 +54,10 @@ var DataMap:RPGMap;
 var DataItems:Array<Item>;
 
 @:native("$dataStates")
-// var DataStates:Array<State>;
+var DataStates:Array<State>;
 
 @:native("$dataEnemies")
-// var DataEnemies:Array<Enemy>
+var DataEnemies:Array<Enemy>;
 
 @:native("$dataArmors")
 var DataArmor:Array<Armor>;
@@ -66,7 +66,7 @@ var DataArmor:Array<Armor>;
 var DataWeapons:Array<Weapon>;
 
 @:native("$dataTroops")
-// var DataTroops:Array<Troop>
+var DataTroops:Array<Troop>;
 
 @:native("$dataCommonEvents")
 var DataCommonEvents:Array<CommonEvent>;

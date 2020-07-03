@@ -792,6 +792,28 @@ typedef Armor = {
 	var atypeId:Int;
 }
 
+typedef Troop = {
+	/**
+	 * The troop ID.
+	 */
+	var id: Int;
+
+	/**
+	 * The troop name.
+	 */
+	var name: String;
+
+	/**
+	 * The troop members. An RPG.Troop.Member array.
+	 */
+	var members: Array<TroopMember>;
+
+	/**
+	 * The battle events. An RPG.Troop.Page array.
+	 */
+	var pages: Array<Page>;
+}
+
 typedef TroopMember = {
 	/**
 	 * The enemy ID.
@@ -1439,3 +1461,252 @@ typedef SystemAttackMotion = {
 	 */
 	var weaponImageId:Int;
 }
+
+ typedef Enemy = {
+	 > Metadata,
+	/**
+	 * The file name of the enemy's battler graphic.
+	 */
+	var battlerName: String;
+
+	/**
+	 * The adjustment value for the battler graphic's hue (0..360).
+	 */
+	var battlerHue: Int;
+
+/**
+ * The name of the enemy in the database.
+ * 
+ * @type {string}
+ * @memberof Enemy
+ */
+	var name: String;
+
+/**
+ * The ID of the enemy in the database.
+ * 
+ * @type {number}
+ * @memberof Enemy
+ */
+var id:Int;
+
+	/**
+	 * Parameters. An array of integers using the following IDs as subscripts:
+	 *
+	 * 0: Maximum hit points
+	 * 1: Maximum magic points
+	 * 2: Attack power
+	 * 3: Defense power
+	 * 4: Magic attack power
+	 * 5: Magic defense power
+	 * 6: Agility
+	 * 7: Luck
+	 */
+	var params: Array<Int>;
+
+	/**
+	 * The enemy's experience.
+	 */
+var	exp: Int;
+
+	/**
+	 * The enemy's gold.
+	 */
+var	gold: Int;
+
+	/**
+	 * The items the enemy drops. An RPG.Enemy.DropItem array.
+	 */
+	var dropItems: Array<EnemyDropItem>;
+
+	/**
+	 * The enemy's action pattern. An array of RPG.Enemy.Action.
+	 */
+	var actions: Array<EnemyAction>;
+}
+
+ typedef EnemyDropItem = {
+	/**
+	 * The type of dropped item.
+	 *
+	 * 0: None
+	 * 1: Item
+	 * 2: Weapon
+	 * 3: Armor
+	 */
+	var kind: Int;
+
+	/**
+	 * The ID of the data depending on the type of dropped item (item, weapon, or armor).
+	 */
+	var dataId: Int;
+
+	/**
+	 * N of the probability that the item will be dropped, 1/N.
+	 */
+	var denominator: Int;
+}
+
+/**
+* The data class for enemy [Actions].
+*/
+  typedef EnemyAction = {
+	/**
+	 * The ID of skills to be employed as actions.
+	 */
+	var skillId: Int;
+
+	/**
+	 * The type of condition.
+	 *
+	 * 0: Always
+	 * 1: Turn No.
+	 * 2: HP
+	 * 3: MP
+	 * 4: State
+	 * 5: Party Level
+	 * 6: Switch
+	 */
+	var conditionType: Int;
+
+	/**
+	 * The first parameter of the condition.
+	 */
+	var conditionParam1: Int;
+
+	/**
+	 * The second parameter of the condition.
+	 */
+	var conditionParam2: Int;
+
+	/**
+	 * The action's priority rating (1..10).
+	 */
+	var rating: Int;
+}
+
+/**
+     * The data class for state.
+     */
+		 typedef State = {
+			 > Metadata,
+			/**
+			 * The ID.
+			 */
+			var id: Int;
+
+			/**
+			 * The name.
+			 */
+			var name: String;
+
+			/**
+			 * Action restrictions.
+			 *
+			 * 0: None
+			 * 1: Attack enemy
+			 * 2: Attack enemy or ally
+			 * 3: Attack ally
+			 * 4: Cannot act
+			 */
+			var restriction: Int;
+
+			/**
+			 * The state priority (0..100).
+			 */
+			var priority: Int;
+
+			/**
+			 * Removes state at end of battle (true/false).
+			 */
+			var removeAtBattleEnd: Bool;
+
+			/**
+			 * Removes state by action restriction (true/false).
+			 */
+			var removeByRestriction: Bool;
+
+			/**
+			 * The timing of automatic state removal.
+			 *
+			 * 0: None
+			 * 1: At end of action
+			 * 2: At end of turn
+			 */
+			var autoRemovalTiming: Int;
+
+			/**
+			 * The minimum turns of the duration.
+			 */
+			var minTurns: Int;
+
+			/**
+			 * The maximum turns of the duration.
+			 */
+			var maxTurns: Int;
+
+			/**
+			 * Removes state by damage (true/false).
+			 */
+			var removeByDamage: Bool;
+
+			/**
+			 * Chance of state being removed by damage (%).
+			 */
+			var chanceByDamage: Float;
+
+			/**
+			 * Removes state by walking (true/false).
+			 */
+			var removeByWalking: Bool;
+
+			/**
+			 * Number of steps until state is removed.
+			 */
+			var stepToRemove: Int;
+
+			/**
+			 * The icon number.
+			 */
+			var iconIndex: Int;
+
+			/**
+			 * The message when an actor fell in the state.
+			 */
+			var message1: String;
+
+			/**
+			 * The message when an enemy fell in the state.
+			 */
+			var message2: String;
+
+			/**
+			 * The message when the state remains.
+			 */
+			var message3: String;
+
+			/**
+			 * The message when the state is removed.
+			 */
+			var message4: Int;
+
+			/**
+			 * The side-view motion.
+			 */
+			var motion: Int;
+
+			/**
+			 * The side-view overlay.
+			 */
+			var overlay: Int;
+
+			/**
+			 * The array of Trait data.
+			 */
+			var traits: Array<Trait>;
+
+			var ?releaseByDamage:Bool;
+			var ?description:String;
+	}
+
+	
