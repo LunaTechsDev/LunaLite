@@ -20,16 +20,20 @@ class Fn {
     return Syntax.field(obj, "prototype");
   }
 
-  public static inline function setPrProp(obj, fieldName:String, value:Any) {
-    return Syntax.code("{0}.{1} = {2}", prototype(obj), Syntax.plainCode(fieldName), value);
+  public static inline function setPrProp(obj:Any, fieldName:String, value:Any) {
+    Syntax.code("{0}.{1} = {2}", prototype(obj), Syntax.plainCode(fieldName), value);
   }
 
-  public static inline function getPrProp(obj, fieldName:String):Any {
+  public static inline function setPrPropVoidFn(obj:Any, fieldName:String, value:(Any) -> Void) {
+    Syntax.code("{0}.{1} = {2}", prototype(obj), Syntax.plainCode(fieldName), value);
+  }
+
+  public static inline function getPrProp(obj:Any, fieldName:String):Any {
     return Syntax.code("{0}.{1}", prototype(obj), Syntax.plainCode(fieldName));
   }
 
   @:analyzer(local_dce)
-  public static inline function setField(obj, fieldName:String, value:Any) {
+  public static inline function setField(obj:Any, fieldName:String, value:Any) {
     return Syntax.code("{0} = {1}",Syntax.field(obj, fieldName), value);
   }
 

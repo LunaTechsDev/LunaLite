@@ -27,15 +27,17 @@ const a = 3;
 ;(function ($global) { "use strict";
 class Main {
 	static main() {
-		// Build Date: 2020-07-03 11:10:08 
-		//=============================================================================
-    // Kiniitta
-    //=============================================================================
+		// Build Date: 2020-07-03 21:31:03 
+		
+//=============================================================================
+// Kiniitta
+//=============================================================================
+      
 		/*:
-    @author Kino 
+     @author Kino 
     @plugindesc This plugin allows you to use Haxe in your RPGMakerMV code.
     @param haxeVersion
-    */
+   */
 		// This is a test of the watcher 
 		let sceneTitleStart = Scene_Base.prototype.start;
 		Scene_Base.prototype.start = function() {

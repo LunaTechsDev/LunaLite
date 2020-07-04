@@ -1,5 +1,5 @@
 package core;
 
-import js.Function;
+import js.lib.Function;
 
 typedef JsFn  = Function;

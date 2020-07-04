@@ -19,8 +19,14 @@
 
 # For Compiling Separate JavaScript Files
 
-# --each
+--each
 -js dist/kiniita.js
 -main Main
 --macro macros.MacroTools.getSourceOutput()
+
+
+--next
+-js dist/KITA_MessageExt.js
+-main plugins.KITA_MessageExt
+
 --cmd haxe --run CleanJs
