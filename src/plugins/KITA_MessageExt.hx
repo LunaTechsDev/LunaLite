@@ -1,22 +1,46 @@
 package plugins;
 
+import mz.managers.PluginManager;
 import core.AnyBox;
 import core.Types.JsFn;
 import utils.Fn;
 import utils.Comment;
-import macros.MacroTools;
 import mz.windows.Window_Message;
 import mz.windows.Window_Base;
 
-var textSpeed:Int=5;
+var textSpeed:Int=2;
 
 function main() {
- Comment.title(MacroTools.generateBuildDate());
  Comment.pluginParams("
    @author Kino
    @plugindesc An extension to the core Message Window functionality
-   to support Visual Novels <KITA_MessageExt>."
+   to support Visual Novels <KITA_MessageExt>.
+
+   @param Text Speed 
+   @desc The speed at which characters will be rendered
+   @default 2
+   
+   @help
+   Version: 1.00
+   Version Log:
+   Now you can change the text speed at will using escape characters
+   inside the window.
+   Example: \\TS[30] updates the text speed to super slow 30.
+   Note: The [30] will appear in the editor, but not in game.
+
+   Instructions:
+   You set your text speed in the plugin menu.
+   This is the speed that the characters will be drawn at.
+
+   Contact me via forums; username: Kino.
+   Hope this plugin helps and enjoy!
+   "
+   
  );
+
+ var parameters:Any = PluginManager.parameters("KITA_MessageExt"); 
+ textSpeed =  Fn.getByArrSyntax(parameters, "Text Speed");
+ trace(textSpeed);
 
  Fn.setPrProp(Window_Message, "setBackgroundTexture", () -> {
    var self = Fn.self;
@@ -30,8 +54,6 @@ function main() {
   self.dyn.originalTextSpeed = txtSpeed;
   self.dyn.activeTextSpeed = txtSpeed;
  };
-
-//  Fn.prototype(Window_Message)
 
  Fn.proto(Window_Message).dyn.processEscapeCharacter = function(code:String, textState:String) {
    var self: TBox<Window_Message> = Fn.self;

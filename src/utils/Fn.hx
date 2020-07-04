@@ -40,6 +40,15 @@ class Fn {
   }
 
   /**
+   * Gets an element using an array syntax.
+   * @param obj 
+   * @param fieldName 
+   */
+  public static inline function getByArrSyntax(obj:Any, fieldName:String) {
+    return Syntax.code("{0}[{1}]", obj, fieldName);
+  }
+
+  /**
    * Invokes the standard JavaScript defineProperty functionality to the value
    * @param obj 
    * @param propName 

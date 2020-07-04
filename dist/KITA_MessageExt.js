@@ -1,6 +1,9 @@
 //=============================================================================
 // KITA_MessageExt.js
 //=============================================================================
+//=============================================================================
+// Build Date: 2020-07-04 16:18:43
+//=============================================================================
 
 //=============================================================================
 //  Contact Information
@@ -35,17 +38,34 @@ class haxe_iterators_ArrayIterator {
 	}
 }
 function plugins_KITA_$MessageExt_main() {
-	
-//=============================================================================
-// Build Date: 2020-07-04 06:41:27
-//=============================================================================
-      
 	/*:
      
    @author Kino
    @plugindesc An extension to the core Message Window functionality
    to support Visual Novels <KITA_MessageExt>.
+
+   @param Text Speed 
+   @desc The speed at which characters will be rendered
+   @default 2
+   
+   @help
+   Version: 1.00
+   Version Log:
+   Now you can change the text speed at will using escape characters
+   inside the window.
+   Example: \TS[30] updates the text speed to super slow 30.
+   Note: The [30] will appear in the editor, but not in game.
+
+   Instructions:
+   You set your text speed in the plugin menu.
+   This is the speed that the characters will be drawn at.
+
+   Contact me via forums; username: Kino.
+   Hope this plugin helps and enjoy!
+   
    */
+	plugins_KITA_$MessageExt_textSpeed = PluginManager.parameters("KITA_MessageExt")["Text Speed"];
+	console.log("src/plugins/KITA_MessageExt.hx:43:",plugins_KITA_$MessageExt_textSpeed);
 	Window_Message.prototype.setBackgroundTexture = function() {
 		this;
 	};
@@ -108,7 +128,7 @@ class utils_Fn {
 }
 {
 }
-var plugins_KITA_$MessageExt_textSpeed = 5;
+var plugins_KITA_$MessageExt_textSpeed = 2;
 plugins_KITA_$MessageExt_main();
 })({});
 

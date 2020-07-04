@@ -10,6 +10,11 @@ macro function pipe(exprs:Array<Expr>) :Expr {
   return macro $b{exprs};
 }
 
+macro function generateBuildDate (): ExprOf<String> {
+  var date = Date.now();
+  return macro $v{"Build Date: " + date.toString()}
+}
+
 function main() {
   final attributionStr = File.read("Attribution.txt")
     .readAll().toString();
@@ -22,6 +27,12 @@ function main() {
 '//=============================================================================
 // $file
 //=============================================================================\n';
+
+    var buildStr = generateBuildDate();
+    final buildDate =
+'//=============================================================================
+// $buildStr
+//=============================================================================\n';
     final filePath = '$distDir/$file';
     final contents = File.read(filePath).readAll().toString();
     final cleanContents = pipe(
@@ -29,7 +40,7 @@ function main() {
       ~/(==);/g.replace(_, "$1"),
       ~/(\/\/.+\s*);/g.replace(_, "$1")
     );
-    final newContent = fileNameStr + attributionStr + "\n" + cleanContents;
+    final newContent = fileNameStr + buildDate + attributionStr + "\n" + cleanContents;
     File.write(filePath).writeString(newContent);
     trace("Cleaned Output File: " + filePath);
   });
