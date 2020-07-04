@@ -2,8 +2,12 @@ package macros;
 import haxe.macro.Expr;
 import haxe.macro.Compiler;
 import haxe.macro.PositionTools;
+import haxe.macro.Context;
 import sys.io.File;
 import sys.FileSystem;
+using StringTools;
+using Lambda;
+
 /**
  * Tool Level Macros for Kiniitta
  */

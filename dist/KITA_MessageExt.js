@@ -2,7 +2,7 @@
 // KITA_MessageExt.js
 //=============================================================================
 //=============================================================================
-// Build Date: 2020-07-04 16:18:43
+// Build Date: 2020-07-04 19:31:56
 //=============================================================================
 
 //=============================================================================
@@ -65,7 +65,8 @@ function plugins_KITA_$MessageExt_main() {
    
    */
 	plugins_KITA_$MessageExt_textSpeed = PluginManager.parameters("KITA_MessageExt")["Text Speed"];
-	console.log("src/plugins/KITA_MessageExt.hx:43:",plugins_KITA_$MessageExt_textSpeed);
+	console.log("src/plugins/KITA_MessageExt.hx:45:",plugins_KITA_$MessageExt_textSpeed);
+	console.log("src/plugins/KITA_MessageExt.hx:46:","assets/mypic.png");
 	Window_Message.prototype.setBackgroundTexture = function() {
 		this;
 	};

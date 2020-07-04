@@ -1,5 +1,6 @@
 package plugins;
 
+import js.lib.Object;
 import mz.managers.PluginManager;
 import core.AnyBox;
 import core.Types.JsFn;
@@ -7,6 +8,7 @@ import utils.Fn;
 import utils.Comment;
 import mz.windows.Window_Message;
 import mz.windows.Window_Base;
+import core.Assets;
 
 var textSpeed:Int=2;
 
@@ -41,6 +43,7 @@ function main() {
  var parameters:Any = PluginManager.parameters("KITA_MessageExt"); 
  textSpeed =  Fn.getByArrSyntax(parameters, "Text Speed");
  trace(textSpeed);
+ trace(Assets.new_name);
 
  Fn.setPrProp(Window_Message, "setBackgroundTexture", () -> {
    var self = Fn.self;
