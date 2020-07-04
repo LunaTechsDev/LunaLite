@@ -22,18 +22,18 @@ function main() {
    var self = Fn.self;
  });
 
- /* Window Message Text Speed Support */
- var windowMsgInitialize:JsFn = Fn.getPrProp(Window_Message, "initialize");
- 
- Fn.setPrProp(Window_Message, "initialize", () -> {
-   var self:TBox<Window_Message> = Fn.self;
-   windowMsgInitialize.call(self);
-   var txtSpeed = textSpeed;
-   self.dyn.originalTextSpeed = txtSpeed;
-   self.dyn.activeTextSpeed = txtSpeed;
- });
+ final winMsgInitialize:JsFn = Fn.proto(Window_Message).dyn.initialize; 
+ Fn.proto(Window_Message).dyn.initialize = function() {
+  var self:TBox<Window_Message> = Fn.self;
+  winMsgInitialize.call(self);
+  var txtSpeed = textSpeed;
+  self.dyn.originalTextSpeed = txtSpeed;
+  self.dyn.activeTextSpeed = txtSpeed;
+ };
 
- Fn.setPrProp(Window_Message, "processEscapeCharacter", (code:String, textState:String) -> {
+//  Fn.prototype(Window_Message)
+
+ Fn.proto(Window_Message).dyn.processEscapeCharacter = function(code:String, textState:String) {
    var self: TBox<Window_Message> = Fn.self;
    switch(code) {
      case '$':
@@ -58,7 +58,7 @@ function main() {
       var winBaseProcessEscChar:JsFn = Fn.getPrProp(Window_Base, "processEscapeCharacter");
       winBaseProcessEscChar.call(self, code, textState);
    }
- });
+ };
 
  Fn.setPrPropVoidFn(Window_Message, "updateTextSpeed",(value) -> {
   var self:Dynamic = Fn.self;

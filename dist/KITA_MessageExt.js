@@ -37,7 +37,7 @@ class haxe_iterators_ArrayIterator {
 function plugins_KITA_$MessageExt_main() {
 	
 //=============================================================================
-// Build Date: 2020-07-03 21:31:04
+// Build Date: 2020-07-04 06:41:27
 //=============================================================================
       
 	/*:
@@ -49,13 +49,13 @@ function plugins_KITA_$MessageExt_main() {
 	Window_Message.prototype.setBackgroundTexture = function() {
 		this;
 	};
-	let windowMsgInitialize = Window_Message.prototype.initialize;
+	let winMsgInitialize = Window_Message.prototype.initialize;
 	Window_Message.prototype.initialize = function() {
 		let self = this;
-		windowMsgInitialize.call(self);
+		winMsgInitialize.call(self);
 		let txtSpeed = plugins_KITA_$MessageExt_textSpeed;
 		self.originalTextSpeed = txtSpeed;
-		return self.activeTextSpeed = txtSpeed;
+		self.activeTextSpeed = txtSpeed;
 	};
 	Window_Message.prototype.processEscapeCharacter = function(code,textState) {
 		let self = this;
@@ -100,6 +100,11 @@ function plugins_KITA_$MessageExt_main() {
 		self.activeTextSpeed = self.originalTextSpeed;
 		winMessageTerminateMessage.call(self);
 	};
+}
+class utils_Fn {
+	static proto(obj) {
+		return obj.prototype;
+	}
 }
 {
 }

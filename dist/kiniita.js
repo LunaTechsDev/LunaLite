@@ -27,7 +27,7 @@ const a = 3;
 ;(function ($global) { "use strict";
 class Main {
 	static main() {
-		// Build Date: 2020-07-03 21:31:03 
+		// Build Date: 2020-07-04 06:41:26 
 		
 //=============================================================================
 // Kiniitta
@@ -62,6 +62,11 @@ class haxe_iterators_ArrayIterator {
 	}
 }
 var $gameVariables = null;
+class utils_Fn {
+	static proto(obj) {
+		return obj.prototype;
+	}
+}
 {
 }
 Main.main();

@@ -5,6 +5,8 @@ import utils.Fn;
 
 @:native("Window_Base")
 extern class Window_Base {
+
+  public function initialize():Void;
   
   public function setBackgroundType(type:Int):Void;
 

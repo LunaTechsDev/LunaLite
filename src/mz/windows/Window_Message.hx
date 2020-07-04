@@ -4,6 +4,8 @@ package mz.windows;
 extern class Window_Message extends Window_Base {
   private var _positionType:Int;
 
+  public function initialize():Void;
+
   /**
    * Returns the sub windows of Window_Message
    * goldWindow, choiceWindow, numberWindow, and itemWindow

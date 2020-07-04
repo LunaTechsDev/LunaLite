@@ -2,6 +2,7 @@ package utils;
 import haxe.macro.Type.ClassType;
 import js.Syntax;
 import js.lib.Object;
+import core.AnyBox.TBox;
 import Type;
 
 typedef Self=String;
@@ -16,20 +17,21 @@ class Fn {
     return Syntax.code("this");
   }
 
-  public static inline function prototype<T>(obj:T):T {
+  @:keep
+  public static inline function proto<T>(obj:Class<T>):TBox<T> {
     return Syntax.field(obj, "prototype");
   }
 
   public static inline function setPrProp(obj:Any, fieldName:String, value:Any) {
-    Syntax.code("{0}.{1} = {2}", prototype(obj), Syntax.plainCode(fieldName), value);
+    Syntax.code("{0}.{1} = {2}", proto(obj), Syntax.plainCode(fieldName), value);
   }
 
   public static inline function setPrPropVoidFn(obj:Any, fieldName:String, value:(Any) -> Void) {
-    Syntax.code("{0}.{1} = {2}", prototype(obj), Syntax.plainCode(fieldName), value);
+    Syntax.code("{0}.{1} = {2}", proto(obj), Syntax.plainCode(fieldName), value);
   }
 
   public static inline function getPrProp(obj:Any, fieldName:String):Any {
-    return Syntax.code("{0}.{1}", prototype(obj), Syntax.plainCode(fieldName));
+    return Syntax.code("{0}.{1}", proto(obj), Syntax.plainCode(fieldName));
   }
 
   @:analyzer(local_dce)
