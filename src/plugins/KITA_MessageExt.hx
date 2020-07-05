@@ -43,7 +43,6 @@ function main() {
  var parameters:Any = PluginManager.parameters("KITA_MessageExt"); 
  textSpeed =  Fn.getByArrSyntax(parameters, "Text Speed");
  trace(textSpeed);
- trace(Assets.new_name);
 
  Fn.setPrProp(Window_Message, "setBackgroundTexture", () -> {
    var self = Fn.self;
