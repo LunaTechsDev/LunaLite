@@ -3,6 +3,7 @@ package mz.core;
 import pixi.core.display.DisplayObject;
 import pixi.core.display.Container;
 
+@:native("Stage")
 extern class Stage extends Container {
   // The interactive flag causes a memory leak.
   
