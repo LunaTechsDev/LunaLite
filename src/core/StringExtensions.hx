@@ -58,7 +58,7 @@ inline function monoSpace(string:String):String {
      * @returns {Scene}
      */
      inline function currentScene() {
-      return SceneManager._scene;
+      return SceneManager.curretScene;
     }
 
 // inline function toBinary(number: Int) {

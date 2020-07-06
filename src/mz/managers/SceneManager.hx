@@ -10,75 +10,75 @@ import mz.scenes.Scene_Base;
  */
 @:native("SceneManager")
 extern class SceneManager {
-	private var _scene:Any;
-	private var _nextScene:Any;
-	private var _stack:Array<Any>;
-	private var _screenWidth:Int;
-	private var _screenHeight:Int;
-	private var _backgroundBitmap:Bitmap;
+	private static var _scene:Any;
+	private static var _nextScene:Any;
+	private static var _stack:Array<Any>;
+	private static var _screenWidth:Int;
+	private static var _screenHeight:Int;
+	private static var _backgroundBitmap:Bitmap;
 
 	/**
 	 * Convenience variable for getting the current scene.
 	 */
 	@:native("_scene")
-	public var curretScene:Any;
+	public static var curretScene:Any;
 
-	public function preferableRendererType():String;
-	public function shouldUseCanvasRenderer():Bool;
+	public static function preferableRendererType():String;
+	public static function shouldUseCanvasRenderer():Bool;
 
-	public function initialize():Void;
-	public function initGraphics():Void;
-	public function initAudio():Void;
-	public function initInput():Void;
-	public function initNwjs():Void;
-	public function update():Void;
-	public function terminate():Void;
-	public function tickStart():Void;
-	public function tickEnd():Void;
-	public function changeScene():Void;
-	public function updateScene():Void;
-	public function renderScene():Void;
-	public function onSceneCreate():Void;
-	public function onSceneStart():Void;
-	public function onSceneLoading():Void;
+	public static function initialize():Void;
+	public static function initGraphics():Void;
+	public static function initAudio():Void;
+	public static function initInput():Void;
+	public static function initNwjs():Void;
+	public static function update():Void;
+	public static function terminate():Void;
+	public static function tickStart():Void;
+	public static function tickEnd():Void;
+	public static function changeScene():Void;
+	public static function updateScene():Void;
+	public static function renderScene():Void;
+	public static function onSceneCreate():Void;
+	public static function onSceneStart():Void;
+	public static function onSceneLoading():Void;
 
-	public function onError(e:Event):Void;
-	public function onKeyDown(event:KeyboardEvent):Void;
-	public function catchException(e:Event):Void;
+	public static function onError(e:Event):Void;
+	public static function onKeyDown(event:KeyboardEvent):Void;
+	public static function catchException(e:Event):Void;
 
-	public function isSceneChanging():Bool;
-	public function isCurrentSceneBusy():Bool;
-	public function isCurrentSceneStarted():Bool;
-	public function isNextScene(sceneClass:Any):Bool;
-	public function isPreviousScene(sceneClass:Any):Bool;
+	public static function isSceneChanging():Bool;
+	public static function isCurrentSceneBusy():Bool;
+	public static function isCurrentSceneStarted():Bool;
+	public static function isNextScene(sceneClass:Any):Bool;
+	public static function isPreviousScene(sceneClass:Any):Bool;
 
   /**
    * Goes to the scene passed in.
    * @param sceneClass 
    */
-  public function goto(sceneClass:Any):Void;
+  public static function goto(sceneClass:Any):Void;
   /**
    * Pushes the scene passed in to the scene stack.
    * Immediately goes to the scene passed in.
    * @param sceneClass 
    */
-  public function push(sceneClass:Any):Void;
+  public static function push(sceneClass:Any):Void;
 	/**
 	 * Pops the current scene from the stack.
 	 */
-  public function pop():Void;
+  public static function pop():Void;
 	/**
 	 * Exits the current scene.
 	 */
-	public function exit():Void;
-  public function clearStack():Void;
+	public static function exit():Void;
+  public static function clearStack():Void;
 	/**
 	 * Stops the current scene.
 	 */
-	public function stop():Void;
-	public function prepareNextScene():Void;
-	public function snap():Bitmap;
-	public function snapForBackground():Void;
-	public function backgroundBitmap():Bitmap;
-	public function updateManagers(ticks:Float, delta:Float):Void;
+	public static function stop():Void;
+	public static function prepareNextScene():Void;
+	public static function snap():Bitmap;
+	public static function snapForBackground():Void;
+	public static function backgroundBitmap():Bitmap;
+	public static function updateManagers(ticks:Float, delta:Float):Void;
 }
