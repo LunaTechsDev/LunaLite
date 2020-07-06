@@ -1,5 +1,6 @@
 package core;
 
+import mz.managers.SceneManager;
 import pixi.interaction.EventEmitter;
 import mz.core.Utils;
 
@@ -34,3 +35,11 @@ function getParams(regEx: EReg) {
 function lerp(start:Float, end:Float, amount:Float):Float {
   return start + ((end - start) * amount);
 }
+
+    /**
+     * Returns the current SceneManager._scene.
+     * @returns {Scene}
+     */
+     inline function currentScene() {
+      return SceneManager.curretScene;
+    }

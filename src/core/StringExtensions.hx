@@ -1,6 +1,5 @@
 package core;
 
-import mz.managers.SceneManager;
 using StringTools;
 
 /**
@@ -52,14 +51,6 @@ inline function x1breplace2(string:String):String {
 inline function monoSpace(string:String):String {
 	return ~/\s{2,}/gi.replace(string, " ");
 }
-
-    /**
-     * Returns the current SceneManager._scene.
-     * @returns {Scene}
-     */
-     inline function currentScene() {
-      return SceneManager.curretScene;
-    }
 
 // inline function toBinary(number: Int) {
 //   return Std.string(number).
