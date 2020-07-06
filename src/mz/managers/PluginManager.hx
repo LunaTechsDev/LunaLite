@@ -8,9 +8,9 @@ import mz.types.MZ;
  */
 @:native("PluginManager")
 extern class PluginManager {
-  private var _path:String;
-  private var _scripts:Array<String>;
-  private var _errorUrls:Array<String>;
+  private static var _path:String;
+  private static var _scripts:Array<String>;
+  private static var _errorUrls:Array<String>;
 
   public static function setup(plugins: Array<PluginSettings>):Void;
 
