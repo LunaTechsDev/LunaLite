@@ -16,8 +16,11 @@
 * Compile time checks to prevent null errors in your code
 * Dead Code Elimination
 * Add Prepend JS libraries to your code as part of a plugin
-* Sreate plugins in parts
+* Create plugins in parts
  * No longer deal with the monolithic plugin file
+* Generate build dates for your plugins
+* Enhancements for classes and basic types
+* Bundle Documentation With Code
 
 ## RoadMap
 

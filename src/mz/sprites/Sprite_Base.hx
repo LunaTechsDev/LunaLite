@@ -21,7 +21,7 @@ extern class Sprite_Base extends Sprite {
 	 * @type {Sprite_Base}
 	 * @memberof Sprite_Base
 	 */
-	private var  _effectTarget:Sprite_Base;
+	private var _effectTarget:Sprite_Base;
 
 	/**
 	 * Determines sprite's visibility
@@ -29,6 +29,13 @@ extern class Sprite_Base extends Sprite {
 	private var _hiding:Bool;
 
 	public function new():Void;
+
+	/**
+	 * Initializes the sprite.
+	 *
+	 * @memberof Sprite_Base
+	 */
+	public function initialize():Void;
 
 	/**
 	 * Hides the sprite.

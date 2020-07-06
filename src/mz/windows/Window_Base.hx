@@ -1,11 +1,12 @@
 package mz.windows;
 
 import js.lib.Object;
+import mz.core._Window;
 import utils.Fn;
 
 
 @:native("Window_Base")
-extern class Window_Base  extends Object{
+extern class Window_Base  extends _Window {
 
   public function initialize():Void;
   

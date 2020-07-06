@@ -23,3 +23,14 @@ function createDie(sides:Int):Die {
 function getParams(regEx: EReg) {
 
 }
+
+/**
+ * Applies Linear Interpolation to the variable provided
+ * @param start 
+ * @param end 
+ * @param amount 
+ * @return {Float}
+ */
+function lerp(start:Float, end:Float, amount:Float):Float {
+  return start + ((end - start) * amount);
+}

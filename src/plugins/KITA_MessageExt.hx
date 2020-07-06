@@ -1,6 +1,11 @@
 package plugins;
 
-import js.lib.Object;
+
+import mz.core.Bitmap;
+
+
+
+import nodes.SpriteBust;
 import mz.managers.PluginManager;
 import core.AnyBox;
 import core.Types.JsFn;
@@ -8,11 +13,14 @@ import utils.Fn;
 import utils.Comment;
 import mz.windows.Window_Message;
 import mz.windows.Window_Base;
+import mz.sprites.Sprite_Base;
 import core.Assets;
+using Std;
 
 var textSpeed:Int=2;
 
 function main() {
+  trace(Sprite_Base);
  Comment.pluginParams("
    @author Kino
    @plugindesc An extension to the core Message Window functionality
@@ -48,6 +56,10 @@ function main() {
    var self = Fn.self;
  });
 
+ final img = new Bitmap(128, 128);
+ img.fillRect(0, 0, 128, 128,"black");
+ final MSGBUST = new SpriteBust(0, 0, img);
+ 
  final winMsgInitialize:JsFn = Fn.proto(Window_Message).dyn.initialize; 
  Fn.proto(Window_Message).dyn.initialize = function() {
   var self:TBox<Window_Message> = Fn.self;
@@ -55,6 +67,10 @@ function main() {
   var txtSpeed = textSpeed;
   self.dyn.originalTextSpeed = txtSpeed;
   self.dyn.activeTextSpeed = txtSpeed;
+  self.dyn.msgBust =  MSGBUST;
+  MSGBUST.move(0, -128);
+  self.addChild(self.dyn.msgBust);
+  MSGBUST.show();
  };
 
  Fn.proto(Window_Message).dyn.processEscapeCharacter = function(code:String, textState:String) {
