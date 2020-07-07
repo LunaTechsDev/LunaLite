@@ -20,7 +20,7 @@ extern class SceneManager {
   private static var _boxHeight: Int;
   private static var _deltaTime: Float;
   private static var _currentTime: Float;
-  private static _accumulator: Int;
+  private static var _accumulator: Int;
 
 	/**
 	 * Convenience variable for getting the current scene.
