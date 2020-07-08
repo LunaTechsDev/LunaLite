@@ -1,6 +1,8 @@
 package plugins;
 
 
+import mz.managers.DataManager;
+import mz.types.RPG.Weapon;
 import mz.core.Bitmap;
 
 
