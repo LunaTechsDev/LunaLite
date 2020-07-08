@@ -2,7 +2,7 @@ package nodes;
 
 import mz.core.Bitmap;
 import mz.sprites.Sprite_Base;
-import core.Amarylls;
+import core.Amaryllis;
 
 enum MoveType {
   Linear;

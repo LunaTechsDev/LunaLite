@@ -2,7 +2,7 @@
 // KITA_MessageExt.js
 //=============================================================================
 //=============================================================================
-// Build Date: 2020-07-05 18:05:09
+// Build Date: 2020-07-07 20:23:27
 //=============================================================================
 
 //=============================================================================
@@ -33,7 +33,7 @@ class Std {
 	}
 }
 Std.__name__ = true;
-function core_Amarylls_lerp(start,end,amount) {
+function core_Amaryllis_lerp(start,end,amount) {
 	return start + (end - start) * amount;
 }
 class haxe_Log {
@@ -242,10 +242,10 @@ class nodes_SpriteBust extends Sprite_Base {
 		let xResult = this.x;
 		let yResult = this.y;
 		if(this._shadowX != this.x) {
-			xResult = core_Amarylls_lerp(this.x,this._shadowX,0.025);
+			xResult = core_Amaryllis_lerp(this.x,this._shadowX,0.025);
 		}
 		if(this._shadowY != this.y) {
-			yResult = core_Amarylls_lerp(this.y,this._shadowY,0.025);
+			yResult = core_Amaryllis_lerp(this.y,this._shadowY,0.025);
 		}
 		if(this._shadowX == this.x && this._shadowY == this.y) {
 			this._moveWait = -1;
