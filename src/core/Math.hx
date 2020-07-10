@@ -23,4 +23,12 @@ abstract Math(SMath) {
     var rand = [for (i in start...end) i];
     return rand[randomInt() * rand.length];
   } 
+
+  public static inline function clampf(num:Float, min:Float, max:Float):Float {
+    return Math.min(Math.max(num, min), max);
+  }
+  
+  public static inline function clamp(num:Int, min:Int, max:Int) : Int {
+    return  Math.round(Math.min(Math.max(num, min), max));
+  }
 }
