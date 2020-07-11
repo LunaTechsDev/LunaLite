@@ -1,5 +1,7 @@
 package mz.windows;
 
+import mz.sprites.Sprite_Button;
+
 @:native("Window_NumberInput")
 extern class Window_NumberInput extends Window_Selectable {
   private var _messageWindow: Window_Message;
