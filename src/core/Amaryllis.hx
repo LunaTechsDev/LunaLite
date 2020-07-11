@@ -1,20 +1,25 @@
 package core;
 
+import utils.Fn;
+import mz.windows.Window_Base;
+import haxe.Json;
 import haxe.Constraints.Function;
 import mz.managers.ImageManager;
 import mz.managers.SceneManager;
 import pixi.interaction.EventEmitter;
 import mz.core.Utils;
 
+using Lambda;
+
 final VERSION = '1.0.0';
 final MZ_NAME = Utils.RPGMAKER_NAME;
 final MZ_VERSION = Utils.RPGMAKER_VERSION;
 
-function createEventEmitter() {
+inline function createEventEmitter() {
 	return new EventEmitter();
 }
 
-function createDie(sides:Int):Die {
+inline function createDie(sides:Int):Die {
 	return new Die(sides);
 }
 
@@ -44,11 +49,11 @@ inline function currentScene() {
 	return SceneManager.curretScene;
 }
 
-function isImagePath(path:String) {
+inline function isImagePath(path:String) {
 	return path.split("/").length > 2 ? true : false;
 }
 
-function loadImage(path:String, hue:Int = 0) {
+inline function loadImage(path:String, hue:Int = 0) {
 	return isImagePath(path) ? ImageManager.loadNormalBitmap(path + ".png", hue) : null;
 }
 
@@ -56,7 +61,7 @@ function loadImage(path:String, hue:Int = 0) {
  * Returns true if the game is running on desktop(nwjs).
  * @returns {boolean}
  */
-function isNwjs() {
+inline function isNwjs() {
 	return Utils.isNwjs();
 }
 
@@ -64,7 +69,7 @@ function isNwjs() {
  * Returns true if the game is running on mobile.
  * @returns{boolean}
  */
-function isMobile() {
+inline function isMobile() {
 	return Utils.isMobileDevice();
 }
 
@@ -72,7 +77,7 @@ function isMobile() {
  * Returns true if the game is in test mode.
  * @returns {boolean}
  */
-function isTest() {
+inline function isTest() {
 	return Utils.isOptionValid("test");
 }
 
@@ -103,4 +108,53 @@ function times(iterations:Int, f:Function) {
 	for (i in 0...iterations) {
 		f();
 	}
+}
+
+function safeParse(string:String) {
+	try {
+		return Json.parse(string);
+	} catch (err) {
+		return err;
+	}
+}
+
+/**
+ * Returns a number based on the game's default lineHeight.
+ * @param {number} number
+ * @returns {number}
+ */
+inline function lines(num:Int) {
+	return Fn.proto(Window_Base).lineHeight() * num;
+}
+
+/**
+ * Returns rgb as a css hex string.
+ * @param {number} red
+ * @param {number} green
+ * @param {number} blue
+ * @returns {string}
+ */
+inline function  rgbToHex(red:Int, green:Int, blue:Int) {
+	final hex = pixi.core.utils.Utils.rgb2hex([red, green, blue]);
+	return pixi.core.utils.Utils.hex2string(hex);
+}
+
+/**
+ * Returns a rgb in css format string.
+ * @param {Int} red
+ * @param {Int} green
+ * @param {Int} blue
+ * @returns {string}
+ */
+inline function rgbToCss(red:Int, green:Int, blue:Int) {
+	return Utils.rgbToCssColor(red, green, blue);
+}
+
+/**
+ * Clears an array of all values.
+ * @param {Array<Any>} array
+ */
+inline function clear(array:Array<Any>) {
+	array.resize(0);
+	return array;
 }
