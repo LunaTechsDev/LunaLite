@@ -31,7 +31,7 @@ extern class Window_NumberInput extends Window_Selectable {
    * @returns {number} 
    * @memberof Window_NumberInput
    */
-  publif function itemWidth(): Int;
+  public function itemWidth(): Int;
   /**
    * Creates the number input window buttons.
    * 
