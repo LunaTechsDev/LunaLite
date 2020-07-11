@@ -499,7 +499,7 @@ public function   tpCostColor(): String;
     * @returns {(number | String)} 
     * @memberof Window_Base
     */
-   public function obtainEscapeParam(textState: TextState): EitherType<Float, String>;
+   public function obtainEscapeParam(textState: EitherType<String, TextState>): EitherType<Float, String>;
    /**
     * Processes escape characters when drawTextEx is used 
     * for drawing text.
