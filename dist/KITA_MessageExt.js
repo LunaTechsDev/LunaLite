@@ -2,7 +2,7 @@
 // KITA_MessageExt.js
 //=============================================================================
 //=============================================================================
-// Build Date: 2020-07-07 20:23:27
+// Build Date: 2020-07-11 15:49:41
 //=============================================================================
 
 //=============================================================================
@@ -264,7 +264,7 @@ class nodes_SpriteBust extends Sprite_Base {
 }
 nodes_SpriteBust.__name__ = true;
 function plugins_KITA_$MessageExt_main() {
-	haxe_Log.trace(Sprite_Base,{ fileName : "src/plugins/KITA_MessageExt.hx", lineNumber : 23, className : "plugins._KITA_MessageExt.KITA_MessageExt_Fields_", methodName : "main"});
+	haxe_Log.trace(Sprite_Base,{ fileName : "src/plugins/KITA_MessageExt.hx", lineNumber : 27, className : "plugins._KITA_MessageExt.KITA_MessageExt_Fields_", methodName : "main"});
 	/*:
      
    @author Kino
@@ -292,7 +292,7 @@ function plugins_KITA_$MessageExt_main() {
    
    */
 	plugins_KITA_$MessageExt_textSpeed = PluginManager.parameters("KITA_MessageExt")["Text Speed"];
-	haxe_Log.trace(plugins_KITA_$MessageExt_textSpeed,{ fileName : "src/plugins/KITA_MessageExt.hx", lineNumber : 53, className : "plugins._KITA_MessageExt.KITA_MessageExt_Fields_", methodName : "main"});
+	haxe_Log.trace(plugins_KITA_$MessageExt_textSpeed,{ fileName : "src/plugins/KITA_MessageExt.hx", lineNumber : 57, className : "plugins._KITA_MessageExt.KITA_MessageExt_Fields_", methodName : "main"});
 	Window_Message.prototype.setBackgroundTexture = function() {
 		this;
 	};

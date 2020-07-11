@@ -17,6 +17,8 @@ import mz.windows.Window_Message;
 import mz.windows.Window_Base;
 import mz.sprites.Sprite_Base;
 import core.Assets;
+using core.StringExtensions;
+import macros.MacroTools;
 using Std;
 
 var textSpeed:Int=2;
@@ -53,7 +55,9 @@ function main() {
  var parameters:Any = PluginManager.parameters("KITA_MessageExt"); 
  textSpeed =  Fn.getByArrSyntax(parameters, "Text Speed");
  trace(textSpeed);
-
+ var a = "Test";
+ MacroTools.debug("This is a test commnet");
+ 
  Fn.setPrProp(Window_Message, "setBackgroundTexture", () -> {
    var self = Fn.self;
  });

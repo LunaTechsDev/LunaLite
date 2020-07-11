@@ -10,6 +10,7 @@
 -D js_source_map
 # Haxe Source Map
 -D source-map-content
+-D mode=prod
 # Generate Documentation
 # -D doc_gen
 # -D js_classic
