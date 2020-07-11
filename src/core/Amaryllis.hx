@@ -134,7 +134,7 @@ inline function lines(num:Int) {
  * @param {number} blue
  * @returns {string}
  */
-inline function  rgbToHex(red:Int, green:Int, blue:Int) {
+inline function rgbToHex(red:Int, green:Int, blue:Int) {
 	final hex = pixi.core.utils.Utils.rgb2hex([red, green, blue]);
 	return pixi.core.utils.Utils.hex2string(hex);
 }
@@ -157,4 +157,31 @@ inline function rgbToCss(red:Int, green:Int, blue:Int) {
 inline function clear(array:Array<Any>) {
 	array.resize(0);
 	return array;
+}
+
+/**
+ * Takes a set amount of elements from the start of an array.
+ 		 * Doesn't modify the original array.
+ * @param {number} amount
+ * @param {any[]} list
+ * @returns {any[]}
+ */
+inline function take(amount:Int, list:Array<Any>) {
+	return list.slice(0, amount);
+}
+
+/**
+ * Takes a set amount of elements from the end of an array.
+ * Doesn't modify the original array.
+ * @param {number} amount
+ * @param {any[]} list
+ * @returns {any[]}
+ */
+inline function drop(amount:Int, list:Array<Any>) {
+	return list.slice(amount * -1);
+}
+
+inline function arrayEquals(arr1: Array<Any>, arr2: Array<Any>) {
+	return arr1.length == arr2.length &&
+		!arr1.has((el, index) -> el != arr2[index]);
 }
