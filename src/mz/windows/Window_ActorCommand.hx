@@ -9,6 +9,7 @@ import mz.objects.Game_Actor;
  * The window for selecting an actor's action on the battle screen.
  * @class Window_ActorCommand
  */
+ @:native("Window_ActorCommand")
  extern class Window_ActorCommand extends Window_Command {
   private var _actor: Game_Actor;
 
