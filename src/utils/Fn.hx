@@ -17,6 +17,14 @@ class Fn {
     return Syntax.code("this");
   }
 
+  public static inline function eval(evaluation:String) {
+    return js.Lib.eval(evaluation);
+  }
+
+  public static inline function embedEval(evaluation:String) {
+    return Syntax.code("eval({0})", evaluation);
+  }
+
   @:keep
   public static inline function proto<T>(obj:Class<T>):TBox<T> {
     return Syntax.field(obj, "prototype");

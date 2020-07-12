@@ -1,6 +1,7 @@
 package plugins;
 
 
+import nodes.SpriteIconOsc;
 import mz.core.Bitmap;
 import nodes.SpriteBust;
 import mz.managers.PluginManager;
@@ -16,6 +17,7 @@ using Std;
 var textSpeed:Int = 2;
 final img = new Bitmap(128, 128);
 final MSGBUST = new SpriteBust(0, 0, img);
+final OSCSprite = new SpriteIconOsc(0, 0, img);
 
 function main() {
 	trace(Sprite_Base);
@@ -60,15 +62,20 @@ class KitaWindowMessage extends Window_Message {
 	public var activeTextSpeed:Int;
 	public var originalTextSpeed:Int;
 	public var msgBust:SpriteBust;
+	public var testSprite:SpriteIconOsc;
 
 	public function new(x, y, width, height) {
 		super(x, y, width, height);
 		this.originalTextSpeed = textSpeed;
 		this.activeTextSpeed = textSpeed;
 		this.msgBust = MSGBUST;
+		this.testSprite = OSCSprite;
 		img.fillRect(0, 0, 128, 128, "black");
 		this.msgBust.move(0, -128);
+		this.testSprite.move(0, 400);
+		this.addChild(this.testSprite);
 		this.addChild(this.msgBust);
+		this.testSprite.show();
 		this.msgBust.show();
 	}
 
