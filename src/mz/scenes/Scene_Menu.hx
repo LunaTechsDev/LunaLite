@@ -1,5 +1,9 @@
 package mz.scenes;
 
+import mz.windows.Window_Gold;
+import mz.windows.Window_MenuCommand;
+import mz.windows.Window_MenuStatus;
+
 /**
  * The menu scene in your RPGMakerMV game.
  */
