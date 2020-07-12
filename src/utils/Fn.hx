@@ -17,10 +17,18 @@ class Fn {
     return Syntax.code("this");
   }
 
+  /**
+   * Runs a JavaScript evaluation expression.
+   * @param evaluation 
+   */
   public static inline function eval(evaluation:String) {
     return js.Lib.eval(evaluation);
   }
 
+  /**
+   * Embeds a JavaScript evaluation into the output program.
+   * @param evaluation 
+   */
   public static inline function embedEval(evaluation:String) {
     return Syntax.code("eval({0})", evaluation);
   }
