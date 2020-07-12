@@ -2,7 +2,7 @@
 // KITA_MessageExt.js
 //=============================================================================
 //=============================================================================
-// Build Date: 2020-07-11 15:49:41
+// Build Date: 2020-07-11 17:25:49
 //=============================================================================
 
 //=============================================================================
@@ -263,8 +263,59 @@ class nodes_SpriteBust extends Sprite_Base {
 	}
 }
 nodes_SpriteBust.__name__ = true;
+class plugins_KitaWindowMessage extends Window_Message {
+	constructor(x,y,width,height) {
+		super(x,y,width,height);
+		this.originalTextSpeed = plugins_KITA_$MessageExt_textSpeed;
+		this.activeTextSpeed = plugins_KITA_$MessageExt_textSpeed;
+		this.msgBust = plugins_KITA_$MessageExt_MSGBUST;
+		plugins_KITA_$MessageExt_img.fillRect(0,0,128,128,"black");
+		this.msgBust.move(0,-128);
+		this.addChild(this.msgBust);
+		this.msgBust.show();
+	}
+	updateTextSpeed(value) {
+		this.activeTextSpeed = value;
+	}
+	processEscapeCharacter(code,textState) {
+		switch(code) {
+		case "!":
+			this.startPause();
+			break;
+		case "$":
+			this._goldWindow.open();
+			break;
+		case ".":
+			this.startWait(15);
+			break;
+		case "<":
+			this._lineShowFast = false;
+			break;
+		case ">":
+			this._lineShowFast = true;
+			break;
+		case "TS":
+			this.updateTextSpeed(this.obtainEscapeParam(textState) | 0);
+			break;
+		case "^":
+			this._pauseSkip = true;
+			break;
+		default:
+			super.processEscapeCharacter(code,textState);
+		}
+	}
+	processNormalCharacter(textState) {
+		super.processNormalCharacter(textState);
+		this.startWait(this.activeTextSpeed);
+	}
+	terminateMessage() {
+		this.activeTextSpeed = this.originalTextSpeed;
+		super.terminateMessage();
+	}
+}
+plugins_KitaWindowMessage.__name__ = true;
 function plugins_KITA_$MessageExt_main() {
-	haxe_Log.trace(Sprite_Base,{ fileName : "src/plugins/KITA_MessageExt.hx", lineNumber : 27, className : "plugins._KITA_MessageExt.KITA_MessageExt_Fields_", methodName : "main"});
+	haxe_Log.trace(Sprite_Base,{ fileName : "src/plugins/KITA_MessageExt.hx", lineNumber : 21, className : "plugins._KITA_MessageExt.KITA_MessageExt_Fields_", methodName : "main"});
 	/*:
      
    @author Kino
@@ -292,68 +343,8 @@ function plugins_KITA_$MessageExt_main() {
    
    */
 	plugins_KITA_$MessageExt_textSpeed = PluginManager.parameters("KITA_MessageExt")["Text Speed"];
-	haxe_Log.trace(plugins_KITA_$MessageExt_textSpeed,{ fileName : "src/plugins/KITA_MessageExt.hx", lineNumber : 57, className : "plugins._KITA_MessageExt.KITA_MessageExt_Fields_", methodName : "main"});
-	Window_Message.prototype.setBackgroundTexture = function() {
-		this;
-	};
-	let img = new Bitmap(128,128);
-	img.fillRect(0,0,128,128,"black");
-	let MSGBUST = new nodes_SpriteBust(0,0,img);
-	let winMsgInitialize = Window_Message.prototype.initialize;
-	Window_Message.prototype.initialize = function() {
-		let self = this;
-		winMsgInitialize.call(self);
-		let txtSpeed = plugins_KITA_$MessageExt_textSpeed;
-		self.originalTextSpeed = txtSpeed;
-		self.activeTextSpeed = txtSpeed;
-		self.msgBust = MSGBUST;
-		MSGBUST.move(0,-128);
-		self.addChild(self.msgBust);
-		MSGBUST.show();
-	};
-	Window_Message.prototype.processEscapeCharacter = function(code,textState) {
-		let self = this;
-		switch(code) {
-		case "!":
-			self.startPause();
-			break;
-		case "$":
-			self._goldWIndow.open();
-			break;
-		case ".":
-			self.startWait(15);
-			break;
-		case "<":
-			self._lineShowFast = false;
-			break;
-		case ">":
-			self._lineShowFast = true;
-			break;
-		case "TS":
-			self.updateTextSpeed(self.obtainEscapeParam(textState));
-			break;
-		case "^":
-			self._pauseSkip = true;
-			break;
-		default:
-			Window_Base.prototype.processEscapeCharacter.call(self,code,textState);
-		}
-	};
-	Window_Message.prototype.updateTextSpeed = function(value) {
-		this.activeTextSpeed = value;
-	};
-	let WinBaseProcessNormChar = Window_Base.prototype.processNormalCharacter;
-	Window_Message.prototype.processNormalCharacter = function(textState) {
-		let self = this;
-		WinBaseProcessNormChar.call(self,textState);
-		self.startWait(self.activeTextSpeed);
-	};
-	let winMessageTerminateMessage = Window_Message.prototype.terminateMessage;
-	Window_Message.prototype.terminateMessage = function(_) {
-		let self = this;
-		self.activeTextSpeed = self.originalTextSpeed;
-		winMessageTerminateMessage.call(self);
-	};
+	haxe_Log.trace(plugins_KITA_$MessageExt_textSpeed,{ fileName : "src/plugins/KITA_MessageExt.hx", lineNumber : 49, className : "plugins._KITA_MessageExt.KITA_MessageExt_Fields_", methodName : "main"});
+	Window_Message = plugins_KitaWindowMessage;
 }
 class utils_Fn {
 	static proto(obj) {
@@ -367,6 +358,8 @@ utils_Fn.__name__ = true;
 }
 js_Boot.__toStr = ({ }).toString;
 var plugins_KITA_$MessageExt_textSpeed = 2;
+var plugins_KITA_$MessageExt_img = new Bitmap(128,128);
+var plugins_KITA_$MessageExt_MSGBUST = new nodes_SpriteBust(0,0,plugins_KITA_$MessageExt_img);
 plugins_KITA_$MessageExt_main();
 })({});
 

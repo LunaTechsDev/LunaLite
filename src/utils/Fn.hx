@@ -48,6 +48,10 @@ class Fn {
     return Syntax.code("{0}[{1}]", obj, fieldName);
   }
 
+  public static inline function renameClass<T>(obj:Any, obj2:T):T {
+    return Syntax.code("{0} = {1}", obj, obj2);
+  }
+
   /**
    * Invokes the standard JavaScript defineProperty functionality to the value
    * @param obj 
