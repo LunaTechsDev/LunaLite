@@ -11,6 +11,7 @@
 # Haxe Source Map
 -D source-map-content
 -D mode=prod
+-D gamePath=games/KinoCreates
 # Generate Documentation
 # -D doc_gen
 # -D js_classic
@@ -30,4 +31,5 @@
 -js dist/KITA_MessageExt.js
 -main plugins.KITA_MessageExt
 
---cmd haxe --run CleanJs
+
+--cmd haxe -D gamePath=games/KinoCreates --run CleanJs

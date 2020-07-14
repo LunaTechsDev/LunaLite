@@ -1,6 +1,7 @@
 import sys.io.File;
 import sys.FileSystem;
 import haxe.macro.Expr;
+import haxe.macro.Context;
 using StringTools;
 using Lambda;
 
@@ -13,6 +14,11 @@ macro function pipe(exprs:Array<Expr>) :Expr {
 macro function generateBuildDate (): ExprOf<String> {
   var date = Date.now();
   return macro $v{"Build Date: " + date.toString()}
+}
+
+macro function generatePluginGamePath() : ExprOf<String> {
+  var gamePath = Context.definedValue("gamePath");
+  return macro $v{gamePath + "/js/plugins/"}
 }
 
 function main() {
@@ -42,6 +48,7 @@ function main() {
     );
     final newContent = fileNameStr + buildDate + attributionStr + "\n" + cleanContents;
     File.write(filePath).writeString(newContent);
+    File.write(generatePluginGamePath() + file).writeString(newContent);
     trace("Cleaned Output File: " + filePath);
   });
 }

@@ -1,5 +1,6 @@
 package nodes;
 
+import macros.MacroTools;
 import mz.core.Bitmap;
 import mz.sprites.Sprite_Base;
 import core.Amaryllis;
@@ -41,7 +42,7 @@ class SpriteBust extends Sprite_Base {
     if(y != null) 
       this._shadowY = y;
     this._moveWait = 30;
-    trace("Starting Move", this._moveWait);
+    MacroTools.debug("Starting Move", this._moveWait);
   }
 
   public function moveBy(x:Int, ?y:Int) {
@@ -106,14 +107,14 @@ class SpriteBust extends Sprite_Base {
     if(this._shadowX == this.x && this._shadowY == this.y) {
       //Disable Movement When matching
       this._moveWait = -1;
-      trace("Disable Moving");
+      MacroTools.debug("Disable Moving");
     }
     var xDiff = Math.abs(this._shadowX - this.x);
     var yDiff = Math.abs(this._shadowY - this.y);
     if(xDiff < 0.5) xResult = Math.round(xResult);
     if(yDiff < 0.5) yResult = Math.round(yResult);
     this.move(xResult, yResult);
-    trace("Moving", this.x, this.y);
+    MacroTools.debug("Moving", this.x, this.y);
     this._refresh();
   }
 

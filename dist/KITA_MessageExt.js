@@ -2,7 +2,7 @@
 // KITA_MessageExt.js
 //=============================================================================
 //=============================================================================
-// Build Date: 2020-07-12 11:59:16
+// Build Date: 2020-07-12 14:58:06
 //=============================================================================
 
 //=============================================================================
@@ -27,37 +27,9 @@
 (function ($global) { "use strict";
 var $estr = function() { return js_Boot.__string_rec(this,''); },$hxEnums = $hxEnums || {},$_;
 Math.__name__ = true;
-class Std {
-	static string(s) {
-		return js_Boot.__string_rec(s,"");
-	}
-}
-Std.__name__ = true;
 function core_Amaryllis_lerp(start,end,amount) {
 	return start + (end - start) * amount;
 }
-class haxe_Log {
-	static formatOutput(v,infos) {
-		let str = Std.string(v);
-		if(infos == null) {
-			return str;
-		}
-		let pstr = infos.fileName + ":" + infos.lineNumber;
-		if(infos.customParams != null) {
-			let _g = 0;
-			let _g1 = infos.customParams;
-			while(_g < _g1.length) str += ", " + Std.string(_g1[_g++]);
-		}
-		return pstr + ": " + str;
-	}
-	static trace(v,infos) {
-		let str = haxe_Log.formatOutput(v,infos);
-		if(typeof(console) != "undefined" && console.log != null) {
-			console.log(str);
-		}
-	}
-}
-haxe_Log.__name__ = true;
 class haxe_iterators_ArrayIterator {
 	constructor(array) {
 		this.current = 0;
@@ -174,7 +146,7 @@ class nodes_SpriteBust extends Sprite_Base {
 	constructor(x,y,bitmap) {
 		super();
 		this.bitmap = bitmap;
-		haxe_Log.trace(bitmap,{ fileName : "src/nodes/SpriteBust.hx", lineNumber : 24, className : "nodes.SpriteBust", methodName : "new"});
+		console.log("src/nodes/SpriteBust.hx:25:",bitmap);
 		this.x = x;
 		this.y = y;
 		this._moveWait = 30;
@@ -193,7 +165,6 @@ class nodes_SpriteBust extends Sprite_Base {
 			this._shadowY = y;
 		}
 		this._moveWait = 30;
-		haxe_Log.trace("Starting Move",{ fileName : "src/nodes/SpriteBust.hx", lineNumber : 44, className : "nodes.SpriteBust", methodName : "moveTo", customParams : [this._moveWait]});
 	}
 	moveBy(x,y) {
 		this._shadowX += x;
@@ -249,7 +220,6 @@ class nodes_SpriteBust extends Sprite_Base {
 		}
 		if(this._shadowX == this.x && this._shadowY == this.y) {
 			this._moveWait = -1;
-			haxe_Log.trace("Disable Moving",{ fileName : "src/nodes/SpriteBust.hx", lineNumber : 109, className : "nodes.SpriteBust", methodName : "updateMovement"});
 		}
 		if(Math.abs(this._shadowX - this.x) < 0.5) {
 			xResult = Math.round(xResult);
@@ -258,7 +228,6 @@ class nodes_SpriteBust extends Sprite_Base {
 			yResult = Math.round(yResult);
 		}
 		this.move(xResult,yResult);
-		haxe_Log.trace("Moving",{ fileName : "src/nodes/SpriteBust.hx", lineNumber : 116, className : "nodes.SpriteBust", methodName : "updateMovement", customParams : [this.x,this.y]});
 		this._refresh();
 	}
 }
@@ -341,7 +310,7 @@ class plugins_KitaWindowMessage extends Window_Message {
 }
 plugins_KitaWindowMessage.__name__ = true;
 function plugins_KITA_$MessageExt_main() {
-	haxe_Log.trace(Sprite_Base,{ fileName : "src/plugins/KITA_MessageExt.hx", lineNumber : 23, className : "plugins._KITA_MessageExt.KITA_MessageExt_Fields_", methodName : "main"});
+	console.log("src/plugins/KITA_MessageExt.hx:23:",Sprite_Base);
 	/*:
      
    @author Kino
@@ -369,7 +338,7 @@ function plugins_KITA_$MessageExt_main() {
    
    */
 	plugins_KITA_$MessageExt_textSpeed = PluginManager.parameters("KITA_MessageExt")["Text Speed"];
-	haxe_Log.trace(plugins_KITA_$MessageExt_textSpeed,{ fileName : "src/plugins/KITA_MessageExt.hx", lineNumber : 51, className : "plugins._KITA_MessageExt.KITA_MessageExt_Fields_", methodName : "main"});
+	console.log("src/plugins/KITA_MessageExt.hx:51:",plugins_KITA_$MessageExt_textSpeed);
 	Window_Message = plugins_KitaWindowMessage;
 }
 class utils_Fn {
