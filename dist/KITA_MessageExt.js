@@ -2,7 +2,7 @@
 // KITA_MessageExt.js
 //=============================================================================
 //=============================================================================
-// Build Date: 2020-07-12 14:58:06
+// Build Date: 2020-07-14 11:27:07
 //=============================================================================
 
 //=============================================================================
@@ -310,7 +310,7 @@ class plugins_KitaWindowMessage extends Window_Message {
 }
 plugins_KitaWindowMessage.__name__ = true;
 function plugins_KITA_$MessageExt_main() {
-	console.log("src/plugins/KITA_MessageExt.hx:23:",Sprite_Base);
+	console.log("src/plugins/KITA_MessageExt.hx:24:",Sprite_Base);
 	/*:
      
    @author Kino
@@ -338,7 +338,7 @@ function plugins_KITA_$MessageExt_main() {
    
    */
 	plugins_KITA_$MessageExt_textSpeed = PluginManager.parameters("KITA_MessageExt")["Text Speed"];
-	console.log("src/plugins/KITA_MessageExt.hx:51:",plugins_KITA_$MessageExt_textSpeed);
+	console.log("src/plugins/KITA_MessageExt.hx:52:",plugins_KITA_$MessageExt_textSpeed);
 	Window_Message = plugins_KitaWindowMessage;
 }
 class utils_Fn {
