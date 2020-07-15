@@ -22,7 +22,8 @@
 * Enhancements for classes and basic types
 * Bundle Documentation With Code
 * Dev and Production Mode for debugging code
-* File watching; copies files to the output directory.
+* File watching; copies files to the output directory
+* Automatic formatting of the file on save
 
 ## RoadMap
 
