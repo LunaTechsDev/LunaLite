@@ -58,7 +58,7 @@ var GameMap:Game_Map;
 var GameParty:Game_Party;
 
 /**
- * Controls and functionality for interacting with the game player 
+ * Controls and functionality for interacting with the game player
  * data while the game is running.
  */
 @:native("$gamePlayer")
@@ -67,8 +67,8 @@ var GamePlayer:Game_Player;
 @:native("$testEvent")
 var TestEvent:Array<EventCommand>;
 
+// Data Classes
 
-//Data Classes
 /**
  * RPGMakerMZ database actor data.
  */
@@ -134,4 +134,3 @@ var DataSystem:System;
  */
 @:native("$dataMapInfos")
 var DataMapInfos:Array<MapInfo>;
-
