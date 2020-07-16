@@ -4,6 +4,7 @@ import js.html.KeyboardEvent;
 import js.html.Gamepad;
 import js.lib.Object;
 
+@:native("Input")
 extern class Input {
  /**
   * Current Input State Object
