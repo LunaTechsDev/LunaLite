@@ -32,6 +32,7 @@
 -main plugins.KITA_MessageExt
 
 --next
+-js dist/Helios.js
 -main plugins.Helios
 
 
