@@ -31,5 +31,8 @@
 -js dist/KITA_MessageExt.js
 -main plugins.KITA_MessageExt
 
+--next
+-main plugins.Helios
+
 
 --cmd haxe -D gamePath=games/KinoCreates --run CleanJs
