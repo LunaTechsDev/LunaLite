@@ -7,6 +7,7 @@ package mz.core;
  *
  * @class JsonEx
  */
+@:native("JsonEx")
 extern class JsonEx {
  /**
   * The maximum depth of objects.
