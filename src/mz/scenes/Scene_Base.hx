@@ -1,122 +1,128 @@
 package mz.scenes;
+
+import mz.core.WindowLayer;
+import mz.core.Stage;
 import mz.windows.Window_Base;
 import haxe.extern.EitherType;
 
 @:native("Scene_Base")
-extern class Scene_Base {
-  private var _active:Bool;
-  private var _fadeSign:Int;
-  private var _fadeDuration:Int;
-  private var _imageReservationId:EitherType<Dynamic, Int>;
+extern class Scene_Base extends Stage {
+ private var _active:Bool;
+ private var _fadeSign:Int;
+ private var _fadeDuration:Int;
+ private var _imageReservationId:EitherType<Dynamic, Int>;
+ private var _windowLayer:WindowLayer;
+ @:native("_windowLayer")
+ public var windowLayer:WindowLayer;
 
-  public function new():Void;
+ public function new():Void;
 
-  /**
-   * Initializes the scene.
-   * @return Void 
-   */
-  public function initialize() : Void;
-  /**
-   * Creates the scene's important properties.
-   */
-  public function create() : Void;
+ /**
+  * Initializes the scene.
+  * @return Void
+  */
+ public function initialize():Void;
 
-  /**
-   * Returns whether the scene is active or not.
-   * @return Bool
-   */
-  public function isActive(): Bool;
+ /**
+  * Creates the scene's important properties.
+  */
+ public function create():Void;
 
-  /**
-   * Returns if the scene is ready or not.
-   * @return Bool
-   */
-  public function isReady():Bool;
+ /**
+  * Returns whether the scene is active or not.
+  * @return Bool
+  */
+ public function isActive():Bool;
 
-  /**
-   * Starts the scene.
-   */
-  public function start(): Void;
-  
-  /**
-   * Updates the scene.
-   */
-  public function update(): Void;
+ /**
+  * Returns if the scene is ready or not.
+  * @return Bool
+  */
+ public function isReady():Bool;
 
-  /**
-   * Stops the scene.
-   */
-  public function stop(): Void;
+ /**
+  * Starts the scene.
+  */
+ public function start():Void;
 
-  /**
-   * Checks if the Scene is busy processing an event 
-   * or other conditions.
-   * @return Bool
-   */
-  public function isBusy():Bool;
-  /**
-   * Terminates/ends the scene.
-   */
-  public function terminate(): Void;
+ /**
+  * Updates the scene.
+  */
+ public function update():Void;
 
-  /**
-   * Creates the window layer on the current scene
-   * for displaying any and all windows.
-   */
-  public function createWindowLayer(): Void;
+ /**
+  * Stops the scene.
+  */
+ public function stop():Void;
 
-  /**
-   * Adds a child window to the window layer for processing.
-   * @param window 
-   */
-  public function addWindow(window:Window_Base): Void;
+ /**
+  * Checks if the Scene is busy processing an event
+  * or other conditions.
+  * @return Bool
+  */
+ public function isBusy():Bool;
 
-  /**
-   * Request a fadeIn screen process
-   * @param duration  [duration=30] The time the process will take to fadeIn the screen.
-   * @param white  [white=false] If true the fadeIn will process with a white color else it will be black.
-   */
-  public function startFadeIn(duration:Int, white:Bool): Void;
+ /**
+  * Terminates/ends the scene.
+  */
+ public function terminate():Void;
 
-    /**
-   * Request a fadeOut screen process
-   * @param duration  [duration=30] The time the process will take to fadeOut the screen.
-   * @param white  [white=false] If true the fadeOut will process with a white color else it will be black.
-   */
-   public function startFadeOut(duration:Int, white:Bool): Void;
+ /**
+  * Creates the window layer on the current scene
+  * for displaying any and all windows.
+  */
+ public function createWindowLayer():Void;
 
-   public function createFadeSprite(white:Bool): Void;
+ /**
+  * Adds a child window to the window layer for processing.
+  * @param window
+  */
+ public function addWindow(window:Window_Base):Void;
 
-   /**
-    * Updates the scene's fade
-    */
-   public function updateFade():Void;
-   
-   public function updateChildren():Void;
-    
-  /**
-   * Pops the current scene and returns to the previous scene if available.
-   */
-  public function popScene():Void;   
-   
-   /**
-    * Checks for game over.
-    */
-   public function checkGameOver(): Void;
+ /**
+  * Request a fadeIn screen process
+  * @param duration  [duration=30] The time the process will take to fadeIn the screen.
+  * @param white  [white=false] If true the fadeIn will process with a white color else it will be black.
+  */
+ public function startFadeIn(duration:Int, white:Bool):Void;
 
-   public function fadeOutAll(): Void;
+ /**
+  * Request a fadeOut screen process
+  * @param duration  [duration=30] The time the process will take to fadeOut the screen.
+  * @param white  [white=false] If true the fadeOut will process with a white color else it will be black.
+  */
+ public function startFadeOut(duration:Int, white:Bool):Void;
 
-   /**
-    * Returns the fade speed.
-    * @return Int
-    */
-   public function fadeSpeed():Int;
+ public function createFadeSprite(white:Bool):Void;
 
-   /**
-    * Returns the slow fade speed.
-    * @return Int
-    */
-   public function slowFadeSpeed():Int;
+ /**
+  * Updates the scene's fade
+  */
+ public function updateFade():Void;
 
+ public function updateChildren():Void;
+
+ /**
+  * Pops the current scene and returns to the previous scene if available.
+  */
+ public function popScene():Void;
+
+ /**
+  * Checks for game over.
+  */
+ public function checkGameOver():Void;
+
+ public function fadeOutAll():Void;
+
+ /**
+  * Returns the fade speed.
+  * @return Int
+  */
+ public function fadeSpeed():Int;
+
+ /**
+  * Returns the slow fade speed.
+  * @return Int
+  */
+ public function slowFadeSpeed():Int;
 }
-

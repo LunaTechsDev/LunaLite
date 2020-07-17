@@ -1,3 +1,4 @@
 node_modules/
 games/
-src/plugins/Helios.hx
+src/plugins/heliosprj/*
+dist/Helios.*

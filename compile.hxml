@@ -33,7 +33,7 @@
 
 --next
 -js dist/Helios.js
--main plugins.Helios
+-main plugins.helios.Helios
 
 
 --cmd haxe -D gamePath=games/KinoCreates --run CleanJs
