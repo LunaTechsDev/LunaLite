@@ -10,7 +10,7 @@ package core;
 @:build(macros.BuildMacroTools.buildFileList("assets/"))
 @:build(macros.BuildMacroTools.buildFileList("games/KinoCreates/img/"))
 class Assets {
-  // public function new() {
-  //    MacroTools.buildFileList("assets/");
-  // }
+ // public function new() {
+ //    MacroTools.buildFileList("assets/");
+ // }
 }

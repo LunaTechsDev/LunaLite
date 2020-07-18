@@ -2,4 +2,4 @@ package core;
 
 import js.lib.Function;
 
-typedef JsFn  = Function;
+typedef JsFn = Function;

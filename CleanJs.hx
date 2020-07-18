@@ -42,7 +42,8 @@ function main() {
 //=============================================================================\n';
   final filePath = '$distDir/$file';
   final contents = File.read(filePath).readAll().toString();
-  final cleanContents = pipe(~/(\*\/);/g.replace(contents, "$1"), ~/(==);/g.replace(_, "$1"), ~/(\/\/.+\s*);/g.replace(_, "$1"));
+  final cleanContents = pipe(~/(\*\/);/g.replace(contents, "$1"), ~/(==);/g.replace(_, "$1"), ~/(\/\/.+\s*);/g.replace(_, "$1"),
+   ~/(?<!")\\n(?!")/g.replace(_, "\n"), ~/(?<=")\\n(?!")/g.replace(_, "\n"), ~/@"|"@/gi.replace(_, ""), ~/@(.*)@/gi.replace(_, "$1"));
   final newContent = fileNameStr + buildDate + madeWithStr + attributionStr + "\n" + cleanContents;
   File.write(filePath).writeString(newContent);
   File.write(generatePluginGamePath() + file).writeString(newContent);

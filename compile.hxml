@@ -15,7 +15,7 @@
 # Generate Documentation
 # -D doc_gen
 # -D js_classic
--dce full
+# -dce full
 
 # Note you can call an hxml file inside an hxml file for build purposes.
 
@@ -33,7 +33,7 @@
 
 --next
 -js dist/Helios.js
--main plugins.helios.Helios
+-main plugins.heliosprj.Helios
 
 
 --cmd haxe -D gamePath=games/KinoCreates --run CleanJs
