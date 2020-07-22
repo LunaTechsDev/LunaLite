@@ -2,9 +2,7 @@ package macros;
 
 import haxe.macro.Expr;
 import haxe.macro.Compiler;
-import haxe.macro.PositionTools;
 import haxe.macro.Context;
-import sys.io.File;
 import sys.FileSystem;
 
 using StringTools;
@@ -37,9 +35,21 @@ class MacroTools {
 
  macro public static function debug(args: Array<Expr>): Expr {
   var mode: String = Context.definedValue("mode");
+  var argValues: Dynamic = [];
+  for (arg in args) {
+   var value: Expr;
+   var exprType = arg.expr;
+   switch (exprType) {
+    case EField(expr, field):
+     value = $v{expr};
+    case _:
+     value = $v{arg};
+   }
+   argValues.push(value);
+  }
   return switch (mode) {
    case "dev":
-    macro trace($v{args});
+    macro trace($v{argValues});
    case "prod":
     macro null;
    case _:

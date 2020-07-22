@@ -2,7 +2,7 @@
 // kiniita.js
 //=============================================================================
 //=============================================================================
-// Build Date: 2020-07-18 13:22:38
+// Build Date: 2020-07-21 21:02:23
 //=============================================================================
 //=============================================================================
 // Made with Kiniita -- Haxe
@@ -31,10 +31,10 @@
 /** JS Lib */
 const a = 3;
 ;(function ($global) { "use strict";
-var $estr = function() { return js_Boot.__string_rec(this,''); },$hxEnums = $hxEnums || {},$_;
+var $estr = function() { return js_Boot.__string_rec(this,''); },$hxEnums = $hxEnums || {};
 class Main {
 	static main() {
-		// Build Date: 2020-07-18 13:22:35 
+		// Build Date: 2020-07-21 21:02:20 
 		
 //=============================================================================
 // Kiniitta
@@ -58,95 +58,6 @@ class Main {
 }
 Main.__name__ = true;
 Math.__name__ = true;
-class core_TBox {
-	static setField(this1,fieldName,value) {
-		this1[fieldName] = value;
-	}
-	static get_dyn(this1) {
-		return this1;
-	}
-	static set_dyn(this1,obj) {
-		return this1;
-	}
-	static set(this1,f) {
-		f(this1);
-	}
-}
-class haxe_Exception extends Error {
-	constructor(message,previous,native) {
-		super(message);
-		this.message = message;
-		this.__previousException = previous;
-		this.__nativeException = native != null ? native : this;
-	}
-	unwrap() {
-		return this.__nativeException;
-	}
-	get_native() {
-		return this.__nativeException;
-	}
-	static caught(value) {
-		if(((value) instanceof haxe_Exception)) {
-			return value;
-		} else if(((value) instanceof Error)) {
-			return new haxe_Exception(value.message,null,value);
-		} else {
-			return new haxe_ValueException(value,null,value);
-		}
-	}
-	static thrown(value) {
-		if(((value) instanceof haxe_Exception)) {
-			return value.get_native();
-		} else if(((value) instanceof Error)) {
-			return value;
-		} else {
-			let e = new haxe_ValueException(value);
-			return e;
-		}
-	}
-}
-haxe_Exception.__name__ = true;
-class haxe_ValueException extends haxe_Exception {
-	constructor(value,previous,native) {
-		super(String(value),previous,native);
-		this.value = value;
-	}
-	unwrap() {
-		return this.value;
-	}
-}
-haxe_ValueException.__name__ = true;
-class haxe_io_Bytes {
-	constructor(data) {
-		this.length = data.byteLength;
-		this.b = new Uint8Array(data);
-		this.b.bufferValue = data;
-		data.hxBytes = this;
-		data.bytes = this.b;
-	}
-}
-haxe_io_Bytes.__name__ = true;
-class haxe_io_Eof {
-	constructor() {
-	}
-	toString() {
-		return "Eof";
-	}
-}
-haxe_io_Eof.__name__ = true;
-var haxe_io_Error = $hxEnums["haxe.io.Error"] = { __ename__:true,__constructs__:null
-	,Blocked: {_hx_name:"Blocked",_hx_index:0,__enum__:"haxe.io.Error",toString:$estr}
-	,Overflow: {_hx_name:"Overflow",_hx_index:1,__enum__:"haxe.io.Error",toString:$estr}
-	,OutsideBounds: {_hx_name:"OutsideBounds",_hx_index:2,__enum__:"haxe.io.Error",toString:$estr}
-	,Custom: ($_=function(e) { return {_hx_index:3,e:e,__enum__:"haxe.io.Error",toString:$estr}; },$_._hx_name="Custom",$_.__params__ = ["e"],$_)
-};
-haxe_io_Error.__constructs__ = [haxe_io_Error.Blocked,haxe_io_Error.Overflow,haxe_io_Error.OutsideBounds,haxe_io_Error.Custom];
-class haxe_io_Input {
-}
-haxe_io_Input.__name__ = true;
-class haxe_io_Output {
-}
-haxe_io_Output.__name__ = true;
 class haxe_iterators_ArrayIterator {
 	constructor(array) {
 		this.current = 0;
@@ -255,225 +166,10 @@ class js_Boot {
 	}
 }
 js_Boot.__name__ = true;
-var js_node_Fs = require("fs");
-class js_node_KeyValue {
-	static get_key(this1) {
-		return this1[0];
-	}
-	static get_value(this1) {
-		return this1[1];
-	}
-}
-var js_node_buffer_Buffer = require("buffer").Buffer;
-class js_node_stream_WritableNewOptionsAdapter {
-	static from(options) {
-		if(!Object.prototype.hasOwnProperty.call(options,"final")) {
-			Object.defineProperty(options,"final",{ get : function() {
-				return options.final_;
-			}});
-		}
-		return options;
-	}
-}
-class macros_MacroTools {
-}
-macros_MacroTools.__name__ = true;
 var $gameVariables = null;
-var $gameSwitches = null;
-var $gameTemp = null;
-var $gameMessage = null;
-var $gameSelfSwitches = null;
-var $gameActors = null;
-var $gameTimer = null;
-var $gameMap = null;
-var $gameParty = null;
-var $gamePlayer = null;
-var $testEvent = null;
-var $dataActors = null;
-var $dataMap = null;
-var $dataItems = null;
-var $dataStates = null;
-var $dataEnemies = null;
-var $dataArmors = null;
-var $dataWeapons = null;
-var $dataTroops = null;
-var $dataCommonEvents = null;
-var $dataSystem = null;
-var $dataMapInfos = null;
-class sys_io_FileInput extends haxe_io_Input {
-	constructor(fd) {
-		super();
-		this.fd = fd;
-		this.pos = 0;
-	}
-	readByte() {
-		let buf = js_node_buffer_Buffer.alloc(1);
-		let bytesRead;
-		try {
-			bytesRead = js_node_Fs.readSync(this.fd,buf,0,1,this.pos);
-		} catch( _g ) {
-			let _g1 = haxe_Exception.caught(_g).unwrap();
-			if(_g1.code == "EOF") {
-				throw haxe_Exception.thrown(new haxe_io_Eof());
-			} else {
-				throw haxe_Exception.thrown(haxe_io_Error.Custom(_g1));
-			}
-		}
-		if(bytesRead == 0) {
-			throw haxe_Exception.thrown(new haxe_io_Eof());
-		}
-		this.pos++;
-		return buf[0];
-	}
-	readBytes(s,pos,len) {
-		let data = s.b;
-		let buf = js_node_buffer_Buffer.from(data.buffer,data.byteOffset,s.length);
-		let bytesRead;
-		try {
-			bytesRead = js_node_Fs.readSync(this.fd,buf,pos,len,this.pos);
-		} catch( _g ) {
-			let _g1 = haxe_Exception.caught(_g).unwrap();
-			if(_g1.code == "EOF") {
-				throw haxe_Exception.thrown(new haxe_io_Eof());
-			} else {
-				throw haxe_Exception.thrown(haxe_io_Error.Custom(_g1));
-			}
-		}
-		if(bytesRead == 0) {
-			throw haxe_Exception.thrown(new haxe_io_Eof());
-		}
-		this.pos += bytesRead;
-		return bytesRead;
-	}
-	close() {
-		js_node_Fs.closeSync(this.fd);
-	}
-	seek(p,pos) {
-		switch(pos._hx_index) {
-		case 0:
-			this.pos = p;
-			break;
-		case 1:
-			this.pos += p;
-			break;
-		case 2:
-			this.pos = js_node_Fs.fstatSync(this.fd).size + p;
-			break;
-		}
-	}
-	tell() {
-		return this.pos;
-	}
-	eof() {
-		return this.pos >= js_node_Fs.fstatSync(this.fd).size;
-	}
-}
-sys_io_FileInput.__name__ = true;
-class sys_io_FileOutput extends haxe_io_Output {
-	constructor(fd) {
-		super();
-		this.fd = fd;
-		this.pos = 0;
-	}
-	writeByte(b) {
-		let buf = js_node_buffer_Buffer.alloc(1);
-		buf[0] = b;
-		js_node_Fs.writeSync(this.fd,buf,0,1,this.pos);
-		this.pos++;
-	}
-	writeBytes(s,pos,len) {
-		let data = s.b;
-		let buf = js_node_buffer_Buffer.from(data.buffer,data.byteOffset,s.length);
-		let wrote = js_node_Fs.writeSync(this.fd,buf,pos,len,this.pos);
-		this.pos += wrote;
-		return wrote;
-	}
-	close() {
-		js_node_Fs.closeSync(this.fd);
-	}
-	seek(p,pos) {
-		switch(pos._hx_index) {
-		case 0:
-			this.pos = p;
-			break;
-		case 1:
-			this.pos += p;
-			break;
-		case 2:
-			this.pos = js_node_Fs.fstatSync(this.fd).size + p;
-			break;
-		}
-	}
-	tell() {
-		return this.pos;
-	}
-}
-sys_io_FileOutput.__name__ = true;
-var sys_io_FileSeek = $hxEnums["sys.io.FileSeek"] = { __ename__:true,__constructs__:null
-	,SeekBegin: {_hx_name:"SeekBegin",_hx_index:0,__enum__:"sys.io.FileSeek",toString:$estr}
-	,SeekCur: {_hx_name:"SeekCur",_hx_index:1,__enum__:"sys.io.FileSeek",toString:$estr}
-	,SeekEnd: {_hx_name:"SeekEnd",_hx_index:2,__enum__:"sys.io.FileSeek",toString:$estr}
-};
-sys_io_FileSeek.__constructs__ = [sys_io_FileSeek.SeekBegin,sys_io_FileSeek.SeekCur,sys_io_FileSeek.SeekEnd];
-class utils_Comment {
-	static title(title) {
-		return 
-//=============================================================================
-// title
-//=============================================================================
-      
-	}
-	static singleLine(message) {
-		return // message 
-	}
-	static multiLine(message) {
-		return /*
-    message
-    */
-	}
-	static pluginParams(params) {
-		return /*:
-     params
-   */
-	}
-}
-utils_Comment.__name__ = true;
 class utils_Fn {
-	static get_self() {
-		return this;
-	}
-	static eval(evaluation) {
-		return eval(evaluation);
-	}
-	static embedEval(evaluation) {
-		return eval(evaluation);
-	}
 	static proto(obj) {
 		return obj.prototype;
-	}
-	static setPrProp(obj,fieldName,value) {
-		obj.prototype.fieldName = value;
-	}
-	static setPrPropVoidFn(obj,fieldName,value) {
-		obj.prototype.fieldName = value;
-	}
-	static getPrProp(obj,fieldName) {
-		return obj.prototype.fieldName;
-	}
-	static setField(obj,fieldName,value) {
-		return obj[fieldName] = value;
-	}
-	static getByArrSyntax(obj,fieldName) {
-		return obj[fieldName];
-	}
-	static renameClass(obj,obj2) {
-		return obj = obj2;
-	}
-	static setProp(obj,propName,value) {
-		return Object.defineProperty(obj,propName,{ value : value});
-	}
-	static setProtoProp(obj,propName,value) {
-		return obj.prototype.propName = value;
 	}
 }
 utils_Fn.__name__ = true;

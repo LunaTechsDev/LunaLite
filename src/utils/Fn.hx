@@ -65,8 +65,16 @@ class Fn {
   return Syntax.code("{0}[{1}]", obj, fieldName);
  }
 
- public static inline function renameClass<T>(obj: Any, obj2: T): T {
-  return Syntax.code("{0} = {1}", obj, obj2);
+ /**
+  * Used to overwrite classes in RPGMakerMV with another class to alias and update
+  * functionality.
+  * @param obj
+  * @param propName
+  * @param value
+  * @return T
+  */
+ public static inline function renameClass<T>(originalObj: Any, overrideObj: T): T {
+  return Syntax.code("{0} = {1}", originalObj, overrideObj);
  }
 
  /**

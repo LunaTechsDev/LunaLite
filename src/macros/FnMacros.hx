@@ -1,6 +1,5 @@
 package macros;
 
-import haxe.macro.Type.AnonStatus;
 import haxe.macro.Context;
 import haxe.macro.Expr;
 import haxe.macro.TypeTools;
@@ -16,7 +15,7 @@ class FnMacros {
   var pos = Context.currentPos();
   var localVars = Context.getLocalVars();
   var classFields = Context.getLocalClass().get().fields;
-  trace(entity, "Enter function");
+
   var fields: Array<Expr> = [];
 
   var tentity = Context.typeof(entity);
@@ -25,15 +24,13 @@ class FnMacros {
     for (field in tr.fields) {
      var name = field.name;
      var value = field.expr();
-     trace(name);
-     trace(${value});
+
      var tmp = macro $v{value};
 
      fields.push(macro var $name = $tmp);
      localVars.set(name, field.type);
      classFields.get().push(field);
      //  localVars.clear();
-     trace(localVars.get(name));
     }
    case _:
     return Context.error("Object type expected instead of" + tentity.getName(), pos); // Do nothing
@@ -46,7 +43,7 @@ class FnMacros {
   //   fields.push(macro var element = entity.$element);
   //  }
   // };
-  trace(fields);
+
   fields.push(macro var hello = 3);
   return macro $b{fields};
  }

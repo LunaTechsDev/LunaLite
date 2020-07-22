@@ -10,12 +10,12 @@
 -D js_source_map
 # Haxe Source Map
 -D source-map-content
--D mode=prod
+-D mode=dev
 -D gamePath=games/KinoCreates
 # Generate Documentation
 # -D doc_gen
 # -D js_classic
-# -dce full
+-dce full
 
 # Note you can call an hxml file inside an hxml file for build purposes.
 
