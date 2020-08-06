@@ -44,7 +44,7 @@ class SpriteBust extends Sprite_Base {
   if (y != null)
    this._shadowY = y;
   this._moveWait = 30;
-  MacroTools.debug("Starting Move", this._moveWait);
+  trace("Starting Move", this._moveWait);
  }
 
  public function moveBy(x: Int, ?y: Int) {
@@ -82,9 +82,11 @@ class SpriteBust extends Sprite_Base {
   }
  }
 
- public function updateFade() {}
+ public function updateFade() {
+ }
 
- public function updateScaling() {}
+ public function updateScaling() {
+ }
 
  public function updateMovement() {
   var xResult = this.x;
@@ -104,7 +106,7 @@ class SpriteBust extends Sprite_Base {
   if (this._shadowX == this.x && this._shadowY == this.y) {
    // Disable Movement When matching
    this._moveWait = -1;
-   MacroTools.debug("Disable Moving");
+   trace("Disable Moving");
   }
   var xDiff = Math.abs(this._shadowX - this.x);
   var yDiff = Math.abs(this._shadowY - this.y);
@@ -113,7 +115,7 @@ class SpriteBust extends Sprite_Base {
   if (yDiff < 0.5)
    yResult = Math.round(yResult);
   this.move(xResult, yResult);
-  MacroTools.debug("Moving", this.x, this.y);
+  trace("Moving", this.x, this.y);
   this._refresh();
  }
 }

@@ -2,7 +2,1015 @@
 // KITA_MessageExt.js
 //=============================================================================
 //=============================================================================
-// Build Date: 2020-07-21 21:02:23
+// Build Date: 2020-08-05 22:25:05
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// KITA_MessageExt.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-05 22:24:32
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// KITA_MessageExt.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-05 22:24:09
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// KITA_MessageExt.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-05 22:23:48
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// KITA_MessageExt.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-05 22:23:35
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// KITA_MessageExt.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-05 22:23:10
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// KITA_MessageExt.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-05 22:22:53
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// KITA_MessageExt.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-05 22:22:33
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// KITA_MessageExt.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-05 22:20:28
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// KITA_MessageExt.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-05 22:11:25
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// KITA_MessageExt.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-05 22:11:03
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// KITA_MessageExt.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-05 22:10:41
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// KITA_MessageExt.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-05 22:09:49
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// KITA_MessageExt.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-05 22:08:44
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// KITA_MessageExt.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-05 22:08:29
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// KITA_MessageExt.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-05 22:07:16
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// KITA_MessageExt.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-05 22:01:48
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// KITA_MessageExt.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-05 22:01:05
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// KITA_MessageExt.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-05 22:00:16
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// KITA_MessageExt.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-05 21:58:35
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// KITA_MessageExt.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-05 21:52:53
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// KITA_MessageExt.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-05 21:44:34
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// KITA_MessageExt.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-05 21:44:02
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// KITA_MessageExt.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-05 21:39:50
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// KITA_MessageExt.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-05 21:39:31
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// KITA_MessageExt.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-05 21:35:12
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// KITA_MessageExt.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-05 21:23:31
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// KITA_MessageExt.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-05 21:15:45
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// KITA_MessageExt.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-05 21:14:48
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// KITA_MessageExt.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-05 21:13:46
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// KITA_MessageExt.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-05 21:04:52
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// KITA_MessageExt.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-05 21:02:56
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// KITA_MessageExt.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-05 21:01:15
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// KITA_MessageExt.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-05 20:59:45
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// KITA_MessageExt.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-05 20:59:30
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// KITA_MessageExt.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-05 20:56:09
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// KITA_MessageExt.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-05 20:44:03
 //=============================================================================
 //=============================================================================
 // Made with Kiniita -- Haxe
@@ -30,9 +1038,37 @@
 (function ($global) { "use strict";
 var $estr = function() { return js_Boot.__string_rec(this,''); },$hxEnums = $hxEnums || {},$_;
 Math.__name__ = true;
+class Std {
+	static string(s) {
+		return js_Boot.__string_rec(s,"");
+	}
+}
+Std.__name__ = true;
 function core_Amaryllis_lerp(start,end,amount) {
 	return start + (end - start) * amount;
 }
+class haxe_Log {
+	static formatOutput(v,infos) {
+		let str = Std.string(v);
+		if(infos == null) {
+			return str;
+		}
+		let pstr = infos.fileName + ":" + infos.lineNumber;
+		if(infos.customParams != null) {
+			let _g = 0;
+			let _g1 = infos.customParams;
+			while(_g < _g1.length) str += ", " + Std.string(_g1[_g++]);
+		}
+		return pstr + ": " + str;
+	}
+	static trace(v,infos) {
+		let str = haxe_Log.formatOutput(v,infos);
+		if(typeof(console) != "undefined" && console.log != null) {
+			console.log(str);
+		}
+	}
+}
+haxe_Log.__name__ = true;
 class haxe_iterators_ArrayIterator {
 	constructor(array) {
 		this.current = 0;
@@ -46,111 +1082,6 @@ class haxe_iterators_ArrayIterator {
 	}
 }
 haxe_iterators_ArrayIterator.__name__ = true;
-var haxe_macro_StringLiteralKind = $hxEnums["haxe.macro.StringLiteralKind"] = { __ename__:true,__constructs__:null
-	,DoubleQuotes: {_hx_name:"DoubleQuotes",_hx_index:0,__enum__:"haxe.macro.StringLiteralKind",toString:$estr}
-	,SingleQuotes: {_hx_name:"SingleQuotes",_hx_index:1,__enum__:"haxe.macro.StringLiteralKind",toString:$estr}
-};
-haxe_macro_StringLiteralKind.__constructs__ = [haxe_macro_StringLiteralKind.DoubleQuotes,haxe_macro_StringLiteralKind.SingleQuotes];
-var haxe_macro_Constant = $hxEnums["haxe.macro.Constant"] = { __ename__:true,__constructs__:null
-	,CInt: ($_=function(v) { return {_hx_index:0,v:v,__enum__:"haxe.macro.Constant",toString:$estr}; },$_._hx_name="CInt",$_.__params__ = ["v"],$_)
-	,CFloat: ($_=function(f) { return {_hx_index:1,f:f,__enum__:"haxe.macro.Constant",toString:$estr}; },$_._hx_name="CFloat",$_.__params__ = ["f"],$_)
-	,CString: ($_=function(s,kind) { return {_hx_index:2,s:s,kind:kind,__enum__:"haxe.macro.Constant",toString:$estr}; },$_._hx_name="CString",$_.__params__ = ["s","kind"],$_)
-	,CIdent: ($_=function(s) { return {_hx_index:3,s:s,__enum__:"haxe.macro.Constant",toString:$estr}; },$_._hx_name="CIdent",$_.__params__ = ["s"],$_)
-	,CRegexp: ($_=function(r,opt) { return {_hx_index:4,r:r,opt:opt,__enum__:"haxe.macro.Constant",toString:$estr}; },$_._hx_name="CRegexp",$_.__params__ = ["r","opt"],$_)
-};
-haxe_macro_Constant.__constructs__ = [haxe_macro_Constant.CInt,haxe_macro_Constant.CFloat,haxe_macro_Constant.CString,haxe_macro_Constant.CIdent,haxe_macro_Constant.CRegexp];
-var haxe_macro_Binop = $hxEnums["haxe.macro.Binop"] = { __ename__:true,__constructs__:null
-	,OpAdd: {_hx_name:"OpAdd",_hx_index:0,__enum__:"haxe.macro.Binop",toString:$estr}
-	,OpMult: {_hx_name:"OpMult",_hx_index:1,__enum__:"haxe.macro.Binop",toString:$estr}
-	,OpDiv: {_hx_name:"OpDiv",_hx_index:2,__enum__:"haxe.macro.Binop",toString:$estr}
-	,OpSub: {_hx_name:"OpSub",_hx_index:3,__enum__:"haxe.macro.Binop",toString:$estr}
-	,OpAssign: {_hx_name:"OpAssign",_hx_index:4,__enum__:"haxe.macro.Binop",toString:$estr}
-	,OpEq: {_hx_name:"OpEq",_hx_index:5,__enum__:"haxe.macro.Binop",toString:$estr}
-	,OpNotEq: {_hx_name:"OpNotEq",_hx_index:6,__enum__:"haxe.macro.Binop",toString:$estr}
-	,OpGt: {_hx_name:"OpGt",_hx_index:7,__enum__:"haxe.macro.Binop",toString:$estr}
-	,OpGte: {_hx_name:"OpGte",_hx_index:8,__enum__:"haxe.macro.Binop",toString:$estr}
-	,OpLt: {_hx_name:"OpLt",_hx_index:9,__enum__:"haxe.macro.Binop",toString:$estr}
-	,OpLte: {_hx_name:"OpLte",_hx_index:10,__enum__:"haxe.macro.Binop",toString:$estr}
-	,OpAnd: {_hx_name:"OpAnd",_hx_index:11,__enum__:"haxe.macro.Binop",toString:$estr}
-	,OpOr: {_hx_name:"OpOr",_hx_index:12,__enum__:"haxe.macro.Binop",toString:$estr}
-	,OpXor: {_hx_name:"OpXor",_hx_index:13,__enum__:"haxe.macro.Binop",toString:$estr}
-	,OpBoolAnd: {_hx_name:"OpBoolAnd",_hx_index:14,__enum__:"haxe.macro.Binop",toString:$estr}
-	,OpBoolOr: {_hx_name:"OpBoolOr",_hx_index:15,__enum__:"haxe.macro.Binop",toString:$estr}
-	,OpShl: {_hx_name:"OpShl",_hx_index:16,__enum__:"haxe.macro.Binop",toString:$estr}
-	,OpShr: {_hx_name:"OpShr",_hx_index:17,__enum__:"haxe.macro.Binop",toString:$estr}
-	,OpUShr: {_hx_name:"OpUShr",_hx_index:18,__enum__:"haxe.macro.Binop",toString:$estr}
-	,OpMod: {_hx_name:"OpMod",_hx_index:19,__enum__:"haxe.macro.Binop",toString:$estr}
-	,OpAssignOp: ($_=function(op) { return {_hx_index:20,op:op,__enum__:"haxe.macro.Binop",toString:$estr}; },$_._hx_name="OpAssignOp",$_.__params__ = ["op"],$_)
-	,OpInterval: {_hx_name:"OpInterval",_hx_index:21,__enum__:"haxe.macro.Binop",toString:$estr}
-	,OpArrow: {_hx_name:"OpArrow",_hx_index:22,__enum__:"haxe.macro.Binop",toString:$estr}
-	,OpIn: {_hx_name:"OpIn",_hx_index:23,__enum__:"haxe.macro.Binop",toString:$estr}
-};
-haxe_macro_Binop.__constructs__ = [haxe_macro_Binop.OpAdd,haxe_macro_Binop.OpMult,haxe_macro_Binop.OpDiv,haxe_macro_Binop.OpSub,haxe_macro_Binop.OpAssign,haxe_macro_Binop.OpEq,haxe_macro_Binop.OpNotEq,haxe_macro_Binop.OpGt,haxe_macro_Binop.OpGte,haxe_macro_Binop.OpLt,haxe_macro_Binop.OpLte,haxe_macro_Binop.OpAnd,haxe_macro_Binop.OpOr,haxe_macro_Binop.OpXor,haxe_macro_Binop.OpBoolAnd,haxe_macro_Binop.OpBoolOr,haxe_macro_Binop.OpShl,haxe_macro_Binop.OpShr,haxe_macro_Binop.OpUShr,haxe_macro_Binop.OpMod,haxe_macro_Binop.OpAssignOp,haxe_macro_Binop.OpInterval,haxe_macro_Binop.OpArrow,haxe_macro_Binop.OpIn];
-var haxe_macro_Unop = $hxEnums["haxe.macro.Unop"] = { __ename__:true,__constructs__:null
-	,OpIncrement: {_hx_name:"OpIncrement",_hx_index:0,__enum__:"haxe.macro.Unop",toString:$estr}
-	,OpDecrement: {_hx_name:"OpDecrement",_hx_index:1,__enum__:"haxe.macro.Unop",toString:$estr}
-	,OpNot: {_hx_name:"OpNot",_hx_index:2,__enum__:"haxe.macro.Unop",toString:$estr}
-	,OpNeg: {_hx_name:"OpNeg",_hx_index:3,__enum__:"haxe.macro.Unop",toString:$estr}
-	,OpNegBits: {_hx_name:"OpNegBits",_hx_index:4,__enum__:"haxe.macro.Unop",toString:$estr}
-};
-haxe_macro_Unop.__constructs__ = [haxe_macro_Unop.OpIncrement,haxe_macro_Unop.OpDecrement,haxe_macro_Unop.OpNot,haxe_macro_Unop.OpNeg,haxe_macro_Unop.OpNegBits];
-var haxe_macro_FunctionKind = $hxEnums["haxe.macro.FunctionKind"] = { __ename__:true,__constructs__:null
-	,FAnonymous: {_hx_name:"FAnonymous",_hx_index:0,__enum__:"haxe.macro.FunctionKind",toString:$estr}
-	,FNamed: ($_=function(name,inlined) { return {_hx_index:1,name:name,inlined:inlined,__enum__:"haxe.macro.FunctionKind",toString:$estr}; },$_._hx_name="FNamed",$_.__params__ = ["name","inlined"],$_)
-	,FArrow: {_hx_name:"FArrow",_hx_index:2,__enum__:"haxe.macro.FunctionKind",toString:$estr}
-};
-haxe_macro_FunctionKind.__constructs__ = [haxe_macro_FunctionKind.FAnonymous,haxe_macro_FunctionKind.FNamed,haxe_macro_FunctionKind.FArrow];
-var haxe_macro_ExprDef = $hxEnums["haxe.macro.ExprDef"] = { __ename__:true,__constructs__:null
-	,EConst: ($_=function(c) { return {_hx_index:0,c:c,__enum__:"haxe.macro.ExprDef",toString:$estr}; },$_._hx_name="EConst",$_.__params__ = ["c"],$_)
-	,EArray: ($_=function(e1,e2) { return {_hx_index:1,e1:e1,e2:e2,__enum__:"haxe.macro.ExprDef",toString:$estr}; },$_._hx_name="EArray",$_.__params__ = ["e1","e2"],$_)
-	,EBinop: ($_=function(op,e1,e2) { return {_hx_index:2,op:op,e1:e1,e2:e2,__enum__:"haxe.macro.ExprDef",toString:$estr}; },$_._hx_name="EBinop",$_.__params__ = ["op","e1","e2"],$_)
-	,EField: ($_=function(e,field) { return {_hx_index:3,e:e,field:field,__enum__:"haxe.macro.ExprDef",toString:$estr}; },$_._hx_name="EField",$_.__params__ = ["e","field"],$_)
-	,EParenthesis: ($_=function(e) { return {_hx_index:4,e:e,__enum__:"haxe.macro.ExprDef",toString:$estr}; },$_._hx_name="EParenthesis",$_.__params__ = ["e"],$_)
-	,EObjectDecl: ($_=function(fields) { return {_hx_index:5,fields:fields,__enum__:"haxe.macro.ExprDef",toString:$estr}; },$_._hx_name="EObjectDecl",$_.__params__ = ["fields"],$_)
-	,EArrayDecl: ($_=function(values) { return {_hx_index:6,values:values,__enum__:"haxe.macro.ExprDef",toString:$estr}; },$_._hx_name="EArrayDecl",$_.__params__ = ["values"],$_)
-	,ECall: ($_=function(e,params) { return {_hx_index:7,e:e,params:params,__enum__:"haxe.macro.ExprDef",toString:$estr}; },$_._hx_name="ECall",$_.__params__ = ["e","params"],$_)
-	,ENew: ($_=function(t,params) { return {_hx_index:8,t:t,params:params,__enum__:"haxe.macro.ExprDef",toString:$estr}; },$_._hx_name="ENew",$_.__params__ = ["t","params"],$_)
-	,EUnop: ($_=function(op,postFix,e) { return {_hx_index:9,op:op,postFix:postFix,e:e,__enum__:"haxe.macro.ExprDef",toString:$estr}; },$_._hx_name="EUnop",$_.__params__ = ["op","postFix","e"],$_)
-	,EVars: ($_=function(vars) { return {_hx_index:10,vars:vars,__enum__:"haxe.macro.ExprDef",toString:$estr}; },$_._hx_name="EVars",$_.__params__ = ["vars"],$_)
-	,EFunction: ($_=function(kind,f) { return {_hx_index:11,kind:kind,f:f,__enum__:"haxe.macro.ExprDef",toString:$estr}; },$_._hx_name="EFunction",$_.__params__ = ["kind","f"],$_)
-	,EBlock: ($_=function(exprs) { return {_hx_index:12,exprs:exprs,__enum__:"haxe.macro.ExprDef",toString:$estr}; },$_._hx_name="EBlock",$_.__params__ = ["exprs"],$_)
-	,EFor: ($_=function(it,expr) { return {_hx_index:13,it:it,expr:expr,__enum__:"haxe.macro.ExprDef",toString:$estr}; },$_._hx_name="EFor",$_.__params__ = ["it","expr"],$_)
-	,EIf: ($_=function(econd,eif,eelse) { return {_hx_index:14,econd:econd,eif:eif,eelse:eelse,__enum__:"haxe.macro.ExprDef",toString:$estr}; },$_._hx_name="EIf",$_.__params__ = ["econd","eif","eelse"],$_)
-	,EWhile: ($_=function(econd,e,normalWhile) { return {_hx_index:15,econd:econd,e:e,normalWhile:normalWhile,__enum__:"haxe.macro.ExprDef",toString:$estr}; },$_._hx_name="EWhile",$_.__params__ = ["econd","e","normalWhile"],$_)
-	,ESwitch: ($_=function(e,cases,edef) { return {_hx_index:16,e:e,cases:cases,edef:edef,__enum__:"haxe.macro.ExprDef",toString:$estr}; },$_._hx_name="ESwitch",$_.__params__ = ["e","cases","edef"],$_)
-	,ETry: ($_=function(e,catches) { return {_hx_index:17,e:e,catches:catches,__enum__:"haxe.macro.ExprDef",toString:$estr}; },$_._hx_name="ETry",$_.__params__ = ["e","catches"],$_)
-	,EReturn: ($_=function(e) { return {_hx_index:18,e:e,__enum__:"haxe.macro.ExprDef",toString:$estr}; },$_._hx_name="EReturn",$_.__params__ = ["e"],$_)
-	,EBreak: {_hx_name:"EBreak",_hx_index:19,__enum__:"haxe.macro.ExprDef",toString:$estr}
-	,EContinue: {_hx_name:"EContinue",_hx_index:20,__enum__:"haxe.macro.ExprDef",toString:$estr}
-	,EUntyped: ($_=function(e) { return {_hx_index:21,e:e,__enum__:"haxe.macro.ExprDef",toString:$estr}; },$_._hx_name="EUntyped",$_.__params__ = ["e"],$_)
-	,EThrow: ($_=function(e) { return {_hx_index:22,e:e,__enum__:"haxe.macro.ExprDef",toString:$estr}; },$_._hx_name="EThrow",$_.__params__ = ["e"],$_)
-	,ECast: ($_=function(e,t) { return {_hx_index:23,e:e,t:t,__enum__:"haxe.macro.ExprDef",toString:$estr}; },$_._hx_name="ECast",$_.__params__ = ["e","t"],$_)
-	,EDisplay: ($_=function(e,displayKind) { return {_hx_index:24,e:e,displayKind:displayKind,__enum__:"haxe.macro.ExprDef",toString:$estr}; },$_._hx_name="EDisplay",$_.__params__ = ["e","displayKind"],$_)
-	,EDisplayNew: ($_=function(t) { return {_hx_index:25,t:t,__enum__:"haxe.macro.ExprDef",toString:$estr}; },$_._hx_name="EDisplayNew",$_.__params__ = ["t"],$_)
-	,ETernary: ($_=function(econd,eif,eelse) { return {_hx_index:26,econd:econd,eif:eif,eelse:eelse,__enum__:"haxe.macro.ExprDef",toString:$estr}; },$_._hx_name="ETernary",$_.__params__ = ["econd","eif","eelse"],$_)
-	,ECheckType: ($_=function(e,t) { return {_hx_index:27,e:e,t:t,__enum__:"haxe.macro.ExprDef",toString:$estr}; },$_._hx_name="ECheckType",$_.__params__ = ["e","t"],$_)
-	,EMeta: ($_=function(s,e) { return {_hx_index:28,s:s,e:e,__enum__:"haxe.macro.ExprDef",toString:$estr}; },$_._hx_name="EMeta",$_.__params__ = ["s","e"],$_)
-};
-haxe_macro_ExprDef.__constructs__ = [haxe_macro_ExprDef.EConst,haxe_macro_ExprDef.EArray,haxe_macro_ExprDef.EBinop,haxe_macro_ExprDef.EField,haxe_macro_ExprDef.EParenthesis,haxe_macro_ExprDef.EObjectDecl,haxe_macro_ExprDef.EArrayDecl,haxe_macro_ExprDef.ECall,haxe_macro_ExprDef.ENew,haxe_macro_ExprDef.EUnop,haxe_macro_ExprDef.EVars,haxe_macro_ExprDef.EFunction,haxe_macro_ExprDef.EBlock,haxe_macro_ExprDef.EFor,haxe_macro_ExprDef.EIf,haxe_macro_ExprDef.EWhile,haxe_macro_ExprDef.ESwitch,haxe_macro_ExprDef.ETry,haxe_macro_ExprDef.EReturn,haxe_macro_ExprDef.EBreak,haxe_macro_ExprDef.EContinue,haxe_macro_ExprDef.EUntyped,haxe_macro_ExprDef.EThrow,haxe_macro_ExprDef.ECast,haxe_macro_ExprDef.EDisplay,haxe_macro_ExprDef.EDisplayNew,haxe_macro_ExprDef.ETernary,haxe_macro_ExprDef.ECheckType,haxe_macro_ExprDef.EMeta];
-var haxe_macro_DisplayKind = $hxEnums["haxe.macro.DisplayKind"] = { __ename__:true,__constructs__:null
-	,DKCall: {_hx_name:"DKCall",_hx_index:0,__enum__:"haxe.macro.DisplayKind",toString:$estr}
-	,DKDot: {_hx_name:"DKDot",_hx_index:1,__enum__:"haxe.macro.DisplayKind",toString:$estr}
-	,DKStructure: {_hx_name:"DKStructure",_hx_index:2,__enum__:"haxe.macro.DisplayKind",toString:$estr}
-	,DKMarked: {_hx_name:"DKMarked",_hx_index:3,__enum__:"haxe.macro.DisplayKind",toString:$estr}
-	,DKPattern: ($_=function(outermost) { return {_hx_index:4,outermost:outermost,__enum__:"haxe.macro.DisplayKind",toString:$estr}; },$_._hx_name="DKPattern",$_.__params__ = ["outermost"],$_)
-};
-haxe_macro_DisplayKind.__constructs__ = [haxe_macro_DisplayKind.DKCall,haxe_macro_DisplayKind.DKDot,haxe_macro_DisplayKind.DKStructure,haxe_macro_DisplayKind.DKMarked,haxe_macro_DisplayKind.DKPattern];
-var haxe_macro_ComplexType = $hxEnums["haxe.macro.ComplexType"] = { __ename__:true,__constructs__:null
-	,TPath: ($_=function(p) { return {_hx_index:0,p:p,__enum__:"haxe.macro.ComplexType",toString:$estr}; },$_._hx_name="TPath",$_.__params__ = ["p"],$_)
-	,TFunction: ($_=function(args,ret) { return {_hx_index:1,args:args,ret:ret,__enum__:"haxe.macro.ComplexType",toString:$estr}; },$_._hx_name="TFunction",$_.__params__ = ["args","ret"],$_)
-	,TAnonymous: ($_=function(fields) { return {_hx_index:2,fields:fields,__enum__:"haxe.macro.ComplexType",toString:$estr}; },$_._hx_name="TAnonymous",$_.__params__ = ["fields"],$_)
-	,TParent: ($_=function(t) { return {_hx_index:3,t:t,__enum__:"haxe.macro.ComplexType",toString:$estr}; },$_._hx_name="TParent",$_.__params__ = ["t"],$_)
-	,TExtend: ($_=function(p,fields) { return {_hx_index:4,p:p,fields:fields,__enum__:"haxe.macro.ComplexType",toString:$estr}; },$_._hx_name="TExtend",$_.__params__ = ["p","fields"],$_)
-	,TOptional: ($_=function(t) { return {_hx_index:5,t:t,__enum__:"haxe.macro.ComplexType",toString:$estr}; },$_._hx_name="TOptional",$_.__params__ = ["t"],$_)
-	,TNamed: ($_=function(n,t) { return {_hx_index:6,n:n,t:t,__enum__:"haxe.macro.ComplexType",toString:$estr}; },$_._hx_name="TNamed",$_.__params__ = ["n","t"],$_)
-	,TIntersection: ($_=function(tl) { return {_hx_index:7,tl:tl,__enum__:"haxe.macro.ComplexType",toString:$estr}; },$_._hx_name="TIntersection",$_.__params__ = ["tl"],$_)
-};
-haxe_macro_ComplexType.__constructs__ = [haxe_macro_ComplexType.TPath,haxe_macro_ComplexType.TFunction,haxe_macro_ComplexType.TAnonymous,haxe_macro_ComplexType.TParent,haxe_macro_ComplexType.TExtend,haxe_macro_ComplexType.TOptional,haxe_macro_ComplexType.TNamed,haxe_macro_ComplexType.TIntersection];
 class js_Boot {
 	static __string_rec(o,s) {
 		if(o == null) {
@@ -254,7 +1185,7 @@ class nodes_SpriteBust extends Sprite_Base {
 	constructor(x,y,bitmap) {
 		super();
 		this.bitmap = bitmap;
-		console.log("src/nodes/SpriteBust.hx:26:",bitmap);
+		haxe_Log.trace(bitmap,{ fileName : "src/nodes/SpriteBust.hx", lineNumber : 26, className : "nodes.SpriteBust", methodName : "new"});
 		this.x = x;
 		this.y = y;
 		this._moveWait = 30;
@@ -273,7 +1204,7 @@ class nodes_SpriteBust extends Sprite_Base {
 			this._shadowY = y;
 		}
 		this._moveWait = 30;
-		console.log("src/macros/MacroTools.hx:52:",[{ expr : haxe_macro_ExprDef.EConst(haxe_macro_Constant.CString("Starting Move",haxe_macro_StringLiteralKind.DoubleQuotes))},{ expr : haxe_macro_ExprDef.EConst(haxe_macro_Constant.CIdent("this"))}]);
+		haxe_Log.trace("Starting Move",{ fileName : "src/nodes/SpriteBust.hx", lineNumber : 47, className : "nodes.SpriteBust", methodName : "moveTo", customParams : [this._moveWait]});
 	}
 	moveBy(x,y) {
 		this._shadowX += x;
@@ -329,7 +1260,7 @@ class nodes_SpriteBust extends Sprite_Base {
 		}
 		if(this._shadowX == this.x && this._shadowY == this.y) {
 			this._moveWait = -1;
-			console.log("src/macros/MacroTools.hx:52:",[{ expr : haxe_macro_ExprDef.EConst(haxe_macro_Constant.CString("Disable Moving",haxe_macro_StringLiteralKind.DoubleQuotes))}]);
+			haxe_Log.trace("Disable Moving",{ fileName : "src/nodes/SpriteBust.hx", lineNumber : 107, className : "nodes.SpriteBust", methodName : "updateMovement"});
 		}
 		if(Math.abs(this._shadowX - this.x) < 0.5) {
 			xResult = Math.round(xResult);
@@ -338,7 +1269,7 @@ class nodes_SpriteBust extends Sprite_Base {
 			yResult = Math.round(yResult);
 		}
 		this.move(xResult,yResult);
-		console.log("src/macros/MacroTools.hx:52:",[{ expr : haxe_macro_ExprDef.EConst(haxe_macro_Constant.CString("Moving",haxe_macro_StringLiteralKind.DoubleQuotes))},{ expr : haxe_macro_ExprDef.EConst(haxe_macro_Constant.CIdent("this"))},{ expr : haxe_macro_ExprDef.EConst(haxe_macro_Constant.CIdent("this"))}]);
+		haxe_Log.trace("Moving",{ fileName : "src/nodes/SpriteBust.hx", lineNumber : 116, className : "nodes.SpriteBust", methodName : "updateMovement", customParams : [this.x,this.y]});
 		this._refresh();
 	}
 }
@@ -421,7 +1352,7 @@ class plugins_KitaWindowMessage extends Window_Message {
 }
 plugins_KitaWindowMessage.__name__ = true;
 function plugins_KITA_$MessageExt_main() {
-	console.log("src/plugins/KITA_MessageExt.hx:24:",Sprite_Base);
+	haxe_Log.trace(Sprite_Base,{ fileName : "src/plugins/KITA_MessageExt.hx", lineNumber : 24, className : "plugins._KITA_MessageExt.KITA_MessageExt_Fields_", methodName : "main"});
 	/*:
      
    @author Kino
@@ -449,8 +1380,7 @@ function plugins_KITA_$MessageExt_main() {
    
    */
 	plugins_KITA_$MessageExt_textSpeed = PluginManager.parameters("KITA_MessageExt")["Text Speed"];
-	console.log("src/plugins/KITA_MessageExt.hx:52:",plugins_KITA_$MessageExt_textSpeed);
-	console.log("src/macros/MacroTools.hx:52:",[{ expr : haxe_macro_ExprDef.EConst(haxe_macro_Constant.CString("This is a test commnet",haxe_macro_StringLiteralKind.DoubleQuotes))}]);
+	haxe_Log.trace(plugins_KITA_$MessageExt_textSpeed,{ fileName : "src/plugins/KITA_MessageExt.hx", lineNumber : 52, className : "plugins._KITA_MessageExt.KITA_MessageExt_Fields_", methodName : "main"});
 	Window_Message = plugins_KitaWindowMessage;
 }
 class utils_Fn {
@@ -471,5 +1401,3 @@ var plugins_KITA_$MessageExt_MSGBUST = new nodes_SpriteBust(0,0,plugins_KITA_$Me
 var plugins_KITA_$MessageExt_OSCSprite = new KITASpriteIconOsc(0,0,plugins_KITA_$MessageExt_img);
 plugins_KITA_$MessageExt_main();
 })({});
-
-//# sourceMappingURL=KITA_MessageExt.js.map

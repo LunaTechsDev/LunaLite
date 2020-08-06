@@ -16,11 +16,15 @@ final MZ_NAME = Utils.RPGMAKER_NAME;
 final MZ_VERSION = Utils.RPGMAKER_VERSION;
 
 inline function createEventEmitter() {
-	return new EventEmitter();
+ return new EventEmitter();
 }
 
-inline function createDie(sides:Int):Die {
-	return new Die(sides);
+inline function createDie(sides: Int): Die {
+ return new Die(sides);
+}
+
+inline function elementName(entity: Dynamic) {
+ return entity.constructor.name;
 }
 
 /**
@@ -28,7 +32,8 @@ inline function createDie(sides:Int):Die {
  * on plugin description
  * @param regEx
  */
-function getParams(regEx:EReg) {}
+function getParams(regEx: EReg) {
+}
 
 /**
  * Applies Linear Interpolation to the variable provided
@@ -37,8 +42,8 @@ function getParams(regEx:EReg) {}
  * @param amount
  * @return {Float}
  */
-function lerp(start:Float, end:Float, amount:Float):Float {
-	return start + ((end - start) * amount);
+function lerp(start: Float, end: Float, amount: Float): Float {
+ return start + ((end - start) * amount);
 }
 
 /**
@@ -46,15 +51,16 @@ function lerp(start:Float, end:Float, amount:Float):Float {
  * @returns {Scene}
  */
 inline function currentScene() {
-	return SceneManager.curretScene;
+ return SceneManager.currentScene;
 }
 
-inline function isImagePath(path:String) {
-	return path.split("/").length > 2 ? true : false;
+inline function isImagePath(path: String) {
+ return path.split("/").length > 2 ? true : false;
 }
 
-inline function loadImage(path:String, hue:Int = 0) {
-	return isImagePath(path) ? ImageManager.loadNormalBitmap(path + ".png", hue) : null;
+inline function loadImage(path: String, hue: Int = 0) {
+ return isImagePath(path) ? ImageManager.loadNormalBitmap(path + ".png",
+  hue) : null;
 }
 
 /**
@@ -62,7 +68,7 @@ inline function loadImage(path:String, hue:Int = 0) {
  * @returns {boolean}
  */
 inline function isNwjs() {
-	return Utils.isNwjs();
+ return Utils.isNwjs();
 }
 
 /**
@@ -70,7 +76,7 @@ inline function isNwjs() {
  * @returns{boolean}
  */
 inline function isMobile() {
-	return Utils.isMobileDevice();
+ return Utils.isMobileDevice();
 }
 
 /**
@@ -78,7 +84,7 @@ inline function isMobile() {
  * @returns {boolean}
  */
 inline function isTest() {
-	return Utils.isOptionValid("test");
+ return Utils.isOptionValid("test");
 }
 
 /**
@@ -86,16 +92,16 @@ inline function isTest() {
  * @param {Function} f
  * @returns {Function}
  */
-function once(f:Function) {
-	var count = 0;
-	return function() {
-		if (count > 0)
-			return null;
-		else {
-			count++;
-			return f();
-		}
-	};
+function once(f: Function) {
+ var count = 0;
+ return function() {
+  if (count > 0)
+   return null;
+  else {
+   count++;
+   return f();
+  }
+ };
 }
 
 /**
@@ -104,18 +110,18 @@ function once(f:Function) {
  * @param {number} iterations
  * @param {Function} f
  */
-function times(iterations:Int, f:Function) {
-	for (i in 0...iterations) {
-		f();
-	}
+function times(iterations: Int, f: Function) {
+ for (i in 0...iterations) {
+  f();
+ }
 }
 
-function safeParse(string:String) {
-	try {
-		return Json.parse(string);
-	} catch (err) {
-		return err;
-	}
+function safeParse(string: String) {
+ try {
+  return Json.parse(string);
+ } catch (err) {
+  return err;
+ }
 }
 
 /**
@@ -123,8 +129,8 @@ function safeParse(string:String) {
  * @param {number} number
  * @returns {number}
  */
-inline function lines(num:Int) {
-	return Fn.proto(Window_Base).lineHeight() * num;
+inline function lines(num: Int) {
+ return Fn.proto(Window_Base).lineHeight() * num;
 }
 
 /**
@@ -134,9 +140,9 @@ inline function lines(num:Int) {
  * @param {number} blue
  * @returns {string}
  */
-inline function rgbToHex(red:Int, green:Int, blue:Int) {
-	final hex = pixi.core.utils.Utils.rgb2hex([red, green, blue]);
-	return pixi.core.utils.Utils.hex2string(hex);
+inline function rgbToHex(red: Int, green: Int, blue: Int) {
+ final hex = pixi.core.utils.Utils.rgb2hex([red, green, blue]);
+ return pixi.core.utils.Utils.hex2string(hex);
 }
 
 /**
@@ -146,28 +152,28 @@ inline function rgbToHex(red:Int, green:Int, blue:Int) {
  * @param {Int} blue
  * @returns {string}
  */
-inline function rgbToCss(red:Int, green:Int, blue:Int) {
-	return Utils.rgbToCssColor(red, green, blue);
+inline function rgbToCss(red: Int, green: Int, blue: Int) {
+ return Utils.rgbToCssColor(red, green, blue);
 }
 
 /**
  * Clears an array of all values.
  * @param {Array<Any>} array
  */
-inline function clear(array:Array<Any>) {
-	array.resize(0);
-	return array;
+inline function clear(array: Array<Any>) {
+ array.resize(0);
+ return array;
 }
 
 /**
  * Takes a set amount of elements from the start of an array.
- 		 * Doesn't modify the original array.
+    * Doesn't modify the original array.
  * @param {number} amount
  * @param {any[]} list
  * @returns {any[]}
  */
-inline function take(amount:Int, list:Array<Any>) {
-	return list.slice(0, amount);
+inline function take(amount: Int, list: Array<Any>) {
+ return list.slice(0, amount);
 }
 
 /**
@@ -177,11 +183,11 @@ inline function take(amount:Int, list:Array<Any>) {
  * @param {any[]} list
  * @returns {any[]}
  */
-inline function drop(amount:Int, list:Array<Any>) {
-	return list.slice(amount * -1);
+inline function drop(amount: Int, list: Array<Any>) {
+ return list.slice(amount * -1);
 }
 
 inline function arrayEquals(arr1: Array<Any>, arr2: Array<Any>) {
-	return arr1.length == arr2.length &&
-		!arr1.has((el, index) -> el != arr2[index]);
+ return arr1.length == arr2.length
+  && !arr1.has((el, index) -> el != arr2[index]);
 }

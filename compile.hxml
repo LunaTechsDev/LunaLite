@@ -1,16 +1,20 @@
 
+-lib jsfps
 -lib pixijs
 -lib hxnodejs
+
 -cp src
 
 -D js-es=6
 
 # Static Code Analysis For Removing  Unnecessary Code
 -D analyzer-optimize 
--D js_source_map
+# -D js_source_map
 # Haxe Source Map
--D source-map-content
--D mode=dev
+# -D source-map-content
+# -D mode=dev
+# Enable/Disable console.log -- tracing with the below line
+# --no-traces
 -D gamePath=games/KinoCreates
 # Generate Documentation
 # -D doc_gen
@@ -22,18 +26,17 @@
 # For Compiling Separate JavaScript Files
 
 --each
--js dist/kiniita.js
--main Main
---macro macros.MacroTools.getSourceOutput()
+# -js dist/kiniita.js
+# -main Main
+# --macro macros.MacroTools.getSourceOutput()
 
+
+# --next
+# -js dist/KITA_MessageExt.js
+# -main plugins.KITA_MessageExt
 
 --next
--js dist/KITA_MessageExt.js
--main plugins.KITA_MessageExt
-
---next
--js dist/Helios.js
--main plugins.heliosprj.Helios
+helios.hxml
 
 
 --cmd haxe -D gamePath=games/KinoCreates --run CleanJs

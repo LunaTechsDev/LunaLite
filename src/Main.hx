@@ -2,7 +2,7 @@ import mz.Globals.GameVariables;
 import js.Syntax;
 import js.html.Window;
 import js.lib.Function;
-import mz.scenes.Scene_Base;
+import mv.scenes.Scene_Base;
 import utils.Fn;
 import utils.Comment;
 import macros.MacroTools;
@@ -16,9 +16,9 @@ class Main {
     @plugindesc This plugin allows you to use Haxe in your RPGMakerMV code.
     @param haxeVersion");
   Comment.singleLine("This is a test of the watcher");
-  var sceneTitleStart:Function = Fn.getPrProp(Scene_Base, "start");
+  var sceneTitleStart: Function = Fn.getPrProp(Scene_Base, "start");
   Fn.setPrProp(Scene_Base, "start", () -> {
-   var self:Scene_Base = Fn.self;
+   var self: Scene_Base = Fn.self;
    sceneTitleStart.call(self);
    GameVariables.setValue(1, 3);
    Fn.setField(Window, "Haxe", "Version 4.2.0");

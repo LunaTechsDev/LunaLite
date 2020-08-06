@@ -1,5 +1,6 @@
 package utils;
 
+import js.html.Console;
 import haxe.macro.Type.ClassType;
 import js.Syntax;
 import js.lib.Object;
@@ -90,5 +91,17 @@ class Fn {
 
  public static inline function setProtoProp(obj, propName, value) {
   return Syntax.code("{0}.prototype.@{1}@ = {2}", obj, propName, value);
+ }
+
+ public static inline function instanceof(v: Dynamic, cl): Bool {
+  return Syntax.instanceof(v, cl);
+ }
+
+ public static inline function typeof(v: Dynamic): String {
+  return Syntax.typeof(v);
+ }
+
+ public static inline function log(data) {
+  Console.log(data);
  }
 }

@@ -2,3 +2,6 @@ node_modules/
 games/
 src/plugins/heliosprj/*
 dist/Helios.*
+helios.hxml
+dev.hxml
+dump/
