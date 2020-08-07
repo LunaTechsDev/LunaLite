@@ -2,7 +2,7 @@ import mz.Globals.GameVariables;
 import js.Syntax;
 import js.html.Window;
 import js.lib.Function;
-import mv.scenes.Scene_Base;
+import mz.scenes.Scene_Base;
 import utils.Fn;
 import utils.Comment;
 import macros.MacroTools;
