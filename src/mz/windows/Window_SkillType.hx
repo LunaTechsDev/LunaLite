@@ -9,6 +9,7 @@ import mz.objects.Game_Actor;
  * The window for selecting a skill type on the skill screen.
  * @class Window_SkillType
  */
+@:native("Window_SkillType")
 extern class Window_SkillType extends Window_Command {
  /**
   * The current game actor attached to the window.
