@@ -3,7 +3,7 @@ package mz.windows;
 import mz.core.Rectangle;
 
 @:native("Window_Selectable")
-extern class Window_Selectable {
+extern class Window_Selectable extends Window_Base {
  /**
   * The index property of Window_Selectable; this is used
   * to select items from the list within the window.

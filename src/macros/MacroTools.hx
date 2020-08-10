@@ -34,6 +34,14 @@ class MacroTools {
   }
  }
 
+ macro public static function defineIfNull(value: Expr, def: Expr): Expr {
+  return macro @:pos(Context.currentPos()) {
+   if ($value == null)
+    $value = $def;
+   $value;
+  }
+ }
+
  macro public static function debug(args: Array<Expr>): Expr {
   var mode: String = Context.definedValue("mode");
   var result: Array<Expr> = [];

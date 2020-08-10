@@ -1,5 +1,6 @@
 package core;
 
+import mz.scenes.Scene_Base;
 import utils.Fn;
 import mz.windows.Window_Base;
 import haxe.Json;
@@ -190,4 +191,9 @@ inline function drop(amount: Int, list: Array<Any>) {
 inline function arrayEquals(arr1: Array<Any>, arr2: Array<Any>) {
  return arr1.length == arr2.length
   && !arr1.has((el, index) -> el != arr2[index]);
+}
+
+inline function addWindowToScene(window: Window_Base) {
+ var scene: Scene_Base = currentScene();
+ scene.windowLayer.addChild(window);
 }

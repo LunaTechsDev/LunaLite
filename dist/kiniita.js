@@ -2,6 +2,2554 @@
 // kiniita.js
 //=============================================================================
 //=============================================================================
+// Build Date: 2020-08-08 22:32:35
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-08 22:32:18
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-08 22:29:44
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-08 22:29:24
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-08 22:19:10
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-08 22:14:54
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-08 15:30:14
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-08 15:15:43
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-08 15:14:49
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-08 15:14:40
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-08 15:13:55
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-08 15:12:49
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-08 15:12:02
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-08 15:07:24
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-08 15:06:29
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-08 15:03:55
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-08 15:03:13
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-08 14:55:53
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-08 14:55:39
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-08 14:53:38
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-08 14:51:49
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-08 14:51:03
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-08 14:47:58
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-08 14:37:34
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-08 14:37:28
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-08 14:37:12
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-08 14:36:56
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-08 14:36:48
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-08 14:35:52
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-08 14:27:05
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-08 14:25:18
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-07 20:52:40
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-07 20:50:44
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-07 20:49:26
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-07 20:46:41
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-07 20:45:33
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-07 20:40:26
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-07 20:34:54
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-07 20:32:55
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-07 20:29:43
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-07 20:28:36
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-07 20:27:35
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-07 20:17:15
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-07 20:16:41
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-07 20:12:23
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-07 20:10:46
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-07 20:10:11
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-07 19:55:04
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-07 19:49:20
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-07 19:48:28
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-07 19:47:16
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-07 19:46:56
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-07 19:46:41
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-07 19:46:22
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-07 19:46:06
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-07 19:45:52
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-07 19:45:32
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-07 19:44:26
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-07 19:44:06
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-07 19:40:26
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-07 19:38:36
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-07 19:38:14
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-07 19:37:59
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-07 19:31:07
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-07 19:24:59
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-07 19:21:50
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-07 19:20:58
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-07 19:08:49
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-07 19:08:04
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-07 19:05:16
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-07 19:01:38
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-06 22:23:04
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-06 22:22:27
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-06 22:19:52
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-06 22:19:38
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-06 22:18:47
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-06 22:17:19
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-06 22:14:43
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-06 22:13:19
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-06 22:13:07
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-06 22:09:29
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-06 22:09:14
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-06 22:08:35
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-06 21:58:57
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-06 21:58:26
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-06 21:57:37
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-06 21:56:24
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-06 21:33:59
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-06 21:32:12
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-06 21:23:50
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
+// Build Date: 2020-08-06 21:15:06
+//=============================================================================
+//=============================================================================
+// Made with Kiniita -- Haxe
+//=============================================================================
+
+//=============================================================================
+//  Contact Information
+//=============================================================================
+/*
+*
+* Contact me via twitter: EISKino, or on the rpg maker forums.
+* Username on forums: Kino.
+*
+* Forum Link: http://forums.rpgmakerweb.com/index.php?/profile/75879-kino/
+* Old Website Link: http://endlessillusoft.com/
+* New Website Link: https://kinocreates.io/ 
+* Twitter Link: https://twitter.com/EISKino
+* Patreon Link: https://www.patreon.com/EISKino
+*
+* Hope this plugin helps, and enjoy!
+* --Kino
+*/
+
+//=============================================================================
+// kiniita.js
+//=============================================================================
+//=============================================================================
 // Build Date: 2020-08-05 22:25:05
 //=============================================================================
 //=============================================================================
