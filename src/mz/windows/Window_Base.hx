@@ -965,6 +965,7 @@ extern class Window_Base extends _Window {
   */
  public function reserveFaceImages(): Void;
 
+ #if compileMZ
  /**
   * Checks if object passed in is a rectangle..
   * Error is usually thrown when an MV plugin is used.
@@ -1004,4 +1005,5 @@ extern class Window_Base extends _Window {
   * Plays the cursor sound from SoundManager;
   */
  public function playCursorSound(): Void;
+ #end
 }

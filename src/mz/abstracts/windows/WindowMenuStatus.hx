@@ -4,7 +4,8 @@ import mz.windows.Window_MenuStatus;
 
 @forward
 @:forwardStatics
-abstract WindowMenuStatus(Window_MenuStatus) {
+abstract WindowMenuStatus(Window_MenuStatus) from Window_MenuStatus
+ to Window_MenuStatus {
  public inline function raw(): Window_MenuStatus {
   return this;
  }

@@ -4,7 +4,7 @@ import mz.windows.Window_Options;
 
 @:forward
 @:forwardStatics
-abstract WindowOptions(Window_Options) {
+abstract WindowOptions(Window_Options) from Window_Options to Window_Options {
  public inline function raw(): Window_Options {
   return this;
  }

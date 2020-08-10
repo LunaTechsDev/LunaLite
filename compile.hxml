@@ -21,6 +21,10 @@
 # -D js_classic
 -dce full
 
+# RM Version for Conditional Compilation
+-D compileMV
+# -D compileMZ
+
 # Note you can call an hxml file inside an hxml file for build purposes.
 
 # For Compiling Separate JavaScript Files
