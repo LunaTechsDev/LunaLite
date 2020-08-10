@@ -35,9 +35,9 @@
 # --macro macros.MacroTools.getSourceOutput()
 
 
-# --next
-# -js dist/KITA_MessageExt.js
-# -main plugins.KITA_MessageExt
+--next
+-js dist/KITA_MessageExt.js
+-main plugins.KITA_MessageExt
 
 --next
 helios.hxml
