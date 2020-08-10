@@ -9,7 +9,7 @@ extern class Window_Status {
  private var _stypeId: Int;
  private var _data: Array<Skill>;
 
- public function new(x: Int, y: Int, witth: Int, height: Int);
+ public function new(x: Int, y: Int, width: Int, height: Int);
 
  /**
   * Sets the current actor of the skill list window.
