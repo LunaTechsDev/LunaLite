@@ -8,31 +8,34 @@ import mz.types.RPG;
  */
 @:native("Game_Map")
 extern class Game_Map {
- private var _interpreter:Game_Interpreter;
- private var _mapId:Int;
- private var _tilesetId:Int;
- private var _events:Array<Game_Event>;
- private var _commonEvents:Array<Game_CommonEvent>;
- private var _vehicles:Array<Game_Vehicle>;
- private var _displayX:Int;
- private var _displayY:Int;
- private var _nameDisplay:Bool;
- private var _scrollDirection:Int;
- private var _scrollRest:Float;
- private var _scrollSpeed:Float;
- private var _parallaxName:String;
- private var _parallaxZero:Bool;
- private var _parallaxLoopX:Bool;
- private var _parallaxLoopY:Bool;
- private var _parallaxSx:Int;
- private var _parallaxSy:Int;
- private var _parallaxX:Int;
- private var _parallaxY:Int;
- private var _battleback1Name:String;
- private var _battleback2Name:String;
- private var _needsRefresh:Bool;
+ private var _interpreter: Game_Interpreter;
+ private var _mapId: Int;
+ private var _tilesetId: Int;
+ private var _events: Array<Game_Event>;
+ private var _commonEvents: Array<Game_CommonEvent>;
+ private var _vehicles: Array<Game_Vehicle>;
+ private var _displayX: Int;
+ private var _displayY: Int;
+ private var _nameDisplay: Bool;
+ private var _scrollDirection: Int;
+ private var _scrollRest: Float;
+ private var _scrollSpeed: Float;
+ private var _parallaxName: String;
+ private var _parallaxZero: Bool;
+ private var _parallaxLoopX: Bool;
+ private var _parallaxLoopY: Bool;
+ private var _parallaxSx: Int;
+ private var _parallaxSy: Int;
+ private var _parallaxX: Int;
+ private var _parallaxY: Int;
+ private var _battleback1Name: String;
+ private var _battleback2Name: String;
+ private var _needsRefresh: Bool;
 
- public function setup(mapId:Int):Void;
+ public function new(): Void;
+ public function initialize(): Void;
+
+ public function setup(mapId: Int): Void;
 
  /**
   * Returns true if an event is running.
@@ -40,7 +43,7 @@ extern class Game_Map {
   * @returns {Bool}
   * @memberof Game_Map
   */
- public function isEventRunning():Bool;
+ public function isEventRunning(): Bool;
 
  /**
   * Returns tile width.
@@ -48,7 +51,7 @@ extern class Game_Map {
   * @returns {Int}
   * @memberof Game_Map
   */
- public function tileWidth():Int;
+ public function tileWidth(): Int;
 
  /**
   * Returns tile height.
@@ -56,7 +59,7 @@ extern class Game_Map {
   * @returns {Int}
   * @memberof Game_Map
   */
- public function tileHeight():Int;
+ public function tileHeight(): Int;
 
  /**
   * Returns map id.
@@ -64,7 +67,7 @@ extern class Game_Map {
   * @returns {Int}
   * @memberof Game_Map
   */
- public function mapId():Int;
+ public function mapId(): Int;
 
  /**
   * Returns the tileset id.
@@ -72,7 +75,7 @@ extern class Game_Map {
   * @returns {Int}
   * @memberof Game_Map
   */
- public function tilesetId():Int;
+ public function tilesetId(): Int;
 
  /**
   * Returns the display x coordinate.
@@ -80,7 +83,7 @@ extern class Game_Map {
   * @returns {Int}
   * @memberof Game_Map
   */
- public function displayX():Int;
+ public function displayX(): Int;
 
  /**
   * Returns the display y coordinate.
@@ -88,9 +91,9 @@ extern class Game_Map {
   * @returns {Int}
   * @memberof Game_Map
   */
- public function displayY():Int;
+ public function displayY(): Int;
 
- public function parallaxName():String;
+ public function parallaxName(): String;
 
  /**
   * Returns the name of battle back 1.
@@ -98,7 +101,7 @@ extern class Game_Map {
   * @returns {String}
   * @memberof Game_Map
   */
- public function battleback1Name():String;
+ public function battleback1Name(): String;
 
  /**
   * Returns the name of battle back 2.
@@ -106,9 +109,9 @@ extern class Game_Map {
   * @returns {String}
   * @memberof Game_Map
   */
- public function battleback2Name():String;
+ public function battleback2Name(): String;
 
- public function requestRefresh(mapId:Int):Void;
+ public function requestRefresh(mapId: Int): Void;
 
  /**
   * Returns true if the name display is enabled.
@@ -116,37 +119,37 @@ extern class Game_Map {
   * @returns {Bool}
   * @memberof Game_Map
   */
- public function isNameDisplayEnabled():Bool;
+ public function isNameDisplayEnabled(): Bool;
 
  /**
   * Disables name display.
   *
   * @memberof Game_Map
   */
- public function disableNameDisplay():Void;
+ public function disableNameDisplay(): Void;
 
  /**
   * Enable name display.
   *
   * @memberof Game_Map
   */
- public function enableNameDisplay():Void;
+ public function enableNameDisplay(): Void;
 
  /**
   * Creates the vehicles for the game map.
   *
   * @memberof Game_Map
   */
- public function createVehicles():Void;
+ public function createVehicles(): Void;
 
  /**
   * Refreshes the vehicles on the game map.
   *
   * @memberof Game_Map
   */
- public function refereshVehicles():Void;
+ public function refereshVehicles(): Void;
 
- public function vehicles():Array<Game_Vehicle>;
+ public function vehicles(): Array<Game_Vehicle>;
 
  /**
   * Returns the game vehicle specified by type.
@@ -155,7 +158,7 @@ extern class Game_Map {
   * @returns {Game_Vehicle}
   * @memberof Game_Map
   */
- public function vehicle(type:String):Game_Vehicle;
+ public function vehicle(type: String): Game_Vehicle;
 
  /**
   * Returns the game boat.
@@ -163,7 +166,7 @@ extern class Game_Map {
   * @returns {Game_Vehicle}
   * @memberof Game_Map
   */
- public function boat():Game_Vehicle;
+ public function boat(): Game_Vehicle;
 
  /**
   * Returns the game ship.
@@ -171,7 +174,7 @@ extern class Game_Map {
   * @returns {Game_Vehicle}
   * @memberof Game_Map
   */
- public function ship():Game_Vehicle;
+ public function ship(): Game_Vehicle;
 
  /**
   * Returns the game airship.
@@ -179,9 +182,9 @@ extern class Game_Map {
   * @returns {Game_Vehicle}
   * @memberof Game_Map
   */
- public function airship():Game_Vehicle;
+ public function airship(): Game_Vehicle;
 
- public function setupEvents():Void;
+ public function setupEvents(): Void;
 
  /**
   * Returns all events on the game map.
@@ -189,7 +192,7 @@ extern class Game_Map {
   * @returns {Array<Game_Event>}
   * @memberof Game_Map
   */
- public function events():Array<Game_Event>;
+ public function events(): Array<Game_Event>;
 
  /**
   * Returns an event, given the event id.
@@ -198,7 +201,7 @@ extern class Game_Map {
   * @returns {Game_Event}
   * @memberof Game_Map
   */
- public function event(eventId:Int):Game_Event;
+ public function event(eventId: Int): Game_Event;
 
  /**
   * Erases the event given the event id.
@@ -206,7 +209,7 @@ extern class Game_Map {
   * @param {Int} eventId
   * @memberof Game_Map
   */
- public function eraseEvent(eventId:Int):Void;
+ public function eraseEvent(eventId: Int): Void;
 
  /**
   * Returns all the parallel running common events.
@@ -214,19 +217,19 @@ extern class Game_Map {
   * @returns {Array<RPG.CommonEvent>}
   * @memberof Game_Map
   */
- public function parallelCommonEvents():Array<CommonEvent>;
+ public function parallelCommonEvents(): Array<CommonEvent>;
 
- public function setupScroll():Void;
+ public function setupScroll(): Void;
 
- public function setupParallax():Void;
+ public function setupParallax(): Void;
 
- public function setupBattleback():Void;
+ public function setupBattleback(): Void;
 
- public function setDisplayPos(x:Int, y:Int):Void;
+ public function setDisplayPos(x: Int, y: Int): Void;
 
- public function parallaxOx():Int;
+ public function parallaxOx(): Int;
 
- public function parallaxOy():Int;
+ public function parallaxOy(): Int;
 
  /**
   * Returns the tilset of the game map.
@@ -234,7 +237,7 @@ extern class Game_Map {
   * @returns {RPG.Tileset}
   * @memberof Game_Map
   */
- public function tileset():Tileset;
+ public function tileset(): Tileset;
 
  /**
   * Returns the tileset flags of the game map.
@@ -242,7 +245,7 @@ extern class Game_Map {
   * @returns {Array<Int>}
   * @memberof Game_Map
   */
- public function tilesetFlags():Array<Int>;
+ public function tilesetFlags(): Array<Int>;
 
  /**
   * Returns the display name of the game map.
@@ -250,7 +253,7 @@ extern class Game_Map {
   * @returns {String}
   * @memberof Game_Map
   */
- public function displayName():String;
+ public function displayName(): String;
 
  /**
   * Returns the map width.
@@ -258,7 +261,7 @@ extern class Game_Map {
   * @returns {Int}
   * @memberof Game_Map
   */
- public function width():Int;
+ public function width(): Int;
 
  /**
   * Returns the map height.
@@ -266,7 +269,7 @@ extern class Game_Map {
   * @returns {Int}
   * @memberof Game_Map
   */
- public function height():Int;
+ public function height(): Int;
 
  /**
   * Returns the map data.
@@ -274,7 +277,7 @@ extern class Game_Map {
   * @returns {Array<Int>}
   * @memberof Game_Map
   */
- public function data():Array<Int>;
+ public function data(): Array<Int>;
 
  /**
   * Returns true if the map loops horizontally.
@@ -282,7 +285,7 @@ extern class Game_Map {
   * @returns {Bool}
   * @memberof Game_Map
   */
- public function isLoopHorizontal():Bool;
+ public function isLoopHorizontal(): Bool;
 
  /**
   * Returns true if the map loops vertically.
@@ -290,7 +293,7 @@ extern class Game_Map {
   * @returns {Bool}
   * @memberof Game_Map
   */
- public function isLoopVertical():Bool;
+ public function isLoopVertical(): Bool;
 
  /**
   * Returns true if dash is disabled on the map.
@@ -298,7 +301,7 @@ extern class Game_Map {
   * @returns {Bool}
   * @memberof Game_Map
   */
- public function isDashDisabled():Bool;
+ public function isDashDisabled(): Bool;
 
  /**
   * Returns the list of possible encounters on the current map.
@@ -306,7 +309,7 @@ extern class Game_Map {
   * @returns {Array<RPG.Map.Encounter>}
   * @memberof Game_Map
   */
- public function encounterList():Array<MapEncounter>;
+ public function encounterList(): Array<MapEncounter>;
 
  /**
   * Returns the Int of encounter steps on the map.
@@ -314,7 +317,7 @@ extern class Game_Map {
   * @returns {Int}
   * @memberof Game_Map
   */
- public function encounterStep():Int;
+ public function encounterStep(): Int;
 
  /**
   * Returns true if the map is an over world map.
@@ -322,7 +325,7 @@ extern class Game_Map {
   * @returns {Bool}
   * @memberof Game_Map
   */
- public function isOverworld():Bool;
+ public function isOverworld(): Bool;
 
  /**
   * Returns the screen tile x coordinate.
@@ -330,7 +333,7 @@ extern class Game_Map {
   * @returns {Int}
   * @memberof Game_Map
   */
- public function screenTileX():Int;
+ public function screenTileX(): Int;
 
  /**
   * Returns the screen tile y coordinate.
@@ -338,29 +341,29 @@ extern class Game_Map {
   * @returns {Int}
   * @memberof Game_Map
   */
- public function screenTileY():Int;
+ public function screenTileY(): Int;
 
- public function adjustX(x:Int):Int;
+ public function adjustX(x: Int): Int;
 
- public function adjustY(y:Int):Int;
+ public function adjustY(y: Int): Int;
 
- public function roundX(x:Int):Int;
+ public function roundX(x: Int): Int;
 
- public function roundY(y:Int):Int;
+ public function roundY(y: Int): Int;
 
- public function xWithDirection(x:Int, d:Int):Int;
+ public function xWithDirection(x: Int, d: Int): Int;
 
- public function yWithDirection(y:Int, d:Int):Int;
+ public function yWithDirection(y: Int, d: Int): Int;
 
- public function roundXWithDirection(x:Int, d:Int):Int;
+ public function roundXWithDirection(x: Int, d: Int): Int;
 
- public function roundYWithDirection(y:Int, d:Int):Int;
+ public function roundYWithDirection(y: Int, d: Int): Int;
 
- public function deltaX(x1:Int, x2:Int):Int;
+ public function deltaX(x1: Int, x2: Int): Int;
 
- public function deltaY(y1:Int, y2:Int):Int;
+ public function deltaY(y1: Int, y2: Int): Int;
 
- public function distance(x1:Int, y1:Int, x2:Int, y2:Int):Int;
+ public function distance(x1: Int, y1: Int, x2: Int, y2: Int): Int;
 
  /**
   * Converts the x coordinate from canvas to map coordinate x.
@@ -369,7 +372,7 @@ extern class Game_Map {
   * @returns {Int}
   * @memberof Game_Map
   */
- public function canvasToMapX(x:Int):Int;
+ public function canvasToMapX(x: Int): Int;
 
  /**
   * Converts the y coordinate from canvas to map y coordinate.
@@ -378,20 +381,20 @@ extern class Game_Map {
   * @returns {Int}
   * @memberof Game_Map
   */
- public function canvasToMapY(y:Int):Int;
+ public function canvasToMapY(y: Int): Int;
 
  /**
   * Auto plays the game map.
   *
   * @memberof Game_Map
   */
- public function autoplay():Void;
+ public function autoplay(): Void;
 
- public function refreshIfNeeded():Void;
+ public function refreshIfNeeded(): Void;
 
- public function refresh():Void;
+ public function refresh(): Void;
 
- public function refreshTileEvents():Void;
+ public function refreshTileEvents(): Void;
 
  /**
   * Returns the game events at the specified
@@ -401,21 +404,21 @@ extern class Game_Map {
   * @returns {Array<Game_Event>}
   * @memberof Game_Map
   */
- public function eventsXy(x:Int, y:Int):Array<Game_Event>;
+ public function eventsXy(x: Int, y: Int): Array<Game_Event>;
 
- public function eventsXyNt(x:Int, y:Int):Array<Game_Event>;
+ public function eventsXyNt(x: Int, y: Int): Array<Game_Event>;
 
- public function tileEventsXy(x:Int, y:Int):Array<Game_Event>;
+ public function tileEventsXy(x: Int, y: Int): Array<Game_Event>;
 
- public function eventIdXy(x:Int, y:Int):Int;
+ public function eventIdXy(x: Int, y: Int): Int;
 
- public function scrollDown(distance:Int):Void;
+ public function scrollDown(distance: Int): Void;
 
- public function scrollLeft(distance:Int):Void;
+ public function scrollLeft(distance: Int): Void;
 
- public function scrollRight(distance:Int):Void;
+ public function scrollRight(distance: Int): Void;
 
- public function scrollUp(distance:Int):Void;
+ public function scrollUp(distance: Int): Void;
 
  /**
   * Returns true if the x and y coordinates are valid.
@@ -425,9 +428,9 @@ extern class Game_Map {
   * @returns {Bool}
   * @memberof Game_Map
   */
- public function isValid(x:Int, y:Int):Bool;
+ public function isValid(x: Int, y: Int): Bool;
 
- public function checkPassage(x:Int, y:Int, bit:Int):Bool;
+ public function checkPassage(x: Int, y: Int, bit: Int): Bool;
 
  /**
   * Returns the tile id at the specified x, y, and z coordinates.
@@ -438,23 +441,23 @@ extern class Game_Map {
   * @returns {Int}
   * @memberof Game_Map
   */
- public function tileId(x:Int, y:Int, z:Int):Int;
+ public function tileId(x: Int, y: Int, z: Int): Int;
 
- public function layeredTiles(x:Int, y:Int):Array<Int>;
+ public function layeredTiles(x: Int, y: Int): Array<Int>;
 
- public function allTiles(x:Int, y:Int):Array<Int>;
+ public function allTiles(x: Int, y: Int): Array<Int>;
 
- public function autotileType(x:Int, y:Int, z:Int):Int;
+ public function autotileType(x: Int, y: Int, z: Int): Int;
 
- public function isPassable(x:Int, y:Int, d:Int):Bool;
+ public function isPassable(x: Int, y: Int, d: Int): Bool;
 
- public function isBoatPassable(x:Int, y:Int):Bool;
+ public function isBoatPassable(x: Int, y: Int): Bool;
 
- public function isShipPassable(x:Int, y:Int):Bool;
+ public function isShipPassable(x: Int, y: Int): Bool;
 
- public function isAirshipLandOk(x:Int, y:Int):Bool;
+ public function isAirshipLandOk(x: Int, y: Int): Bool;
 
- public function checkLayeredTilesFlags(x:Int, y:Int, bit:Int):Bool;
+ public function checkLayeredTilesFlags(x: Int, y: Int, bit: Int): Bool;
 
  /**
   * Returns true if the specified element at the given x and y coordinates
@@ -464,21 +467,21 @@ extern class Game_Map {
   * @returns {Bool}
   * @memberof Game_Map
   */
- public function isLadder(x:Int, y:Int):Bool;
+ public function isLadder(x: Int, y: Int): Bool;
 
- public function isBush(x:Int, y:Int):Bool;
+ public function isBush(x: Int, y: Int): Bool;
 
- public function isCounter(x:Int, y:Int):Bool;
+ public function isCounter(x: Int, y: Int): Bool;
 
- public function isDamageFloor(x:Int, y:Int):Bool;
+ public function isDamageFloor(x: Int, y: Int): Bool;
 
- public function terrainTag(x:Int, y:Int):Int;
+ public function terrainTag(x: Int, y: Int): Int;
 
- public function regionId(x:Int, y:Int):Int;
+ public function regionId(x: Int, y: Int): Int;
 
- public function startScroll(direction:Int, distance:Int, speed:Int):Void;
+ public function startScroll(direction: Int, distance: Int, speed: Int): Void;
 
- public function isScrolling():Bool;
+ public function isScrolling(): Bool;
 
  /**
   * Updates the game map, given that the scene is active.
@@ -486,34 +489,34 @@ extern class Game_Map {
   * @param {Bool} sceneActive
   * @memberof Game_Map
   */
- public function update(sceneActive:Bool):Void;
+ public function update(sceneActive: Bool): Void;
 
- public function updateScroll():Void;
+ public function updateScroll(): Void;
 
- public function scrollDistance():Int;
+ public function scrollDistance(): Int;
 
- public function doScroll(direction:Int, distance:Int):Void;
+ public function doScroll(direction: Int, distance: Int): Void;
 
  /**
   * Updates all events on the map.
   *
   * @memberof Game_Map
   */
- public function updateEvents():Void;
+ public function updateEvents(): Void;
 
  /**
   * Updates all game vehicles on the map.
   *
   * @memberof Game_Map
   */
- public function updateVehicles():Void;
+ public function updateVehicles(): Void;
 
  /**
   * Updates the map parallaxes.
   *
   * @memberof Game_Map
   */
- public function updateParallax():Void;
+ public function updateParallax(): Void;
 
  /**
   * Changes them ap tileset, given the tileset id.
@@ -521,18 +524,20 @@ extern class Game_Map {
   * @param {Int} tilesetId
   * @memberof Game_Map
   */
- public function changeTileset(tilesetId:Int):Void;
+ public function changeTileset(tilesetId: Int): Void;
 
- public function changeBattleback(battleback1Name:String, battleback2Name:String):Void;
+ public function changeBattleback(battleback1Name: String,
+  battleback2Name: String): Void;
 
- public function changeParallax(name:String, loopX:Bool, loopY:Bool, sx:Int, sy:Int):Void;
+ public function changeParallax(name: String, loopX: Bool, loopY: Bool,
+  sx: Int, sy: Int): Void;
 
  /**
   * Updates the map's game interpreter.
   *
   * @memberof Game_Map
   */
- public function updateInterpreter():Void;
+ public function updateInterpreter(): Void;
 
  /**
   * Unlocks an event on the map given the event id.
@@ -540,13 +545,13 @@ extern class Game_Map {
   * @param {Int} eventId
   * @memberof Game_Map
   */
- public function unlockEvent(eventId:Int):Void;
+ public function unlockEvent(eventId: Int): Void;
 
- public function setupStartingEvent():Bool;
+ public function setupStartingEvent(): Bool;
 
- public function setupTestEvent():Bool;
+ public function setupTestEvent(): Bool;
 
- public function setupStartingMapEvent():Bool;
+ public function setupStartingMapEvent(): Bool;
 
  /**
   * Sets up an auto run common event.
@@ -554,7 +559,7 @@ extern class Game_Map {
   * @returns {Bool}
   * @memberof Game_Map
   */
- public function setupAutorunCommonEvent():Bool;
+ public function setupAutorunCommonEvent(): Bool;
 
  /**
   * Returns true if any event is starting on the map.
@@ -562,5 +567,5 @@ extern class Game_Map {
   * @returns {Bool}
   * @memberof Game_Map
   */
- public function isAnyEventStarting():Bool;
+ public function isAnyEventStarting(): Bool;
 }

@@ -1,0 +1,1 @@
+package mz.abstracts.objects;
