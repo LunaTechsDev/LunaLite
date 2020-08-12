@@ -1,5 +1,5 @@
 package mz.objects;
 
-extern class Game_Enemy {
-
+@:native("Game_Enemy")
+extern class Game_Enemy extends Game_Battler {
 }
