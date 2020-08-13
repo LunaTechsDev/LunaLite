@@ -1,12 +1,12 @@
 package mz.abstracts.sprites;
 
 import mz.types.LunaTea.BalloonId;
-import mz.sprites.Sprite_Ballon;
+import mz.sprites.Sprite_Balloon;
 
 @:forward
 @:forwardStatics
-abstract SpriteBalloon(Sprite_Ballon) from Sprite_Ballon to Sprite_Ballon {
+abstract SpriteBalloon(Sprite_Balloon) from Sprite_Balloon to Sprite_Ballon {
  public inline function new() {
-  this = new Sprite_Ballon();
+  this = new Sprite_Balloon();
  }
 }

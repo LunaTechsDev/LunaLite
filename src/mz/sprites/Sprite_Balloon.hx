@@ -9,7 +9,7 @@ import mz.types.LunaTea.BalloonId;
  * The sprite for displaying a balloon icon.
  */
 @:native("Sprite_Balloon")
-extern class Sprite_Ballon extends Sprite_Base {
+extern class Sprite_Balloon extends Sprite_Base {
  private var _balloonId: BalloonId; // TODO: Create Balloon ID abstract
  private var _duration: Int;
 
