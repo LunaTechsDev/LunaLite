@@ -1,0 +1,6 @@
+# @install: lix --silent download "haxelib:/haxeui-core#1.1.2" into haxeui-core/1.1.2/haxelib
+# @run: haxelib run-dir haxeui-core ${HAXE_LIBCACHE}/haxeui-core/1.1.2/haxelib
+-lib hscript
+-cp ${HAXE_LIBCACHE}/haxeui-core/1.1.2/haxelib/
+-D haxeui-core=1.1.2
+-lib hscript

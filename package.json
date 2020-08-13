@@ -20,8 +20,11 @@
   "devDependencies": {
     "nodemon": "^2.0.4"
   },
-  "execMap" : {
+  "execMap": {
     "hxml": "haxe",
     "hx": "haxe"
+  },
+  "dependencies": {
+    "lix": "^15.9.0"
   }
 }

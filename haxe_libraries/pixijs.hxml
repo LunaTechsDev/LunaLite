@@ -1,0 +1,5 @@
+# @install: lix --silent download "haxelib:/pixijs#5.1.2" into pixijs/5.1.2/haxelib
+-lib perf.js
+-cp ${HAXE_LIBCACHE}/pixijs/5.1.2/haxelib/src
+-D pixijs=5.1.2
+-lib perf.js

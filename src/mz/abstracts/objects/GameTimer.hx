@@ -1,6 +1,5 @@
 package mz.abstracts.objects;
 
-import mv.objects.Game_Interpreter;
 import mz.objects.Game_Timer;
 
 @:forward
