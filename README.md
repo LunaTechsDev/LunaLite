@@ -33,3 +33,9 @@
 3. Create a pipeline for making plugins efficiently and distributing them effectively
 4. Allow for backwards compatability with MV
 5. Allow for debugging not seen in the production plugin builds
+
+
+
+## FAQ
+* Invalid commandLine class : plugins.*.. should be..
+> Check if your file has package plugins; at the top. Also make sure your plugin class has the same name as the file name.
