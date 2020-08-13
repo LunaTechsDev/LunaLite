@@ -1,0 +1,19 @@
+-lib jsfps
+-lib pixijs
+-lib hxnodejs
+
+-cp src
+-D doc-gen
+
+--macro include("core")
+--macro include("macros")
+--macro include("mz")
+--macro include("utils")
+--macro include("nodes")
+--no-output
+
+--each
+
+--next
+-xml libdocs/doc.xml
+-js dummy.js

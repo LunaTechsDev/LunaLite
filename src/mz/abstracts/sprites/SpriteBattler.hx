@@ -1,6 +1,6 @@
 package mz.abstracts.sprites;
 
-import mv.sprites.Sprite_Battler;
+import mz.sprites.Sprite_Battler;
 
 @:forward
 @:forwardStatics

@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "nodemon --watch src -e hx,hxml,xml --exec haxe compile.hxml"
+    "watch": "nodemon --watch src -e hx,hxml,xml --exec haxe compile.hxml",
+    "gendoc": "haxe -xml doc.xml -D doc-gen generate-doc.hxml",
+    "createdoc": "haxelib run dox -i libdocs/doc.xml"
   },
   "repository": {
     "type": "git",
