@@ -29,3 +29,8 @@ enum abstract BalloonId(Int) from Int to Int {
 @:forwardStatics
 enum abstract AnimationSpeed(Int) from Int to Int {
 }
+
+@:forward
+@:forwardStatics
+enum abstract WeaponImageId(Int) from Int to Int {
+}
