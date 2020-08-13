@@ -348,7 +348,7 @@ extern class Bitmap {
       * @method addLoadListener
       * @param {Function} listner The callback function
       */
-     public function addLoadListener(listner: () -> Void): Void;
+     public function addLoadListener(listner: (bitmap: Bitmap) -> Void): Void;
  
      /**
       * touch the resource
