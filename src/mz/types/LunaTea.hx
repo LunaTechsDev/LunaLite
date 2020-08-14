@@ -21,7 +21,8 @@ enum abstract BalloonId(Int) from Int to Int {
  public inline var SWEAT = 5;
  public inline var COBWEB = 6;
  public inline var SILENCE = 7;
- public inline var ZZZ = 8;
+ public inline var LIGHT_BULB = 8;
+ public inline var ZZZ = 9;
  // Extra Balloon IDs would be user defined
 }
 
@@ -50,10 +51,10 @@ enum abstract CharacterPattern(Int) from Int to Int {
 @:forward
 @:forwardStatics
 enum abstract MoveType(Int) from Int to Int {
- public var FIXED = 0;
- public var RANDOM = 1;
- public var APPROACH = 2;
- public var CUSTOM = 3;
+ public inline var FIXED = 0;
+ public inline var RANDOM = 1;
+ public inline var APPROACH = 2;
+ public inline var CUSTOM = 3;
 }
 
 /**
@@ -62,14 +63,18 @@ enum abstract MoveType(Int) from Int to Int {
 @:forward
 @:forwardStatics
 enum abstract MoveSpeed(Int) from Int to Int {
- public var X8SLOWER = 1;
- public var X4SLOWER = 2;
- public var X2SLOWER = 3;
- public var NORMAL = 4;
- public var X2FASTER = 5;
- public var X4FASTER = 6;
+ public inline var X8SLOWER = 1;
+ public inline var X4SLOWER = 2;
+ public inline var X2SLOWER = 3;
+ public inline var NORMAL = 4;
+ public inline var X2FASTER = 5;
+ public inline var X4FASTER = 6;
 }
 
+/**
+ *  Move frequency for Characters/Events
+ * in RPGMaker MV/MZ.
+ */
 @:forward
 @:forwardStatics
 enum abstract MoveFrequency(Int) from Int to Int {
@@ -80,6 +85,11 @@ enum abstract MoveFrequency(Int) from Int to Int {
  public var HIGHEST = 5;
 }
 
+/**
+ * Character/Events priority in RPGMaker MV/MZ.
+ * This will determine if they're shown above or below or
+ * on the same level as characters on the map.
+ */
 @:forward
 @:forwardStatics
 enum abstract CharacterPriority(Int) from Int to Int {
