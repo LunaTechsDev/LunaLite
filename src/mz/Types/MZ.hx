@@ -105,6 +105,6 @@ typedef PluginSettings = {
 }
 
 typedef Motion = {
- index: Int;
- loop: Bool;
+ var index: Int;
+ var loop: Bool;
 }
