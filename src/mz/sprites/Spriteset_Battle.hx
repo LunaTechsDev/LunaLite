@@ -1,14 +1,16 @@
+package mz.sprites;
+
 /**
  * -----------------------------------------------------------------------------
  * Spriteset_Battle
  *
  * The set of sprites on the battle screen.
  */
-
 import mz.core.Bitmap;
 import mz.core.Sprite;
 import mz.core.TilingSprite;
 
+@:native("Spriteset_Battle")
 extern class Spriteset_Battle extends Spriteset_Base {
  private var _battlebackLocated: Bool;
  private var _backgroundSprite: Sprite;
