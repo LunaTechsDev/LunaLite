@@ -50623,6 +50623,23 @@
 	<c path="mz.sprites.Sprite_Actor"/>
 	<c path="mz.sprites.Sprite_Actor"/>
 </f></raw></class>
+	<abstract path="mz.abstracts.sprites.SpriteAnimation" params="" file="src/mz/abstracts/sprites/SpriteAnimation.hx">
+		<from><icast><c path="mz.sprites.Sprite_Animation"/></icast></from>
+		<this><c path="mz.sprites.Sprite_Animation"/></this>
+		<to><icast><c path="mz.sprites.Sprite_Animation"/></icast></to>
+		<meta>
+			<m n=":forward"/>
+			<m n=":forwardStatics"/>
+		</meta>
+		<impl><class path="mz.abstracts.sprites._SpriteAnimation.SpriteAnimation_Impl_" params="" file="src/mz/abstracts/sprites/SpriteAnimation.hx" private="1" module="mz.abstracts.sprites.SpriteAnimation" final="1"><_new public="1" get="inline" set="null" line="9" static="1">
+	<f a=""><x path="mz.abstracts.sprites.SpriteAnimation"/></f>
+	<meta><m n=":noCompletion"/></meta>
+</_new></class></impl>
+	</abstract>
+	<class path="mz.abstracts.sprites._SpriteAnimation.SpriteAnimation_Impl_" params="" file="src/mz/abstracts/sprites/SpriteAnimation.hx" private="1" module="mz.abstracts.sprites.SpriteAnimation" final="1"><_new public="1" get="inline" set="null" line="9" static="1">
+	<f a=""><x path="mz.abstracts.sprites.SpriteAnimation"/></f>
+	<meta><m n=":noCompletion"/></meta>
+</_new></class>
 	<abstract path="mz.abstracts.sprites.SpriteBalloon" params="" file="src/mz/abstracts/sprites/SpriteBalloon.hx">
 		<from><icast><c path="mz.sprites.Sprite_Balloon"/></icast></from>
 		<this><c path="mz.sprites.Sprite_Balloon"/></this>
@@ -50696,6 +50713,23 @@
 	<c path="mz.sprites.Sprite_Character"/>
 	<c path="mz.sprites.Sprite_Character"/>
 </f></raw></class>
+	<abstract path="mz.abstracts.sprites.SpriteDamage" params="" file="src/mz/abstracts/sprites/SpriteDamage.hx">
+		<from><icast><c path="mz.sprites.Sprite_Damage"/></icast></from>
+		<this><c path="mz.sprites.Sprite_Damage"/></this>
+		<to><icast><c path="mz.sprites.Sprite_Damage"/></icast></to>
+		<meta>
+			<m n=":forward"/>
+			<m n=":forwardStatics"/>
+		</meta>
+		<impl><class path="mz.abstracts.sprites._SpriteDamage.SpriteDamage_Impl_" params="" file="src/mz/abstracts/sprites/SpriteDamage.hx" private="1" module="mz.abstracts.sprites.SpriteDamage" final="1"><_new public="1" get="inline" set="null" line="8" static="1">
+	<f a=""><x path="mz.abstracts.sprites.SpriteDamage"/></f>
+	<meta><m n=":noCompletion"/></meta>
+</_new></class></impl>
+	</abstract>
+	<class path="mz.abstracts.sprites._SpriteDamage.SpriteDamage_Impl_" params="" file="src/mz/abstracts/sprites/SpriteDamage.hx" private="1" module="mz.abstracts.sprites.SpriteDamage" final="1"><_new public="1" get="inline" set="null" line="8" static="1">
+	<f a=""><x path="mz.abstracts.sprites.SpriteDamage"/></f>
+	<meta><m n=":noCompletion"/></meta>
+</_new></class>
 	<abstract path="mz.abstracts.sprites.SpriteDestination" params="" file="src/mz/abstracts/sprites/SpriteDestination.hx">
 		<from><icast><c path="mz.sprites.Sprite_Destination"/></icast></from>
 		<this><c path="mz.sprites.Sprite_Destination"/></this>
@@ -50747,6 +50781,40 @@
 	<f a=""><x path="mz.abstracts.sprites.SpritePicture"/></f>
 	<meta><m n=":noCompletion"/></meta>
 </_new></class>
+	<abstract path="mz.abstracts.sprites.SpriteStateIcon" params="" file="src/mz/abstracts/sprites/SpriteStateIcon.hx">
+		<from><icast><c path="mz.sprites.Sprite_StateIcon"/></icast></from>
+		<this><c path="mz.sprites.Sprite_StateIcon"/></this>
+		<to><icast><c path="mz.sprites.Sprite_StateIcon"/></icast></to>
+		<meta>
+			<m n=":forward"/>
+			<m n=":forwardStatics"/>
+		</meta>
+		<impl><class path="mz.abstracts.sprites._SpriteStateIcon.SpriteStateIcon_Impl_" params="" file="src/mz/abstracts/sprites/SpriteStateIcon.hx" private="1" module="mz.abstracts.sprites.SpriteStateIcon" final="1"><_new public="1" get="inline" set="null" line="9" static="1">
+	<f a=""><x path="mz.abstracts.sprites.SpriteStateIcon"/></f>
+	<meta><m n=":noCompletion"/></meta>
+</_new></class></impl>
+	</abstract>
+	<class path="mz.abstracts.sprites._SpriteStateIcon.SpriteStateIcon_Impl_" params="" file="src/mz/abstracts/sprites/SpriteStateIcon.hx" private="1" module="mz.abstracts.sprites.SpriteStateIcon" final="1"><_new public="1" get="inline" set="null" line="9" static="1">
+	<f a=""><x path="mz.abstracts.sprites.SpriteStateIcon"/></f>
+	<meta><m n=":noCompletion"/></meta>
+</_new></class>
+	<abstract path="mz.abstracts.sprites.SpriteStateOverlay" params="" file="src/mz/abstracts/sprites/SpriteStateOverlay.hx">
+		<from><icast><c path="mz.sprites.Sprite_StateOverlay"/></icast></from>
+		<this><c path="mz.sprites.Sprite_StateOverlay"/></this>
+		<to><icast><c path="mz.sprites.Sprite_StateOverlay"/></icast></to>
+		<meta>
+			<m n=":forward"/>
+			<m n=":forwardStatics"/>
+		</meta>
+		<impl><class path="mz.abstracts.sprites._SpriteStateOverlay.SpriteStateOverlay_Impl_" params="" file="src/mz/abstracts/sprites/SpriteStateOverlay.hx" private="1" module="mz.abstracts.sprites.SpriteStateOverlay" final="1"><_new public="1" get="inline" set="null" line="9" static="1">
+	<f a=""><x path="mz.abstracts.sprites.SpriteStateOverlay"/></f>
+	<meta><m n=":noCompletion"/></meta>
+</_new></class></impl>
+	</abstract>
+	<class path="mz.abstracts.sprites._SpriteStateOverlay.SpriteStateOverlay_Impl_" params="" file="src/mz/abstracts/sprites/SpriteStateOverlay.hx" private="1" module="mz.abstracts.sprites.SpriteStateOverlay" final="1"><_new public="1" get="inline" set="null" line="9" static="1">
+	<f a=""><x path="mz.abstracts.sprites.SpriteStateOverlay"/></f>
+	<meta><m n=":noCompletion"/></meta>
+</_new></class>
 	<abstract path="mz.abstracts.sprites.SpriteTimer" params="" file="src/mz/abstracts/sprites/SpriteTimer.hx">
 		<from><icast><c path="mz.sprites.Sprite_Timer"/></icast></from>
 		<this><c path="mz.sprites.Sprite_Timer"/></this>
@@ -50793,6 +50861,63 @@
 	<c path="mz.sprites.Sprite_Weapon"/>
 </f></raw>
 	</class>
+	<abstract path="mz.abstracts.sprites.SpritesetBase" params="" file="src/mz/abstracts/sprites/SpritesetBase.hx">
+		<from><icast><c path="mz.sprites.Spriteset_Base"/></icast></from>
+		<this><c path="mz.sprites.Spriteset_Base"/></this>
+		<to><icast><c path="mz.sprites.Spriteset_Base"/></icast></to>
+		<meta>
+			<m n=":forward"/>
+			<m n=":forwardStatics"/>
+		</meta>
+		<impl><class path="mz.abstracts.sprites._SpritesetBase.SpritesetBase_Impl_" params="" file="src/mz/abstracts/sprites/SpritesetBase.hx" private="1" module="mz.abstracts.sprites.SpritesetBase" final="1"><_new public="1" get="inline" set="null" line="8" static="1">
+	<f a=""><x path="mz.abstracts.sprites.SpritesetBase"/></f>
+	<meta><m n=":noCompletion"/></meta>
+</_new></class></impl>
+	</abstract>
+	<class path="mz.abstracts.sprites._SpritesetBase.SpritesetBase_Impl_" params="" file="src/mz/abstracts/sprites/SpritesetBase.hx" private="1" module="mz.abstracts.sprites.SpritesetBase" final="1"><_new public="1" get="inline" set="null" line="8" static="1">
+	<f a=""><x path="mz.abstracts.sprites.SpritesetBase"/></f>
+	<meta><m n=":noCompletion"/></meta>
+</_new></class>
+	<abstract path="mz.abstracts.sprites.SpritesetBattle" params="" file="src/mz/abstracts/sprites/SpritesetBattle.hx">
+		<from><icast><c path="mz.sprites.Spriteset_Battle"/></icast></from>
+		<this><c path="mz.sprites.Spriteset_Battle"/></this>
+		<to><icast><c path="mz.sprites.Spriteset_Battle"/></icast></to>
+		<meta>
+			<m n=":forward"/>
+			<m n=":forwardStatics"/>
+		</meta>
+		<impl><class path="mz.abstracts.sprites._SpritesetBattle.SpritesetBattle_Impl_" params="" file="src/mz/abstracts/sprites/SpritesetBattle.hx" private="1" module="mz.abstracts.sprites.SpritesetBattle" final="1"><_new public="1" get="inline" set="null" line="9" static="1">
+	<f a=""><x path="mz.abstracts.sprites.SpritesetBattle"/></f>
+	<meta><m n=":noCompletion"/></meta>
+</_new></class></impl>
+	</abstract>
+	<class path="mz.abstracts.sprites._SpritesetBattle.SpritesetBattle_Impl_" params="" file="src/mz/abstracts/sprites/SpritesetBattle.hx" private="1" module="mz.abstracts.sprites.SpritesetBattle" final="1"><_new public="1" get="inline" set="null" line="9" static="1">
+	<f a=""><x path="mz.abstracts.sprites.SpritesetBattle"/></f>
+	<meta><m n=":noCompletion"/></meta>
+</_new></class>
+	<abstract path="mz.abstracts.sprites.SpritesetMap" params="" file="src/mz/abstracts/sprites/SpritesetMap.hx">
+		<from><icast><c path="mz.sprites.Spriteset_Map"/></icast></from>
+		<this><c path="mz.sprites.Spriteset_Map"/></this>
+		<to><icast><c path="mz.sprites.Spriteset_Map"/></icast></to>
+		<meta>
+			<m n=":forward"/>
+			<m n=":forwardStatics"/>
+		</meta>
+		<impl><class path="mz.abstracts.sprites._SpritesetMap.SpritesetMap_Impl_" params="" file="src/mz/abstracts/sprites/SpritesetMap.hx" private="1" module="mz.abstracts.sprites.SpritesetMap" final="1"><_new public="1" get="inline" set="null" line="9" static="1">
+	<f a="?bitmap">
+		<c path="mz.core.Bitmap"/>
+		<x path="mz.abstracts.sprites.SpritesetMap"/>
+	</f>
+	<meta><m n=":noCompletion"/></meta>
+</_new></class></impl>
+	</abstract>
+	<class path="mz.abstracts.sprites._SpritesetMap.SpritesetMap_Impl_" params="" file="src/mz/abstracts/sprites/SpritesetMap.hx" private="1" module="mz.abstracts.sprites.SpritesetMap" final="1"><_new public="1" get="inline" set="null" line="9" static="1">
+	<f a="?bitmap">
+		<c path="mz.core.Bitmap"/>
+		<x path="mz.abstracts.sprites.SpritesetMap"/>
+	</f>
+	<meta><m n=":noCompletion"/></meta>
+</_new></class>
 	<abstract path="mz.abstracts.windows.WindowBase" params="" file="src/mz/abstracts/windows/WindowBase.hx">
 		<from><icast><c path="mz.windows.Window_Base"/></icast></from>
 		<this><c path="mz.windows.Window_Base"/></this>
@@ -51737,7 +51862,10 @@
 		</blur>
 		<addLoadListener public="1" set="method">
 			<f a="listner">
-				<f a=""><x path="Void"/></f>
+				<f a="bitmap">
+					<c path="mz.core.Bitmap"/>
+					<x path="Void"/>
+				</f>
 				<x path="Void"/>
 			</f>
 			<haxe_doc>* Add a callback function that will be called when the bitmap is loaded.
@@ -53640,6 +53768,595 @@
 		</new>
 		<meta><m n=":native"><e>"PIXI.Sprite"</e></m></meta>
 	</class>
+	<class path="mz.core.ScreenSprite" params="" file="src/mz/core/ScreenSprite.hx" extern="1">
+		<extends path="pixi.core.sprites.Sprite"/>
+		<opacity public="1">
+			<x path="Int"/>
+			<haxe_doc>* The opacity of the sprite (0 to 255).
+  *
+  * @property opacity
+  * @type Number</haxe_doc>
+		</opacity>
+		<setBlack public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Sets black to the color of the screen sprite.
+  *
+  * @method setBlack</haxe_doc>
+		</setBlack>
+		<setWhite public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Sets white to the color of the screen sprite.
+  *
+  * @method setWhite</haxe_doc>
+		</setWhite>
+		<setColor public="1" set="method">
+			<f a="?r:?g:?b">
+				<x path="Int"/>
+				<x path="Int"/>
+				<x path="Int"/>
+				<x path="Void"/>
+			</f>
+			<haxe_doc>* Sets the color of the screen sprite by values.
+  *
+  * @method setColor
+  * @param {Number} r The red value in the range (0, 255)
+  * @param {Number} g The green value in the range (0, 255)
+  * @param {Number} b The blue value in the range (0, 255)</haxe_doc>
+		</setColor>
+		<_graphics><c path="pixi.core.graphics.Graphics"/></_graphics>
+		<_red>
+			<x path="Int"/>
+			<haxe_doc>* The red value in range (0, 255)</haxe_doc>
+		</_red>
+		<_green>
+			<x path="Int"/>
+			<haxe_doc>* The blue value in range (0, 255)</haxe_doc>
+		</_green>
+		<_blue>
+			<x path="Int"/>
+			<haxe_doc>* The blue value in range (0, 255)</haxe_doc>
+		</_blue>
+		<_colorText>
+			<c path="String"/>
+			<haxe_doc>* The string for color text</haxe_doc>
+		</_colorText>
+		<new public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* The sprite which covers the entire game screen.
+  *
+  * @class ScreenSprite
+  * @constructor</haxe_doc>
+		</new>
+		<meta><m n=":native"><e>"ScreenSprite"</e></m></meta>
+	</class>
+	<class path="mz.core.Tilemap" params="" file="src/mz/core/TileMap.hx" module="mz.core.TileMap" extern="1">
+		<extends path="pixi.core.display.Container"/>
+		<TILE_ID_A1 public="1" static="1"><x path="Int"/></TILE_ID_A1>
+		<TILE_ID_A2 public="1" static="1"><x path="Int"/></TILE_ID_A2>
+		<TILE_ID_A3 public="1" static="1"><x path="Int"/></TILE_ID_A3>
+		<TILE_ID_A4 public="1" static="1"><x path="Int"/></TILE_ID_A4>
+		<TILE_ID_A5 public="1" static="1"><x path="Int"/></TILE_ID_A5>
+		<TILE_ID_B public="1" static="1"><x path="Int"/></TILE_ID_B>
+		<TILE_ID_C public="1" static="1"><x path="Int"/></TILE_ID_C>
+		<TILE_ID_D public="1" static="1"><x path="Int"/></TILE_ID_D>
+		<TILE_ID_E public="1" static="1"><x path="Int"/></TILE_ID_E>
+		<TILE_ID_MAX public="1" static="1"><x path="Int"/></TILE_ID_MAX>
+		<FLOOR_AUTOTILE_TABLE public="1" static="1"><c path="Array"><c path="Array"><c path="Array"><x path="Int"/></c></c></c></FLOOR_AUTOTILE_TABLE>
+		<WALL_AUTOTILE_TABLE public="1" static="1"><c path="Array"><c path="Array"><c path="Array"><x path="Int"/></c></c></c></WALL_AUTOTILE_TABLE>
+		<WATERFALL_AUTOTILE_TABLE public="1" static="1"><c path="Array"><c path="Array"><c path="Array"><x path="Int"/></c></c></c></WATERFALL_AUTOTILE_TABLE>
+		<isVisibleTile public="1" set="method" static="1"><f a="tileId">
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></isVisibleTile>
+		<isAutotile public="1" set="method" static="1"><f a="tileId">
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></isAutotile>
+		<getAutotileKind public="1" set="method" static="1"><f a="tileId">
+	<x path="Int"/>
+	<x path="Int"/>
+</f></getAutotileKind>
+		<getAutotileShape public="1" set="method" static="1"><f a="tileId">
+	<x path="Int"/>
+	<x path="Int"/>
+</f></getAutotileShape>
+		<makeAutotileId public="1" set="method" static="1"><f a="kind:shape">
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></makeAutotileId>
+		<isSameKindTile public="1" set="method" static="1"><f a="tileID1:tileID2">
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></isSameKindTile>
+		<isTileA1 public="1" set="method" static="1"><f a="tileId">
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></isTileA1>
+		<isTileA2 public="1" set="method" static="1"><f a="tileId">
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></isTileA2>
+		<isTileA3 public="1" set="method" static="1"><f a="tileId">
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></isTileA3>
+		<isTileA4 public="1" set="method" static="1"><f a="tileId">
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></isTileA4>
+		<isTileA5 public="1" set="method" static="1"><f a="tileId">
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></isTileA5>
+		<isWaterTile public="1" set="method" static="1"><f a="tileId">
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></isWaterTile>
+		<isWaterfallTile public="1" set="method" static="1"><f a="tileId">
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></isWaterfallTile>
+		<isGroundTile public="1" set="method" static="1"><f a="tileId">
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></isGroundTile>
+		<isShadowingTile public="1" set="method" static="1"><f a="tileId">
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></isShadowingTile>
+		<isRoofTile public="1" set="method" static="1"><f a="tileId">
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></isRoofTile>
+		<isWallTopTile public="1" set="method" static="1"><f a="tileId">
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></isWallTopTile>
+		<isWallSideTile public="1" set="method" static="1"><f a="tileId">
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></isWallSideTile>
+		<isWallTile public="1" set="method" static="1"><f a="tileId">
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></isWallTile>
+		<isFloorTypeAutotile public="1" set="method" static="1"><f a="tileId">
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></isFloorTypeAutotile>
+		<isWallTypeAutotile public="1" set="method" static="1"><f a="tileId">
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></isWallTypeAutotile>
+		<isWaterfallTypeAutotile public="1" set="method" static="1"><f a="tileId">
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></isWaterfallTypeAutotile>
+		<bitmaps public="1">
+			<c path="Array"><c path="mz.core.Bitmap"/></c>
+			<haxe_doc>* The bitmaps used as a tileset.
+  *
+  * @property bitmaps
+  * @type Array</haxe_doc>
+		</bitmaps>
+		<origin public="1">
+			<c path="mz.core.Point"/>
+			<haxe_doc>* The origin point of the tilemap for scrolling.
+  *
+  * @property origin
+  * @type Point</haxe_doc>
+		</origin>
+		<flags public="1">
+			<c path="Array"><x path="Int"/></c>
+			<haxe_doc>* The tileset flags.
+  *
+  * @property flags
+  * @type Array</haxe_doc>
+		</flags>
+		<animationCount public="1">
+			<x path="Int"/>
+			<haxe_doc>* The animation count for autotiles.
+  *
+  * @property animationCount
+  * @type Number</haxe_doc>
+		</animationCount>
+		<horizontalWrap public="1">
+			<x path="Bool"/>
+			<haxe_doc>* Whether the tilemap loops horizontal.
+  *
+  * @property horizontalWrap
+  * @type Boolean</haxe_doc>
+		</horizontalWrap>
+		<verticalWrap public="1">
+			<x path="Bool"/>
+			<haxe_doc>* Whether the tilemap loops vertical.
+  *
+  * @property verticalWrap
+  * @type Boolean</haxe_doc>
+		</verticalWrap>
+		<tileWidth public="1">
+			<x path="Int"/>
+			<haxe_doc>* The width of the screen in pixels.
+  *
+  * @property width
+  * @type Number</haxe_doc>
+		</tileWidth>
+		<tileHeight public="1">
+			<x path="Int"/>
+			<haxe_doc>* The height of a tile in pixels.
+  *
+  * @property tileHeight
+  * @type Number</haxe_doc>
+		</tileHeight>
+		<setData public="1" set="method">
+			<f a="width:height:data">
+				<x path="Int"/>
+				<x path="Int"/>
+				<c path="Array"><x path="Int"/></c>
+				<x path="Void"/>
+			</f>
+			<haxe_doc>* Sets the tilemap data.
+  *
+  * @method setData
+  * @param {Number} width The width of the map in number of tiles
+  * @param {Number} height The height of the map in number of tiles
+  * @param {Array} data The one dimensional array for the map data</haxe_doc>
+		</setData>
+		<isReady public="1" set="method">
+			<f a=""><x path="Bool"/></f>
+			<haxe_doc>* Checks whether the tileset is ready to render.
+  *
+  * @method isReady
+  * @type Boolean
+  * @return {Boolean} True if the tilemap is ready</haxe_doc>
+		</isReady>
+		<update public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Updates the tilemap for each frame.
+  *
+  * @method update</haxe_doc>
+		</update>
+		<updateTransform public="1" set="method" override="1">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* @method updateTransform
+  * @private</haxe_doc>
+		</updateTransform>
+		<refresh public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Forces to repaint the entire static
+  *
+  * @method refresh</haxe_doc>
+		</refresh>
+		<addChild public="1" set="method" override="1">
+			<f a="child">
+				<c path="pixi.core.display.DisplayObject"/>
+				<c path="pixi.core.display.DisplayObject"/>
+			</f>
+			<haxe_doc>* Adds a child to the container.
+  *
+  * @method addChild
+  * @param {PIXI.DisplayObject} child The child to add
+  * @return {PIXI.DisplayObject} The child that was added</haxe_doc>
+		</addChild>
+		<addChildAt public="1" set="method" override="1">
+			<f a="child:index">
+				<c path="pixi.core.display.DisplayObject"/>
+				<x path="Int"/>
+				<c path="pixi.core.display.DisplayObject"/>
+			</f>
+			<haxe_doc>* Adds a child to the container at a specified index.
+  *
+  * @method addChildAt
+  * @param {PIXI.DisplayObject} child The child to add
+  * @param {Number} index The index to place the child in
+  * @return {PIXI.DisplayObject} The child that was added</haxe_doc>
+		</addChildAt>
+		<removeChild public="1" set="method" override="1">
+			<f a="child">
+				<c path="pixi.core.display.DisplayObject"/>
+				<c path="pixi.core.display.DisplayObject"/>
+			</f>
+			<haxe_doc>* Removes a child from the container.
+  *
+  * @method removeChild
+  * @param {PIXI.DisplayObject} child The child to remove
+  * @return {PIXI.DisplayObject} The child that was removed</haxe_doc>
+		</removeChild>
+		<removeChildAt public="1" set="method" override="1">
+			<f a="index">
+				<x path="Int"/>
+				<c path="pixi.core.display.DisplayObject"/>
+			</f>
+			<haxe_doc>* Removes a child from the specified index position.
+  *
+  * @method removeChildAt
+  * @param {Number} index The index to get the child from
+  * @return {PIXI.DisplayObject} The child that was removed</haxe_doc>
+		</removeChildAt>
+		<refreshTileset public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Forces to refresh the tileset
+  *
+  * @method refresh</haxe_doc>
+		</refreshTileset>
+		<_margin><x path="Int"/></_margin>
+		<_width><x path="Int"/></_width>
+		<_height><x path="Int"/></_height>
+		<_tileWidth><x path="Int"/></_tileWidth>
+		<_tileHeight><x path="Int"/></_tileHeight>
+		<_mapWidth><x path="Int"/></_mapWidth>
+		<_mapHeight><x path="Int"/></_mapHeight>
+		<_mapData><c path="Array"><x path="Int"/></c></_mapData>
+		<_layerWidth><x path="Int"/></_layerWidth>
+		<_layerHeight><x path="Int"/></_layerHeight>
+		<_lastTiles><c path="Array"><c path="Array"><c path="Array"><c path="Array"><x path="Int"/></c></c></c></c></_lastTiles>
+		<_lowerLayer><c path="mz.core.Sprite"/></_lowerLayer>
+		<_upperLayer><c path="mz.core.Sprite"/></_upperLayer>
+		<_createLayers set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* @method _createLayers
+  * @private</haxe_doc>
+		</_createLayers>
+		<_updateLayerPositions set="method">
+			<f a="startX:startY">
+				<x path="Int"/>
+				<x path="Int"/>
+				<x path="Void"/>
+			</f>
+			<haxe_doc>* @method _updateLayerPositions
+  * @param {Number} startX
+  * @param {Number} startY
+  * @private</haxe_doc>
+		</_updateLayerPositions>
+		<_paintAllTiles set="method">
+			<f a="startX:startY">
+				<x path="Int"/>
+				<x path="Int"/>
+				<x path="Void"/>
+			</f>
+			<haxe_doc>* @method _paintAllTiles
+  * @param {Number} startX
+  * @param {Number} startY
+  * @private</haxe_doc>
+		</_paintAllTiles>
+		<_paintTiles set="method">
+			<f a="startX:startY:x:y">
+				<x path="Int"/>
+				<x path="Int"/>
+				<x path="Int"/>
+				<x path="Int"/>
+				<x path="Void"/>
+			</f>
+			<haxe_doc>* @method _paintTiles
+  * @param {Number} startX
+  * @param {Number} startY
+  * @param {Number} x
+  * @param {Number} y
+  * @private</haxe_doc>
+		</_paintTiles>
+		<_readLastTiles set="method">
+			<f a="i:x:y">
+				<x path="Int"/>
+				<x path="Int"/>
+				<x path="Int"/>
+				<c path="Array"><x path="Int"/></c>
+			</f>
+			<haxe_doc>* @method _readLastTiles
+  * @param {Number} i
+  * @param {Number} x
+  * @param {Number} y
+  * @private</haxe_doc>
+		</_readLastTiles>
+		<_writeLastTiles set="method">
+			<f a="i:x:y:tiles">
+				<x path="Int"/>
+				<x path="Int"/>
+				<x path="Int"/>
+				<c path="Array"><x path="Int"/></c>
+				<x path="Void"/>
+			</f>
+			<haxe_doc>* @method _writeLastTiles
+  * @param {Number} i
+  * @param {Number} x
+  * @param {Number} y
+  * @param {Array} tiles
+  * @private</haxe_doc>
+		</_writeLastTiles>
+		<_drawTile set="method">
+			<f a="bitmap:tileId:dx:dy">
+				<c path="mz.core.Bitmap"/>
+				<x path="Int"/>
+				<x path="Int"/>
+				<x path="Int"/>
+				<x path="Void"/>
+			</f>
+			<haxe_doc>* @method _drawTile
+  * @param {Bitmap} bitmap
+  * @param {Number} tileId
+  * @param {Number} dx
+  * @param {Number} dy
+  * @private</haxe_doc>
+		</_drawTile>
+		<_drawNormalTile set="method">
+			<f a="bitmap:tileId:dx:dy">
+				<c path="mz.core.Bitmap"/>
+				<x path="Int"/>
+				<x path="Int"/>
+				<x path="Int"/>
+				<x path="Void"/>
+			</f>
+			<haxe_doc>* @method _drawNormalTile
+  * @param {Bitmap} bitmap
+  * @param {Number} tileId
+  * @param {Number} dx
+  * @param {Number} dy
+  * @private</haxe_doc>
+		</_drawNormalTile>
+		<_drawAutotile set="method">
+			<f a="bitmap:tileId:dx:dy">
+				<c path="mz.core.Bitmap"/>
+				<x path="Int"/>
+				<x path="Int"/>
+				<x path="Int"/>
+				<x path="Void"/>
+			</f>
+			<haxe_doc>* @method _drawAutotile
+  * @param {Bitmap} bitmap
+  * @param {Number} tileId
+  * @param {Number} dx
+  * @param {Number} dy
+  * @private</haxe_doc>
+		</_drawAutotile>
+		<_drawTableEdge set="method">
+			<f a="bitmap:tileId:dx:dy">
+				<c path="mz.core.Bitmap"/>
+				<x path="Int"/>
+				<x path="Int"/>
+				<x path="Int"/>
+				<x path="Void"/>
+			</f>
+			<haxe_doc>* @method _drawTableEdge
+  * @param {Bitmap} bitmap
+  * @param {Number} tileId
+  * @param {Number} dx
+  * @param {Number} dy
+  * @private</haxe_doc>
+		</_drawTableEdge>
+		<_drawShadow set="method">
+			<f a="bitmap:shadowBits:dx:dy">
+				<c path="mz.core.Bitmap"/>
+				<x path="Int"/>
+				<x path="Int"/>
+				<x path="Int"/>
+				<x path="Void"/>
+			</f>
+			<haxe_doc>* @method _drawShadow
+  * @param {Bitmap} bitmap
+  * @param {Number} shadowBits
+  * @param {Number} dx
+  * @param {Number} dy
+  * @private</haxe_doc>
+		</_drawShadow>
+		<_readMapData set="method">
+			<f a="x:y:z">
+				<x path="Int"/>
+				<x path="Int"/>
+				<x path="Int"/>
+				<x path="Int"/>
+			</f>
+			<haxe_doc>* @method _readMapData
+  * @param {Number} x
+  * @param {Number} y
+  * @param {Number} z
+  * @return {Number}
+  * @private</haxe_doc>
+		</_readMapData>
+		<_isHigherTile set="method">
+			<f a="tileId">
+				<x path="Int"/>
+				<x path="Bool"/>
+			</f>
+			<haxe_doc>* @method _isHigherTile
+  * @param {Number} tileId
+  * @return {Boolean}
+  * @private</haxe_doc>
+		</_isHigherTile>
+		<_isTableTile set="method">
+			<f a="tileId">
+				<x path="Int"/>
+				<x path="Bool"/>
+			</f>
+			<haxe_doc>* @method _isTableTile
+  * @param {Number} tileId
+  * @return {Boolean}
+  * @private</haxe_doc>
+		</_isTableTile>
+		<_isOverpassPosition set="method">
+			<f a="mx:my">
+				<x path="Int"/>
+				<x path="Int"/>
+				<x path="Bool"/>
+			</f>
+			<haxe_doc>* @method _isOverpassPosition
+  * @param {Number} mx
+  * @param {Number} my
+  * @return {Boolean}
+  * @private</haxe_doc>
+		</_isOverpassPosition>
+		<_sortChildren set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* @method _sortChildren
+  * @private</haxe_doc>
+		</_sortChildren>
+		<_compareChildOrder set="method">
+			<f a="a:b">
+				<c path="mz.core.Sprite"/>
+				<c path="mz.core.Sprite"/>
+				<x path="Int"/>
+			</f>
+			<haxe_doc>* @method _compareChildOrder
+  * @param {Sprite} a
+  * @param {Sprite} b
+  * @private</haxe_doc>
+		</_compareChildOrder>
+		<new public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc><![CDATA[* [read-only] The array of children of the sprite.
+  *
+  * @property children
+  * @type Array<PIXI.DisplayObject>]]></haxe_doc>
+		</new>
+		<meta><m n=":native"><e>"TileMap"</e></m></meta>
+	</class>
+	<class path="mz.core.ShaderTilemap" params="" file="src/mz/core/ShaderTileMap.hx" module="mz.core.ShaderTileMap" extern="1">
+		<extends path="mz.core.Tilemap"/>
+		<_hackRenderer set="method">
+			<f a="renderer">
+				<c path="pixi.core.renderers.AbstractRenderer"/>
+				<c path="pixi.core.renderers.AbstractRenderer"/>
+			</f>
+			<haxe_doc>* Uploads animation state in renderer
+  *
+  * @method _hackRenderer
+  * @param {PIXI.SystemRenderer} pixi renderer
+  * @private</haxe_doc>
+		</_hackRenderer>
+		<renderWebGL public="1" set="method">
+			<f a="renderer">
+				<c path="pixi.core.renderers.webgl.Renderer"/>
+				<x path="Void"/>
+			</f>
+			<haxe_doc>* PIXI render method
+  *
+  * @method renderWebGL
+  * @param {PIXI.WebGLRenderer} pixi renderer</haxe_doc>
+		</renderWebGL>
+		<renderCanvas public="1" set="method">
+			<f a="renderer">
+				<c path="pixi.core.renderers.canvas.CanvasRenderer"/>
+				<x path="Void"/>
+			</f>
+			<haxe_doc>* PIXI render method
+  *
+  * @method renderCanvas
+  * @param {PIXI.CanvasRenderer} pixi renderer</haxe_doc>
+		</renderCanvas>
+		<refresh public="1" set="method" override="1">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Forces to repaint the entire tilemap AND update bitmaps list if needed
+  *
+  * @method refresh</haxe_doc>
+		</refresh>
+		<refreshTileset public="1" set="method" override="1">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Call after you update tileset
+  *
+  * @method refreshTileset</haxe_doc>
+		</refreshTileset>
+		<meta><m n=":native"><e>"ShaderTilemap"</e></m></meta>
+	</class>
 	<class path="mz.core.Sprite" params="" file="src/mz/core/Sprite.hx" extern="1">
 		<extends path="pixi.core.sprites.Sprite"/>
 		<_counter public="1" static="1">
@@ -54308,6 +55025,528 @@
   * @constructor
   * @param {Bitmap} bitmap The image for the tiling sprite</haxe_doc>
 		</new>
+	</class>
+	<class path="pixi.core.renderers.webgl.filters.Filter" params="" file="/Users/kinor/haxe/haxe_libraries/pixijs/5.1.2/haxelib/src/pixi/core/renderers/webgl/filters/Filter.hx" extern="1">
+		<defaultVertexSrc public="1" static="1">
+			<d/>
+			<haxe_doc>* The default vertex shader source
+	 *
+	 * @static
+	 * @constant</haxe_doc>
+		</defaultVertexSrc>
+		<defaultFragmentSrc public="1" static="1">
+			<d/>
+			<haxe_doc>* The default fragment shader source
+	 *
+	 * @static
+	 * @constant</haxe_doc>
+		</defaultFragmentSrc>
+		<legacy public="1" set="null">
+			<x path="Bool"/>
+			<haxe_doc>* Legacy filters use position and uvs from attributes</haxe_doc>
+		</legacy>
+		<blendMode public="1">
+			<e path="pixi.core.BlendModes"/>
+			<haxe_doc>* Sets the blendmode of the filter. Default: PIXI.BLEND_MODES.NORMAL</haxe_doc>
+		</blendMode>
+		<program public="1">
+			<c path="pixi.core.renderers.webgl.Program"/>
+			<haxe_doc>* Program that the shader uses</haxe_doc>
+		</program>
+		<state public="1">
+			<c path="pixi.core.renderers.webgl.State"/>
+			<haxe_doc>* The WebGL state the filter requires to render</haxe_doc>
+		</state>
+		<vertexSrc public="1">
+			<c path="String"/>
+			<haxe_doc>* The vertex shader.
+	 *
+	 * @member {String}</haxe_doc>
+		</vertexSrc>
+		<fragmentSrc public="1">
+			<c path="String"/>
+			<haxe_doc>* The fragment shader.
+	 *
+	 * @member {String}</haxe_doc>
+		</fragmentSrc>
+		<uniforms public="1">
+			<d/>
+			<haxe_doc><![CDATA[* An object containing the current values of custom uniforms.
+	 * @example <caption>Updating the value of a custom uniform</caption>
+	 * filter.uniforms.time = performance.now();
+	 *
+	 * @member {Dynamic}]]></haxe_doc>
+		</uniforms>
+		<padding public="1">
+			<x path="Float"/>
+			<haxe_doc>* The padding of the filter. Some filters require extra space to breath such as a blur.
+	 * Increasing this will add extra width and height to the bounds of the object that the
+	 * filter is applied to.
+	 *
+	 * @member {Float}</haxe_doc>
+		</padding>
+		<resolution public="1">
+			<x path="Float"/>
+			<haxe_doc>* The resolution of the filter. Setting this to be lower will lower the quality but
+	 * increase the performance of the filter.
+	 *
+	 * @member {Float}</haxe_doc>
+		</resolution>
+		<enabled public="1">
+			<x path="Bool"/>
+			<haxe_doc>* If enabled is true the filter is applied, if false it will not.
+	 *
+	 * @member {Bool}</haxe_doc>
+		</enabled>
+		<autoFit public="1">
+			<x path="Bool"/>
+			<haxe_doc>* If enabled, PixiJS will fit the filter area into boundaries for better performance. Switch it off if it does not work for specific shader.
+	 * Workaround for http://jsfiddle.net/xbmhh207/1/
+	 * @default true
+	 * @member {Bool}</haxe_doc>
+		</autoFit>
+		<apply public="1" set="method"><f a="filterManager:input:output:?clear:?currentState">
+	<c path="pixi.core.renderers.systems.FilterSystem"/>
+	<c path="pixi.core.textures.RenderTexture"/>
+	<c path="pixi.core.textures.RenderTexture"/>
+	<x path="Bool"/>
+	<c path="pixi.core.renderers.webgl.filters.CurrentState"/>
+	<x path="Void"/>
+</f></apply>
+		<new public="1" set="method">
+			<f a="?vertexSrc:?fragmentSrc:?uniforms">
+				<c path="String"/>
+				<c path="String"/>
+				<d/>
+				<x path="Void"/>
+			</f>
+			<haxe_doc>* @class
+	 * @memberof PIXI
+	 * @param [vertexSrc] {String} The source of the vertex shader.
+	 * @param [fragmentSrc] {String} The source of the fragment shader.
+	 * @param [uniforms] {Dynamic} Custom uniforms to use to augment the built-in ones.</haxe_doc>
+		</new>
+		<meta><m n=":native"><e>"PIXI.Filter"</e></m></meta>
+	</class>
+	<class path="pixi.filters.colormatrix.ColorMatrixFilter" params="" file="/Users/kinor/haxe/haxe_libraries/pixijs/5.1.2/haxelib/src/pixi/filters/colormatrix/ColorMatrixFilter.hx" extern="1">
+		<extends path="pixi.core.renderers.webgl.filters.Filter"/>
+		<matrix public="1">
+			<c path="Array"><x path="Float"/></c>
+			<haxe_doc>* Sets the matrix of the color matrix filter
+	 *
+	 * @member {number[]}
+	 * @memberof ColorMatrixFilter#
+	 * @default [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]</haxe_doc>
+		</matrix>
+		<brightness public="1" set="method">
+			<f a="b:multiply">
+				<x path="Float"/>
+				<x path="Bool"/>
+				<x path="Void"/>
+			</f>
+			<haxe_doc>* Adjusts brightness
+	 *
+	 * Multiply the current matrix
+	 * @param b {Float} value of the brigthness (0 is black)
+	 * @param multiply {Bool} refer to ._loadMatrix() method</haxe_doc>
+		</brightness>
+		<greyscale public="1" set="method">
+			<f a="scale:multiply">
+				<x path="Float"/>
+				<x path="Bool"/>
+				<x path="Void"/>
+			</f>
+			<haxe_doc>* Set the matrices in grey scales
+	 *
+	 * Multiply the current matrix
+	 * @param scale {Float} value of the grey (0 is black)
+	 * @param multiply {Bool} refer to ._loadMatrix() method</haxe_doc>
+		</greyscale>
+		<blackAndWhite public="1" set="method">
+			<f a="multiply">
+				<x path="Bool"/>
+				<x path="Void"/>
+			</f>
+			<haxe_doc>* Set the black and white matrice
+	 * Multiply the current matrix
+	 *
+	 * @param multiply {Bool} refer to ._loadMatrix() method</haxe_doc>
+		</blackAndWhite>
+		<hue public="1" set="method">
+			<f a="rotation:multiply">
+				<x path="Float"/>
+				<x path="Bool"/>
+				<x path="Void"/>
+			</f>
+			<haxe_doc>* Set the hue propertie of the color
+	 *
+	 * Multiply the current matrix
+	 * @param rotation {Float} in degrees
+	 * @param multiply {Bool} refer to ._loadMatrix() method</haxe_doc>
+		</hue>
+		<contrast public="1" set="method">
+			<f a="amount:multiply">
+				<x path="Float"/>
+				<x path="Bool"/>
+				<x path="Void"/>
+			</f>
+			<haxe_doc>* Set the contrast matrix, increase the separation between dark and bright
+	 * Increase contrast : shadows darker and highlights brighter
+	 * Decrease contrast : bring the shadows up and the highlights down
+	 *
+	 * @param amount {Float} value of the contrast
+	 * @param multiply {Bool} refer to ._loadMatrix() method</haxe_doc>
+		</contrast>
+		<saturation public="1" set="method">
+			<f a="amount:multiply">
+				<x path="Float"/>
+				<x path="Bool"/>
+				<x path="Void"/>
+			</f>
+			<haxe_doc>* Set the saturation matrix, increase the separation between colors
+	 * Increase saturation : increase contrast, brightness, and sharpness
+	 * @param amount {Float}
+	 * @param multiply {Bool} refer to ._loadMatrix() method</haxe_doc>
+		</saturation>
+		<desaturate public="1" set="method">
+			<f a="multiply">
+				<x path="Bool"/>
+				<x path="Void"/>
+			</f>
+			<haxe_doc>* Desaturate image (remove color)
+	 *
+	 * Call the saturate function
+	 *
+	 * @param multiply {Bool} refer to ._loadMatrix() method</haxe_doc>
+		</desaturate>
+		<negative public="1" set="method">
+			<f a="multiply">
+				<x path="Bool"/>
+				<x path="Void"/>
+			</f>
+			<haxe_doc>* Negative image (inverse of classic rgb matrix)
+	 *
+	 * @param multiply {Bool} refer to ._loadMatrix() method</haxe_doc>
+		</negative>
+		<sepia public="1" set="method">
+			<f a="multiply">
+				<x path="Bool"/>
+				<x path="Void"/>
+			</f>
+			<haxe_doc>* Sepia image
+	 *
+	 * @param multiply {Bool} refer to ._loadMatrix() method</haxe_doc>
+		</sepia>
+		<technicolor public="1" set="method">
+			<f a="multiply">
+				<x path="Bool"/>
+				<x path="Void"/>
+			</f>
+			<haxe_doc>* Color motion picture process invented in 1916 (thanks Dominic Szablewski)
+	 *
+	 * @param multiply {Bool} refer to ._loadMatrix() method</haxe_doc>
+		</technicolor>
+		<polaroid public="1" set="method">
+			<f a="multiply">
+				<x path="Bool"/>
+				<x path="Void"/>
+			</f>
+			<haxe_doc>* Polaroid filter
+	 *
+	 * @param multiply {boolean} refer to ._loadMatrix() method</haxe_doc>
+		</polaroid>
+		<toBGR public="1" set="method">
+			<f a="multiply">
+				<x path="Bool"/>
+				<x path="Void"/>
+			</f>
+			<haxe_doc><![CDATA[* Filter who transforms : Red -> Blue and Blue -> Red
+	 *
+	 * @param multiply {Bool} refer to ._loadMatrix() method]]></haxe_doc>
+		</toBGR>
+		<kodachrome public="1" set="method">
+			<f a="multiply">
+				<x path="Bool"/>
+				<x path="Void"/>
+			</f>
+			<haxe_doc>* Color reversal film introduced by Eastman Kodak in 1935. (thanks Dominic Szablewski)
+	 *
+	 * @param multiply {Bool} refer to ._loadMatrix() method</haxe_doc>
+		</kodachrome>
+		<browni public="1" set="method">
+			<f a="multiply">
+				<x path="Bool"/>
+				<x path="Void"/>
+			</f>
+			<haxe_doc>* Brown delicious browni filter (thanks Dominic Szablewski)
+	 *
+	 * @param multiply {Bool} refer to ._loadMatrix() method</haxe_doc>
+		</browni>
+		<vintage public="1" set="method"><f a="multiply">
+	<x path="Bool"/>
+	<x path="Void"/>
+</f></vintage>
+		<colorTone public="1" set="method"><f a="desaturation:toned:lightColor:darkColor:multiply">
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Bool"/>
+	<x path="Void"/>
+</f></colorTone>
+		<night public="1" set="method"><f a="intensity:multiply">
+	<x path="Float"/>
+	<x path="Bool"/>
+	<x path="Void"/>
+</f></night>
+		<predator public="1" set="method"><f a="amount:multiply">
+	<x path="Float"/>
+	<x path="Bool"/>
+	<x path="Void"/>
+</f></predator>
+		<lsd public="1" set="method"><f a="multiply">
+	<x path="Bool"/>
+	<x path="Void"/>
+</f></lsd>
+		<reset public="1" set="method"><f a=""><x path="Void"/></f></reset>
+		<new public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc><![CDATA[* The ColorMatrixFilter class lets you apply a 5x5 matrix transformation on the RGBA
+	 * color and alpha values of every pixel on your displayObject to produce a result
+	 * with a new set of RGBA color and alpha values. It's pretty powerful!
+	 *
+	 * ```js
+	 *  var colorMatrix = new ColorMatrixFilter();
+	 *  container.filters = [colorMatrix];
+	 *  colorMatrix.contrast(2);
+	 * ```
+	 * @author Clément Chenebault <clement@goodboydigital.com>
+	 * @class
+	 * @extends AbstractFilter
+	 * @memberof PIXI.filters]]></haxe_doc>
+		</new>
+		<meta><m n=":native"><e>"PIXI.filters.ColorMatrixFilter"</e></m></meta>
+	</class>
+	<class path="mz.core.ToneFilter" params="" file="src/mz/core/ToneFilter.hx" extern="1">
+		<extends path="pixi.filters.colormatrix.ColorMatrixFilter"/>
+		<adjustHue public="1" set="method">
+			<f a="?value">
+				<x path="Int"/>
+				<x path="Void"/>
+			</f>
+			<haxe_doc>* Changes the hue.
+  *
+  * @method adjustHue
+  * @param {Number} value The hue value in the range (-360, 360)</haxe_doc>
+		</adjustHue>
+		<adjustSaturation public="1" set="method">
+			<f a="?value">
+				<x path="Int"/>
+				<x path="Void"/>
+			</f>
+			<haxe_doc>* Changes the saturation.
+  *
+  * @method adjustSaturation
+  * @param {Number} value The saturation value in the range (-255, 255)</haxe_doc>
+		</adjustSaturation>
+		<adjustTone public="1" set="method">
+			<f a="?r:?g:?b">
+				<x path="Int"/>
+				<x path="Int"/>
+				<x path="Int"/>
+				<x path="Void"/>
+			</f>
+			<haxe_doc>* Changes the tone.
+  *
+  * @method adjustTone
+  * @param {Number} r The red strength in the range (-255, 255)
+  * @param {Number} g The green strength in the range (-255, 255)
+  * @param {Number} b The blue strength in the range (-255, 255)</haxe_doc>
+		</adjustTone>
+		<new public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* The color matrix filter for WebGL.
+  *
+  * @class ToneFilter
+  * @extends PIXI.Filter
+  * @constructor</haxe_doc>
+		</new>
+		<meta><m n=":native"><e>"ToneFilter"</e></m></meta>
+	</class>
+	<class path="mz.core.ToneSprite" params="" file="src/mz/core/ToneSprite.hx" extern="1">
+		<extends path="pixi.core.display.Container"/>
+		<clear public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Clears the tone.
+  *
+  * @method reset</haxe_doc>
+		</clear>
+		<setTone public="1" set="method">
+			<f a="r:g:b:gray">
+				<x path="Int"/>
+				<x path="Int"/>
+				<x path="Int"/>
+				<x path="Int"/>
+				<x path="Void"/>
+			</f>
+			<haxe_doc>* Sets the tone.
+  *
+  * @method setTone
+  * @param {Number} r The red strength in the range (-255, 255)
+  * @param {Number} g The green strength in the range (-255, 255)
+  * @param {Number} b The blue strength in the range (-255, 255)
+  * @param {Number} gray The grayscale level in the range (0, 255)</haxe_doc>
+		</setTone>
+		<_red><x path="Int"/></_red>
+		<_green><x path="Int"/></_green>
+		<_blue><x path="Int"/></_blue>
+		<_gray><x path="Int"/></_gray>
+		<_renderCanvas set="method">
+			<f a="renderer">
+				<c path="pixi.core.renderers.canvas.CanvasRenderer"/>
+				<x path="Void"/>
+			</f>
+			<haxe_doc>* @method _renderCanvas
+  * @param {PIXI.CanvasRenderer} renderer
+  * @private</haxe_doc>
+		</_renderCanvas>
+		<_renderWebGL set="method">
+			<f a="renderer">
+				<c path="pixi.core.renderers.webgl.Renderer"/>
+				<x path="Void"/>
+			</f>
+			<haxe_doc>* @method _renderWebGL
+  * @param {PIXI.WebGLRenderer} renderer
+  * @private</haxe_doc>
+		</_renderWebGL>
+		<new public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* The sprite which changes the screen color in 2D canvas mode.
+  *
+  * @class ToneSprite
+  * @constructor</haxe_doc>
+		</new>
+		<meta><m n=":native"><e>"ToneSprite"</e></m></meta>
+	</class>
+	<class path="mz.core.Weather" params="" file="src/mz/core/Weather.hx" extern="1">
+		<extends path="pixi.core.display.Container"/>
+		<type public="1">
+			<c path="String"/>
+			<haxe_doc>* The type of the weather in ['none', 'rain', 'storm', 'snow'].
+  *
+  * @property type
+  * @type String</haxe_doc>
+		</type>
+		<power public="1">
+			<x path="Int"/>
+			<haxe_doc>* The power of the weather in the range (0, 9).
+  *
+  * @property power
+  * @type Number</haxe_doc>
+		</power>
+		<origin public="1">
+			<c path="mz.core.Point"/>
+			<haxe_doc>* The origin point of the weather for scrolling.
+  *
+  * @property origin
+  * @type Point</haxe_doc>
+		</origin>
+		<update public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Updates the weather for each frame.
+  *
+  * @method update</haxe_doc>
+		</update>
+		<_width><x path="Int"/></_width>
+		<_height><x path="Int"/></_height>
+		<_sprites><c path="Array"><c path="mz.core.Sprite"/></c></_sprites>
+		<_rainBitmap><c path="mz.core.Bitmap"/></_rainBitmap>
+		<_stormBitmap><c path="mz.core.Bitmap"/></_stormBitmap>
+		<_snowBitmap><c path="mz.core.Bitmap"/></_snowBitmap>
+		<_dimmerSprite><c path="mz.core.ScreenSprite"/></_dimmerSprite>
+		<_createBitmaps set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* @method _createBitmaps
+  * @private</haxe_doc>
+		</_createBitmaps>
+		<_createDimmer set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* @method _createDimmer
+  * @private</haxe_doc>
+		</_createDimmer>
+		<_updateDimmer set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* @method _updateDimmer
+  * @private</haxe_doc>
+		</_updateDimmer>
+		<_updateAllSprites set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* @method _updateAllSprites
+  * @private</haxe_doc>
+		</_updateAllSprites>
+		<_addSprite set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* @method _addSprite
+  * @private</haxe_doc>
+		</_addSprite>
+		<_removeSprite set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* @method _removeSprite
+  * @private</haxe_doc>
+		</_removeSprite>
+		<_updateSprite set="method">
+			<f a="sprite">
+				<c path="mz.core.Sprite"/>
+				<x path="Void"/>
+			</f>
+			<haxe_doc>* @method _updateSprite
+  * @param {Sprite} sprite
+  * @private</haxe_doc>
+		</_updateSprite>
+		<_updateRainSprite set="method">
+			<f a="sprite">
+				<c path="mz.core.Sprite"/>
+				<x path="Void"/>
+			</f>
+			<haxe_doc>* @method _updateRainSprite
+  * @param {Sprite} sprite
+  * @private</haxe_doc>
+		</_updateRainSprite>
+		<_updateStormSprite set="method">
+			<f a="sprite">
+				<c path="mz.core.Sprite"/>
+				<x path="Void"/>
+			</f>
+			<haxe_doc>* @method _updateStormSprite
+  * @param {Sprite} sprite
+  * @private</haxe_doc>
+		</_updateStormSprite>
+		<_updateSnowSprite set="method">
+			<f a="sprite">
+				<c path="mz.core.Sprite"/>
+				<x path="Void"/>
+			</f>
+			<haxe_doc>* @method _updateSnowSprite
+  * @param {Sprite} sprite
+  * @private</haxe_doc>
+		</_updateSnowSprite>
+		<_rebornSprite set="method">
+			<f a="sprite">
+				<c path="mz.core.Sprite"/>
+				<x path="Void"/>
+			</f>
+			<haxe_doc>* @method _rebornSprite
+  * @param {Sprite} sprite
+  * @private</haxe_doc>
+		</_rebornSprite>
+		<new public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* The weather effect which displays rain, storm, or snow.
+  *
+  * @class Weather
+  * @constructor</haxe_doc>
+		</new>
+		<meta><m n=":native"><e>"Weather"</e></m></meta>
 	</class>
 	<class path="mz.core.WindowLayer" params="" file="src/mz/core/WindowLayer.hx" extern="1">
 		<extends path="pixi.core.display.Container"/>
@@ -63103,7 +64342,174 @@
 		<extends path="mz.sprites.Sprite_Battler"/>
 		<meta><m n=":native"><e>"Sprite_Actor"</e></m></meta>
 	</class>
-	<class path="mz.sprites.Sprite_Animation" params="" file="src/mz/sprites/Sprite_Animation.hx" extern="1"><meta><m n=":native"><e>"Sprite_Animation"</e></m></meta></class>
+	<class path="mz.sprites.Sprite_Animation" params="" file="src/mz/sprites/Sprite_Animation.hx" extern="1">
+		<extends path="mz.core.Sprite"/>
+		<_checker1 static="1"><a><key><t path="mz.types.Animation"/></key></a></_checker1>
+		<_checker2 static="1"><a><key><t path="mz.types.Animation"/></key></a></_checker2>
+		<_target><c path="mz.sprites.Sprite_Base"/></_target>
+		<_animation><t path="mz.types.Animation"/></_animation>
+		<_mirror><x path="Bool"/></_mirror>
+		<_delay><x path="Int"/></_delay>
+		<_rate_><x path="Float"/></_rate_>
+		<_duration><x path="Int"/></_duration>
+		<_flashColor><c path="Array"><x path="Int"/></c></_flashColor>
+		<_flashDuration><x path="Int"/></_flashDuration>
+		<_screenFlashDuration><x path="Int"/></_screenFlashDuration>
+		<_hidingDuration><x path="Int"/></_hidingDuration>
+		<_bitmap1><c path="mz.core.Bitmap"/></_bitmap1>
+		<_bitmap2><c path="mz.core.Bitmap"/></_bitmap2>
+		<_cellSprites><c path="Array"><c path="mz.core.Sprite"/></c></_cellSprites>
+		<_screenFlashSprite><c path="mz.core.ScreenSprite"/></_screenFlashSprite>
+		<_duplicated><x path="Bool"/></_duplicated>
+		<_reduceArtifacts><x path="Bool"/></_reduceArtifacts>
+		<initMembers public="1" set="method"><f a=""><x path="Void"/></f></initMembers>
+		<setup public="1" set="method"><f a="target:animation:mirror:delay">
+	<c path="mz.sprites.Sprite_Base"/>
+	<t path="mz.types.Animation"/>
+	<x path="Bool"/>
+	<x path="Int"/>
+	<x path="Void"/>
+</f></setup>
+		<remove public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Removes the sprite animation.
+  *
+  * @memberof Sprite_Animation</haxe_doc>
+		</remove>
+		<setupRate public="1" set="method"><f a=""><x path="Void"/></f></setupRate>
+		<setupDuration public="1" set="method"><f a=""><x path="Void"/></f></setupDuration>
+		<updateFlash public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Updates the flash animation of the sprite animation.
+  *
+  * @memberof Sprite_Animation</haxe_doc>
+		</updateFlash>
+		<updateScreenFlash public="1" set="method"><f a=""><x path="Void"/></f></updateScreenFlash>
+		<absoluteX public="1" set="method">
+			<f a=""><x path="Float"/></f>
+			<haxe_doc>* Returns the absolute x position of the sprite animation.
+  *
+  * @returns {number}
+  * @memberof Sprite_Animation</haxe_doc>
+		</absoluteX>
+		<absoluteY public="1" set="method">
+			<f a=""><x path="Float"/></f>
+			<haxe_doc>* Returns the absolute y position of the sprite aniamtion.
+  *
+  * @returns {number}
+  * @memberof Sprite_Animation</haxe_doc>
+		</absoluteY>
+		<updateHiding public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Updates the hiding of the sprite animation.
+  *
+  * @memberof Sprite_Animation</haxe_doc>
+		</updateHiding>
+		<isPlaying public="1" set="method">
+			<f a=""><x path="Bool"/></f>
+			<haxe_doc>* Returns true if the sprite animation is playing.
+  *
+  * @returns {boolean}
+  * @memberof Sprite_Animation</haxe_doc>
+		</isPlaying>
+		<loadBitmaps public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Loads the bitmaps of the sprite animation.
+  *
+  * @memberof Sprite_Animation</haxe_doc>
+		</loadBitmaps>
+		<isReady public="1" set="method">
+			<f a=""><x path="Bool"/></f>
+			<haxe_doc>* Returns true if the sprite animation is ready.
+  *
+  * @returns {boolean}
+  * @memberof Sprite_Animation</haxe_doc>
+		</isReady>
+		<createSprites public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Create the sprites of the sprite animation.
+  *
+  * @memberof Sprite_Animation</haxe_doc>
+		</createSprites>
+		<createCellSprites public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Create the cell sprites of the sprite animation.
+  *
+  * @memberof Sprite_Animation</haxe_doc>
+		</createCellSprites>
+		<createScreenFlashSprite public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Create the screen flash sprite of the sprite animation.
+  *
+  * @memberof Sprite_Animation</haxe_doc>
+		</createScreenFlashSprite>
+		<updateMain public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Updates the main loop of the sprite animation.
+  *
+  * @memberof Sprite_Animation</haxe_doc>
+		</updateMain>
+		<updatePosition public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Updates the position of the sprite animation.
+  *
+  * @memberof Sprite_Animation</haxe_doc>
+		</updatePosition>
+		<updateFrame public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Updates the frame of the sprite aniamtion.
+  *
+  * @memberof Sprite_Animation</haxe_doc>
+		</updateFrame>
+		<currentFrameIndex public="1" set="method">
+			<f a=""><x path="Int"/></f>
+			<haxe_doc>* Returns the current frame index of the sprite aniamtion.
+  *
+  * @returns {number}
+  * @memberof Sprite_Animation</haxe_doc>
+		</currentFrameIndex>
+		<updateAllCellSprites public="1" set="method"><f a="frame">
+	<c path="Array"><c path="Array"><x path="Int"/></c></c>
+	<x path="Void"/>
+</f></updateAllCellSprites>
+		<updateCellSprite public="1" set="method"><f a="sprite:cell">
+	<c path="mz.core.Sprite"/>
+	<c path="Array"><x path="Int"/></c>
+	<x path="Void"/>
+</f></updateCellSprite>
+		<processTimingData public="1" set="method"><f a="timing">
+	<t path="mz.types.AnimationTiming"/>
+	<x path="Void"/>
+</f></processTimingData>
+		<startFlash public="1" set="method"><f a="color:duration">
+	<c path="Array"><x path="Int"/></c>
+	<x path="Int"/>
+	<x path="Void"/>
+</f></startFlash>
+		<startScreenFlash public="1" set="method"><f a="color:duration">
+	<c path="Array"><x path="Int"/></c>
+	<x path="Int"/>
+	<x path="Void"/>
+</f></startScreenFlash>
+		<startHiding public="1" set="method">
+			<f a="duration">
+				<x path="Int"/>
+				<x path="Void"/>
+			</f>
+			<haxe_doc>* Starts hiding the sprite animation.
+  *
+  * @param {number} duration The duration of the hide.
+  * @memberof Sprite_Animation</haxe_doc>
+		</startHiding>
+		<haxe_doc>* -----------------------------------------------------------------------------
+ * Sprite_Animation
+ *
+ * The sprite for displaying an animation.</haxe_doc>
+		<meta>
+			<m n=":directlyUsed"/>
+			<m n=":native"><e>"Sprite_Animation"</e></m>
+		</meta>
+	</class>
 	<class path="mz.sprites.Sprite_Balloon" params="" file="src/mz/sprites/Sprite_Balloon.hx" extern="1">
 		<extends path="mz.sprites.Sprite_Base"/>
 		<_balloonId><x path="mz.types.BalloonId"/></_balloonId>
@@ -63198,6 +64604,84 @@
 		<initMembers public="1" set="method"><f a=""><x path="Void"/></f></initMembers>
 		<meta><m n=":native"><e>"Sprite_Character"</e></m></meta>
 	</class>
+	<class path="mz.sprites.Sprite_Damage" params="" file="src/mz/sprites/Sprite_Damage.hx" extern="1">
+		<extends path="mz.core.Sprite"/>
+		<_duration><x path="Int"/></_duration>
+		<_flashColor>
+			<c path="Array"><x path="Int"/></c>
+			<haxe_doc>* Array of 3 numbers of RGB</haxe_doc>
+		</_flashColor>
+		<_flashDuration><x path="Int"/></_flashDuration>
+		<_damageBitmap><c path="mz.core.Bitmap"/></_damageBitmap>
+		<setup public="1" set="method"><f a="target">
+	<c path="mz.objects.Game_Actor"/>
+	<x path="Void"/>
+</f></setup>
+		<setupCriticalEffect public="1" set="method"><f a=""><x path="Void"/></f></setupCriticalEffect>
+		<digitWidth public="1" set="method">
+			<f a=""><x path="Int"/></f>
+			<haxe_doc>* Returns the digit width of the sprite damage.
+  *
+  * @returns {number}
+  * @memberof Sprite_Damage</haxe_doc>
+		</digitWidth>
+		<digitHeight public="1" set="method">
+			<f a=""><x path="Int"/></f>
+			<haxe_doc>* Returns the digit height of the sprite damage.
+  *
+  * @returns {number}
+  * @memberof Sprite_Damage</haxe_doc>
+		</digitHeight>
+		<createMiss public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Creates the miss display of the damage sprite.
+  *
+  * @memberof Sprite_Damage</haxe_doc>
+		</createMiss>
+		<createDigits public="1" set="method"><f a="baseRow:value">
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Void"/>
+</f></createDigits>
+		<createChildSprite public="1" set="method">
+			<f a=""><c path="mz.core.Sprite"/></f>
+			<haxe_doc>* Creates the child sprite of the damage sprite for displaying damage.
+  *
+  * @returns {Sprite}
+  * @memberof Sprite_Damage</haxe_doc>
+		</createChildSprite>
+		<updateChild public="1" set="method"><f a="sprite">
+	<c path="mz.core.Sprite"/>
+	<x path="Void"/>
+</f></updateChild>
+		<updateFlash public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Updates the flash of the damage sprite.
+  *
+  * @memberof Sprite_Damage</haxe_doc>
+		</updateFlash>
+		<updateOpacity public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Updates the opacity of the damage sprite.
+  *
+  * @memberof Sprite_Damage</haxe_doc>
+		</updateOpacity>
+		<isPlaying public="1" set="method">
+			<f a=""><x path="Bool"/></f>
+			<haxe_doc>* Returns true if the damage sprite is playing.
+  *
+  * @returns {boolean}
+  * @memberof Sprite_Damage</haxe_doc>
+		</isPlaying>
+		<haxe_doc>* -----------------------------------------------------------------------------
+ * Sprite_Damage
+ *
+ * The sprite for displaying a popup damage.</haxe_doc>
+		<meta>
+			<m n=":directlyUsed"/>
+			<m n=":native"><e>"Sprite_Damage"</e></m>
+		</meta>
+	</class>
 	<class path="mz.sprites.Sprite_Destination" params="" file="src/mz/sprites/Sprite_Destination.hx" extern="1">
 		<extends path="mz.core.Sprite"/>
 		<_frameCount><x path="Int"/></_frameCount>
@@ -63238,7 +64722,93 @@
 	</class>
 	<class path="mz.sprites.Sprite_StateIcon" params="" file="src/mz/sprites/Sprite_StateIcon.hx" extern="1">
 		<extends path="mz.core.Sprite"/>
-		<meta><m n=":native"><e>"Sprite_StateIcon"</e></m></meta>
+		<_iconWidth static="1"><x path="Int"/></_iconWidth>
+		<_iconHeight static="1"><x path="Int"/></_iconHeight>
+		<_battler><c path="mz.objects.Game_Battler"/></_battler>
+		<_iconIndex><x path="Int"/></_iconIndex>
+		<_animationCount><x path="Int"/></_animationCount>
+		<_animationIndex><x path="Int"/></_animationIndex>
+		<initMembers public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Initializes the sprite state icon properties.
+  *
+  * @memberof Sprite_StateIcon</haxe_doc>
+		</initMembers>
+		<loadBitmap public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Loads the bitmap of the sprite state icon.
+  *
+  * @memberof Sprite_StateIcon</haxe_doc>
+		</loadBitmap>
+		<setup public="1" set="method"><f a="battler">
+	<c path="mz.objects.Game_Battler"/>
+	<x path="Void"/>
+</f></setup>
+		<animationWait public="1" set="method"><f a=""><x path="Int"/></f></animationWait>
+		<updateIcon public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Updates the icon displayed in the icon sprite.
+  *
+  * @memberof Sprite_StateIcon</haxe_doc>
+		</updateIcon>
+		<updateFrame public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Updates the state icon sprite frame.
+  *
+  * @memberof Sprite_StateIcon</haxe_doc>
+		</updateFrame>
+		<haxe_doc>* -----------------------------------------------------------------------------
+ * Sprite_StateIcon
+ *
+ * The sprite for displaying state icons.</haxe_doc>
+		<meta>
+			<m n=":directlyUsed"/>
+			<m n=":native"><e>"Sprite_StateIcon"</e></m>
+		</meta>
+	</class>
+	<class path="mz.sprites.Sprite_StateOverlay" params="" file="src/mz/sprites/Sprite_StateOverlay.hx" extern="1">
+		<extends path="mz.sprites.Sprite_Base"/>
+		<_battler><c path="mz.objects.Game_Battler"/></_battler>
+		<_overlayIndex><x path="Int"/></_overlayIndex>
+		<_animationCount><x path="Int"/></_animationCount>
+		<_pattern><x path="Int"/></_pattern>
+		<initMembers public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Initialize the overlay sprite properties.
+  *
+  * @memberof Sprite_StateOverlay</haxe_doc>
+		</initMembers>
+		<loadBitmap public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Loads the bitmap of the overlay sprite.
+  *
+  * @memberof Sprite_StateOverlay</haxe_doc>
+		</loadBitmap>
+		<setup public="1" set="method"><f a="battler">
+	<c path="mz.objects.Game_Battler"/>
+	<x path="Void"/>
+</f></setup>
+		<animationWait public="1" set="method"><f a=""><x path="Int"/></f></animationWait>
+		<updatePattern public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Updates the overlay sprite pattern.
+  *
+  * @memberof Sprite_StateOverlay</haxe_doc>
+		</updatePattern>
+		<updateFrame public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Updates the overlay sprite frame.
+  *
+  * @memberof Sprite_StateOverlay</haxe_doc>
+		</updateFrame>
+		<haxe_doc>* -----------------------------------------------------------------------------
+ * Sprite_StateOverlay
+ *
+ * The sprite for displaying an overlay image for a state.</haxe_doc>
+		<meta>
+			<m n=":directlyUsed"/>
+			<m n=":native"><e>"Sprite_StateOverlay"</e></m>
+		</meta>
 	</class>
 	<class path="mz.sprites.Sprite_Timer" params="" file="src/mz/sprites/Sprite_Timer.hx" extern="1">
 		<extends path="mz.core.Sprite"/>
@@ -63337,6 +64907,410 @@
 		<meta>
 			<m n=":directlyUsed"/>
 			<m n=":native"><e>"Sprite_Weapon"</e></m>
+		</meta>
+	</class>
+	<class path="mz.sprites.Spriteset_Base" params="" file="src/mz/sprites/Spriteset_Base.hx" extern="1">
+		<extends path="mz.core.Sprite"/>
+		<_tone><c path="Array"><x path="Int"/></c></_tone>
+		<_baseSprite><c path="mz.core.Sprite"/></_baseSprite>
+		<_blackScreen><c path="mz.core.ScreenSprite"/></_blackScreen>
+		<_toneFilter><c path="mz.core.ToneFilter"/></_toneFilter>
+		<_toneSprite><c path="mz.core.ToneSprite"/></_toneSprite>
+		<_pictureContainer><c path="mz.core.Sprite"/></_pictureContainer>
+		<_timerSprite><c path="mz.sprites.Sprite_Timer"/></_timerSprite>
+		<_flashSprite><c path="mz.core.ScreenSprite"/></_flashSprite>
+		<_fadeSprite><c path="mz.core.ScreenSprite"/></_fadeSprite>
+		<createLowerLayer public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Creates the lower layer including the base sprites.
+  *
+  * @memberof Spriteset_Base</haxe_doc>
+		</createLowerLayer>
+		<createUpperLayer public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Creates the upper layer including the pictures,
+  * timer, and screen sprites.
+  * @memberof Spriteset_Base</haxe_doc>
+		</createUpperLayer>
+		<createBaseSprite public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Create the base sprite.
+  *
+  * @memberof Spriteset_Base</haxe_doc>
+		</createBaseSprite>
+		<createToneChanger public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Creates the tone changer sprite.
+  *
+  * @memberof Spriteset_Base</haxe_doc>
+		</createToneChanger>
+		<createWebGLToneChanger public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Creates the WebGL toner.
+  *
+  * @memberof Spriteset_Base</haxe_doc>
+		</createWebGLToneChanger>
+		<createCanvasToneChanger public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Creates the Canvas tone.
+  *
+  * @memberof Spriteset_Base</haxe_doc>
+		</createCanvasToneChanger>
+		<createPictures public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Creates a new sprite picture on the spritesetb ase.
+  *
+  * @memberof Spriteset_Base</haxe_doc>
+		</createPictures>
+		<createTimer public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Creates a new Sprite timer on the spriteset base.
+  *
+  * @memberof Spriteset_Base</haxe_doc>
+		</createTimer>
+		<createScreenSprites public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Creates the screen sprite.
+  *
+  * @memberof Spriteset_Base</haxe_doc>
+		</createScreenSprites>
+		<updateScreenSprites public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Updates the screen sprites on the spriteset base.
+  *
+  * @memberof Spriteset_Base</haxe_doc>
+		</updateScreenSprites>
+		<updateToneChanger public="1" set="method"><f a=""><x path="Void"/></f></updateToneChanger>
+		<updateWebGLToneChanger public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Updates the WebGL tone changer.
+  *
+  * @memberof Spriteset_Base</haxe_doc>
+		</updateWebGLToneChanger>
+		<updateCanvasToneChanger public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Updates the Canvas tone changer.
+  *
+  * @memberof Spriteset_Base</haxe_doc>
+		</updateCanvasToneChanger>
+		<updatePosition public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Updates the position of spriteset base.
+  *
+  * @memberof Spriteset_Base</haxe_doc>
+		</updatePosition>
+		<haxe_doc>* -----------------------------------------------------------------------------
+ * Spriteset_Base
+ *
+ * The superdeclare class of Spriteset_Map and Spriteset_Battle.</haxe_doc>
+		<meta>
+			<m n=":directlyUsed"/>
+			<m n=":native"><e>"Spriteset_Base"</e></m>
+		</meta>
+	</class>
+	<class path="mz.sprites.Spriteset_Battle" params="" file="src/mz/sprites/Spriteset_Battle.hx" extern="1">
+		<extends path="mz.sprites.Spriteset_Base"/>
+		<_battlebackLocated><x path="Bool"/></_battlebackLocated>
+		<_backgroundSprite><c path="mz.core.Sprite"/></_backgroundSprite>
+		<_battleField><c path="mz.core.Sprite"/></_battleField>
+		<_back1Sprite><c path="mz.core.TilingSprite"/></_back1Sprite>
+		<_back2Sprite><c path="mz.core.TilingSprite"/></_back2Sprite>
+		<_enemySprites><c path="Array"><c path="mz.sprites.Sprite_Enemy"/></c></_enemySprites>
+		<_actorSprites><c path="Array"><c path="mz.sprites.Sprite_Actor"/></c></_actorSprites>
+		<createBackground public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Creates the background of the battle spriteset.
+  *
+  * @memberof Spriteset_Battle</haxe_doc>
+		</createBackground>
+		<createBattleField public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Creates the battlefield of the battle spriteset.
+  *
+  * @memberof Spriteset_Battle</haxe_doc>
+		</createBattleField>
+		<createBattleback public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Creates the battleback of the battle spriteset.
+  *
+  * @memberof Spriteset_Battle</haxe_doc>
+		</createBattleback>
+		<updateBattleback public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Updates the battleback of the battle spriteset.
+  *
+  * @memberof Spriteset_Battle</haxe_doc>
+		</updateBattleback>
+		<locateBattleback public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Locates the battleback and adjusts the coordinates of the
+  * battleback.
+  * @memberof Spriteset_Battle</haxe_doc>
+		</locateBattleback>
+		<battleback1Bitmap public="1" set="method">
+			<f a=""><c path="mz.core.Bitmap"/></f>
+			<haxe_doc>* Returns battleb ack 2 of the battle spriteset.
+  *
+  * @returns {Bitmap} Instance of the Bitmap class.
+  * @memberof Spriteset_Battle</haxe_doc>
+		</battleback1Bitmap>
+		<battleback2Bitmap public="1" set="method">
+			<f a=""><c path="mz.core.Bitmap"/></f>
+			<haxe_doc>* Returns battleback 2 of the battle spriteset.
+  *
+  * @returns {Bitmap} Instance of the Bitmap class.
+  * @memberof Spriteset_Battle</haxe_doc>
+		</battleback2Bitmap>
+		<battleback1Name public="1" set="method">
+			<f a=""><c path="String"/></f>
+			<haxe_doc>*
+  *
+  * @returns {string} Name of battleback 1 bitmap.
+  * @memberof Spriteset_Battle</haxe_doc>
+		</battleback1Name>
+		<battleback2Name public="1" set="method">
+			<f a=""><c path="String"/></f>
+			<haxe_doc>*
+  *
+  * @returns {string} Name of battleback 2 bitmap.
+  * @memberof Spriteset_Battle</haxe_doc>
+		</battleback2Name>
+		<overworldBattleback1Name public="1" set="method">
+			<f a=""><c path="String"/></f>
+			<haxe_doc>* Returns the battleback 1 name as a string.
+  *
+  * @returns {string} Name of overworld battleback 1 bitmap.
+  * @memberof Spriteset_Battle</haxe_doc>
+		</overworldBattleback1Name>
+		<overworldBattleback2Name public="1" set="method">
+			<f a=""><c path="String"/></f>
+			<haxe_doc>* Returns the battleback 2 name as a string.
+  *
+  * @returns {string} Name of overworld battleback 2 bitmap.
+  * @memberof Spriteset_Battle</haxe_doc>
+		</overworldBattleback2Name>
+		<normalBattleback1Name public="1" set="method">
+			<f a=""><c path="String"/></f>
+			<haxe_doc>*
+  *
+  * @returns {string} Name of the normal battleback 1 bitmap.
+  * @memberof Spriteset_Battle</haxe_doc>
+		</normalBattleback1Name>
+		<normalBattleback2Name public="1" set="method">
+			<f a=""><c path="String"/></f>
+			<haxe_doc>*
+  *
+  * @returns {string} Name of the normal battleback 2 bitmap.
+  * @memberof Spriteset_Battle</haxe_doc>
+		</normalBattleback2Name>
+		<terrainBattleback1Name public="1" set="method">
+			<f a="type">
+				<x path="Int"/>
+				<c path="String"/>
+			</f>
+			<haxe_doc>* Given the specified terrtain type, return
+  * the battleback 1 name.
+  * @param {number} type Terrain type.
+  * @returns {string} Name of the terrtain battleback 1 bitmap.
+  * @memberof Spriteset_Battle</haxe_doc>
+		</terrainBattleback1Name>
+		<terrainBattleback2Name public="1" set="method">
+			<f a="type">
+				<x path="Int"/>
+				<c path="String"/>
+			</f>
+			<haxe_doc>* Given the specified terrain type, return
+  * the battleback 2 name.
+  * @param {number} type Terrain type.
+  * @returns {string} Name of the terrain battleback 2 bitmap.
+  * @memberof Spriteset_Battle</haxe_doc>
+		</terrainBattleback2Name>
+		<defaultBattleback1Name public="1" set="method">
+			<f a=""><c path="String"/></f>
+			<haxe_doc>*
+  *
+  * @returns {string} Name of the default battleback 1 name.
+  * @memberof Spriteset_Battle</haxe_doc>
+		</defaultBattleback1Name>
+		<defaultBattleback2Name public="1" set="method">
+			<f a=""><c path="String"/></f>
+			<haxe_doc>*
+  *
+  * @returns {string} Name of the default battleback 2 name.
+  * @memberof Spriteset_Battle</haxe_doc>
+		</defaultBattleback2Name>
+		<shipBattleback1Name public="1" set="method">
+			<f a=""><c path="String"/></f>
+			<haxe_doc>*
+  *
+  * @returns {string} Name of the ship battleback 1  bitmap.
+  * @memberof Spriteset_Battle</haxe_doc>
+		</shipBattleback1Name>
+		<shipBattleback2Name public="1" set="method">
+			<f a=""><c path="String"/></f>
+			<haxe_doc>*
+  *
+  * @returns {string} Name of the ship battleback 2 bitmap.
+  * @memberof Spriteset_Battle</haxe_doc>
+		</shipBattleback2Name>
+		<autotileType public="1" set="method"><f a="z">
+	<x path="Int"/>
+	<x path="Int"/>
+</f></autotileType>
+		<createEnemies public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Creates sprite enemies for the battle spriteset.
+  *
+  * @memberof Spriteset_Battle</haxe_doc>
+		</createEnemies>
+		<compareEnemySprite public="1" set="method"><f a="a:b">
+	<c path="mz.sprites.Sprite_Enemy"/>
+	<c path="mz.sprites.Sprite_Enemy"/>
+	<x path="Int"/>
+</f></compareEnemySprite>
+		<createActors public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Creates sprite actors for the battle spriteset.
+  *
+  * @memberof Spriteset_Battle</haxe_doc>
+		</createActors>
+		<updateActors public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Updates the actor sprites on the battle spriteset.
+  *
+  * @memberof Spriteset_Battle</haxe_doc>
+		</updateActors>
+		<battlerSprites public="1" set="method">
+			<f a=""><c path="Array"><c path="mz.sprites.Sprite_Battler"/></c></f>
+			<haxe_doc><![CDATA[* Returns all battler sprites on the battle spriteset.
+  *
+  * @returns {Array<Sprite_Battler>}
+  * @memberof Spriteset_Battle]]></haxe_doc>
+		</battlerSprites>
+		<isAnimationPlaying public="1" set="method">
+			<f a=""><x path="Bool"/></f>
+			<haxe_doc>* Returns true if animation is playing on the battle spriteset.
+  *
+  * @returns {boolean}
+  * @memberof Spriteset_Battle</haxe_doc>
+		</isAnimationPlaying>
+		<isEffecting public="1" set="method"><f a=""><x path="Bool"/></f></isEffecting>
+		<isAnyoneMoving public="1" set="method">
+			<f a=""><x path="Bool"/></f>
+			<haxe_doc>* Returns true if any sprite actor or enemy is moving.
+  *
+  * @returns {boolean} Representing whether any battle participants are moving.
+  * @memberof Spriteset_Battle</haxe_doc>
+		</isAnyoneMoving>
+		<isBusy public="1" set="method">
+			<f a=""><x path="Bool"/></f>
+			<haxe_doc>* Returns true if the battle spriteset is busy.
+  *
+  * @returns {boolean}
+  * @memberof Spriteset_Battle</haxe_doc>
+		</isBusy>
+		<meta>
+			<m n=":directlyUsed"/>
+			<m n=":native"><e>"Spriteset_Battle"</e></m>
+		</meta>
+	</class>
+	<class path="mz.sprites.Spriteset_Map" params="" file="src/mz/sprites/Spriteset_Map.hx" extern="1">
+		<extends path="mz.sprites.Spriteset_Base"/>
+		<_parallax><c path="mz.core.TilingSprite"/></_parallax>
+		<_tilemap><x path="haxe.extern.EitherType">
+	<c path="mz.core.Tilemap"/>
+	<c path="mz.core.ShaderTilemap"/>
+</x></_tilemap>
+		<_tileset><t path="mz.types.Tileset"/></_tileset>
+		<_characterSprites><c path="Array"><c path="mz.sprites.Sprite_Character"/></c></_characterSprites>
+		<_shadowSprite><c path="mz.core.Sprite"/></_shadowSprite>
+		<_destinationSprite><c path="mz.sprites.Sprite_Destination"/></_destinationSprite>
+		<_weather><c path="mz.core.Weather"/></_weather>
+		<_parallaxName><c path="String"/></_parallaxName>
+		<hideCharacters public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Hides the map spriteset character sprites.
+  *
+  * @memberof Spriteset_Map</haxe_doc>
+		</hideCharacters>
+		<createParallax public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Creates the map spriteset parallax.
+  *
+  * @memberof Spriteset_Map</haxe_doc>
+		</createParallax>
+		<createTilemap public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Creates the map spriteset tile map.
+  *
+  * @memberof Spriteset_Map</haxe_doc>
+		</createTilemap>
+		<loadTileset public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Loads the map spriteset tileset.
+  *
+  * @memberof Spriteset_Map</haxe_doc>
+		</loadTileset>
+		<createCharacters public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Creates the map spriteset character sprite.
+  *
+  * @memberof Spriteset_Map</haxe_doc>
+		</createCharacters>
+		<createShadow public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Creates the map spriteset shadow sprite.
+  *
+  * @memberof Spriteset_Map</haxe_doc>
+		</createShadow>
+		<createDestination public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Creates the map spriteset destination sprite.
+  *
+  * @memberof Spriteset_Map</haxe_doc>
+		</createDestination>
+		<createWeather public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Creates the map spriteset weather.
+  *
+  * @memberof Spriteset_Map</haxe_doc>
+		</createWeather>
+		<updateTileset public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Updates the map spriteset tileset.
+  *
+  * @memberof Spriteset_Map</haxe_doc>
+		</updateTileset>
+		<_canvasReAddParallax set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Simple fix for canvas parallax issue, destroy old parallax and readd to  the tree.</haxe_doc>
+		</_canvasReAddParallax>
+		<updateParallax public="1" set="method"><f a=""><x path="Void"/></f></updateParallax>
+		<updateTilemap public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Updates the map spriteset tile map.
+  *
+  * @memberof Spriteset_Map</haxe_doc>
+		</updateTilemap>
+		<updateShadow public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Updates the map spriteset shadow.
+  *
+  * @memberof Spriteset_Map</haxe_doc>
+		</updateShadow>
+		<updateWeather public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Updates the map spriteset weather.
+  *
+  * @memberof Spriteset_Map</haxe_doc>
+		</updateWeather>
+		<haxe_doc>* -----------------------------------------------------------------------------
+ * Spriteset_Map
+ *
+ * The set of sprites on the map screen.</haxe_doc>
+		<meta>
+			<m n=":directlyUsed"/>
+			<m n=":native"><e>"Spriteset_map"</e></m>
 		</meta>
 	</class>
 	<abstract path="mz.types.StateId" params="" file="src/mz/types/LunaTea.hx" module="mz.types.LunaTea">
@@ -72364,108 +74338,6 @@
  *
  * An instance of this class is automatically created by default, and can be found at renderer.plugins.extract</haxe_doc>
 		<meta><m n=":native"><e>"PIXI.extract.Extract"</e></m></meta>
-	</class>
-	<class path="pixi.core.renderers.webgl.filters.Filter" params="" file="/Users/kinor/haxe/haxe_libraries/pixijs/5.1.2/haxelib/src/pixi/core/renderers/webgl/filters/Filter.hx" extern="1">
-		<defaultVertexSrc public="1" static="1">
-			<d/>
-			<haxe_doc>* The default vertex shader source
-	 *
-	 * @static
-	 * @constant</haxe_doc>
-		</defaultVertexSrc>
-		<defaultFragmentSrc public="1" static="1">
-			<d/>
-			<haxe_doc>* The default fragment shader source
-	 *
-	 * @static
-	 * @constant</haxe_doc>
-		</defaultFragmentSrc>
-		<legacy public="1" set="null">
-			<x path="Bool"/>
-			<haxe_doc>* Legacy filters use position and uvs from attributes</haxe_doc>
-		</legacy>
-		<blendMode public="1">
-			<e path="pixi.core.BlendModes"/>
-			<haxe_doc>* Sets the blendmode of the filter. Default: PIXI.BLEND_MODES.NORMAL</haxe_doc>
-		</blendMode>
-		<program public="1">
-			<c path="pixi.core.renderers.webgl.Program"/>
-			<haxe_doc>* Program that the shader uses</haxe_doc>
-		</program>
-		<state public="1">
-			<c path="pixi.core.renderers.webgl.State"/>
-			<haxe_doc>* The WebGL state the filter requires to render</haxe_doc>
-		</state>
-		<vertexSrc public="1">
-			<c path="String"/>
-			<haxe_doc>* The vertex shader.
-	 *
-	 * @member {String}</haxe_doc>
-		</vertexSrc>
-		<fragmentSrc public="1">
-			<c path="String"/>
-			<haxe_doc>* The fragment shader.
-	 *
-	 * @member {String}</haxe_doc>
-		</fragmentSrc>
-		<uniforms public="1">
-			<d/>
-			<haxe_doc><![CDATA[* An object containing the current values of custom uniforms.
-	 * @example <caption>Updating the value of a custom uniform</caption>
-	 * filter.uniforms.time = performance.now();
-	 *
-	 * @member {Dynamic}]]></haxe_doc>
-		</uniforms>
-		<padding public="1">
-			<x path="Float"/>
-			<haxe_doc>* The padding of the filter. Some filters require extra space to breath such as a blur.
-	 * Increasing this will add extra width and height to the bounds of the object that the
-	 * filter is applied to.
-	 *
-	 * @member {Float}</haxe_doc>
-		</padding>
-		<resolution public="1">
-			<x path="Float"/>
-			<haxe_doc>* The resolution of the filter. Setting this to be lower will lower the quality but
-	 * increase the performance of the filter.
-	 *
-	 * @member {Float}</haxe_doc>
-		</resolution>
-		<enabled public="1">
-			<x path="Bool"/>
-			<haxe_doc>* If enabled is true the filter is applied, if false it will not.
-	 *
-	 * @member {Bool}</haxe_doc>
-		</enabled>
-		<autoFit public="1">
-			<x path="Bool"/>
-			<haxe_doc>* If enabled, PixiJS will fit the filter area into boundaries for better performance. Switch it off if it does not work for specific shader.
-	 * Workaround for http://jsfiddle.net/xbmhh207/1/
-	 * @default true
-	 * @member {Bool}</haxe_doc>
-		</autoFit>
-		<apply public="1" set="method"><f a="filterManager:input:output:?clear:?currentState">
-	<c path="pixi.core.renderers.systems.FilterSystem"/>
-	<c path="pixi.core.textures.RenderTexture"/>
-	<c path="pixi.core.textures.RenderTexture"/>
-	<x path="Bool"/>
-	<c path="pixi.core.renderers.webgl.filters.CurrentState"/>
-	<x path="Void"/>
-</f></apply>
-		<new public="1" set="method">
-			<f a="?vertexSrc:?fragmentSrc:?uniforms">
-				<c path="String"/>
-				<c path="String"/>
-				<d/>
-				<x path="Void"/>
-			</f>
-			<haxe_doc>* @class
-	 * @memberof PIXI
-	 * @param [vertexSrc] {String} The source of the vertex shader.
-	 * @param [fragmentSrc] {String} The source of the fragment shader.
-	 * @param [uniforms] {Dynamic} Custom uniforms to use to augment the built-in ones.</haxe_doc>
-		</new>
-		<meta><m n=":native"><e>"PIXI.Filter"</e></m></meta>
 	</class>
 	<class path="pixi.core.renderers.webgl.filters.CurrentState" params="" file="/Users/kinor/haxe/haxe_libraries/pixijs/5.1.2/haxelib/src/pixi/core/renderers/webgl/filters/Filter.hx" module="pixi.core.renderers.webgl.filters.Filter" extern="1" interface="1">
 		<destinationFrame public="1"><c path="pixi.core.math.shapes.Rectangle"/></destinationFrame>
