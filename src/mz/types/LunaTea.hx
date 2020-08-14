@@ -46,6 +46,30 @@ enum abstract CharacterPattern(Int) from Int to Int {
 }
 
 /**
+ * Motion Type used for Sprite Actors
+ * on different scenes in MV/MZ.
+ */
+enum abstract MotionType(String) from String to String {
+ public inline var WALK = "walk";
+ public inline var WAIT = "wait";
+ public inline var CHANT = "chant";
+ public inline var GUARD = "guard";
+ public inline var DAMAGE = "damage";
+ public inline var EVADE = "evade";
+ public inline var THRUST = "thrust";
+ public inline var MISSLE = "missle";
+ public inline var SKILL = "SKILL";
+ public inline var SPELL = "spell";
+ public inline var ITEM = "item";
+ public inline var ESCAPE = "escape";
+ public inline var VICTORY = "victory";
+ public inline var DYING = "dying";
+ public inline var ABNORMAL = "abnormal";
+ public inline var SLEEP = "sleep";
+ public inline var DEAD = "dead";
+}
+
+/**
  * The Move Types of Characters/Event in RPGMaker MV/MZ
  */
 @:forward

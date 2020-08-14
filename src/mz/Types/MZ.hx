@@ -103,3 +103,8 @@ typedef PluginSettings = {
  parameters: {key: String}
  // Any //{key:String}:String
 }
+
+typedef Motion = {
+ index: Int;
+ loop: Bool;
+}
