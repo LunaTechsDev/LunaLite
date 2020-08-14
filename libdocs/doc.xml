@@ -50703,16 +50703,40 @@
 	<c path="mz.sprites.Sprite_Button"/>
 </f></raw></class>
 	<abstract path="mz.abstracts.sprites.SpriteCharacter" params="" file="src/mz/abstracts/sprites/SpriteCharacter.hx">
+		<from><icast><c path="mz.sprites.Sprite_Character"/></icast></from>
 		<this><c path="mz.sprites.Sprite_Character"/></this>
-		<impl><class path="mz.abstracts.sprites._SpriteCharacter.SpriteCharacter_Impl_" params="" file="src/mz/abstracts/sprites/SpriteCharacter.hx" private="1" module="mz.abstracts.sprites.SpriteCharacter" final="1"><raw public="1" get="inline" set="null" line="6" static="1"><f a="this">
+		<to><icast><c path="mz.sprites.Sprite_Character"/></icast></to>
+		<meta>
+			<m n=":forward"/>
+			<m n=":forwardStatics"/>
+		</meta>
+		<impl><class path="mz.abstracts.sprites._SpriteCharacter.SpriteCharacter_Impl_" params="" file="src/mz/abstracts/sprites/SpriteCharacter.hx" private="1" module="mz.abstracts.sprites.SpriteCharacter" final="1">
+	<_new public="1" get="inline" set="null" line="10" static="1">
+		<f a="character">
+			<c path="mz.objects.Game_Character"/>
+			<x path="mz.abstracts.sprites.SpriteCharacter"/>
+		</f>
+		<meta><m n=":noCompletion"/></meta>
+	</_new>
+	<raw public="1" get="inline" set="null" line="14" static="1"><f a="this">
 	<c path="mz.sprites.Sprite_Character"/>
 	<c path="mz.sprites.Sprite_Character"/>
-</f></raw></class></impl>
+</f></raw>
+</class></impl>
 	</abstract>
-	<class path="mz.abstracts.sprites._SpriteCharacter.SpriteCharacter_Impl_" params="" file="src/mz/abstracts/sprites/SpriteCharacter.hx" private="1" module="mz.abstracts.sprites.SpriteCharacter" final="1"><raw public="1" get="inline" set="null" line="6" static="1"><f a="this">
+	<class path="mz.abstracts.sprites._SpriteCharacter.SpriteCharacter_Impl_" params="" file="src/mz/abstracts/sprites/SpriteCharacter.hx" private="1" module="mz.abstracts.sprites.SpriteCharacter" final="1">
+		<_new public="1" get="inline" set="null" line="10" static="1">
+			<f a="character">
+				<c path="mz.objects.Game_Character"/>
+				<x path="mz.abstracts.sprites.SpriteCharacter"/>
+			</f>
+			<meta><m n=":noCompletion"/></meta>
+		</_new>
+		<raw public="1" get="inline" set="null" line="14" static="1"><f a="this">
 	<c path="mz.sprites.Sprite_Character"/>
 	<c path="mz.sprites.Sprite_Character"/>
-</f></raw></class>
+</f></raw>
+	</class>
 	<abstract path="mz.abstracts.sprites.SpriteDamage" params="" file="src/mz/abstracts/sprites/SpriteDamage.hx">
 		<from><icast><c path="mz.sprites.Sprite_Damage"/></icast></from>
 		<this><c path="mz.sprites.Sprite_Damage"/></this>
@@ -64598,11 +64622,180 @@
 	</class>
 	<class path="mz.sprites.Sprite_Character" params="" file="src/mz/sprites/Sprite_Character.hx" extern="1">
 		<extends path="mz.sprites.Sprite_Base"/>
-		<_upperBody><c path="mz.core.Sprite"/></_upperBody>
+		<_character>
+			<c path="mz.objects.Game_Character"/>
+			<haxe_doc>* The Game_Character object assigned
+  * to the sprite.
+  * @private var
+  * @type {Game_Character}
+  * @memberof Sprite_Character</haxe_doc>
+		</_character>
+		<_balloonDuration><x path="Int"/></_balloonDuration>
+		<_tilesetId><x path="Int"/></_tilesetId>
+		<_upperBody><x path="Int"/></_upperBody>
 		<_lowerBody><c path="mz.core.Sprite"/></_lowerBody>
 		<_bushDepth><x path="Int"/></_bushDepth>
+		<_balloonSprite>
+			<c path="mz.sprites.Sprite_Balloon"/>
+			<haxe_doc>* The current balloon sprite
+  * assigned to the sprite.
+  * @private var
+  * @type {Sprite_Balloon}
+  * @memberof Sprite_Character</haxe_doc>
+		</_balloonSprite>
+		<initialize public="1" set="method" override="1"><f a="character">
+	<c path="mz.objects.Game_Character"/>
+	<x path="Void"/>
+</f></initialize>
 		<initMembers public="1" set="method"><f a=""><x path="Void"/></f></initMembers>
-		<meta><m n=":native"><e>"Sprite_Character"</e></m></meta>
+		<setCharacter public="1" set="method">
+			<f a="character">
+				<c path="mz.objects.Game_Character"/>
+				<x path="Void"/>
+			</f>
+			<haxe_doc>* Sets the current Game_Character object
+  * attached to the sprite.
+  * @param {Game_Character} character
+  * @memberof Sprite_Character</haxe_doc>
+		</setCharacter>
+		<isTile public="1" set="method">
+			<f a=""><x path="Bool"/></f>
+			<haxe_doc>* Returns true if the Game_Character object
+  * tileId is greater than 0.
+  * @returns {Bool}
+  * @memberof Sprite_Character</haxe_doc>
+		</isTile>
+		<tilesetBitmap public="1" set="method"><f a="tileId">
+	<x path="Int"/>
+	<c path="mz.core.Bitmap"/>
+</f></tilesetBitmap>
+		<updateBitmap public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Updates the bitmap of the sprite character.
+  *
+  * @memberof Sprite_Character</haxe_doc>
+		</updateBitmap>
+		<isImageChanged public="1" set="method">
+			<f a=""><x path="Bool"/></f>
+			<haxe_doc>* Returns true if the sprite character image has changed.
+  *
+  * @returns {Bool}
+  * @memberof Sprite_Character</haxe_doc>
+		</isImageChanged>
+		<setTileBitmap public="1" set="method"><f a=""><x path="Void"/></f></setTileBitmap>
+		<setCharacterBitmap public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Sets the sprite character bitmap.
+  *
+  * @memberof Sprite_Character</haxe_doc>
+		</setCharacterBitmap>
+		<updateFrame public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Updates the sprite character frame.
+  *
+  * @memberof Sprite_Character</haxe_doc>
+		</updateFrame>
+		<updateTileFrame public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Updates the sprite character tile frame.
+  *
+  * @memberof Sprite_Character</haxe_doc>
+		</updateTileFrame>
+		<updateCharacterFrame public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Updates the sprite character -- character frame.
+  *
+  * @memberof Sprite_Character</haxe_doc>
+		</updateCharacterFrame>
+		<characterBlockX public="1" set="method"><f a=""><x path="Int"/></f></characterBlockX>
+		<characterBlockY public="1" set="method"><f a=""><x path="Int"/></f></characterBlockY>
+		<characterPatternX public="1" set="method">
+			<f a=""><x path="mz.types.CharacterPattern"/></f>
+			<haxe_doc>* Returns the character x pattern.
+  *
+  * @returns {number}
+  * @memberof Sprite_Character</haxe_doc>
+		</characterPatternX>
+		<characterPatternY public="1" set="method">
+			<f a=""><x path="mz.types.CharacterPattern"/></f>
+			<haxe_doc>* Returns the character y pattern.
+  *
+  * @returns {number}
+  * @memberof Sprite_Character</haxe_doc>
+		</characterPatternY>
+		<patternWidth public="1" set="method">
+			<f a=""><x path="Int"/></f>
+			<haxe_doc>* Returns the pattern width.
+  *
+  * @returns {number}
+  * @memberof Sprite_Character</haxe_doc>
+		</patternWidth>
+		<patternHeight public="1" set="method">
+			<f a=""><x path="Int"/></f>
+			<haxe_doc>* Returns the pattern height.
+  *
+  * @returns {number}
+  * @memberof Sprite_Character</haxe_doc>
+		</patternHeight>
+		<updateHalfBodySprites public="1" set="method"><f a=""><x path="Void"/></f></updateHalfBodySprites>
+		<createHalfBodySprites public="1" set="method"><f a=""><x path="Void"/></f></createHalfBodySprites>
+		<updatePosition public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Updates the position of the sprite character.
+  *
+  * @memberof Sprite_Character</haxe_doc>
+		</updatePosition>
+		<updateAnimation public="1" set="method"><f a=""><x path="Void"/></f></updateAnimation>
+		<updateOther public="1" set="method"><f a=""><x path="Void"/></f></updateOther>
+		<setupAnimation public="1" set="method"><f a=""><x path="Void"/></f></setupAnimation>
+		<setupBalloon public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Sets up the Game_Character object
+  * balloon sprite, and calls the startBalloon method.
+  * @memberof Sprite_Character</haxe_doc>
+		</setupBalloon>
+		<startBalloon public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Starts the balloon sprite on the
+  * Game_Character object.
+  * @memberof Sprite_Character</haxe_doc>
+		</startBalloon>
+		<updateBalloon public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Processes the balloon sprite, calls
+  * the endBaloon method if the balloon sprite is done playing.
+  * @memberof Sprite_Character</haxe_doc>
+		</updateBalloon>
+		<endBalloon public="1" set="method">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>* Ends the balloon sprite, removing it from
+      * the Game_Character object sprite.
+  * @memberof Sprite_Character</haxe_doc>
+		</endBalloon>
+		<isBalloonPlaying public="1" set="method">
+			<f a=""><x path="Bool"/></f>
+			<haxe_doc>* Returns true if a balloon animation
+    * is playing on the character.
+  * @returns {Bool}
+  * @memberof Sprite_Character</haxe_doc>
+		</isBalloonPlaying>
+		<new public="1" set="method">
+			<f a="character">
+				<c path="mz.objects.Game_Character"/>
+				<x path="Void"/>
+			</f>
+			<haxe_doc>* Creates an instance of Sprite_Character.
+  * @param {Game_Character} character
+  * @memberof Sprite_Character</haxe_doc>
+		</new>
+		<haxe_doc>* -----------------------------------------------------------------------------
+ * Sprite_Character
+ *
+ * The sprite for displaying a character.</haxe_doc>
+		<meta>
+			<m n=":directlyUsed"/>
+			<m n=":native"><e>"Sprite_Character"</e></m>
+		</meta>
 	</class>
 	<class path="mz.sprites.Sprite_Damage" params="" file="src/mz/sprites/Sprite_Damage.hx" extern="1">
 		<extends path="mz.core.Sprite"/>
@@ -65521,6 +65714,374 @@
 		<impl><class path="mz.types._LunaTea.WeaponImageId_Impl_" params="" file="src/mz/types/LunaTea.hx" private="1" module="mz.types.LunaTea" extern="1" final="1"><meta><m n=":enum"/></meta></class></impl>
 	</abstract>
 	<class path="mz.types._LunaTea.WeaponImageId_Impl_" params="" file="src/mz/types/LunaTea.hx" private="1" module="mz.types.LunaTea" extern="1" final="1"><meta><m n=":enum"/></meta></class>
+	<abstract path="mz.types.CharacterPattern" params="" file="src/mz/types/LunaTea.hx" module="mz.types.LunaTea">
+		<from><icast><x path="Int"/></icast></from>
+		<this><x path="Int"/></this>
+		<to><icast><x path="Int"/></icast></to>
+		<haxe_doc>* Character pattern represents the in-editor character
+ * pattern.</haxe_doc>
+		<meta>
+			<m n=":enum"/>
+			<m n=":forward"/>
+			<m n=":forwardStatics"/>
+		</meta>
+		<impl><class path="mz.types._LunaTea.CharacterPattern_Impl_" params="" file="src/mz/types/LunaTea.hx" private="1" module="mz.types.LunaTea" extern="1" final="1"><meta><m n=":enum"/></meta></class></impl>
+	</abstract>
+	<class path="mz.types._LunaTea.CharacterPattern_Impl_" params="" file="src/mz/types/LunaTea.hx" private="1" module="mz.types.LunaTea" extern="1" final="1"><meta><m n=":enum"/></meta></class>
+	<abstract path="mz.types.MoveType" params="" file="src/mz/types/LunaTea.hx" module="mz.types.LunaTea">
+		<from><icast><x path="Int"/></icast></from>
+		<this><x path="Int"/></this>
+		<to><icast><x path="Int"/></icast></to>
+		<haxe_doc>* The Move Types of Characters/Event in RPGMaker MV/MZ</haxe_doc>
+		<meta>
+			<m n=":enum"/>
+			<m n=":forward"/>
+			<m n=":forwardStatics"/>
+		</meta>
+		<impl><class path="mz.types._LunaTea.MoveType_Impl_" params="" file="src/mz/types/LunaTea.hx" private="1" module="mz.types.LunaTea" extern="1" final="1">
+	<FIXED public="1" get="inline" set="null" expr="cast 0" line="53" static="1">
+		<x path="mz.types.MoveType"/>
+		<meta>
+			<m n=":value"><e>cast 0</e></m>
+			<m n=":impl"/>
+			<m n=":enum"/>
+		</meta>
+	</FIXED>
+	<RANDOM public="1" get="inline" set="null" expr="cast 1" line="54" static="1">
+		<x path="mz.types.MoveType"/>
+		<meta>
+			<m n=":value"><e>cast 1</e></m>
+			<m n=":impl"/>
+			<m n=":enum"/>
+		</meta>
+	</RANDOM>
+	<APPROACH public="1" get="inline" set="null" expr="cast 2" line="55" static="1">
+		<x path="mz.types.MoveType"/>
+		<meta>
+			<m n=":value"><e>cast 2</e></m>
+			<m n=":impl"/>
+			<m n=":enum"/>
+		</meta>
+	</APPROACH>
+	<CUSTOM public="1" get="inline" set="null" expr="cast 3" line="56" static="1">
+		<x path="mz.types.MoveType"/>
+		<meta>
+			<m n=":value"><e>cast 3</e></m>
+			<m n=":impl"/>
+			<m n=":enum"/>
+		</meta>
+	</CUSTOM>
+	<meta><m n=":enum"/></meta>
+</class></impl>
+	</abstract>
+	<class path="mz.types._LunaTea.MoveType_Impl_" params="" file="src/mz/types/LunaTea.hx" private="1" module="mz.types.LunaTea" extern="1" final="1">
+		<FIXED public="1" get="inline" set="null" expr="cast 0" line="53" static="1">
+			<x path="mz.types.MoveType"/>
+			<meta>
+				<m n=":value"><e>cast 0</e></m>
+				<m n=":impl"/>
+				<m n=":enum"/>
+			</meta>
+		</FIXED>
+		<RANDOM public="1" get="inline" set="null" expr="cast 1" line="54" static="1">
+			<x path="mz.types.MoveType"/>
+			<meta>
+				<m n=":value"><e>cast 1</e></m>
+				<m n=":impl"/>
+				<m n=":enum"/>
+			</meta>
+		</RANDOM>
+		<APPROACH public="1" get="inline" set="null" expr="cast 2" line="55" static="1">
+			<x path="mz.types.MoveType"/>
+			<meta>
+				<m n=":value"><e>cast 2</e></m>
+				<m n=":impl"/>
+				<m n=":enum"/>
+			</meta>
+		</APPROACH>
+		<CUSTOM public="1" get="inline" set="null" expr="cast 3" line="56" static="1">
+			<x path="mz.types.MoveType"/>
+			<meta>
+				<m n=":value"><e>cast 3</e></m>
+				<m n=":impl"/>
+				<m n=":enum"/>
+			</meta>
+		</CUSTOM>
+		<meta><m n=":enum"/></meta>
+	</class>
+	<abstract path="mz.types.MoveSpeed" params="" file="src/mz/types/LunaTea.hx" module="mz.types.LunaTea">
+		<from><icast><x path="Int"/></icast></from>
+		<this><x path="Int"/></this>
+		<to><icast><x path="Int"/></icast></to>
+		<haxe_doc>* The Move Speed Types of Characters/Events in RPGMaker MV/MZ</haxe_doc>
+		<meta>
+			<m n=":enum"/>
+			<m n=":forward"/>
+			<m n=":forwardStatics"/>
+		</meta>
+		<impl><class path="mz.types._LunaTea.MoveSpeed_Impl_" params="" file="src/mz/types/LunaTea.hx" private="1" module="mz.types.LunaTea" extern="1" final="1">
+	<X8SLOWER public="1" get="inline" set="null" expr="cast 1" line="65" static="1">
+		<x path="mz.types.MoveSpeed"/>
+		<meta>
+			<m n=":value"><e>cast 1</e></m>
+			<m n=":impl"/>
+			<m n=":enum"/>
+		</meta>
+	</X8SLOWER>
+	<X4SLOWER public="1" get="inline" set="null" expr="cast 2" line="66" static="1">
+		<x path="mz.types.MoveSpeed"/>
+		<meta>
+			<m n=":value"><e>cast 2</e></m>
+			<m n=":impl"/>
+			<m n=":enum"/>
+		</meta>
+	</X4SLOWER>
+	<X2SLOWER public="1" get="inline" set="null" expr="cast 3" line="67" static="1">
+		<x path="mz.types.MoveSpeed"/>
+		<meta>
+			<m n=":value"><e>cast 3</e></m>
+			<m n=":impl"/>
+			<m n=":enum"/>
+		</meta>
+	</X2SLOWER>
+	<NORMAL public="1" get="inline" set="null" expr="cast 4" line="68" static="1">
+		<x path="mz.types.MoveSpeed"/>
+		<meta>
+			<m n=":value"><e>cast 4</e></m>
+			<m n=":impl"/>
+			<m n=":enum"/>
+		</meta>
+	</NORMAL>
+	<X2FASTER public="1" get="inline" set="null" expr="cast 5" line="69" static="1">
+		<x path="mz.types.MoveSpeed"/>
+		<meta>
+			<m n=":value"><e>cast 5</e></m>
+			<m n=":impl"/>
+			<m n=":enum"/>
+		</meta>
+	</X2FASTER>
+	<X4FASTER public="1" get="inline" set="null" expr="cast 6" line="70" static="1">
+		<x path="mz.types.MoveSpeed"/>
+		<meta>
+			<m n=":value"><e>cast 6</e></m>
+			<m n=":impl"/>
+			<m n=":enum"/>
+		</meta>
+	</X4FASTER>
+	<meta><m n=":enum"/></meta>
+</class></impl>
+	</abstract>
+	<class path="mz.types._LunaTea.MoveSpeed_Impl_" params="" file="src/mz/types/LunaTea.hx" private="1" module="mz.types.LunaTea" extern="1" final="1">
+		<X8SLOWER public="1" get="inline" set="null" expr="cast 1" line="65" static="1">
+			<x path="mz.types.MoveSpeed"/>
+			<meta>
+				<m n=":value"><e>cast 1</e></m>
+				<m n=":impl"/>
+				<m n=":enum"/>
+			</meta>
+		</X8SLOWER>
+		<X4SLOWER public="1" get="inline" set="null" expr="cast 2" line="66" static="1">
+			<x path="mz.types.MoveSpeed"/>
+			<meta>
+				<m n=":value"><e>cast 2</e></m>
+				<m n=":impl"/>
+				<m n=":enum"/>
+			</meta>
+		</X4SLOWER>
+		<X2SLOWER public="1" get="inline" set="null" expr="cast 3" line="67" static="1">
+			<x path="mz.types.MoveSpeed"/>
+			<meta>
+				<m n=":value"><e>cast 3</e></m>
+				<m n=":impl"/>
+				<m n=":enum"/>
+			</meta>
+		</X2SLOWER>
+		<NORMAL public="1" get="inline" set="null" expr="cast 4" line="68" static="1">
+			<x path="mz.types.MoveSpeed"/>
+			<meta>
+				<m n=":value"><e>cast 4</e></m>
+				<m n=":impl"/>
+				<m n=":enum"/>
+			</meta>
+		</NORMAL>
+		<X2FASTER public="1" get="inline" set="null" expr="cast 5" line="69" static="1">
+			<x path="mz.types.MoveSpeed"/>
+			<meta>
+				<m n=":value"><e>cast 5</e></m>
+				<m n=":impl"/>
+				<m n=":enum"/>
+			</meta>
+		</X2FASTER>
+		<X4FASTER public="1" get="inline" set="null" expr="cast 6" line="70" static="1">
+			<x path="mz.types.MoveSpeed"/>
+			<meta>
+				<m n=":value"><e>cast 6</e></m>
+				<m n=":impl"/>
+				<m n=":enum"/>
+			</meta>
+		</X4FASTER>
+		<meta><m n=":enum"/></meta>
+	</class>
+	<abstract path="mz.types.MoveFrequency" params="" file="src/mz/types/LunaTea.hx" module="mz.types.LunaTea">
+		<from><icast><x path="Int"/></icast></from>
+		<this><x path="Int"/></this>
+		<to><icast><x path="Int"/></icast></to>
+		<meta>
+			<m n=":enum"/>
+			<m n=":forward"/>
+			<m n=":forwardStatics"/>
+		</meta>
+		<impl><class path="mz.types._LunaTea.MoveFrequency_Impl_" params="" file="src/mz/types/LunaTea.hx" private="1" module="mz.types.LunaTea" extern="1" final="1">
+	<LOWEST public="1" get="inline" set="null" expr="cast 1" line="76" static="1">
+		<x path="mz.types.MoveFrequency"/>
+		<meta>
+			<m n=":value"><e>cast 1</e></m>
+			<m n=":impl"/>
+			<m n=":enum"/>
+		</meta>
+	</LOWEST>
+	<LOWER public="1" get="inline" set="null" expr="cast 2" line="77" static="1">
+		<x path="mz.types.MoveFrequency"/>
+		<meta>
+			<m n=":value"><e>cast 2</e></m>
+			<m n=":impl"/>
+			<m n=":enum"/>
+		</meta>
+	</LOWER>
+	<NORMAL public="1" get="inline" set="null" expr="cast 3" line="78" static="1">
+		<x path="mz.types.MoveFrequency"/>
+		<meta>
+			<m n=":value"><e>cast 3</e></m>
+			<m n=":impl"/>
+			<m n=":enum"/>
+		</meta>
+	</NORMAL>
+	<HIGHER public="1" get="inline" set="null" expr="cast 4" line="79" static="1">
+		<x path="mz.types.MoveFrequency"/>
+		<meta>
+			<m n=":value"><e>cast 4</e></m>
+			<m n=":impl"/>
+			<m n=":enum"/>
+		</meta>
+	</HIGHER>
+	<HIGHEST public="1" get="inline" set="null" expr="cast 5" line="80" static="1">
+		<x path="mz.types.MoveFrequency"/>
+		<meta>
+			<m n=":value"><e>cast 5</e></m>
+			<m n=":impl"/>
+			<m n=":enum"/>
+		</meta>
+	</HIGHEST>
+	<meta><m n=":enum"/></meta>
+</class></impl>
+	</abstract>
+	<class path="mz.types._LunaTea.MoveFrequency_Impl_" params="" file="src/mz/types/LunaTea.hx" private="1" module="mz.types.LunaTea" extern="1" final="1">
+		<LOWEST public="1" get="inline" set="null" expr="cast 1" line="76" static="1">
+			<x path="mz.types.MoveFrequency"/>
+			<meta>
+				<m n=":value"><e>cast 1</e></m>
+				<m n=":impl"/>
+				<m n=":enum"/>
+			</meta>
+		</LOWEST>
+		<LOWER public="1" get="inline" set="null" expr="cast 2" line="77" static="1">
+			<x path="mz.types.MoveFrequency"/>
+			<meta>
+				<m n=":value"><e>cast 2</e></m>
+				<m n=":impl"/>
+				<m n=":enum"/>
+			</meta>
+		</LOWER>
+		<NORMAL public="1" get="inline" set="null" expr="cast 3" line="78" static="1">
+			<x path="mz.types.MoveFrequency"/>
+			<meta>
+				<m n=":value"><e>cast 3</e></m>
+				<m n=":impl"/>
+				<m n=":enum"/>
+			</meta>
+		</NORMAL>
+		<HIGHER public="1" get="inline" set="null" expr="cast 4" line="79" static="1">
+			<x path="mz.types.MoveFrequency"/>
+			<meta>
+				<m n=":value"><e>cast 4</e></m>
+				<m n=":impl"/>
+				<m n=":enum"/>
+			</meta>
+		</HIGHER>
+		<HIGHEST public="1" get="inline" set="null" expr="cast 5" line="80" static="1">
+			<x path="mz.types.MoveFrequency"/>
+			<meta>
+				<m n=":value"><e>cast 5</e></m>
+				<m n=":impl"/>
+				<m n=":enum"/>
+			</meta>
+		</HIGHEST>
+		<meta><m n=":enum"/></meta>
+	</class>
+	<abstract path="mz.types.CharacterPriority" params="" file="src/mz/types/LunaTea.hx" module="mz.types.LunaTea">
+		<from><icast><x path="Int"/></icast></from>
+		<this><x path="Int"/></this>
+		<to><icast><x path="Int"/></icast></to>
+		<meta>
+			<m n=":enum"/>
+			<m n=":forward"/>
+			<m n=":forwardStatics"/>
+		</meta>
+		<impl><class path="mz.types._LunaTea.CharacterPriority_Impl_" params="" file="src/mz/types/LunaTea.hx" private="1" module="mz.types.LunaTea" extern="1" final="1">
+	<BELOW_CHARACTERS public="1" get="inline" set="null" expr="cast 0" line="86" static="1">
+		<x path="mz.types.CharacterPriority"/>
+		<meta>
+			<m n=":value"><e>cast 0</e></m>
+			<m n=":impl"/>
+			<m n=":enum"/>
+		</meta>
+	</BELOW_CHARACTERS>
+	<SAME_AS_CHARACTERS public="1" get="inline" set="null" expr="cast 1" line="87" static="1">
+		<x path="mz.types.CharacterPriority"/>
+		<meta>
+			<m n=":value"><e>cast 1</e></m>
+			<m n=":impl"/>
+			<m n=":enum"/>
+		</meta>
+	</SAME_AS_CHARACTERS>
+	<ABOVE_CHARACTERS public="1" get="inline" set="null" expr="cast 2" line="88" static="1">
+		<x path="mz.types.CharacterPriority"/>
+		<meta>
+			<m n=":value"><e>cast 2</e></m>
+			<m n=":impl"/>
+			<m n=":enum"/>
+		</meta>
+	</ABOVE_CHARACTERS>
+	<meta><m n=":enum"/></meta>
+</class></impl>
+	</abstract>
+	<class path="mz.types._LunaTea.CharacterPriority_Impl_" params="" file="src/mz/types/LunaTea.hx" private="1" module="mz.types.LunaTea" extern="1" final="1">
+		<BELOW_CHARACTERS public="1" get="inline" set="null" expr="cast 0" line="86" static="1">
+			<x path="mz.types.CharacterPriority"/>
+			<meta>
+				<m n=":value"><e>cast 0</e></m>
+				<m n=":impl"/>
+				<m n=":enum"/>
+			</meta>
+		</BELOW_CHARACTERS>
+		<SAME_AS_CHARACTERS public="1" get="inline" set="null" expr="cast 1" line="87" static="1">
+			<x path="mz.types.CharacterPriority"/>
+			<meta>
+				<m n=":value"><e>cast 1</e></m>
+				<m n=":impl"/>
+				<m n=":enum"/>
+			</meta>
+		</SAME_AS_CHARACTERS>
+		<ABOVE_CHARACTERS public="1" get="inline" set="null" expr="cast 2" line="88" static="1">
+			<x path="mz.types.CharacterPriority"/>
+			<meta>
+				<m n=":value"><e>cast 2</e></m>
+				<m n=":impl"/>
+				<m n=":enum"/>
+			</meta>
+		</ABOVE_CHARACTERS>
+		<meta><m n=":enum"/></meta>
+	</class>
 	<typedef path="mz.types.Matrix" params="" file="src/mz/types/MZ.hx" module="mz.types.MZ"><a>
 	<value><c path="Array"><x path="Int"/></c></value>
 	<type><c path="String"/></type>
