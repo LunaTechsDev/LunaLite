@@ -4,7 +4,7 @@
   "license": "MIT",
   "tags": ["RPGMakerMV", "RPGMakerMZ", "RPGMaker", "GameDev"],
   "description": "A library for creating plugins and tools for RPGMaker software.",
-  "version": "0.5.5",
+  "version": "0.6.0",
   "classPath": "src/",
   "releasenote": "Initial release, everything is working correctly.",
   "contributors": ["Kino", "Waynee", "LTN"],
