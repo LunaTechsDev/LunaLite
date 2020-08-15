@@ -140,3 +140,8 @@ enum abstract DamageColorType(Int) from Int to Int {
   */
  public inline var DEFAULT = 4;
 }
+
+@:forward
+@:forwardStatics
+enum abstract WaitMode(Int) from Int to Int {
+}
