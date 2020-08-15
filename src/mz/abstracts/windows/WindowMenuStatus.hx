@@ -6,8 +6,8 @@ import mz.windows.Window_MenuStatus;
 @:forwardStatics
 abstract WindowMenuStatus(Window_MenuStatus) from Window_MenuStatus
  to Window_MenuStatus {
- public inline function new(x: Int, y: Int, width: Int, height: Int) {
-  this = new Window_MenuStatus(x, y, width, height);
+ public inline function new(x: Int, y: Int) {
+  this = new Window_MenuStatus(x, y);
  }
 
  public inline function raw(): Window_MenuStatus {
