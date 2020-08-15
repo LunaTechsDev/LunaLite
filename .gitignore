@@ -5,4 +5,5 @@ dist/Helios.*
 helios.hxml
 dev.hxml
 compile-local.hxml
+pages/
 dump/
