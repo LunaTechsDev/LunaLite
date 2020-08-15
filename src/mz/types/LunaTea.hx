@@ -12,6 +12,16 @@ enum abstract BuffId(Int) from Int to Int {
 
 @:forward
 @:forwardStatics
+enum abstract ParameterId(Int) from Int to Int {
+}
+
+@:forward
+@:forwardStatics
+enum abstract EquipTypeId(Int) from Int to Int {
+}
+
+@:forward
+@:forwardStatics
 enum abstract BalloonId(Int) from Int to Int {
  public inline var EXCLAMATION = 0;
  public inline var QUESTION = 1;
