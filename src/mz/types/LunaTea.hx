@@ -102,11 +102,11 @@ enum abstract MoveSpeed(Int) from Int to Int {
 @:forward
 @:forwardStatics
 enum abstract MoveFrequency(Int) from Int to Int {
- public var LOWEST = 1;
- public var LOWER = 2;
- public var NORMAL = 3;
- public var HIGHER = 4;
- public var HIGHEST = 5;
+ public inline var LOWEST = 1;
+ public inline var LOWER = 2;
+ public inline var NORMAL = 3;
+ public inline var HIGHER = 4;
+ public inline var HIGHEST = 5;
 }
 
 /**
@@ -117,9 +117,9 @@ enum abstract MoveFrequency(Int) from Int to Int {
 @:forward
 @:forwardStatics
 enum abstract CharacterPriority(Int) from Int to Int {
- public var BELOW_CHARACTERS = 0;
- public var SAME_AS_CHARACTERS = 1;
- public var ABOVE_CHARACTERS = 2;
+ public inline var BELOW_CHARACTERS = 0;
+ public inline var SAME_AS_CHARACTERS = 1;
+ public inilne var ABOVE_CHARACTERS = 2;
 }
 
 @:forward
@@ -130,13 +130,13 @@ enum abstract Color(String) from String to String {
 @:forward
 @:forwardStatics
 enum abstract DamageColorType(Int) from Int to Int {
- public var HP_DAMAGE = 0;
- public var HP_RECOVER = 1;
- public var MP_DAMAGE = 2;
- public var MP_RECOVER = 3;
+ public inline var HP_DAMAGE = 0;
+ public inline var HP_RECOVER = 1;
+ public inline var MP_DAMAGE = 2;
+ public inline var MP_RECOVER = 3;
 
  /**
   * Default can be any number
   */
- public var DEFAULT = 4;
+ public inline var DEFAULT = 4;
 }
