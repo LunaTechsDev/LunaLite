@@ -4,7 +4,9 @@ import mz.types.RPG.BaseItem;
 
 @:native("Window_MenuActor")
 extern class Window_MenuActor extends Window_MenuStatus {
-  public function new();
+ public function new();
 
-  public function selectForItem(item:BaseItem):Void;
+ public function initialize(): Void;
+
+ public function selectForItem(item: BaseItem): Void;
 }
