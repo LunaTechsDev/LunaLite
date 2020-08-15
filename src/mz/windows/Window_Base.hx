@@ -1,5 +1,6 @@
 package mz.windows;
 
+import mz.types.LunaTea.Color;
 import mz.core.Rectangle;
 import mz.types.RPG.BaseItem;
 import mz.objects.Game_Actor;
@@ -883,7 +884,7 @@ extern class Window_Base extends _Window {
   * @param {number} change
   * @memberof Window_Base
   */
- public function paramchangeTextColor(change: Int): Void;
+ public function paramchangeTextColor(change: Int): Color;
 
  /**
   * Sets the background type of the window.

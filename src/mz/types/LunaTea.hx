@@ -121,3 +121,22 @@ enum abstract CharacterPriority(Int) from Int to Int {
  public var SAME_AS_CHARACTERS = 1;
  public var ABOVE_CHARACTERS = 2;
 }
+
+@:forward
+@:forwardStatics
+enum abstract Color(String) from String to String {
+}
+
+@:forward
+@:forwardStatics
+enum abstract DamageColorType(Int) from Int to Int {
+ public var HP_DAMAGE = 0;
+ public var HP_RECOVER = 1;
+ public var MP_DAMAGE = 2;
+ public var MP_RECOVER = 3;
+
+ /**
+  * Default can be any number
+  */
+ public var DEFAULT = 4;
+}
