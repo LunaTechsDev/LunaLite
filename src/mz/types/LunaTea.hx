@@ -119,7 +119,7 @@ enum abstract MoveFrequency(Int) from Int to Int {
 enum abstract CharacterPriority(Int) from Int to Int {
  public inline var BELOW_CHARACTERS = 0;
  public inline var SAME_AS_CHARACTERS = 1;
- public inilne var ABOVE_CHARACTERS = 2;
+ public inline var ABOVE_CHARACTERS = 2;
 }
 
 @:forward
