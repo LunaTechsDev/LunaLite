@@ -1,0 +1,16 @@
+{
+  "name": "LunaTea",
+  "url" : "https://github.com/jasononeil/useless/",
+  "license": "MIT",
+  "tags": ["RPGMakerMV", "RPGMakerMZ", "RPGMaker", "GameDev"],
+  "description": "A library for creating plugins and tools for RPGMaker software.",
+  "version": "0.5.0",
+  "classPath": "src/",
+  "releasenote": "Initial release, everything is working correctly.",
+  "contributors": ["Kino", "Waynee", "LTN"],
+  "dependencies": {
+    "pixijs":"",
+    "hxnodejs": "",
+    "jsfps": ""
+  }
+}
