@@ -5,7 +5,7 @@ import mz.sprites.Sprite_Button;
 
 @:forward
 @:forwardStatics
-abstract SpriteButton(Sprite_Button) {
+abstract SpriteButton(Sprite_Button) from Sprite_Button to Sprite_Button {
  public inline function new(?bitmap: Bitmap) {
   this = new Sprite_Button(bitmap);
  }

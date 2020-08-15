@@ -5,7 +5,7 @@ import mz.sprites.Sprite_Enemy;
 
 @:forward
 @:forwardStatics
-abstract SpriteEnemy(Sprite_Enemy) {
+abstract SpriteEnemy(Sprite_Enemy) from Sprite_Enemy to Sprite_Enemy {
  public inline function new(battler: Game_Enemy) {
   this = new Sprite_Enemy(battler);
  }
