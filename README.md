@@ -1,12 +1,22 @@
-# Kiniita - KinoCreates
-> Core Engine for RPGMaker MZ Haxe Development
+# LunaTea 
+> Open Source - Haxe Core Library for RPGMaker MZ/MV plugin and tool development.
 
 
 ## How To Use
+Clone the **prepared** **[LunarBase](https://github.com/LunaTechsDev/LunarBase)** project with example plugins included.
 
+## Setup For Development
+* Have Haxe installed and the relevant haxe extensions
+* Install lix extension
 
-## Build Process 
-> Simply run haxe compile.hxml
+1. Install NPM
+2. Install lix globally
+3. `npm install` 
+4. `lix download`
+5. `Start developing`
+
+## Test Process 
+> Simply run `npm run integritycheck` to check if code is valid.
 
 ## Features
 * Full access to the Haxe Standard Library
@@ -21,7 +31,6 @@
 * Generate build dates for your plugins
 * Enhancements for classes and basic types
 * Bundle Documentation With Code
-* Dev and Production Mode for debugging code
 * File watching; copies files to the game's js directory
 * Automatic formatting of the file on save
 * Backwards compatible with MV through conditional compilation
@@ -31,8 +40,8 @@
 1. Fully type the RPGMaker MZ core classes
 2. Create a standard library for plugin & game creation
 3. Create a pipeline for making plugins efficiently and distributing them effectively
-4. Allow for backwards compatability with MV
-5. Allow for debugging not seen in the production plugin builds
+4. Allow for backwards compatability with MV :white_check_mark: 
+5. Allow for debugging not seen in the production plugin builds :white_check_mark: 
 
 
 
