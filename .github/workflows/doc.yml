@@ -39,7 +39,7 @@ jobs:
         git pull
         git pull origin master --allow-unrelated-histories
         git branch
-        git merge origin/master || true
+        git merge origin/master -X theirs || true
         git commit -m "Update document classes" || true
       
       # Runs a single command using the runners shell
