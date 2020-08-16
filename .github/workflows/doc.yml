@@ -37,6 +37,7 @@ jobs:
         git config --global user.email "kinarose@gmail.com"
         git fetch
         git pull
+        git pull origin master --allow-unrelated-histories
         git branch
         git merge origin/master || true
         git commit -m "Update document classes" || true
