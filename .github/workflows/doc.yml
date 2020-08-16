@@ -32,6 +32,8 @@ jobs:
       # Runs a single command using the runners shell
     - name: npm install
       run: npm install
+    - name: install lix globally
+      run: npm install --global lix
       # Downloads lix dependencies
     - name: lix download
       run: lix download
