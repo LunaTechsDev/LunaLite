@@ -1,5 +1,10 @@
 package mz.scenes;
 
+import mz.windows.Window_MapName;
+import mz.windows.Window_Message;
+import mz.sprites.Spriteset_Map;
+import mz.windows.Window_ScrollText;
+
 /**
  * The scene class for the map screen.
  */
@@ -247,7 +252,7 @@ extern class Scene_Map extends Scene_Base {
   * @param {number} duration
   * @memberof Scene_Map
   */
- public function startFlashForEncounter(duration: number): Void;
+ public function startFlashForEncounter(duration: Int): Void;
 
  /**
   * Returns the speed of the encounter effect.
