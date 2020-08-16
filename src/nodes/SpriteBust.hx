@@ -94,11 +94,11 @@ class SpriteBust extends Sprite_Base {
   switch (this._defaultMoveType) {
    case Linear:
     if (this._shadowX != this.x) {
-     xResult = lerp(this.x, this._shadowX, 0.025);
+     xResult = Amaryllis.lerp(this.x, this._shadowX, 0.025);
     }
 
     if (this._shadowY != this.y) {
-     yResult = lerp(this.y, this._shadowY, 0.025);
+     yResult = Amaryllis.lerp(this.y, this._shadowY, 0.025);
     }
    case _:
     // Do nothing
