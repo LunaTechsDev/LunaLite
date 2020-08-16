@@ -35,8 +35,8 @@ enum abstract BalloonId(Int) from Int to Int {
  public inline var ZZZ = 9;
 
  @:to
- public inline function toString(): String {
-  switch (this) {
+ public inline static function toString(value: BalloonId): String {
+  switch (value) {
    case EXCLAMATION:
     return "Exclamation";
    case QUESTION:
@@ -119,8 +119,8 @@ enum abstract MoveType(Int) from Int to Int {
  public inline var CUSTOM = 3;
 
  @from
- public inline function toString() {
-  switch (this) {
+ public inline static function toString(value: MoveType) {
+  switch (value) {
    case FIXED:
     return "Fixed";
    case RANDOM:
@@ -149,8 +149,8 @@ enum abstract MoveSpeed(Int) from Int to Int {
  public inline var X4FASTER = 6;
 
  @:to
- public inline function toString(): String {
-  switch (this) {
+ public inline static function toString(value: MoveSpeed): String {
+  switch (value) {
    case X8SLOWER:
     return "X8Slower";
    case X4SLOWER:
@@ -183,8 +183,8 @@ enum abstract MoveFrequency(Int) from Int to Int {
  public inline var HIGHEST = 5;
 
  @:to
- public inline function toString(): String {
-  switch (this) {
+ public inline static function toString(value: MoveFrequency): String {
+  switch (value) {
    case LOWEST:
     return "Lowest";
    case LOWER:
@@ -214,8 +214,8 @@ enum abstract CharacterPriority(Int) from Int to Int {
  public inline var ABOVE_CHARACTERS = 2;
 
  @:to
- public inline function toString(): String {
-  switch (this) {
+ public inline static function toString(value: CharacterPriority): String {
+  switch (value) {
    case BELOW_CHARACTERS:
     return "Below characters";
    case SAME_AS_CHARACTERS:
