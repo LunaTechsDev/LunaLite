@@ -35,7 +35,7 @@ jobs:
         echo "Merging recent changes"
         git config --global user.name "kinoar"
         git config --global user.email "kinarose@gmail.com"
-        git merge master
+        git merge origin/master
         git commit -m "Update document classes"
       
       # Runs a single command using the runners shell
