@@ -33,6 +33,34 @@ enum abstract BalloonId(Int) from Int to Int {
  public inline var SILENCE = 7;
  public inline var LIGHT_BULB = 8;
  public inline var ZZZ = 9;
+
+ @:to
+ public inline function toString(): String {
+  switch (this) {
+   case EXCLAMATION:
+    return "Exclamation";
+   case QUESTION:
+    return "Question";
+   case MUSIC_NOTE:
+    return "Music Note";
+   case HEART:
+    return "Heart";
+   case ANGER:
+    return "Anger";
+   case SWEAT:
+    return "Sweat";
+   case COBWEB:
+    return "Cobweb";
+   case SILENCE:
+    return "Silence";
+   case LIGHT_BULB:
+    return "Light Bulb";
+   case ZZZ:
+    return "Zzz";
+   case _:
+    return "";
+  }
+ }
  // Extra Balloon IDs would be user defined
 }
 
@@ -89,6 +117,22 @@ enum abstract MoveType(Int) from Int to Int {
  public inline var RANDOM = 1;
  public inline var APPROACH = 2;
  public inline var CUSTOM = 3;
+
+ @from
+ public inline function toString() {
+  switch (this) {
+   case FIXED:
+    return "Fixed";
+   case RANDOM:
+    return "Random";
+   case APPROACH:
+    return "Approach";
+   case CUSTOM:
+    return "Custom";
+   case _:
+    return "Custom";
+  }
+ }
 }
 
 /**
@@ -103,6 +147,26 @@ enum abstract MoveSpeed(Int) from Int to Int {
  public inline var NORMAL = 4;
  public inline var X2FASTER = 5;
  public inline var X4FASTER = 6;
+
+ @:to
+ public inline function toString(): String {
+  switch (this) {
+   case X8SLOWER:
+    return "X8Slower";
+   case X4SLOWER:
+    return "X4Slower";
+   case X2SLOWER:
+    return "X2Slower";
+   case NORMAL:
+    return "Normal";
+   case X2FASTER:
+    return "X2Faster";
+   case X4FASTER:
+    return "X4Faster";
+   case _:
+    return "";
+  }
+ }
 }
 
 /**
@@ -117,6 +181,24 @@ enum abstract MoveFrequency(Int) from Int to Int {
  public inline var NORMAL = 3;
  public inline var HIGHER = 4;
  public inline var HIGHEST = 5;
+
+ @:to
+ public inline function toString(): String {
+  switch (this) {
+   case LOWEST:
+    return "Lowest";
+   case LOWER:
+    return "Lower";
+   case NORMAL:
+    return "Normal";
+   case HIGHER:
+    return "Higher";
+   case HIGHEST:
+    return "Highest";
+   case _:
+    return "";
+  }
+ }
 }
 
 /**
@@ -130,6 +212,20 @@ enum abstract CharacterPriority(Int) from Int to Int {
  public inline var BELOW_CHARACTERS = 0;
  public inline var SAME_AS_CHARACTERS = 1;
  public inline var ABOVE_CHARACTERS = 2;
+
+ @:to
+ public inline function toString(): String {
+  switch (this) {
+   case BELOW_CHARACTERS:
+    return "Below characters";
+   case SAME_AS_CHARACTERS:
+    return "Same as characters";
+   case ABOVE_CHARACTERS:
+    return "Above characters";
+   case _:
+    return "";
+  }
+ }
 }
 
 @:forward
