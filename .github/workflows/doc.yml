@@ -38,7 +38,6 @@ jobs:
         git fetch
         git pull
         git branch
-        git merge origin/master
         git commit -m "Update document classes"
       
       # Runs a single command using the runners shell
