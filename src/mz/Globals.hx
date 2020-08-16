@@ -3,7 +3,7 @@ package mz;
 import mz.objects.*;
 import mz.types.RPG;
 
-@:native("")
+@:native("_LTGlobals_")
 class Globals {
  /**
   * The Global game variables in MZ.
