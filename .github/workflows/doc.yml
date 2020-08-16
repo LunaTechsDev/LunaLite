@@ -22,6 +22,7 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
       with:
+        repository: ${{ github.repository }}
         ref: gh-pages
       # Runs a single command using the runners shell
     - name: Setup Node.js
