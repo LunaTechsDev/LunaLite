@@ -32,9 +32,11 @@ jobs:
       # Runs a single command using the runners shell
     - name: npm install
       run: npm install
+      # Install Lix Globally
     - name: install lix globally
       run: npm install --global lix
       # Downloads lix dependencies
+      
     - name: lix download
       run: lix download
 
@@ -45,4 +47,12 @@ jobs:
       # Runs a single command using the runners shell
     - name: Create Documentation
       run: npm run createdoc
+    - name: Push Doc Changes To Branch
+      run: |
+        echo "Pushing to Gh-pages"
+        git config --global user.name "kinoar"
+        git config --global user.email "kinarose@gmail.com"
+        git add -A
+        git commit -m "Update documentation website"
+        git push
 
