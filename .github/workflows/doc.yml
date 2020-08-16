@@ -38,7 +38,7 @@ jobs:
         git fetch
         git pull
         git branch
-        git merge master || true
+        git merge origin/master || true
         git commit -m "Update document classes" || true
       
       # Runs a single command using the runners shell
