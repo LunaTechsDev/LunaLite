@@ -256,3 +256,8 @@ enum abstract WaitMode(Int) from Int to Int {
 @:forwardStatics
 enum abstract Frames(Int) from Int to Int {
 }
+
+@:forward
+@:forwardStatics
+enum abstract Money(Int) from Int to Int {
+}
