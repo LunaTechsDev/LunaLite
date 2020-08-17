@@ -251,3 +251,8 @@ enum abstract DamageColorType(Int) from Int to Int {
 @:forwardStatics
 enum abstract WaitMode(Int) from Int to Int {
 }
+
+@:forward
+@:forwardStatics
+enum abstract Frames(Int) from Int to Int {
+}

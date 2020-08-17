@@ -1,5 +1,6 @@
 package mz.objects;
 
+import js.html.rtc.PriorityType;
 import mz.types.RPG.MoveRoute;
 import mz.types.RPG.EventPage;
 import mz.types.RPG.Event;
