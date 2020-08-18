@@ -2,9 +2,16 @@ package mz;
 
 import mz.objects.*;
 import mz.types.RPG;
+import mz.types.MZ;
 
 @:native("_LTGlobals_")
 class Globals {
+ /**
+  * The Global plugins variable containing all plugins in the plugin manager.
+  */
+ @:native("$plugins")
+ public static var Plugins: Array<PluginSettings>;
+
  /**
   * The Global game variables in MZ.
   */
