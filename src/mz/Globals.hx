@@ -18,6 +18,12 @@ class Globals {
  public static var GameSwitches: Game_Switches;
 
  /**
+  * RPGMakerMZ system game data.
+  */
+ @:native("$gameSystem")
+ public static var GameSystem: Game_System;
+
+ /**
   * RPGMakerMZ temporary game data.
   */
  @:native("$gameTemp")
