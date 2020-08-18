@@ -1,5 +1,6 @@
 package mz.windows;
 
+import mz.core.Rectangle;
 import mz.types.RPG.UsableItem;
 
 /**
@@ -9,9 +10,15 @@ import mz.types.RPG.UsableItem;
  * The window for selecting an item to use on the battle screen.
  * @class Window_BattleItem
  */
- @:native("Window_BattleItem")
- extern class Window_BattleItem extends Window_ItemList {
-  public function new(x: Int, y: Int, width: Int, height: Int);
+@:native("Window_BattleItem")
+extern class Window_BattleItem extends Window_ItemList {
+ #if compileMV
+ public function new(x: Int, y: Int, width: Int, height: Int);
+ public function initialize(x: Int, y: Int, width: Int, height: Int): Void;
+ #else
+ public function new(rect: Rectangle);
+ public function initialize(rect: Rectangle): Void;
+ #end
 
-  public function includes(item: UsableItem): Bool;
+ public function includes(item: UsableItem): Bool;
 }

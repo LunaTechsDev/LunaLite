@@ -3,6 +3,7 @@ package mz.windows;
 import mz.objects.Game_Actor;
 import mz.core.Rectangle;
 
+#if compileMV
 /**
  * -----------------------------------------------------------------------------
  * Window_BattleStatus
@@ -93,3 +94,10 @@ extern class Window_BattleStatus extends Window_Selectable {
  public function drawGaugeAreaWithoutTp(rect: Rectangle,
   actor: Game_Actor): Void;
 }
+#else
+@:native("Window_BattleStatus")
+extern class Window_BattleStatus extends Window_StatusBase {
+ public function new(rect: Rectangle);
+ public function initialize(rect: Rectangle): Void;
+}
+#end

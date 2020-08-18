@@ -9,7 +9,7 @@ import macros.MacroTools;
 
 class Main {
  public static function main() {
-  MacroTools.includeJsLib("libs/test.js");
+  MacroTools.includeJsLib("test.js");
   Comment.singleLine(MacroTools.generateBuildDate());
   Comment.title("Kiniitta");
   Comment.pluginParams("@author Kino

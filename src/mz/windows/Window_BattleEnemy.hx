@@ -1,5 +1,6 @@
 package mz.windows;
 
+import mz.core.Rectangle;
 import mz.objects.Game_Enemy;
 
 /**
@@ -12,7 +13,13 @@ import mz.objects.Game_Enemy;
 extern class Window_BattleEnemy extends Window_Selectable {
  private var _enemies: Array<Game_Enemy>;
 
+ #if compileMV
  public function new(x: Int, y: Int);
+ public initialize(x:Int, y:Int);
+ #else
+ public function new(rect: Rectangle);
+ public function initialize(rect: Rectangle): Void;
+ #end
 
  /**
   * Returns the window width.

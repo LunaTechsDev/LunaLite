@@ -1,5 +1,6 @@
 package mz.windows;
 
+import mz.core.Rectangle;
 import mz.objects.Game_Actor;
 
 /**
@@ -11,7 +12,13 @@ import mz.objects.Game_Actor;
  */
 @:native("Window_BattleActor")
 extern class Window_BattleActor extends Window_BattleStatus {
+ #if compileMV
  public function new(x: Int, y: Int): Void;
+ public function initialize(x: Int, y: Int): Void;
+ #else
+ public function new(rect: Rectangle);
+ public function initialize(rect: Rectangle): Void;
+ #end
 
  /**
   * Selects an actor within the battle actor window.

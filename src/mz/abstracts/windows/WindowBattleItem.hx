@@ -1,5 +1,6 @@
 package mz.abstracts.windows;
 
+import mz.core.Rectangle;
 import mz.windows.Window_BattleItem;
 
 @:forward
@@ -7,6 +8,11 @@ import mz.windows.Window_BattleItem;
 abstract WindowBattleItem(Window_BattleItem) from Window_BattleItem
  to Window_BattleItem {
  public inline function new(x: Int, y: Int, width: Int, height: Int) {
+  #if compileMV
   this = new Window_BattleItem(x, y, width, height);
+  #else
+  var rect = new Rectangle(x, y, width, height);
+  this = new Window_BattleItem(rect);
+  #end
  }
 }
