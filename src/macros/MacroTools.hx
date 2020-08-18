@@ -32,7 +32,6 @@ class MacroTools {
   * @return Expr
   */
  macro public static function includeJsLib(path: String): Expr {
-  trace(FileSystem.exists(path));
   var result = switch (FileSystem.exists(path)) {
    case true:
     trace("Found File at path: " + path);
