@@ -10,7 +10,7 @@ using StringTools;
 using Lambda;
 
 /**
- * Tool Level Macros for Kiniitta
+ * Tool Level Macros for LunaTea
  */
 class MacroTools {
  macro public static function generateBuildDate(): ExprOf<String> {
@@ -25,13 +25,25 @@ class MacroTools {
   return macro $v{output};
  }
 
- macro public static function includeJsLib(path: String) {
-  return switch (FileSystem.exists(path)) {
+ /**
+  * Path is based on your current root directory.
+  * Includes a JS file in your final product.
+  * @param path
+  * @return Expr
+  */
+ macro public static function includeJsLib(path: String): Expr {
+  trace(FileSystem.exists(path));
+  var result = switch (FileSystem.exists(path)) {
    case true:
-    Compiler.includeFile(path, "top");
+    trace("Found File at path: " + path);
+    return Compiler.includeFile(path, "top");
    case false:
-    return macro throw "Fail to find file";
-  }
+    throw "Fail to find file"
+     + path
+     + "\nNote path starts at your root directory.";
+    return macro null;
+  };
+  return result;
  }
 
  macro public static function defineIfNull(value: Expr, def: Expr): Expr {
@@ -42,6 +54,7 @@ class MacroTools {
   }
  }
 
+ @:deprecated
  macro public static function debug(args: Array<Expr>): Expr {
   var mode: String = Context.definedValue("mode");
   var result: Array<Expr> = [];

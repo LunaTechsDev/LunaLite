@@ -4,10 +4,10 @@
   "license": "MIT",
   "tags": ["RPGMakerMV", "RPGMakerMZ", "RPGMaker", "GameDev"],
   "description": "A library for creating plugins and tools for RPGMaker software.",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "classPath": "src/",
-  "releasenote": "Initial release, everything is working correctly.",
-  "contributors": ["Kino", "Waynee", "LTN"],
+  "releasenote": "Initial release, for RPGMakerMV/MZ Library.",
+  "contributors": ["Kino Rose", "Waynee", "LTN"],
   "dependencies": {
     "pixijs":"",
     "hxnodejs": "",

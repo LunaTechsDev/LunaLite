@@ -17,14 +17,20 @@ import mz.types.LunaTea.BuffId;
  * @class Window_BattleLog
  */
 @:native("Window_BattleLog")
-extern class Window_BattleLog {
+extern class Window_BattleLog extends Window_Base {
  private var _lines: Array<String>;
  private var _methods: Array<BattleLogMethod>;
  private var _waitCount: Int;
  private var _waitMode: String;
  private var _baseLineStack: Array<Int>;
  private var _spriteset: Spriteset_Battle;
+ #if compileMV
  public function new();
+ public function initialize(): Void;
+ #else
+ public function new(rect: Rectangle);
+ public function initialize(rect: Rectangle): Void;
+ #end
  public function setSpriteset(spriteset: Spriteset_Battle): Void;
  public function windowWidth(): Int;
  public function windowHeight(): Int;

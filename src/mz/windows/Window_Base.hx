@@ -12,6 +12,7 @@ import utils.Fn;
 
 @:native("Window_Base")
 extern class Window_Base extends _Window {
+ #if compileMV
  /**
   * The standard icon width;
   * default is 32.
@@ -51,6 +52,8 @@ extern class Window_Base extends _Window {
   * @memberof Window_Base
   */
  private static var _faceHeight: Int;
+ #else
+ #end
 
  /**
   * The opening property; determines if
@@ -70,6 +73,7 @@ extern class Window_Base extends _Window {
   */
  private var _closing: Bool;
 
+ #if compileMV
  /**
   * Creates an instance of Window_Base.
   * @param {number} x
@@ -86,6 +90,10 @@ extern class Window_Base extends _Window {
   * @memberof Window_Base
   */
  public function initialize(?x: Int, ?y: Int, ?width: Int, ?height: Int): Void;
+ #else
+ public function new(rect: Rectangle): Void;
+ public function initialize(rect: Rectangle): Void;
+ #end
 
  /**
   * Returns the standard line height of the current window;
