@@ -1,10 +1,14 @@
 package nodes.windows;
 
+import core.Math;
 import rm.core.Rectangle;
 import rm.windows.Window_Base;
 
 @:native("LTWindowBase")
 class LTWindowBase extends Window_Base {
+ public var innerWidthLT(get, null): Int;
+ public var innerHeightLT(get, null): Int;
+
  public function new(x: Int, y: Int, width: Int, height: Int) {
   #if compileMV
   super(x, y, width, height);
@@ -33,5 +37,13 @@ class LTWindowBase extends Window_Base {
   #else
   super.destroyContents();
   #end
+ }
+
+ private function get_innerWidthLT(): Int {
+  return cast Math.max(0, this._width - this._padding * 2);
+ }
+
+ private function get_innerHeightLT(): Int {
+  return cast Math.max(0, this._height - this._padding * 2);
  }
 }
