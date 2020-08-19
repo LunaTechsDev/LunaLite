@@ -28,6 +28,7 @@ extern class Game_System {
  private var _savedBgm: AudioFile;
  private var _walkingBgm: AudioFile;
 
+ public function initialize(): Void;
  public function isJapanese(): Bool;
  public function isChinese(): Bool;
  public function isKorean(): Bool;
