@@ -40,6 +40,66 @@ public function initialize(x: Int, y: Int, height: Int, width: Int);
 #else
 public function new(rect: Rectangle);
 public function initialize(rect: Rectangle): Void;
+
+/**
+ * Forcefully selects the index and cursor
+ * visibility is set to false.
+ * @param index
+ */
+public function forceSelect(index: Int): Void;
+
+/**
+ * Smoothly scrolls to the index.
+ * Cursor visibility is set to true.
+ * @param index
+ */
+public function smoothSelect(index: Int): Void;
+
+public function itemRectWithPadding(index: Int): Rectangle;
+
+/**
+ * Return the rectangle for the line item with padding.
+ * @param index
+ */
+public function itemLineRect(index: Int): Rectangle;
+
+/**
+ * Overwrite this or add to it to add your own draw functions.
+ */
+public function paint(): Void;
+
+/**
+ * Refreshes the cursor.
+ */
+public function refreshCursor(): Void;
+
+/**
+ * Refreshes cursor for selecting all items.
+ */
+public function refreshCursorForAll(): Void;
+
+/**
+ * Returns true by default.
+ * Determines if hover support is enabled.
+ * @return Bool
+ */
+public function isHoverEnabled(): Bool;
+
+/**
+ * Handler for Touching okay in the window.
+ */
+public function onTouchOk(): Void;
+
+/**
+ * Handler for selecting in the window.
+ */
+public function onTouchSelect(): Void;
+
+/**
+ * Handler for touching and processing cancel in
+ * the window.
+ */
+public function onTouchCancel(): Void;
 #end
 
 /**
