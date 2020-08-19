@@ -1,14 +1,14 @@
 package core;
 
-import mz.scenes.Scene_Base;
+import rm.scenes.Scene_Base;
 import utils.Fn;
-import mz.windows.Window_Base;
+import rm.windows.Window_Base;
 import haxe.Json;
 import haxe.Constraints.Function;
-import mz.managers.ImageManager;
-import mz.managers.SceneManager;
+import rm.managers.ImageManager;
+import rm.managers.SceneManager;
 import pixi.interaction.EventEmitter;
-import mz.core.Utils;
+import rm.core.Utils;
 
 using Lambda;
 

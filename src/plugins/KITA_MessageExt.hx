@@ -1,13 +1,13 @@
 package plugins;
 
 import nodes.SpriteIconOsc;
-import mz.core.Bitmap;
+import rm.core.Bitmap;
 import nodes.SpriteBust;
-import mz.managers.PluginManager;
+import rm.managers.PluginManager;
 import utils.Fn;
 import utils.Comment;
-import mz.windows.Window_Message;
-import mz.sprites.Sprite_Base;
+import rm.windows.Window_Message;
+import rm.sprites.Sprite_Base;
 
 using core.StringExtensions;
 

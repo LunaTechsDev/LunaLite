@@ -1,7 +1,7 @@
 package utils;
 
 import haxe.DynamicAccess;
-import mz.core.JsonEx;
+import rm.core.JsonEx;
 import js.lib.Object;
 import js.Syntax;
 
