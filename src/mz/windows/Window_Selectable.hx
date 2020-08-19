@@ -32,9 +32,15 @@ private var _stayCount: Int;
 private var _helpWindow: Window_Help;
 private var _handlers: Any;
 private var _touching: Bool;
+#if compileMV
 private var _scrollX: Float;
 private var _scrollY: Float;
 public function new(x: Int, y: Int, width: Int, height: Int): Void;
+public function initialize(x: Int, y: Int, height: Int, width: Int);
+#else
+public function new(rect: Rectangle);
+public function initialize(rect: Rectangle): Void;
+#end
 
 /**
  * Returns the current position of the _index property.
