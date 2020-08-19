@@ -36,7 +36,7 @@ private var _touching: Bool;
 private var _scrollX: Float;
 private var _scrollY: Float;
 public function new(x: Int, y: Int, width: Int, height: Int): Void;
-public function initialize(x: Int, y: Int, height: Int, width: Int);
+public function initialize(x: Int, y: Int, height: Int, width: Int): Void;
 #else
 public function new(rect: Rectangle);
 public function initialize(rect: Rectangle): Void;

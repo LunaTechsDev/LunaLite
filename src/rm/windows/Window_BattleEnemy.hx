@@ -15,7 +15,7 @@ extern class Window_BattleEnemy extends Window_Selectable {
 
  #if compileMV
  public function new(x: Int, y: Int);
- public initialize(x:Int, y:Int);
+ public function initialize(x: Int, y: Int): Void;
  #else
  public function new(rect: Rectangle);
  public function initialize(rect: Rectangle): Void;
