@@ -1,0 +1,17 @@
+-lib jsfps
+-lib pixijs
+-lib hxnodejs
+
+-cp src
+
+--macro include("core")
+--macro include("macros")
+--macro include("rm")
+--macro include("utils")
+--macro include("nodes")
+--no-output
+
+--each
+
+--next
+-js dummy.js

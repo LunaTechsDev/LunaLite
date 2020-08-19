@@ -3,7 +3,7 @@ package rm.sprites;
 import rm.objects.Game_Actor;
 import rm.core.Sprite;
 import rm.types.LunaTea.CharacterPattern;
-import rm.types.rm.Motion;
+import rm.types.RM.Motion;
 
 /**
  * -----------------------------------------------------------------------------

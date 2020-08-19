@@ -1,7 +1,7 @@
 package rm.windows;
 
 import rm.types.RPG.UsableItem;
-import rm.types.rm.BattleLogMethod;
+import rm.types.RM.BattleLogMethod;
 import rm.sprites.Spriteset_Battle;
 import rm.objects.Game_Action;
 import rm.core.Rectangle;

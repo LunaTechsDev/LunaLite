@@ -5,7 +5,7 @@ import js.html.MouseEvent;
 import js.html.WheelEvent;
 import js.html.TouchEvent;
 import rm.types.LunaTea.Frames;
-import rm.types.rm.TouchInputEvents;
+import rm.types.RM.TouchInputEvents;
 
 @:native("TouchInput")
 extern class TouchInput {
