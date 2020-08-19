@@ -270,3 +270,8 @@ enum abstract GaugeType(String) from String to String {
  public var TP = "tp";
  public var TIME = "time";
 }
+
+@:forward
+@:forwardStatics
+enum abstract SkillTypeId(Int) from Int to Int {
+}
