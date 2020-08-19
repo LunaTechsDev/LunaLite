@@ -7,8 +7,8 @@ import core.Amaryllis;
 /**
  * Utility Sprite Class for creating sprites of oscillating size.
  */
-@:native("KITASpriteIconOsc")
-class SpriteIconOsc extends Sprite_Base {
+@:native("LTSpriteIconOsc")
+class LTSpriteIconOsc extends Sprite_Base {
  public function new(x: Int, y: Int, ?bitmap: Bitmap) {
   super();
   this.x = x;

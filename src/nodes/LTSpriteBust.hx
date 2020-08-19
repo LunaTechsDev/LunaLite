@@ -11,7 +11,7 @@ enum MoveType {
 }
 
 @:keep
-class SpriteBust extends Sprite_Base {
+class LTSpriteBust extends Sprite_Base {
  private var _shadowOpacity: Float;
  private var _shadowX: Float;
  private var _shadowY: Float;
