@@ -389,7 +389,7 @@ class ColorManager {
   * @return Color
   */
  public static function mpColor(?actor: Game_Actor): Color {
-  return baseWindow.mpColor(actor);
+  return actor != null ? baseWindow.mpColor(actor) : baseWindow.normalColor();
  } // TODO: Will be taking actor
 
  /**
@@ -397,7 +397,7 @@ class ColorManager {
   * @return Color
   */
  public static function tpColor(?actor: Game_Actor): Color {
-  return baseWindow.tpColor(actor);
+  return actor != null ? baseWindow.tpColor(actor) : baseWindow.normalColor();
  } // TODO: Will be taking actor
 
  /**

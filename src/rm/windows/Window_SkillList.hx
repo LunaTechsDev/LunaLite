@@ -1,5 +1,7 @@
 package rm.windows;
 
+import rm.types.RPG.Item;
+import rm.core.Rectangle;
 import rm.objects.Game_Actor;
 import rm.types.LunaTea.SkillTypeId;
 import rm.types.RPG.Skill;
@@ -23,9 +25,21 @@ extern class Window_SkillList extends Window_Selectable {
  public var __data: Array<Skill>;
  private var _data: Array<Skill>;
 
+ #if compileMV
  public function new(x: Int, y: Int, witth: Int, height: Int);
 
  public function initialize(x: Int, y: Int, width: Int, height: Int): Void;
+ #else
+ public function new(rect: Rectangle);
+ public function initialize(rect: Rectangle): Void;
+
+ /**
+  * Returns skill at the specified index.
+  * @param index
+  * @return Null<Skill>
+  */
+ public function itemAt(index: Int): Null<Skill>;
+ #end
 
  /**
   * Sets the current actor of the skill list window.
@@ -44,7 +58,8 @@ extern class Window_SkillList extends Window_Selectable {
  public function setStypeId(stypeId: SkillTypeId): Void;
 
  /**
-  * Returns the current skill from the databse.
+  * Returns the current skill at the window index
+  * loaded from the databse.
   *
   * @returns {RPG.Skill}
   * @memberof Window_SkillList
