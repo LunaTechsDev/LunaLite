@@ -14,7 +14,7 @@ extern class Window_SavefileList extends Window_Selectable {
   * @default {Bool} false
   * @memberof Window_SavefileList
   */
-  :@native("_autosave")
+  @native("_autosave")
   public var __autosave: Bool;
 
  /**
