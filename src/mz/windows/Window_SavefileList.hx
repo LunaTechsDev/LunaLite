@@ -5,7 +5,7 @@ import mz.core.Rectangle;
 typedef Info = {key:String};
 
 @:native("Window_SavefileList")
-extern class Window_SavefileList {
+extern class Window_SavefileList extends Window_Selectable {
   private var _mode: String;
 
     public function new (x: Int, y: Int, width: Int, height: Int);
