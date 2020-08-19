@@ -13,11 +13,6 @@ extern class Scene_Title extends Scene_Base {
  public var __commandWindow: Window_TitleCommand;
 
  /**
-  * The command window for title scene commands like new game.
-  */
- private var _commandWindow: Window_TitleCommand;
-
- /**
   * The background sprite which loads the $dataSystem.title1Name image.
   */
  @:native("_backSprite1")
