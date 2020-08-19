@@ -8,6 +8,23 @@ typedef Info = {key:String};
 extern class Window_SavefileList extends Window_Selectable {
   private var _mode: String;
 
+ /**
+  * Whether ornot the auto save feature is enabled
+  *
+  * @default {Bool} false
+  * @memberof Window_SavefileList
+  */
+  :@native("_autosave")
+  public var __autosave: Bool;
+
+ /**
+  * Whether ornot the auto save feature is enabled
+  *
+  * @default {Bool} false
+  * @memberof Window_SavefileList
+  */
+  private var _autosave: Bool;
+
     public function new (x: Int, y: Int, width: Int, height: Int);
 
     /**
