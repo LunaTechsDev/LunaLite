@@ -261,3 +261,12 @@ enum abstract Frames(Int) from Int to Int {
 @:forwardStatics
 enum abstract Money(Int) from Int to Int {
 }
+
+@:forward
+@:forwardStatics
+enum abstract GaugeType(String) from String to String {
+ public var HP = "hp";
+ public var MP = "mp";
+ public var TP = "tp";
+ public var TIME = "time";
+}
