@@ -4,7 +4,7 @@ import mz.objects.Game_Actor;
 import mz.types.RPG;
 
 @:native("Window_Status")
-extern class Window_Status {
+extern class Window_Status extends Window_Selectable {
  private var _actor: Game_Actor;
  private var _stypeId: Int;
  private var _data: Array<Skill>;
