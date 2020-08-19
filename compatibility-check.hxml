@@ -13,5 +13,9 @@
 
 --each
 
+# Cross Compatability Conditional Checks
+--next
+-D compileMV
+-js dummy.js
 --next
 -js dummy.js
