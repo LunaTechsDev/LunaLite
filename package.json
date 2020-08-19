@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "nodemon --watch src -e hx,hxml,xml --exec haxe compile.hxml",
     "gendoc": "haxe -xml doc.xml -D doc-gen generate-doc.hxml",
-    "createdoc": "haxelib run dox -i libdocs/doc.xml",
+    "createdoc": "haxelib run dox -i libdocs/doc.xml --title \"LunaTea\" --include-private -o docs/ -D source-path https://github.com/LunaTechsDev/LunaTea/tree/master/src",
     "integritycheck": "haxe integrity-check.hxml"
   },
   "repository": {

@@ -38,8 +38,8 @@ jobs:
         git fetch
         git pull
         git branch
-        git merge master
-        git commit -m "Update document classes"
+        git merge origin/master --allow-unrelated-histories -X theirs || true
+        git commit -m "Update document classes" || true
       
       # Runs a single command using the runners shell
     - name: npm install
@@ -64,7 +64,7 @@ jobs:
         echo "Pushing to Gh-pages"
         git config --global user.name "kinoar"
         git config --global user.email "kinarose@gmail.com"
-        git add -A
-        git commit -m "Update documentation website"
-        git push
+        git add -A || true
+        git commit -m "Update documentation website" || true
+        git push || true
 
