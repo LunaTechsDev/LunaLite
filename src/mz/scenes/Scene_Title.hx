@@ -2,9 +2,30 @@ package mz.scenes;
 
 import mz.core.Rectangle;
 import mz.core.Sprite;
+import mz.windows.Window_TitleCommand;
 
 @:native("Scene_Title")
 extern class Scene_Title extends Scene_Base {
+ /**
+  * The command window for title scene commands like new game, continue, or options.
+  */
+ private var _commandWindow: Window_TitleCommand;
+
+ /**
+  * The background sprite which loads the $dataSystem.title1Name image.
+  */
+ private var _backSprite1: Sprite;
+
+ /**
+  * The background sprite which loads the $dataSystem.title2Name image.
+  */
+ private var _backSprite2: Sprite;
+
+ /**
+  * The sprite which holds the game title text.
+  */
+ private var _gameTitleSprite: Sprite;
+
  /**
   * Creates the title scene background.
   */
