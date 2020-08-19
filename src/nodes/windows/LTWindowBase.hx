@@ -13,4 +13,25 @@ class LTWindowBase extends Window_Base {
   super(rect);
   #end
  }
+
+ public function drawTextExLT(text: String, x: Int, y: Int, ?width: Int): Int {
+  #if compileMV
+  return super.drawTextEx(text, x, y);
+  #else
+  return super.drawTextEx(text, x, y, width);
+  #end
+ }
+
+ public function destroyContentsLT() {
+  #if compileMV
+  this.contents.baseTexture.destroy();
+  this.contents.baseTexture = null;
+  this.contents.canvas.width = 0;
+  this.contents.canvas.height = 0;
+  this.contents.canvas = null;
+  // MZ also destroys the back sprite
+  #else
+  super.destroyContents();
+  #end
+ }
 }

@@ -490,6 +490,20 @@ extern class Window_Base extends _Window {
   */
  public function textWidth(text: String): Int;
 
+ #if compileMV
+ /**
+  * Draws text with text codes included; this will draw
+  * icons, increase text height, and more.
+  * @param text
+  * @param x
+  * @param y
+  * @param width
+  * @returns Int
+  * @memberof Window_Base
+  */
+ public function drawTextEx(text: String, x: Int, y: Int): Int;
+ #else
+
  /**
   * Draws text with text codes included; this will draw
   * icons, increase text height, and more.
@@ -508,6 +522,7 @@ extern class Window_Base extends _Window {
   * @returns {width:Int, height:Int}
   */
  public function textSizeEx(text: String): {width: Int, height: Int};
+ #end
 
  /**
   * Processes all the text in the window, then
@@ -974,7 +989,7 @@ extern class Window_Base extends _Window {
   */
  public function reserveFaceImages(): Void;
 
- #if compileMZ
+ #if !compileMV
  /**
   * Checks if object passed in is a rectangle..
   * Error is usually thrown when an MV plugin is used.
@@ -989,6 +1004,18 @@ extern class Window_Base extends _Window {
   * @return Rectangle
   */
  public function baseTextRect(): Rectangle;
+
+ public function changeOutlineColor(color: String): Void;
+
+ /**
+  * Draws a rectangle using the outline color and
+  * main text color of the window.
+  * @param x
+  * @param y
+  * @param width
+  * @param height
+  */
+ public function drawRect(x: Int, y: Int, width: Int, height: Int): Void;
 
  /**
   * Destroys the window contents.
