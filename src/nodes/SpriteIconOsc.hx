@@ -1,7 +1,7 @@
 package nodes;
 
-import mz.core.Bitmap;
-import mz.sprites.Sprite_Base;
+import rm.core.Bitmap;
+import rm.sprites.Sprite_Base;
 import core.Amaryllis;
 
 /**

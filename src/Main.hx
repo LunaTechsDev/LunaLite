@@ -1,8 +1,8 @@
-import mz.Globals.GameVariables;
+import rm.Globals.GameVariables;
 import js.Syntax;
 import js.html.Window;
 import js.lib.Function;
-import mz.scenes.Scene_Base;
+import rm.scenes.Scene_Base;
 import utils.Fn;
 import utils.Comment;
 import macros.MacroTools;

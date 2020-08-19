@@ -1,20 +1,20 @@
 package plugins;
 
 import js.Syntax;
-import mz.scenes.Scene_Battle;
-import mz.scenes.Scene_Base;
-import mz.managers.DataManager;
-import mz.types.RPG.Weapon;
-import mz.core.Bitmap;
+import rm.scenes.Scene_Battle;
+import rm.scenes.Scene_Base;
+import rm.managers.DataManager;
+import rm.types.RPG.Weapon;
+import rm.core.Bitmap;
 import nodes.SpriteBust;
-import mz.managers.PluginManager;
+import rm.managers.PluginManager;
 import core.AnyBox;
 import core.Types.JsFn;
 import utils.Fn;
 import utils.Comment;
-import mz.windows.Window_Message;
-import mz.windows.Window_Base;
-import mz.sprites.Sprite_Base;
+import rm.windows.Window_Message;
+import rm.windows.Window_Base;
+import rm.sprites.Sprite_Base;
 import core.Assets;
 
 using core.StringExtensions;
