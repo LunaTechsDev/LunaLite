@@ -7,7 +7,7 @@
 
 --macro include("core")
 --macro include("macros")
---macro include("mz")
+--macro include("rm")
 --macro include("utils")
 --macro include("nodes")
 --no-output
