@@ -5,6 +5,7 @@ import haxe.DynamicAccess;
 import core.Math;
 import rm.core.Rectangle;
 import rm.windows.Window_Base;
+import rm.managers.ColorManager;
 
 @:native("LTWindowBase")
 class LTWindowBase extends Window_Base {
@@ -17,6 +18,19 @@ class LTWindowBase extends Window_Base {
   #else
   var rect = new Rectangle(x, y, width, height);
   super(rect);
+  #end
+ }
+
+ /**
+  * Changes the color based on the color index.
+  * Backport to MV.
+  * @param colorIndex
+  */
+ public function processColorChangeLT(colorIndex: Int) {
+  #if compileMV
+  this.changeTextColor(ColorManager.textColor(colorIndex));
+  #else
+  this.processColorChange(colorIndex);
   #end
  }
 

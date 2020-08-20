@@ -1044,5 +1044,11 @@ extern class Window_Base extends _Window {
   * Plays the cursor sound from SoundManager;
   */
  public function playCursorSound(): Void;
+
+ /**
+  * Changes the color based on the color index.
+  * @param colorIndex
+  */
+ public function processColorChange(colorIndex: Int): Void;
  #end
 }
