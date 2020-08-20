@@ -49,6 +49,24 @@ typedef CommandItem = {
  ext: Any
 }
 
+typedef TextStateLT = {
+ var text: String;
+ var index: Int;
+ var x: Int;
+ var y: Int;
+ var startX: Int;
+ var startY: Int;
+ var width: Int;
+ var left: Int;
+ var height: Int;
+ var rtl: Bool;
+ var buffer: String;
+ var outputWidth: Int;
+ var outputHeight: Int;
+ var drawing: Bool;
+}
+
+#if compileMV
 typedef TextState = {
  index: Int,
  x: Int,
@@ -57,6 +75,21 @@ typedef TextState = {
  left: Int,
  text: String
 }
+#else
+typedef TextState = {
+ var text: String;
+ var index: Int;
+ var startX: Int;
+ var startY: Int;
+ var width: Int;
+ var height: Int;
+ var rtl: Bool;
+ var buffer: String;
+ var outputWidth: Int;
+ var outputHeight: Int;
+ var drawing: Bool;
+}
+#end
 
 typedef BattleLogMethod = {
  name: String,

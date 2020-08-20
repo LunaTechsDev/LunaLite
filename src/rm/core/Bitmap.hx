@@ -306,7 +306,7 @@ extern class Bitmap {
   * @param {String} align The alignment of the text
   */
  public function drawText(text: String, x: Int, y: Int, maxWidth: Int,
-  lineHeight: Int, align: String): Void;
+  lineHeight: Int, ?align: String): Void;
 
  /**
   * Returns the width of the specified text.

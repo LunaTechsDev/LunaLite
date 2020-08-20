@@ -522,7 +522,6 @@ extern class Window_Base extends _Window {
   * @returns {width:Int, height:Int}
   */
  public function textSizeEx(text: String): {width: Int, height: Int};
- #end
 
  /**
   * Processes all the text in the window, then
@@ -544,6 +543,10 @@ extern class Window_Base extends _Window {
   * @return String
   */
  public function createTextBuffer(rtl: Bool): String;
+
+ public function processControlCharacter(extState: TextState,
+  character: String): Void;
+ #end
 
  /**
   * Converts the escape characters and returns the text content
