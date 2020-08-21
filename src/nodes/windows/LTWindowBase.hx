@@ -160,6 +160,35 @@ class LTWindowBase extends Window_Base {
   #end
  }
 
+ public function maxFontSizeInLineLT(line: String): Int {
+  #if compileMv
+  /*
+   let maxFontSize = this.contents.fontSize;
+   const regExp = /\x1b({|}|FS)(\[(\d+)])?/gi;
+   for (;;) {
+       const array = regExp.exec(line);
+       if (!array) {
+           break;
+       }
+       const code = String(array[1]).toUpperCase();
+       if (code === "{") {
+           this.makeFontBigger();
+       } else if (code === "}") {
+           this.makeFontSmaller();
+       } else if (code === "FS") {
+           this.contents.fontSize = parseInt(array[3]);
+       }
+       if (this.contents.fontSize > maxFontSize) {
+           maxFontSize = this.contents.fontSize;
+       }
+   }
+   return maxFontSize;
+   */
+  #else
+  return this.maxFontSizeInLine(line);
+  #end
+ }
+
  private function get_innerWidthLT(): Int {
   return cast Math.max(0, this._width - this._padding * 2);
  }

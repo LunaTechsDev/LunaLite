@@ -665,13 +665,6 @@ extern class Window_Base extends _Window {
  public function calcTextHeight(textState: TextState, all: Bool): Int;
 
  /**
-  * Returns the maximum font size for a single line in rm.
-  * @param line
-  * @return Int
-  */
- public function maxFontSizeInLine(line: String): Int;
-
- /**
   * Draws an icon given the specified iconIndex at the specified
   * x and y coordinates. The Width and Height of the icon is based on the
   * _iconWidth and _iconHeight properties.
@@ -1050,5 +1043,13 @@ extern class Window_Base extends _Window {
   * @param colorIndex
   */
  public function processColorChange(colorIndex: Int): Void;
+
+ /**
+  * Returns the maximum font size for a single line in rm.
+  * @param line
+  * @return Int
+  *
+  */
+ public function maxFontSizeInLine(line: String): Int;
  #end
 }
