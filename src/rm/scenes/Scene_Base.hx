@@ -7,6 +7,9 @@ import haxe.extern.EitherType;
 
 @:native("Scene_Base")
 extern class Scene_Base extends Stage {
+ #if !compileMV 
+ private var _started: Bool;
+ #end
  private var _active: Bool;
  private var _fadeSign: Int;
  private var _fadeDuration: Int;
@@ -61,6 +64,29 @@ extern class Scene_Base extends Stage {
   * @return Bool
   */
  public function isBusy(): Bool;
+
+ #if !compileMV 
+ public function isStarted(): Bool;
+ public function isFading(): Bool;
+ public function createColorFilter(): Void;
+ public function updateColorFilter(): Void;
+ public function scaleSprite(): Void;
+ public function centerSprite(): Void;
+ public function isBottomHelpMode(): Bool;
+ public function isBottomButtonMode(): Bool;
+ public function isRightInputMode(): Bool;
+ public function mainCommandWidth(): Int;
+ public function buttonAreaTop(): Int;
+ public function buttonAreaBottom(): Int;
+ public function buttonAreaHeight(): Int;
+ public function buttonY(): Int;
+ public function calcWindowHeight(): Int;
+ public function requestAutosave(): Void;
+ public function isAutosaveEnabled(): Bool;
+ public function executeAutosave(): Void;
+ public function onAutosaveSuccess(): Void;
+ public function onAutosaveFailure(): Void;
+ #end
 
  /**
   * Terminates/ends the scene.
