@@ -18,7 +18,11 @@ import rm.sprites.Spriteset_Battle;
  * Scene class of the battle screen.
  */
 @:native("Scene_Battle")
+#if compileMV
+extern class Scene_Battle extends Scene_Base {
+#else
 extern class Scene_Battle extends Scene_Message {
+#end
  private var _spriteset: Spriteset_Battle;
  private var _statusWindow: Window_BattleStatus;
  private var _partyCommandWindow: Window_PartyCommand;
