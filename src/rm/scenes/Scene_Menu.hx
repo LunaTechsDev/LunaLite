@@ -1,5 +1,6 @@
 package rm.scenes;
 
+import rm.core.Rectangle;
 import rm.windows.Window_Gold;
 import rm.windows.Window_MenuCommand;
 import rm.windows.Window_MenuStatus;
@@ -12,6 +13,11 @@ extern class Scene_Menu extends Scene_MenuBase {
  private var _commandWindow: Window_MenuCommand;
  private var _goldWindow: Window_Gold;
  private var _statusWindow: Window_MenuStatus;
+
+ #if !compileMV
+ public function commandWindowRect(): Rectangle;
+ public function goldWindowRect(): Rectangle;
+ #end
 
  /**
   * Creates the main menu window on the

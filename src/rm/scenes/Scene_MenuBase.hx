@@ -1,5 +1,7 @@
 package rm.scenes;
 
+import rm.sprites.Sprite_Button;
+import rm.core.Rectangle;
 import rm.core.Sprite;
 import rm.windows.Window_Help;
 import rm.objects.Game_Actor;
@@ -43,6 +45,35 @@ extern class Scene_MenuBase extends Scene_Base {
   * @memberof Scene_MenuBase
   */
  public function actor(): Game_Actor;
+ 
+ #if !compileMV
+ @:native("_cancelButton")
+ public var __cancelButton: Sprite_Button;
+ private var _cancelButton: Sprite_Button;
+
+ @:native("_pageupButton")
+ public var __pageupButton: Sprite_Button;
+ private var _pageupButton: Sprite_Button;
+
+ @:native("_pagedownButton")
+ public var __pagedownButton: Sprite_Button;
+ private var _pagedownButton: Sprite_Button;
+
+ public function helpAreaTop(): Void;
+ public function helpAreaBottom(): Void;
+ public function helpAreaHeight(): Void;
+ public function mainAreaTop(): Void;
+ public function mainAreaBottom(): Void;
+ public function mainAreaHeight(): Void;
+ public function helpWindowRect(): Rectangle;
+ public function createButtons(): Void;
+ public function needsCancelButton(): Bool;
+ public function createCancelButton(): Void;
+ public function needsPageButtons(): Bool;
+ public function createPageButtons(): Void;
+ public function updatePageButtons(): Void;
+ public function arePageButtonsEnabled(): Bool;
+ #end
 
  /**
   * Updates the current actor.

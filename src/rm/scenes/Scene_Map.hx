@@ -1,5 +1,6 @@
 package rm.scenes;
 
+import rm.core.Rectangle;
 import rm.windows.Window_MapName;
 import rm.windows.Window_Message;
 import rm.sprites.Spriteset_Map;
@@ -19,6 +20,25 @@ extern class Scene_Map extends Scene_Base {
  private var _mapNameWindow: Window_MapName;
  private var _scrollTextWindow: Window_ScrollText;
  private var _messageWindow: Window_Message;
+
+ #if !compileMV
+ @:native("_lastMapWasNull")
+ public var __lastMapWasNull: Bool;
+ private var _lastMapWasNull: Bool;
+
+ public function onMapLoaded(): Void;
+ public function shouldAutosave(): Bool;
+ public function onTransferEnd(): Void;
+ public function isPlayerActive(): Bool;
+ public function updateMenuButton(): Void;
+ public function hideMenuButton(): Void;
+ public function updateMapNameWindow(): Void;
+ public function isAnyButtonPressed(): Bool;
+ public function onMapTouch(): Void;
+ public function mapNameWindowRect(): Rectangle;
+ public function createButtons(): Void;
+ public function createMenuButton(): Void;
+ #end
 
  public var menuCalling: Bool;
 

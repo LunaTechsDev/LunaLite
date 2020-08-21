@@ -1,5 +1,6 @@
 package rm.scenes;
 
+import rm.core.Rectangle;
 import rm.windows.Window_GameEnd;
 
 /**
@@ -8,6 +9,10 @@ import rm.windows.Window_GameEnd;
 @:native("Scene_GameEnd")
 extern class Scene_GameEnd extends Scene_MenuBase {
  private var _commandWindow: Window_GameEnd;
+
+ #if !compileMV
+ public function commandWindowRect(): Rectangle;
+ #end
 
  public function stop(): Void;
 

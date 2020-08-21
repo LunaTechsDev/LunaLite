@@ -1,5 +1,6 @@
 package rm.scenes;
 
+import rm.core.Rectangle;
 import rm.windows.Window_BattleItem;
 import rm.windows.Window_PartyCommand;
 import rm.windows.Window_BattleStatus;
@@ -17,7 +18,11 @@ import rm.sprites.Spriteset_Battle;
  * Scene class of the battle screen.
  */
 @:native("Scene_Battle")
+#if compileMV
 extern class Scene_Battle extends Scene_Base {
+#else
+extern class Scene_Battle extends Scene_Message {
+#end
  private var _spriteset: Spriteset_Battle;
  private var _statusWindow: Window_BattleStatus;
  private var _partyCommandWindow: Window_PartyCommand;
@@ -33,6 +38,51 @@ extern class Scene_Battle extends Scene_Base {
  public function updateBattleProcess(): Void;
  public function isAnyInputWindowActive(): Bool;
  public function changeInputWindow(): Void;
+ 
+ #if !compileMV
+ public function updateVisibility(): Void;
+ public function updateLogWindowVisibility(): Void;
+ public function updateStatusWindowVisibility(): Void;
+ public function updateInputWindowVisibility(): Void;
+ public function needsInputWindowChange(): Bool;
+ public function isTimeActive(): Bool;
+ public function shouldAutosave(): Bool;
+ public function shouldOpenStatusWindow(): Bool;
+ public function updateStatusWindowPosition(): Void;
+ public function statusWindowX(): Int;
+ public function shouldOpenStatusWindow(): Bool;
+
+ public function logWindowRect(): Rectangle;
+ public function statusWindowRect(): Rectangle;
+ public function partyCommandWindowRect(): Rectangle;
+ public function actorCommandWindowRect(): Rectangle;
+ public function helpWindowRect(): Rectangle;
+ public function skillWindowRect(): Rectangle;
+ public function itemWindowRect(): Rectangle;
+ public function actorWindowRect(): Rectangle;
+ public function enemyWindowRect(): Rectangle;
+
+ public function helpAreaTop(): Int;
+ public function helpAreaBottom(): Int;
+ public function helpAreaHeight(): Int;
+ public function mainAreaTop(): Int;
+ public function mainAreaBottom(): Int;
+ public function mainAreaHeight(): Int;
+ public function buttonAreaTop(): Int;
+ public function windowAreaHeight(): Int;
+
+ public function createButtons(): Void;
+ public function needsCancelButton(): Void;
+ public function createCancelButton(): Void;
+ public function needsPageButtons(): Void;
+ public function createPageButtons(): Void;
+ public function updatePageButtons(): Void;
+ public function arePageButtonsEnabled(): Bool;
+
+ public function closeCommandWindows(): Void;
+ public function hideSubInputWindows(): Void;
+ public function startEnemySelection(): Void;
+ #end
 
  /**
   * Stops the battle scene.
@@ -218,6 +268,7 @@ extern class Scene_Battle extends Scene_Base {
  public function selectActorSelection(): Void;
  public function onActorOk(): Void;
  public function onActorCancel(): Void;
+
  public function selectEnemySelection(): Void;
 
  /**

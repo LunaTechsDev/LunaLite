@@ -1,5 +1,7 @@
 package rm.scenes;
 
+import rm.core.Rectangle;
+
 /**
  * Scene class of the debug menu screen.
  */
@@ -10,6 +12,12 @@ extern class Scene_Debug extends Scene_MenuBase {
   * @memberof Scene_Debug
   */
  public function createRangeWindow(): Void;
+ 
+ #if !compileMV
+ public function rangeWindowRect(): Rectangle;
+ public function editWindowRect(): Rectangle;
+ public function debugHelpWindowRect(): Rectangle;
+ #end
 
  /**
   * Creates the edit window.

@@ -13,7 +13,11 @@ import rm.windows.Window_ItemCategory;
 @:native("Scene_Item")
 extern class Scene_Item extends Scene_ItemBase {
  private var _categoryWindow: Window_ItemCategory;
-
+ 
+ #if !compileMV
+ public function categoryWindowRect(): Rectangle;
+ public function itemWindowRect(): Rectangle;
+ #end
  /**
   * Creates the category window on the
   * item scene.

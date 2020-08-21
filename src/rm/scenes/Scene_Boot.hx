@@ -6,6 +6,27 @@ import js.lib.Date;
 extern class Scene_Boot extends Scene_Base {
  private var _startDate: Date;
 
+ 
+ @native("_databaseLoaded")
+ public var __databaseLoaded: Bool;
+ private var _databaseLoaded: Bool;
+
+ #if !compileMV
+ public function onDatabaseLoaded(): Void;
+
+ public function setEncryptionInfo(): Void;
+ public function loadPlayerData(): Void;
+
+ public function loadGameFonts(): Void;
+
+ public function isPlayerDataLoaded(): Void;
+
+ public function startNormalGame(): Void;
+ public function resizeScreen(): Void;
+ public function adjustBoxSize(): Void;
+ public function adjustWindow(): Void;
+ #end
+
  /**
   * Loads the system images upon booting the game.
   */
