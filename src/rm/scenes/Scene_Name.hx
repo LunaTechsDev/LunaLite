@@ -5,6 +5,11 @@ package rm.scenes;
  */
 @:native("Scene_Name")
 extern class Scene_Name extends Scene_MenuBase {
+ #if !compileMV
+ public function editWindowRect(): Void;
+ public function inputWindowRect(): Rectangle;
+ #end
+
  /**
   * Prepares the name input scene for giving the specified
   * actor at actorId a name with a maximum number of characters
