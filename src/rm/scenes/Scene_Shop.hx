@@ -1,5 +1,6 @@
 package rm.scenes;
 
+import rm.core.Rectangle;
 import rm.types.LunaTea.Money;
 import rm.windows.Window_ItemCategory;
 import rm.windows.Window_ShopSell;
@@ -27,6 +28,16 @@ extern class Scene_Shop extends Scene_MenuBase {
  private var _buyWindow: Window_ShopBuy;
  private var _categoryWindow: Window_ItemCategory;
  private var _sellWindow: Window_ShopSell;
+
+ #if !compileMV
+ public function commandWindowRect(): Rectangle;
+ public function dummyWindowRect(): Rectangle;
+ public function numberWindowRect(): Rectangle;
+ public function statusWindowRect(): Rectangle;
+ public function buyWindowRect(): Rectangle;
+ public function categoryWindowRect(): Rectangle;
+ public function sellWindowRect(): Rectangle;
+ #end
 
  // Redefinition
  //  private var _helpWindow: Window_Help;
