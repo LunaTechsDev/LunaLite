@@ -1,5 +1,6 @@
 package rm.scenes;
 
+import rm.core.Rectangle;
 import rm.windows.Window_SavefileList;
 
 /**
@@ -8,6 +9,16 @@ import rm.windows.Window_SavefileList;
 @:native("Scene_File")
 extern class Scene_File extends Scene_MenuBase {
  private var _listWindow: Window_SavefileList;
+
+ #if !compileMV
+ public function isSavefileEnabled(): Bool;
+ public function listWindowRect(): Rectangle;
+ public function mode(): Bool;
+ public function needsAutosave(): Bool;
+ public function helpWindowText(): String;
+ public function firstSavefileId(): Int;
+ public function onSavefileOk(): Void;
+ #end
 
  /**
   * Returns the current savefileId.
