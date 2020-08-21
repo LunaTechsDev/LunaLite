@@ -11,6 +11,7 @@ typedef Self = String;
 
 class Fn {
  public static var self(get, null): Any;
+ public static var JsLog = Console.log;
 
  /**
   * Wrapper for JavaScript this
@@ -40,11 +41,13 @@ class Fn {
   return Syntax.field(obj, "prototype");
  }
 
- public static inline function setPrProp(obj: Any, fieldName: String, value: Any) {
+ public static inline function setPrProp(obj: Any, fieldName: String,
+   value: Any) {
   Syntax.code("{0}.@{1}@ = {2}", proto(obj), (fieldName), value);
  }
 
- public static inline function setPrPropVoidFn(obj: Any, fieldName: String, value: (Any) -> Void) {
+ public static inline function setPrPropVoidFn(obj: Any, fieldName: String,
+   value: (Any) -> Void) {
   Syntax.code("{0}.@{1}@ = {2}", proto(obj), (fieldName), value);
  }
 
@@ -53,7 +56,8 @@ class Fn {
  }
 
  @:analyzer(local_dce)
- public static inline function setField(obj: Any, fieldName: String, value: Any) {
+ public static inline function setField(obj: Any, fieldName: String,
+   value: Any) {
   return Syntax.code("{0} = {1}", Syntax.field(obj, fieldName), value);
  }
 
@@ -74,7 +78,8 @@ class Fn {
   * @param value
   * @return T
   */
- public static inline function renameClass<T>(originalObj: Any, overrideObj: T): T {
+ public static inline function renameClass<T>(originalObj: Any,
+   overrideObj: T): T {
   return Syntax.code("{0} = {1}", originalObj, overrideObj);
  }
 
@@ -85,7 +90,8 @@ class Fn {
   * @param value
   * @return T
   */
- public static function setProp<T: {}>(obj: T, propName: String, value: Any): T {
+ public static function setProp<T: {}>(obj: T, propName: String,
+   value: Any): T {
   return Object.defineProperty(obj, propName, {value: value});
  }
 
@@ -101,7 +107,7 @@ class Fn {
   return Syntax.typeof(v);
  }
 
- public static inline function log(data) {
+ public static inline function log(data: Array<Dynamic>) {
   Console.log(data);
  }
 }
