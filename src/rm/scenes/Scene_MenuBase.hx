@@ -67,12 +67,12 @@ extern class Scene_MenuBase extends Scene_Base {
  public function mainAreaHeight(): Void;
  public function helpWindowRect(): Rectangle;
  public function createButtons(): Void;
- public function needsCancelButton(): Void;
+ public function needsCancelButton(): Bool;
  public function createCancelButton(): Void;
- public function needsPageButtons(): Void;
+ public function needsPageButtons(): Bool;
  public function createPageButtons(): Void;
  public function updatePageButtons(): Void;
- public function arePageButtonsEnabled(): Void;
+ public function arePageButtonsEnabled(): Bool;
  #end
 
  /**
