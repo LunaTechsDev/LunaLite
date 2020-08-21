@@ -54,6 +54,12 @@ extern class Game_Actor extends Game_Battler {
  public function actor(): Actor;
 
  /**
+  * Returns the actor's name.
+  * @return String
+  */
+ public function name(): String;
+
+ /**
   * Sets the actor name.
   *
   * @param {String} name
