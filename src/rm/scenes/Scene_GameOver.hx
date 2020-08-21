@@ -9,6 +9,10 @@ import rm.core.Sprite;
 extern class Scene_GameOver extends Scene_Base {
  private var _backSprite: Sprite;
 
+ #if !compileMV
+ public function adjustBackground(): Void;
+ #end
+
  public function stop(): Void;
 
  /**
