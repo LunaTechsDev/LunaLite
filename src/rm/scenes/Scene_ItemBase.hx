@@ -1,5 +1,6 @@
 package rm.scenes;
 
+import rm.core.Rectangle;
 import rm.objects.Game_Actor;
 import rm.windows.Window_Selectable;
 import rm.windows.Window_MenuActor;
@@ -13,6 +14,10 @@ import rm.windows.Window_Base;
 extern class Scene_ItemBase extends Scene_Base {
  private var _actorWindow: Window_MenuActor;
  private var _itemWindow: Window_Selectable;
+
+ #if !compileMV
+ public function actorWindowRect(): Rectangle;
+ #end
 
  /**
   * Creates the actor window within the base item scene.
