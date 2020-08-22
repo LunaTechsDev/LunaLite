@@ -79,6 +79,11 @@ class Fn {
   return Syntax.code("{0} = {1}", Syntax.field(obj, fieldName), value);
  }
 
+ @:analyzer(local_dce)
+ public static inline function getField(obj: Any, fieldName: String) {
+  return Syntax.field(obj, fieldName);
+ }
+
  /**
   * Gets an element using an array syntax.
   * @param obj
