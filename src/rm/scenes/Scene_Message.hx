@@ -1,5 +1,6 @@
 package rm.scenes;
 
+import rm.windows.Window_NameBox;
 import rm.windows.Window_ChoiceList;
 import rm.windows.Window_NumberInput;
 import rm.windows.Window_EventItem;
@@ -8,6 +9,7 @@ import rm.core.Stage;
 import rm.windows.Window_Base;
 import haxe.extern.EitherType;
 
+#if !compileMV
 @:native("Scene_Message")
 extern class Scene_Message extends Scene_Base {
  public var isMessageWindowClosing: Bool;
@@ -27,7 +29,7 @@ extern class Scene_Message extends Scene_Base {
  @:native("_numberInputWindow")
  public var __numberInputWindow: Window_NumberInput;
  private var _numberInputWindow: Window_NumberInput;
- 
+
  public function createAllWindows(): Void;
  public function createMessageWindow(): Void;
  public function messageWindowRect(): Void;
@@ -42,3 +44,5 @@ extern class Scene_Message extends Scene_Base {
  public function eventItemWindowRect(): Void;
  public function associateWindows(): Void;
 }
+#else
+#end
