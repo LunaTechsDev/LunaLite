@@ -3,7 +3,7 @@ package rm.core;
 import pixi.core.display.DisplayObject;
 import pixi.core.display.Container;
 
-@:native("TileMap")
+@:native("Tilemap")
 extern class Tilemap extends Container {
  // Tile type checkers
  public static var TILE_ID_A1: Int;

@@ -1,6 +1,6 @@
 package rm.core;
 
-import rm.core.TileMap.Tilemap;
+import rm.core.Tilemap;
 import pixi.core.renderers.webgl.Renderer;
 import pixi.core.renderers.canvas.CanvasRenderer;
 import pixi.core.renderers.AbstractRenderer;
