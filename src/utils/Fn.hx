@@ -35,7 +35,7 @@ class Fn {
   * Wrapper for JavaScript this
   */
  private static inline function get_self() {
-  return Syntax.code("this");
+  return thisJs();
  }
 
  /**
