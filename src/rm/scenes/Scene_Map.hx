@@ -26,7 +26,6 @@ extern class Scene_Map extends Scene_Base {
  public var __lastMapWasNull: Bool;
  private var _lastMapWasNull: Bool;
 
- public function onMapLoaded(): Void;
  public function shouldAutosave(): Bool;
  public function onTransferEnd(): Void;
  public function isPlayerActive(): Bool;
