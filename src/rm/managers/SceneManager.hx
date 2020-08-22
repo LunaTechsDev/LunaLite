@@ -92,4 +92,8 @@ extern class SceneManager {
  public static function snapForBackground(): Void;
  public static function backgroundBitmap(): Bitmap;
  public static function updateManagers(ticks: Float, delta: Float): Void;
+ #if !compileMV
+ public static function showDevTools(): Void;
+ #else
+ #end
 }
