@@ -23,8 +23,12 @@ class Fn {
   */
  public static var Js = Syntax;
 
- public static function jsThis() {
+ public static inline function thisJs(): Dynamic {
   return js.Lib.nativeThis;
+ }
+
+ public static inline function parseIntJs(string: String, radix: Int): Float {
+  return js.Lib.parseInt(string, radix);
  }
 
  /**
