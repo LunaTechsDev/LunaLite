@@ -161,7 +161,7 @@ class LTWindowBase extends Window_Base {
  }
 
  public function maxFontSizeInLineLT(line: String): Int {
-  #if compileMv
+  #if compileMV
   /*
    let maxFontSize = this.contents.fontSize;
    const regExp = /\x1b({|}|FS)(\[(\d+)])?/gi;
@@ -184,6 +184,7 @@ class LTWindowBase extends Window_Base {
    }
    return maxFontSize;
    */
+  return 0;
   #else
   return this.maxFontSizeInLine(line);
   #end

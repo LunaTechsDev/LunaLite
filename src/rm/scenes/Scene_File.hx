@@ -13,11 +13,19 @@ extern class Scene_File extends Scene_MenuBase {
  #if !compileMV
  public function isSavefileEnabled(): Bool;
  public function listWindowRect(): Rectangle;
- public function mode(): Bool;
+
  public function needsAutosave(): Bool;
- public function helpWindowText(): String;
+
  public function firstSavefileId(): Int;
- public function onSavefileOk(): Void;
+ #else
+
+ /**
+  * Returns the index of the first
+  * save file.
+  * @returns {number}
+  * @memberof Scene_File
+  */
+ public function firstSavefileIndex(): Int;
  #end
 
  /**
@@ -39,14 +47,6 @@ extern class Scene_File extends Scene_MenuBase {
 
  public function activateListWindow(): Void;
  public function helpWindowText(): String;
-
- /**
-  * Returns the index of the first
-  * save file.
-  * @returns {number}
-  * @memberof Scene_File
-  */
- public function firstSavefileIndex(): Int;
 
  /**
   * Handler for when a

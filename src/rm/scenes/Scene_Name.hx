@@ -1,5 +1,7 @@
 package rm.scenes;
 
+import rm.core.Rectangle;
+
 /**
  * Scene class of the name input screen.
  */

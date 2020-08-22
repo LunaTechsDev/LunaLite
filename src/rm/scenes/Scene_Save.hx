@@ -17,8 +17,6 @@ extern class Scene_Save extends Scene_File {
 
  #if !compileMV
  public function executeSave(saveFileId: Int): Void;
- public function onSaveSuccess(): Void;
- public function onSaveFailure(): Void;
  #end
 
  /**
