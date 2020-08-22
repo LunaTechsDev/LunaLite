@@ -23,6 +23,10 @@ class Fn {
   */
  public static var Js = Syntax;
 
+ public static function jsThis() {
+  return js.Lib.nativeThis;
+ }
+
  /**
   * Wrapper for JavaScript this
   */
