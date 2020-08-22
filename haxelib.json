@@ -4,7 +4,7 @@
   "license": "MIT",
   "tags": ["RPGMakerMV", "RPGMakerMZ", "RPGMaker", "GameDev"],
   "description": "A library for creating plugins and tools for RPGMaker software.",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "classPath": "src/",
   "releasenote": "Initial release, for RPGMakerMV/MZ Library.",
   "contributors": ["Kino Rose", "Waynee", "LTN"],
