@@ -11,7 +11,17 @@ typedef Self = String;
 
 class Fn {
  public static var self(get, null): Any;
+
+ /**
+  * Alias for JS console log.
+  */
  public static var JsLog = Console.log;
+
+ /**
+  * Allows you to acces Js syntax  Code functionality
+  * for embedding and more.
+  */
+ public static var Js = Syntax;
 
  /**
   * Wrapper for JavaScript this
