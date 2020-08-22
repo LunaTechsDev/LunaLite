@@ -9,6 +9,7 @@ import js.html.CanvasElement;
 import pixi.core.renderers.webgl.Renderer;
 import pixi.core.display.Container;
 
+@:native("WindowLayer")
 extern class WindowLayer extends Container {
  /**
   * The width of the window layer in pixels.

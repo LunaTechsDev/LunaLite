@@ -1,5 +1,6 @@
 package rm.core;
 
+@:native("Utils")
 extern class Utils {
  /**
   * The name of the RPG Maker. 'MV' in the current version.

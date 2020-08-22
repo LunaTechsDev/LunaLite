@@ -3,6 +3,7 @@ package rm.core;
 import pixi.core.renderers.webgl.Renderer;
 import pixi.core.renderers.canvas.CanvasRenderer;
 
+@:native("TilingSprite")
 extern class TilingSprite extends pixi.extras.TilingSprite {
  /**
   * The origin point of the tiling sprite for scrolling.
