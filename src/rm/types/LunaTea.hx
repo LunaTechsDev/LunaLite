@@ -275,3 +275,8 @@ enum abstract GaugeType(String) from String to String {
 @:forwardStatics
 enum abstract SkillTypeId(Int) from Int to Int {
 }
+
+@:forward
+@:forwardStatics
+enum abstract BattleResult(Int) from Int to Int {
+}
