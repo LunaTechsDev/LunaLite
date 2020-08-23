@@ -10,16 +10,14 @@ class Parse {
   * Function for parsing parameters from JSON in MV/MZ
   */
  public static function parseParameters(parameters: String): Any {
-  return Syntax.code("var JSONSuperParse = function (string) {
+  return Syntax.code("(function (string) {
     var temp;
     try {
-        temp = JsonEx.parse(typeof string === '
-   object ' ? JsonEx.stringify(string) : string);
+        temp = JsonEx.parse(typeof string === 'object ' ? JsonEx.stringify(string) : string);
     } catch (e) {
         return string;
     }
-    if (typeof temp === '
-   object ') {
+    if (typeof temp === 'object ') {
         Object.keys(temp).forEach(function (key) {
             temp[key] = JSONSuperParse(temp[key]);
             if (temp[key] === ' ') {
@@ -28,7 +26,7 @@ class Parse {
         });
     }
     return temp;
-};JSONSuperParse({0})", parameters);
+})({0})", parameters);
  }
 
  //  public static function parseParameters(parameters: String): Any {
