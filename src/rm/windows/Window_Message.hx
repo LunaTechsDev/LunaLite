@@ -33,12 +33,6 @@ extern class Window_Message extends Window_Base {
  #end
 
  /**
-  * Processes all characters displayed within the message window.
-  * @param textState
-  */
- public function processCharacter(textState: String): Void;
-
- /**
   * Returns the sub windows attached to the message window.
   *
   * @returns {Array<Window_Base>}
