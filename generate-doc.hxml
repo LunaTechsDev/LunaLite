@@ -17,3 +17,8 @@
 --next
 -xml libdocs/doc.xml
 -js dummy.js
+
+--next
+-D compileMV
+-xml libdocs/doc.xml
+-js dummyMV.js
