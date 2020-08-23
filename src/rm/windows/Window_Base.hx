@@ -23,6 +23,9 @@ extern class Window_Base extends _Window {
   */
  private static var _iconWidth: Int; // TODO: Move to the ImageManager class
 
+ @:native("_iconWidth")
+ public static var __iconWidth: Int;
+
  /**
   * The standard icon height;
   * default is 32.
@@ -32,6 +35,9 @@ extern class Window_Base extends _Window {
   * @memberof Window_Base
   */
  private static var _iconHeight: Int;
+
+ @:native("_iconHeight")
+ public static var __iconHeight: Int;
 
  /**
   * The standard face width;
@@ -43,6 +49,9 @@ extern class Window_Base extends _Window {
   */
  private static var _faceWidth: Int;
 
+ @:native("_faceWidth")
+ public static var __faceWidth: Int;
+
  /**
   * The standard face height;
   * default is 144.
@@ -52,6 +61,9 @@ extern class Window_Base extends _Window {
   * @memberof Window_Base
   */
  private static var _faceHeight: Int;
+
+ @:native("_faceHeight")
+ public static var __faceHeight: Int;
  #else
  #end
 
