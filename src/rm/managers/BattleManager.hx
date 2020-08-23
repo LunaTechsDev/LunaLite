@@ -100,165 +100,166 @@ extern class BattleManager {
  public var __rewards: BattleRewards;
  private var _rewards: BattleRewards;
 
- public function setup(troopId: Int, canEscape: Bool, canLose: Bool): Void;
+ public static function setup(troopId: Int, canEscape: Bool,
+  canLose: Bool): Void;
 
- public function initMembers(): Void;
+ public static function initMembers(): Void;
 
- public function isBattleTest(): Bool;
+ public static function isBattleTest(): Bool;
 
- public function setBattleTest(battleTest: Bool): Void;
+ public static function setBattleTest(battleTest: Bool): Void;
 
- public function setEventCallback(callback: () -> Void): Void;
+ public static function setEventCallback(callback: () -> Void): Void;
 
- public function setLogWindow(logWindow: Window_BattleLog): Void;
+ public static function setLogWindow(logWindow: Window_BattleLog): Void;
 
- public function setStatusWindow(statusWindow: Window_BattleStatus): Void;
+ public static function setStatusWindow(statusWindow: Window_BattleStatus): Void;
 
- public function setSpriteset(spriteset: Spriteset_Battle): Void;
+ public static function setSpriteset(spriteset: Spriteset_Battle): Void;
 
- public function onEncounter(): Void;
+ public static function onEncounter(): Void;
 
- public function ratePreemptive(): Float;
+ public static function ratePreemptive(): Float;
 
- public function rateSurprise(): Float;
+ public static function rateSurprise(): Float;
 
- public function saveBgmAndBgs(): Void;
+ public static function saveBgmAndBgs(): Void;
 
- public function playBattleBgm(): Void;
+ public static function playBattleBgm(): Void;
 
- public function playVictoryMe(): Void;
+ public static function playVictoryMe(): Void;
 
- public function playDefeatMe(): Void;
+ public static function playDefeatMe(): Void;
 
- public function replayBgmAndBgs(): Void;
+ public static function replayBgmAndBgs(): Void;
 
- public function makeEscapeRatio(): Void;
+ public static function makeEscapeRatio(): Void;
 
- public function update(): Void;
+ public static function update(): Void;
 
- public function updateEvent(): Bool;
+ public static function updateEvent(): Bool;
 
- public function updateEventMain(): Bool;
+ public static function updateEventMain(): Bool;
 
- public function isBusy(): Bool;
+ public static function isBusy(): Bool;
 
- public function isInputting(): Bool;
+ public static function isInputting(): Bool;
 
- public function isInTurn(): Bool;
+ public static function isInTurn(): Bool;
 
- public function isTurnEnd(): Bool;
+ public static function isTurnEnd(): Bool;
 
- public function isAborting(): Bool;
+ public static function isAborting(): Bool;
 
- public function isBattleEnd(): Bool;
+ public static function isBattleEnd(): Bool;
 
- public function canEscape(): Bool;
+ public static function canEscape(): Bool;
 
- public function canLose(): Bool;
+ public static function canLose(): Bool;
 
- public function isEscaped(): Bool;
- public function actor(): Game_Actor;
+ public static function isEscaped(): Bool;
+ public static function actor(): Game_Actor;
 
- public function clearActor(): Void;
+ public static function clearActor(): Void;
 
- public function changeActor(newActorIndex: Int,
+ public static function changeActor(newActorIndex: Int,
   lastActorActionState: String): Void;
 
- public function startBattle(): Void;
+ public static function startBattle(): Void;
 
- public function displayStartMessages(): Void;
+ public static function displayStartMessages(): Void;
 
- public function startInput(): Void;
+ public static function startInput(): Void;
 
- public function inputtingAction(): Game_Action;
+ public static function inputtingAction(): Game_Action;
 
- public function selectNextCommand(): Void;
+ public static function selectNextCommand(): Void;
 
- public function selectPreviousCommand(): Void;
+ public static function selectPreviousCommand(): Void;
 
- public function refreshStatus(): Void;
+ public static function refreshStatus(): Void;
 
- public function startTurn(): Void;
+ public static function startTurn(): Void;
 
- public function updateTurn(): Void;
+ public static function updateTurn(): Void;
 
- public function processTurn(): Void;
+ public static function processTurn(): Void;
 
- public function endTurn(): Void;
+ public static function endTurn(): Void;
 
- public function updateTurnEnd(): Void;
+ public static function updateTurnEnd(): Void;
 
- public function getNextSubject(): Game_Battler;
+ public static function getNextSubject(): Game_Battler;
 
- public function allBattleMembers(): Array<Game_Battler>;
+ public static function allBattleMembers(): Array<Game_Battler>;
 
- public function makeActionOrders(): Void;
+ public static function makeActionOrders(): Void;
 
- public function startAction(): Void;
+ public static function startAction(): Void;
 
- public function updateAction(): Void;
+ public static function updateAction(): Void;
 
- public function endAction(): Void;
+ public static function endAction(): Void;
 
- public function invokeAction(): Void;
+ public static function invokeAction(): Void;
 
- public function invokeNormalAction(): Void;
+ public static function invokeNormalAction(): Void;
 
- public function invokeCounterAttack(): Void;
+ public static function invokeCounterAttack(): Void;
 
- public function invokeMagicReflection(): Void;
+ public static function invokeMagicReflection(): Void;
 
- public function applySubstitute(target: Game_Battler): Game_Battler;
+ public static function applySubstitute(target: Game_Battler): Game_Battler;
 
- public function checkSubstitute(target: Game_Battler): Bool;
+ public static function checkSubstitute(target: Game_Battler): Bool;
 
- public function isActionForced(): Bool;
+ public static function isActionForced(): Bool;
 
- public function forceAction(battler: Game_Battler): Void;
+ public static function forceAction(battler: Game_Battler): Void;
 
- public function processForcedAction(): Void;
+ public static function processForcedAction(): Void;
 
- public function abort(): Void;
+ public static function abort(): Void;
 
- public function checkBattleEnd(): Bool;
+ public static function checkBattleEnd(): Bool;
 
- public function checkAbort(): Bool;
+ public static function checkAbort(): Bool;
 
- public function processVictory(): Void;
+ public static function processVictory(): Void;
 
- public function processEscape(): Bool;
+ public static function processEscape(): Bool;
 
- public function processAbort(): Void;
+ public static function processAbort(): Void;
 
- public function processDefeat(): Void;
+ public static function processDefeat(): Void;
 
- public function endBattle(result: BattleResult): Void;
+ public static function endBattle(result: BattleResult): Void;
 
- public function updateBattleEnd(): Void;
+ public static function updateBattleEnd(): Void;
 
- public function makeRewards(): Void;
+ public static function makeRewards(): Void;
 
- public function displayVictoryMessage(): Void;
+ public static function displayVictoryMessage(): Void;
 
- public function displayDefeatMessage(): Void;
+ public static function displayDefeatMessage(): Void;
 
- public function displayEscapeSuccessMessage(): Void;
+ public static function displayEscapeSuccessMessage(): Void;
 
- public function displayEscapeFailureMessage(): Void;
+ public static function displayEscapeFailureMessage(): Void;
 
- public function displayRewards(): Void;
+ public static function displayRewards(): Void;
 
- public function displayExp(): Void;
+ public static function displayExp(): Void;
 
- public function displayGold(): Void;
+ public static function displayGold(): Void;
 
- public function displayDropItems(): Void;
+ public static function displayDropItems(): Void;
 
- public function gainRewards(): Void;
+ public static function gainRewards(): Void;
 
- public function gainExp(): Void;
+ public static function gainExp(): Void;
 
- public function gainGold(): Void;
+ public static function gainGold(): Void;
 
- public function gainDropItems(): Void;
+ public static function gainDropItems(): Void;
 }
