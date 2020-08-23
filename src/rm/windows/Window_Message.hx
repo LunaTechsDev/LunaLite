@@ -19,9 +19,24 @@ extern class Window_Message extends Window_Base {
  private var _numberWindow: Window_NumberInput;
  private var _itemWindow: Window_EventItem;
 
+ #if compileMV
  public function initialize(): Void;
 
  public function initMembers(): Void;
+
+ /**
+  * Processes normal characters displayed within the message window.
+  * @param textState
+  */
+ public function processNormalCharacter(textState: String): Void;
+ #else
+ #end
+
+ /**
+  * Processes all characters displayed within the message window.
+  * @param textState
+  */
+ public function processCharacter(textState: String): Void;
 
  /**
   * Returns the sub windows attached to the message window.
@@ -107,12 +122,6 @@ extern class Window_Message extends Window_Base {
   * @param textState
   */
  public function processEscapeCharacter(code: String, textState: String): Void;
-
- /**
-  * Processes normal characters displayed within the message window.
-  * @param textState
-  */
- public function processNormalCharacter(textState: String): Void;
 
  /**
   * Starts the wait count for the message window.
