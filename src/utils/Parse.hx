@@ -9,7 +9,7 @@ class Parse {
  /**
   * Function for parsing parameters from JSON in MV/MZ
   */
- public inline static function parseParameters(parameters: String): Any {
+ public static function parseParameters(parameters: String): Any {
   var obj: DynamicAccess<Dynamic>;
   try {
    obj = JsonEx.parse(parameters);
