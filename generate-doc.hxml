@@ -15,10 +15,10 @@
 --each
 
 --next
--xml libdocs/doc.xml
--js dummy.js
+-xml libdocs/mz.xml
+-js dummyMZ.js
 
 --next
 -D compileMV
--xml libdocs/doc.xml
+-xml libdocs/mv.xml
 -js dummyMV.js
