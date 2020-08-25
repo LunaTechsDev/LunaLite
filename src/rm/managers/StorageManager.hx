@@ -1,11 +1,43 @@
 package rm.managers;
 
+import haxe.Json;
+import js.lib.Promise;
+
 /**
  * The static class that manages storage of save game data.
  */
 @:expose("StorageManager")
 @:native("StorageManager")
 extern class StorageManager {
+
+  // @todo make type for zip
+
+  #if !compileMV
+ public static function saveObject(saveName: String, object: Dynamic): Promise<Any>;
+ public static function loadObject(object: Dynamic): Promise<Any>;
+ public static function objectToJson(object: Dynamic): Promise<Any>;
+ public static function jsonToObject(json: Json): Promise<Any>;
+ public static function jsonToZip(json: Json): Promise<Any>;
+ public static function zipToJson(zip): Promise<Any>;
+ public static function saveZip(saveName: String, zip: Dynamic): Promise<Any>;
+ public static function loadZip(saveName: String, zip: Dynamic): Promise<Any>;
+ public static function saveToForage(saveName: String): Promise<Any>;
+ public static function loadFromForage(saveName: String): Promise<Any>;
+ public static function forageExists(saveName: String): Bool;
+ public static function removeForage(saveName: String): Promise<Any>;
+ public static function updateForageKeys(): Promise<Any>;
+ public static function forageKeysUpdated(): Bool;
+ public static function fsMkdir(path: String);
+ public static function fsRename(oldPath: String, newPath: String);
+ public static function fsUnlink(path: String);
+ public static function fsReadFile(path: String);
+ public static function fsWriteFile(path: String, data: Any);
+ public static function fileDirectoryPath(): String;
+ public static function filePath(): String;
+ public static function forageKey(): String;
+ public static function forageTestKey(): String;
+
+  #end
  public static function save(savefileId: Int, json: String): Void;
  public static function load(savefileId: Int): String;
  public static function exists(savefileId: Int): Bool;
