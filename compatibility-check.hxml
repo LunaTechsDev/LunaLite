@@ -1,7 +1,7 @@
 -lib jsfps
 -lib pixijs
 -lib hxnodejs
--lib hxtsdgen
+
 
 -cp src
 
