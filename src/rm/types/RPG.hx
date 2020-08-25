@@ -1099,7 +1099,25 @@ typedef CommonEvent = {
  var list: Array<EventCommand>;
 }
 
+#if !compileMV
+typedef SystemAdvanced = {
+ var gameId: Int;
+ var screenWidth: Int;
+ var screenHeight: Int;
+ var uiAreaWidth: Int;
+ var uiAreaHeight: Int;
+ var numberFontFilename: String;
+ var fallbackFonts: String;
+ var fontSize: Int;
+ var mainFontFilename: String;
+}
+#end
+
 typedef System = {
+ #if !compileMV
+ var advanced: SystemAdvanced;
+ #end
+
  /**
   * The game title.
   */
