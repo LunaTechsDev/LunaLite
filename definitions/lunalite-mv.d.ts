@@ -16866,13 +16866,6 @@ export namespace rm.windows {
 export class Window_SavefileList extends Window_Selectable {
 	constructor(x: number, y: number, width: number, height: number);
 	/**
-	 * Whether ornot the auto save feature is enabled
-	 *
-	 * @default {Bool} false
-	 * @memberof Window_SavefileList
-	 */
-	_autosave: boolean;
-	/**
 	 * Sets the mode of the save file window.
 	 *
 	 * @param {string} mode

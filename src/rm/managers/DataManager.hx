@@ -1,5 +1,6 @@
 package rm.managers;
 
+import js.lib.Promise;
 import haxe.Json;
 import rm.types.RPG.BaseItem;
 
@@ -126,19 +127,9 @@ extern class DataManager {
   */
  public static function maxSavefiles(): Int;
 
- /**
-  * Saves the RPGMakerMV game given a savefileId.
-  * Returns true if successful.
-  * @static
-  * @param {number} savefileId
-  * @returns {Bool}
-  * @memberof DataManager
-  */
- public static function saveGame(savefileId: Int): Bool;
-
- public static function loadGame(savefileId: Int): Bool;
  #if !compileMV
  public static function isMapObject(object: Dynamic): Bool;
+
  /**
   * Saves the RPGMakerMV game given a savefileId.
   * Returns true if successful.
@@ -152,7 +143,21 @@ extern class DataManager {
  public static function loadGame(savefileId: Int): Promise<Any>;
 
  public static function makeSavename(savefileId: Int): String;
-#end
+ #else
+
+ /**
+  * Saves the RPGMakerMV game given a savefileId.
+  * Returns true if successful.
+  * @static
+  * @param {number} savefileId
+  * @returns {Bool}
+  * @memberof DataManager
+  */
+ public static function saveGame(savefileId: Int): Bool;
+
+ public static function loadGame(savefileId: Int): Bool;
+ #end
+
  /**
   * Returns the last accessed save fileId upon
   * saving or loading the game.
