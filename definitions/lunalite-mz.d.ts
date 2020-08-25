@@ -16397,6 +16397,7 @@ export class Window_StatusBase extends Window_Selectable {
 	placeGauage(actor: Game_Actor, gaugeType: rm.types.GaugeType, x: number, y: number): void;
 	/**
 	 * Creates an inner sprite using a sprite class of your choosing..
+	 * Should pass in a class without actually instantiating it.
 	 * @param key
 	 * @param spriteClass
 	 */
