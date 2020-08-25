@@ -8,6 +8,7 @@ import rm.objects.Game_Picture;
  *
  * The sprite for displaying a picture.
  */
+@:expose("Sprite_Picture")
 @:native("Sprite_Picture")
 extern class Sprite_Picture {
  private var _pictureId: Int;

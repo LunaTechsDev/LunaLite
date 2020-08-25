@@ -7,6 +7,7 @@ package rm.windows;
  * The window used for the event command [Show Choices].
  * @class Window_ChoiceList
  */
+@:expose("Window_ChoiceList")
 @:native("Window_ChoiceList")
 extern class Window_ChoiceList extends Window_Command {
  private var _messageWindow: Window_Message;

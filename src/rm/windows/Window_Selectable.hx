@@ -2,6 +2,7 @@ package rm.windows;
 
 import rm.core.Rectangle;
 
+@:expose("Window_Selectable")
 @:native("Window_Selectable")
 #if compileMV
 extern class Window_Selectable extends Window_Base {

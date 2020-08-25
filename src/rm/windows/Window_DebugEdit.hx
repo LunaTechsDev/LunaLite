@@ -7,6 +7,7 @@ package rm.windows;
  * The window for displaying switches and variables on the debug screen.
  * @class Window_DebugEdit
  */
+@:expose("Window_DebugEdit")
 @:native("Window_DebugEdit")
 extern class Window_DebugEdit extends Window_Selectable {
  private var _mode: String;

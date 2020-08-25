@@ -6,6 +6,7 @@ import rm.types.RM;
 /**
  * Static class that manages plugins
  */
+@:expose("PluginManager")
 @:native("PluginManager")
 extern class PluginManager {
  private static var _path: String;

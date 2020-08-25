@@ -3,6 +3,7 @@ package rm.core;
 import pixi.core.display.DisplayObject;
 import pixi.core.display.Container;
 
+@:expose("Tilemap")
 @:native("Tilemap")
 extern class Tilemap extends Container {
  // Tile type checkers

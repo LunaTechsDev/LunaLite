@@ -11,12 +11,23 @@ import rm.types.RPG.Enemy;
  * The game object declare class for an enemy.
  * @class Game_Enemy
  */
+@:expose("Game_Enemy")
 @:native("Game_Enemy")
 extern class Game_Enemy extends Game_Battler {
+ @:native("_enemyId")
+ public var __enemyId: Int;
  private var _enemyId: Int;
+ @:native("_letter")
+ public var __letter: String;
  private var _letter: String;
+ @:native("_plural")
+ public var __plural: Bool;
  private var _plural: Bool;
+ @:native("_screenX")
+ public var __screenX: Int;
  private var _screenX: Int;
+ @:native("_screenY")
+ public var __screenY: Int;
  private var _screenY: Int;
 
  public function new(enemyId: Int, x: Int, y: Int);

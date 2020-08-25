@@ -8,6 +8,7 @@ import rm.objects.Game_Enemy;
  *
  * The sprite for displaying an enemy.
  */
+@:expose("Sprite_Enemy")
 @:native("Sprite_Enemy")
 extern class Sprite_Enemy extends Sprite_Battler {
  private var _enemy: Game_Enemy;

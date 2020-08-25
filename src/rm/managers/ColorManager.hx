@@ -7,6 +7,7 @@ import rm.core.Bitmap;
 import rm.abstracts.windows.WindowBase;
 
 #if !compileMV
+@:expose("ColorManager")
 @:native("ColorManager")
 extern class ColorManager {
  private var _windowSkin: Bitmap;

@@ -12,6 +12,7 @@ import rm.types.RPG.AnimationTiming;
  *
  * The sprite for displaying an animation.
  */
+@:expose("Sprite_Animation")
 @:native("Sprite_Animation")
 extern class Sprite_Animation extends Sprite {
  // TODO: Handle these in Haxe

@@ -2,6 +2,7 @@ package rm.core;
 
 import rm.managers.ImageManager;
 
+@:expose("CacheMap")
 @:native("CacheMap")
 extern class CacheMap {
  /**

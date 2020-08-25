@@ -8,6 +8,7 @@ import rm.types.LunaTea.WeaponImageId;
  *
  * The sprite for displaying a weapon image for attacking.
  */
+@:expose("Sprite_Weapon")
 @:native("Sprite_Weapon")
 extern class Sprite_Weapon extends Sprite_Base {
  private var _weaponImageId: WeaponImageId;

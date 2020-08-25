@@ -8,19 +8,42 @@ import rm.scenes.Scene_Base;
 /**
  * Manages the scenes of the game.
  */
+@:expose("SceneManager")
 @:native("SceneManager")
 extern class SceneManager {
- private static var _scene: Any;
- private static var _nextScene: Any;
+ @:native("_scene")
+ public static var __scene: Scene_Base;
+ private static var _scene: Scene_Base;
+ @:native("_nextScene")
+ public static var __nextScene: Scene_Base;
+ private static var _nextScene: Scene_Base;
+ @:native("_stack")
+ public static var __stack: Array<Any>;
  private static var _stack: Array<Any>;
+ @:native("_screenWidth")
+ public static var __screenWidth: Int;
  private static var _screenWidth: Int;
+ @:native("_screenHeight")
+ public static var __screenHeight: Int;
  private static var _screenHeight: Int;
+ @:native("_backgroundBitmap")
+ public static var __backgroundBitmap: Bitmap;
  private static var _backgroundBitmap: Bitmap;
+ @:native("_boxWidth")
+ public static var __boxWidth: Int;
  private static var _boxWidth: Int;
+ @:native("_boxHeight")
+ public static var __boxHeight: Int;
  private static var _boxHeight: Int;
+ @:native("_deltaTime")
+ public static var __deltaTime: Float;
  private static var _deltaTime: Float;
+ @:native("_currentTime")
+ public static var __currentTime: Float;
  private static var _currentTime: Float;
  private static var _accumulator: Int;
+ @:native("_accumulator")
+ public static var __accumulator: Int;
 
  /**
   * Convenience variable for getting the current scene.

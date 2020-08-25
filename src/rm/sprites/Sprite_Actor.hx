@@ -11,6 +11,7 @@ import rm.types.RM.Motion;
  *
  * The sprite for displaying an actor.
  */
+@:expose("Sprite_Actor")
 @:native("Sprite_Actor")
 extern class Sprite_Actor extends Sprite_Battler {
  public static var MOTIONS: {

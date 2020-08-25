@@ -8,9 +8,14 @@ import rm.types.RPG.BaseItem;
  * This is required, because the save data should not include the database object itself.
  * @class Game_Item
  */
+@:expose("Game_Item")
 @:native("Game_Item")
 extern class Game_Item {
+ @:native("_dataClass")
+ public var __dataClass: String;
  private var _dataClass: String;
+ @native("_itemId")
+ public var __itemId: Int;
  private var _itemId: Int;
 
  public function new(item: BaseItem): Void;

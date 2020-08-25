@@ -9,6 +9,7 @@ import rm.objects.Game_Actor;
  * The window for displaying the skill user's status on the skill screen.
  * @class Window_SkillStatus
  */
+@:expose("Window_SkillStatus")
 @:native("Window_SkillStatus")
 extern class Window_SkillStatus extends Window_Base {
  /**

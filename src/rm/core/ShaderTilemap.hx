@@ -5,6 +5,7 @@ import pixi.core.renderers.webgl.Renderer;
 import pixi.core.renderers.canvas.CanvasRenderer;
 import pixi.core.renderers.AbstractRenderer;
 
+@:expose("ShaderTilemap")
 @:native("ShaderTilemap")
 extern class ShaderTilemap extends Tilemap {
  /**

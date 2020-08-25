@@ -8,6 +8,7 @@ import rm.core.Bitmap;
  * Static class that manages images. Loading the images
  * and create bitmap objects.
  */
+@:expose("ImageManager")
 @:native("ImageManager")
 extern class ImageManager {
  #if !compileMV

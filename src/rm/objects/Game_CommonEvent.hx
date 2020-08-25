@@ -2,9 +2,14 @@ package rm.objects;
 
 import rm.types.RPG;
 
+@:expose("Game_CommonEvent")
 @:native("Game_CommonEvent")
 extern class Game_CommonEvent {
+ @:native("_commonEventId")
+ public var __commonEventId: Int;
  private var _commonEventId: Int;
+ @:native("_interpreter")
+ public var __interpreter: Game_Interpreter;
  private var _interpreter: Game_Interpreter;
 
  public function new(commonEventId: Int);

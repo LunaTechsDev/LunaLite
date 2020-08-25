@@ -5,6 +5,7 @@ package rm.objects;
  * The game object class for a picture.
  *
  */
+@:expose("Game_Picture")
 @:native("Game_Picture")
 extern class Game_Picture {
  /**

@@ -8,6 +8,7 @@ package rm.windows;
  * @class Window_MenuStatus
  * @extends {Window_Selectable}
  */
+@:expose("Window_MenuStatus")
 @:native("Window_MenuStatus")
 extern class Window_MenuStatus extends Window_Selectable {
  private var _formationMode: Bool;

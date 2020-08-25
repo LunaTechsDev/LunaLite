@@ -3,6 +3,7 @@ package rm.scenes;
 /**
  * The scene class of the load game screen.
  */
+@:expose("Scene_Load")
 @:native("Scene_Load")
 extern class Scene_Load extends Scene_File {
  private var _loadSuccess: Bool;

@@ -17,6 +17,7 @@ typedef Branch = {
  * The interpreter for running event commands.
  * @class Game_Interpreter
  */
+@:expose("Game_Interpreter")
 @:native("Game_Interpreter")
 extern class Game_Interpreter {
  private var _depth: Int;

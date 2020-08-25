@@ -6,30 +6,77 @@ import rm.types.RPG;
  * The game object for the map. It contains scrolling and passage functions
  * along with the game interpreter.
  */
+@:expose("Game_Map")
 @:native("Game_Map")
 extern class Game_Map {
+ @:native("_interpreter")
+ public var __interpreter: Game_Interpreter;
  private var _interpreter: Game_Interpreter;
+ @:native("_mapId")
+ public var __mapId: Int;
  private var _mapId: Int;
+ @:native("_tilesetId")
+ public var __tilesetId: Int;
  private var _tilesetId: Int;
+ @:native("_events")
+ public var __events: Array<Game_Event>;
  private var _events: Array<Game_Event>;
+ @:native("_commonEvents")
+ public var __commonEvents: Array<Game_CommonEvent>;
  private var _commonEvents: Array<Game_CommonEvent>;
+ @:native("_vehicles")
+ public var __vehicles: Array<Game_Vehicle>;
  private var _vehicles: Array<Game_Vehicle>;
+ @:native("_displayX")
+ public var __displayX: Int;
  private var _displayX: Int;
+ @:native("_displayY")
+ public var __displayY: Int;
  private var _displayY: Int;
+ @:native("_nameDisplay")
+ public var __nameDisplay: Bool;
  private var _nameDisplay: Bool;
+ @:native("_scrollDirection")
+ public var __scrollDirection: Int;
  private var _scrollDirection: Int;
+ @:native("_scrollRest")
+ public var __scrollRest: Float;
  private var _scrollRest: Float;
+ @:native("_scrollSpeed")
+ public var __scrollSpeed: Float;
  private var _scrollSpeed: Float;
+ @:native("_parallaxName")
+ public var __parallaxName: String;
  private var _parallaxName: String;
+ @:native("_parallaxZero")
+ public var __parallaxZero: Bool;
  private var _parallaxZero: Bool;
+ @:native("_parallaxLoopX")
+ public var __parallaxLoopX: Bool;
  private var _parallaxLoopX: Bool;
+ @:native("_parallaxLoopY")
+ public var __parallaxLoopY: Bool;
  private var _parallaxLoopY: Bool;
+ @:native("_parallaxSx")
+ public var __parallaxSx: Int;
  private var _parallaxSx: Int;
+ @:native("_parallaxSy")
+ public var __parallaxSy: Int;
  private var _parallaxSy: Int;
+ @:native("_parallaxX")
+ public var __parallaxX: Int;
  private var _parallaxX: Int;
+ @:native("_parallaxY")
+ public var __parallaxY: Int;
  private var _parallaxY: Int;
+ @:native("_battleback1Name")
+ public var __battleback1Name: String;
  private var _battleback1Name: String;
+ @:native("_battleback2Name")
+ public var __battleback2Name: String;
  private var _battleback2Name: String;
+ @:native("_needsRefresh")
+ public var __needsRefresh: Bool;
  private var _needsRefresh: Bool;
 
  public function new(): Void;

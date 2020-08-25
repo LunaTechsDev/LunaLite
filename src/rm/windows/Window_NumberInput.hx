@@ -2,6 +2,7 @@ package rm.windows;
 
 import rm.sprites.Sprite_Button;
 
+@:expose("Window_NumberInput")
 @:native("Window_NumberInput")
 extern class Window_NumberInput extends Window_Selectable {
  private var _messageWindow: Window_Message;

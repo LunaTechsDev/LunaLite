@@ -8,6 +8,7 @@ import rm.objects.Game_Battler;
  *
  * The sprite for displaying an overlay image for a state.
  */
+@:expose("Sprite_StateOverlay")
 @:native("Sprite_StateOverlay")
 extern class Sprite_StateOverlay extends Sprite_Base {
  private var _battler: Game_Battler;

@@ -8,6 +8,8 @@ import rm.core.Sprite;
  *
  * The sprite for displaying the destination place of the touch input.
  */
+@:expose("Sprite_Destination")
+@:native("Sprite_Destination")
 extern class Sprite_Destination extends Sprite {
  private var _frameCount: Int;
 

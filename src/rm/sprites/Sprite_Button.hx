@@ -9,6 +9,7 @@ import rm.core.Sprite;
  *
  * The sprite for displaying a button.
  */
+@:expose("Sprite_Button")
 @:native("Sprite_Button")
 extern class Sprite_Button extends Sprite {
  private var _touching: Bool;

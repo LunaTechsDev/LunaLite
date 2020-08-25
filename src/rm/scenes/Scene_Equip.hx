@@ -9,6 +9,7 @@ import rm.windows.Window_EquipCommand;
 /**
  * Scene class of the equipment screen.
  */
+@:expose("Scene_Equip")
 @:native("Scene_Equip")
 extern class Scene_Equip extends Scene_MenuBase {
  private var _statusWindow: Window_EquipStatus;

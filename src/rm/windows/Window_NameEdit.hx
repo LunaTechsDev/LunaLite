@@ -10,6 +10,7 @@ import rm.core.Rectangle;
  * The window for editing an actor's name on the name input screen.
  * @class Window_NameEdit
  */
+@:expose("Window_NameEdit")
 @:native("Window_NameEdit")
 extern class Window_NameEdit {
  private var _name: String;

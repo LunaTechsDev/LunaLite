@@ -9,6 +9,7 @@ import rm.types.RPG.Effect;
  * The game object class representing a battle action.
  * @class Game_Action
  */
+@:expose("Game_Action")
 @:native("Game_Action")
 extern class Game_Action {
  public static var EFFECT_RECOVER_HP: Int;

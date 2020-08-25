@@ -8,6 +8,7 @@ import rm.types.RPG.MapEncounter;
  * the player is dashing. The Game Player State is this
  * object.
  */
+@:expose("Game_Player")
 @:native("Game_Player")
 extern class Game_Player extends Game_Character {
  private var _vehicleType: String;

@@ -7,6 +7,7 @@ import rm.types.RPG.MoveRoute;
  * Super class of Game_Player, Game_Follower, Game_Vehicle,
  * and Game_Event.
  */
+@:expose("Game_Character")
 @:native("Game_Character")
 extern class Game_Character extends Game_CharacterBase {
  public static var ROUTE_END: Int;

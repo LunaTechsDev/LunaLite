@@ -1,5 +1,6 @@
 package rm.core;
 
+@:expose("ScreenSprite")
 @:native("ScreenSprite")
 extern class ScreenSprite extends pixi.core.sprites.Sprite {
  /**

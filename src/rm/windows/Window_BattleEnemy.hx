@@ -10,6 +10,8 @@ import rm.objects.Game_Enemy;
  * The window for selecting a target enemy on the battle screen.
  * @class Window_BattleEnemy
  */
+@:expose("Window_BattleEnemy")
+@native("Window_BattleEnemy")
 extern class Window_BattleEnemy extends Window_Selectable {
  private var _enemies: Array<Game_Enemy>;
 

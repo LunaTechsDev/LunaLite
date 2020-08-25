@@ -5,6 +5,7 @@ import rm.objects.Game_Actor;
 import rm.core.Rectangle;
 
 #if !compileMV
+@:expose("Window_StatusBase")
 @:native("Window_StatusBase")
 extern class Window_StatusBase extends Window_Selectable {
  public function new(rect: Rectangle);

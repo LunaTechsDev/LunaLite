@@ -10,6 +10,7 @@ import rm.windows.Window_Base;
  * Super class of all public function item(skill, items, etc) screen scenes.
  * Super class of Scene_Item & Scene_Skill.
  */
+@:expose("Scene_ItemBase")
 @:native("Scene_ItemBase")
 extern class Scene_ItemBase extends Scene_Base {
  private var _actorWindow: Window_MenuActor;

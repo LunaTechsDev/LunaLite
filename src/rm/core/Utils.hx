@@ -1,5 +1,6 @@
 package rm.core;
 
+@:expose("Utils")
 @:native("Utils")
 extern class Utils {
  /**

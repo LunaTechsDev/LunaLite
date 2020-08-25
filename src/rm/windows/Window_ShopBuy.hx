@@ -9,6 +9,8 @@ import rm.types.RPG.BaseItem;
  * The window for selecting an item to buy on the shop screen.
  * @class Window_ShopBuy
  */
+@:expose("Window_ShopBuy")
+@:native("Window_ShopBuy")
 extern class Window_ShopBuy extends Window_Selectable {
  private var _shopGoods: Array<Array<Any>>;
  private var _money: Int;

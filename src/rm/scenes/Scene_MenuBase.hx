@@ -9,6 +9,7 @@ import rm.objects.Game_Actor;
 /**
  * The super class of all menu-type scenes
  */
+@:expose("Scene_MenuBase")
 @:native("Scene_MenuBase")
 extern class Scene_MenuBase extends Scene_Base {
  /**
@@ -45,7 +46,7 @@ extern class Scene_MenuBase extends Scene_Base {
   * @memberof Scene_MenuBase
   */
  public function actor(): Game_Actor;
- 
+
  #if !compileMV
  @:native("_cancelButton")
  public var __cancelButton: Sprite_Button;

@@ -17,6 +17,7 @@
 # Cross Compatability Conditional Checks
 --next
 -D compileMV
--js dummy.js
+-js definitions/lunalite-mv.js
+
 --next
--js dummy.js
+-js definitions/lunalite-mz.js

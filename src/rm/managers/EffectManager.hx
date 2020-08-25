@@ -6,9 +6,14 @@ import haxe.DynamicAccess;
 typedef Effect = Any;
 
 #if !compileMV
+@:expose("EffectManager")
 @:native("EffectManager")
 extern class EffectManager {
+ @:native("_cache")
+ public static var __cache: Dynamic<Dynamic>;
  private static var _cache: DynamicAccess<Dynamic>;
+ @:native("_errorUrls")
+ public static var __erorUrls: Array<Dynamic>;
  private static var _errorUrls: Array<Dynamic>;
 
  /**

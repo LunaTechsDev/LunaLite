@@ -7,6 +7,8 @@ package rm.windows;
  * The window for selecting buy/sell on the shop screen.
  * @class Window_ShopCommand
  */
+@:expose("Window_ShopCommand")
+@:native("Window_ShopCommand")
 extern class Window_ShopCommand extends Window_HorzCommand {
  private var _windowWidth: Int;
 

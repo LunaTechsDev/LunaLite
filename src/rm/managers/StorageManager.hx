@@ -3,6 +3,7 @@ package rm.managers;
 /**
  * The static class that manages storage of save game data.
  */
+@:expose("StorageManager")
 @:native("StorageManager")
 extern class StorageManager {
  public static function save(savefileId: Int, json: String): Void;

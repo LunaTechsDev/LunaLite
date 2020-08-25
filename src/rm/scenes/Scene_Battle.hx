@@ -17,6 +17,7 @@ import rm.sprites.Spriteset_Battle;
 /**
  * Scene class of the battle screen.
  */
+@:expose("Scene_Battle")
 @:native("Scene_Battle")
 #if compileMV
 extern class Scene_Battle extends Scene_Base {

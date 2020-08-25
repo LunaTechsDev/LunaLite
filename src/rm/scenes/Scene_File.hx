@@ -6,6 +6,7 @@ import rm.windows.Window_SavefileList;
 /**
  *  Super class of Scene_Save and Scene_Load
  */
+@:expose("Scene_File")
 @:native("Scene_File")
 extern class Scene_File extends Scene_MenuBase {
  private var _listWindow: Window_SavefileList;

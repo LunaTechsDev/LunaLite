@@ -6,6 +6,7 @@ import rm.windows.Window_SkillType;
 /**
  * The scene class of the skill screen.
  */
+@:expose("Scene_Skill")
 @:native("Scene_Skill")
 extern class Scene_Skill extends Scene_ItemBase {
  private var _skillTypeWindow: Window_SkillType;

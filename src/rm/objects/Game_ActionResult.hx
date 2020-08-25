@@ -12,6 +12,7 @@ import rm.types.LunaTea.BuffId;
  * member variables in this declare class are public.
  * @class Game_ActionResult
  */
+@:expose("Game_ActionResult")
 @:native("Game_ActionResult")
 extern class Game_ActionResult {
  public var used: Bool;

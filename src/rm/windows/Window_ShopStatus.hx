@@ -14,6 +14,8 @@ import rm.types.LunaTea.EquipTypeId;
  * equipment on the shop screen.
  * @class Window_ShopStatus
  */
+@:expose("Window_ShopStatus")
+@:native("Window_ShopStatus")
 extern class Window_ShopStatus extends Window_Base {
  private var _item: BaseItem;
  private var _pageIndex: Int;

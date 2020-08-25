@@ -1,41 +1,110 @@
 package rm.objects;
 
+import rm.types.LunaTea.BalloonId;
+import rm.types.LunaTea.AnimationId;
+import rm.types.LunaTea.Direction;
+import rm.types.LunaTea.CharacterPriority;
+import rm.types.LunaTea.CharacterPattern;
+import rm.types.LunaTea.MoveSpeed;
+import rm.types.LunaTea.MoveFrequency;
+
 /**
  * The super class of Game Character. It handles basic
  * information such as coordinates, images, and more
  * shared by all characters.
  */
+@:expose("Game_CharacterBase")
 @:native("Game_CharacterBase")
 extern class Game_CharacterBase {
+ @:native("_x")
+ public var __x: Int;
  private var _x: Int;
+ @:native("_y")
+ public var __y: Int;
  private var _y: Int;
+ @:native("_realX")
+ public var __realX: Int;
  private var _realX: Int;
+ @:native("_realY")
+ public var __realY: Int;
  private var _realY: Int;
- private var _moveSpeed: Int;
- private var _moveFrequency: Int;
+ @:native("_moveSpeed")
+ public var __moveSpeed: MoveSpeed;
+ private var _moveSpeed: MoveSpeed;
+ @:native("_moveFrequency")
+ public var __moveFrequency: MoveFrequency;
+ private var _moveFrequency: MoveFrequency;
+ @:native("_opacity")
+ public var __opacity: Int;
  private var _opacity: Int;
+ @:native("_blendMode")
+ public var __blendMode: Int; // TODO: Need to be changed
  private var _blendMode: Int;
- private var _direction: Int;
- private var _pattern: Int;
- private var _priorityType: Int;
+ @:native("_direction")
+ public var __direction: Direction;
+ private var _direction: Direction;
+ @:native("_pattern")
+ public var __patern: CharacterPattern;
+ private var _pattern: CharacterPattern;
+ @:native("_priorityType")
+ public var __priorityType: CharacterPriority;
+ private var _priorityType: CharacterPriority;
+ @:native("_tileId")
+ public var __tileId: Int;
  private var _tileId: Int;
+ @:native("_characterName")
+ public var __characterName: String;
  private var _characterName: String;
+ @:native("_characterIndex")
+ public var __characterIndex: Int;
  private var _characterIndex: Int;
+ @:native("_isObjectCharacter")
+ public var __isObjectCharacter: Bool;
  private var _isObjectCharacter: Bool;
+ @:native("_walkAnime")
+ public var __walkAnime: Bool;
  private var _walkAnime: Bool;
+ @:native("_stepAnime")
+ public var __stepAnime: Bool;
  private var _stepAnime: Bool;
+ @:native("_directionFix")
+ public var __directionFix: Bool;
  private var _directionFix: Bool;
+ @:native("_through")
+ public var __through: Bool;
  private var _through: Bool;
+ @:native("_transparent")
+ public var __transparent: Bool;
  private var _transparent: Bool;
+ @:native("_bushDepth")
+ public var __bushDepth: Int;
  private var _bushDepth: Int;
- private var _animationId: Int;
- private var _balloonId: Int;
+ @:native("_animationId")
+ public var __animationId: AnimationId;
+ private var _animationId: AnimationId;
+ @:native("_ballonId")
+ public var __balloonId: BalloonId;
+ private var _balloonId: BalloonId;
+ @:native("_animationPlaying")
+ public var __animationPlaying: Bool;
  private var _animationPlaying: Bool;
+ @:native("_balloonPlaying")
+ public var __balloonPlaying: Bool;
  private var _balloonPlaying: Bool;
+ @:native("_animationCount")
+ public var __animationCount: Int;
  private var _animationCount: Int;
+ @:native("_stopCount")
+ public var __stopCount: Int;
  private var _stopCount: Int;
+ @:native("_jumpCount")
+ public var __jumpCount: Int;
  private var _jumpCount: Int;
+ @:native("_jumpPeak")
+ public var __jumpPeak: Int;
  private var _jumpPeak: Int;
+ @:native("_movementSuccess")
+ public var __movementSuccess: Bool;
  private var _movementSuccess: Bool;
 
  public function new(): Void;

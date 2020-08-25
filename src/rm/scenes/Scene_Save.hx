@@ -3,6 +3,7 @@ package rm.scenes;
 /**
  * Save game screen scene for RPGMakerMV.
  */
+@:expose("Scene_Save")
 @:native("Scene_Save")
 extern class Scene_Save extends Scene_File {
  /**

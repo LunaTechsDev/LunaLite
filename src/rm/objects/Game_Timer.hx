@@ -5,6 +5,7 @@ package rm.objects;
  *
  * @class Game_Timer
  */
+@:expose("Game_Timer")
 @:native("Game_Timer")
 extern class Game_Timer {
  private var _frames: Int;

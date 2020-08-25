@@ -3,6 +3,7 @@ package rm.windows;
 import rm.core.Bitmap;
 import rm.types.RM.TextState;
 
+@:expose("Window_Message")
 @:native("Window_Message")
 extern class Window_Message extends Window_Base {
  private var _positionType: Int;

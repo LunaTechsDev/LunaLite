@@ -4,6 +4,7 @@ import rm.core.Rectangle;
 import rm.core.Sprite;
 import rm.windows.Window_TitleCommand;
 
+@:expose("Scene_Title")
 @:native("Scene_Title")
 extern class Scene_Title extends Scene_Base {
  /**

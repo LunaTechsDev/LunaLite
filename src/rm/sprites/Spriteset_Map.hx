@@ -14,7 +14,8 @@ import rm.core.Sprite;
  *
  * The set of sprites on the map screen.
  */
-@:native("Spriteset_map")
+@:expose("Spriteset_Map")
+@:native("Spriteset_Map")
 extern class Spriteset_Map extends Spriteset_Base {
  private var _parallax: TilingSprite;
  private var _tilemap: EitherType<Tilemap, ShaderTilemap>;

@@ -9,6 +9,7 @@ import js.html.CanvasElement;
 import pixi.core.renderers.webgl.Renderer;
 import pixi.core.display.Container;
 
+@:expose("WindowLayer")
 @:native("WindowLayer")
 extern class WindowLayer extends Container {
  /**

@@ -1,5 +1,6 @@
 package rm.core;
 
+@:expose("Point")
 @:native("Point")
 extern class Point extends pixi.core.math.Point {
  /**

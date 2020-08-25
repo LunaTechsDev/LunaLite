@@ -9,6 +9,7 @@ import rm.core.Rectangle;
  * The window for selecting a skill to use on the battle screen.
  * @class Window_BattleSkill
  */
+@:expose("Window_BattleSkill")
 @:native("Window_BattleSkill")
 extern class Window_BattleSkill extends Window_SkillList {
  #if compileMV

@@ -3,8 +3,11 @@ package rm.objects;
 /**
  * The game object class for game variables.
  */
+@:expose("Game_Variables")
 @:native("Game_Variables")
 extern class Game_Variables {
+ @:native("_data")
+ public var __data: Array<Int>;
  private var _data: Array<Int>;
 
  public function new(): Void;

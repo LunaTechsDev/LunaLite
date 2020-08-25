@@ -10,6 +10,7 @@ import rm.objects.Game_Actor;
  *
  * The sprite for displaying a popup damage.
  */
+@:expose("Sprite_Damage")
 @:native("Sprite_Damage")
 extern class Sprite_Damage extends Sprite {
  private var _duration: Int;

@@ -4,6 +4,7 @@ import pixi.core.math.Point;
 import pixi.core.display.DisplayObject;
 import pixi.core.display.Container;
 
+@:expose("Window")
 @:native("Window")
 extern class _Window extends Container {
  /**

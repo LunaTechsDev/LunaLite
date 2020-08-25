@@ -3,6 +3,7 @@ package rm.sprites;
 import rm.core.Sprite;
 import rm.types.RPG;
 
+@:expose("Sprite_Base")
 @:native("Sprite_Base")
 extern class Sprite_Base extends Sprite {
  /**

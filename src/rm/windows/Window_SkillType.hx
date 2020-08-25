@@ -9,6 +9,7 @@ import rm.objects.Game_Actor;
  * The window for selecting a skill type on the skill screen.
  * @class Window_SkillType
  */
+@:expose("Window_SkillType")
 @:native("Window_SkillType")
 extern class Window_SkillType extends Window_Command {
  /**

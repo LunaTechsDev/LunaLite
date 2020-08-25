@@ -14,6 +14,7 @@ import rm.types.LunaTea.BattleResult;
  * Manages the game battles to process all of the
  * events that happen within.
  */
+@:expose("BattleManager")
 @:native("BattleManager")
 extern class BattleManager {
  @:native("_phase")

@@ -2,6 +2,7 @@ package rm.core;
 
 import pixi.filters.colormatrix.ColorMatrixFilter;
 
+@:expose("ToneFilter")
 @:native("ToneFilter")
 extern class ToneFilter extends ColorMatrixFilter {
  /**

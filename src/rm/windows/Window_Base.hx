@@ -10,6 +10,7 @@ import js.lib.Object;
 import rm.core._Window;
 import utils.Fn;
 
+@:expose("Window_Base")
 @:native("Window_Base")
 extern class Window_Base extends _Window {
  #if compileMV

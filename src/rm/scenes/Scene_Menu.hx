@@ -8,6 +8,7 @@ import rm.windows.Window_MenuStatus;
 /**
  * The menu scene in your RPGMakerMV game.
  */
+@:expose("Scene_Menu")
 @:native("Scene_Menu")
 extern class Scene_Menu extends Scene_MenuBase {
  private var _commandWindow: Window_MenuCommand;

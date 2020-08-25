@@ -3,6 +3,7 @@ package rm.managers;
 /**
  * The static class that handles terms and messages.
  */
+@:expose("TextManager")
 @:native("TextManager")
 extern class TextManager {
  public static var currencyUnit: String;

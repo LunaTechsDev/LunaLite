@@ -4,6 +4,7 @@ import pixi.core.renderers.canvas.CanvasRenderer;
 import pixi.core.renderers.webgl.Renderer;
 import pixi.core.display.Container;
 
+@:expose("ToneSprite")
 @:native("ToneSprite")
 extern class ToneSprite extends Container {
  /**

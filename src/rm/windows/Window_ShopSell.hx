@@ -9,6 +9,7 @@ import rm.types.RPG.BaseItem;
  * The window for selecting an item to sell on the shop screen.
  * @class Window_ShopSell
  */
+@:expose("Window_ShopSell")
 @:native("Window_ShopSell")
 extern class Window_ShopSell extends Window_ItemList {
  public function new(x: Int, y: Int, width: Int, height: Int);

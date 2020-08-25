@@ -3,6 +3,7 @@ package rm.windows;
 import rm.types.RPG.Item;
 import rm.core.Rectangle;
 
+@:expose("Window_ItemList")
 @:native("Window_ItemList")
 extern class Window_ItemList extends Window_Selectable {
  private var _category: String;

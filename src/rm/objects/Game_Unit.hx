@@ -5,8 +5,11 @@ package rm.objects;
  *
  * @class Game_Unit
  */
+@:expose("Game_Unit")
 @:native("Game_Unit")
 extern class Game_Unit {
+ @:native("_inBattle")
+ public var __inBattle: Bool;
  private var _inBattle: Bool;
 
  public function new(): Void;

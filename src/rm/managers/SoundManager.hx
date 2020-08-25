@@ -3,11 +3,12 @@ package rm.managers;
 /**
  * Static class that plays sound effects defined in the database.
  */
+@:expose("SoundManager")
 @:native("SoundManager")
 extern class SoundManager {
  public static function preloadImportantSounds(): Void;
- public static function loadSystemSound(n: Int): Void;
- public static function playSystemSound(n: Int): Void;
+ public static function loadSystemSound(databaseNumber: Int): Void;
+ public static function playSystemSound(databaseNumber: Int): Void;
  public static function playCursor(): Void;
  public static function playOk(): Void;
  public static function playCancel(): Void;

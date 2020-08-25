@@ -8,6 +8,7 @@ import js.lib.Object;
   [classId:Int]:Int
  };
  */
+@:expose("Game_Actor")
 @:native("Game_Actor")
 extern class Game_Actor extends Game_Battler {
  private var _actorId: Int;

@@ -5,6 +5,7 @@ import rm.core.Rectangle;
 /**
  * Scene class of the name input screen.
  */
+@:expose("Scene_Name")
 @:native("Scene_Name")
 extern class Scene_Name extends Scene_MenuBase {
  #if !compileMV

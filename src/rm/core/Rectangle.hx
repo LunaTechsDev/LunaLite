@@ -1,5 +1,6 @@
 package rm.core;
 
+@:expose("Rectangle")
 @:native("Rectangle")
 extern class Rectangle extends pixi.core.math.shapes.Rectangle {
  /**

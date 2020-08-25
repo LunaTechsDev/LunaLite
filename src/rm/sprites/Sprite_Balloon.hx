@@ -8,6 +8,7 @@ import rm.types.LunaTea.BalloonId;
  *
  * The sprite for displaying a balloon icon.
  */
+@:expose("Sprite_Balloon")
 @:native("Sprite_Balloon")
 extern class Sprite_Balloon extends Sprite_Base {
  private var _balloonId: BalloonId; // TODO: Create Balloon ID abstract

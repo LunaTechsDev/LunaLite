@@ -1,11 +1,23 @@
 package rm.objects;
 
+import haxe.DynamicAccess;
+
 /**
  *  The game object class for self switches.
  */
+@:expose("Game_SelfSwitches")
 @:native("Game_SelfSwitches")
 extern class Game_SelfSwitches {
- private var _data: {key: Array<Any>};
+ /**
+  * {key: Array<Any>}
+  */
+ @:native("_data")
+ public var __data: DynamicAccess<Dynamic>;
+
+ /**
+  * {key: Array<Any>}
+  */
+ private var _data: DynamicAccess<Dynamic>;
 
  public function new(): Void;
  public function initialize(): Void;

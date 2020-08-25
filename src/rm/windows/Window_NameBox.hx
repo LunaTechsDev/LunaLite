@@ -7,6 +7,7 @@ import rm.core.Rectangle;
  * The window for displaying a speaker name above
  * the message window.
  */
+@:expose("Window_NameBox")
 @:native("Window_NameBox")
 extern class Window_NameBox extends Window_Base {
  /**
@@ -71,6 +72,7 @@ extern class Window_NameBox extends Window_Base {
  public function refresh(): Void;
 }
 #else
+@:native("window_NameBox")
 class Window_NameBox extends Window_Base {
  public function new() {
   // TODO: Fix and update with proper coordinates

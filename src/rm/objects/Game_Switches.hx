@@ -5,8 +5,11 @@ package rm.objects;
  *
  * @class Game_Switches
  */
+@:expose("Game_Switches")
 @:native("Game_Switches")
 extern class Game_Switches {
+ @:native("_data")
+ public var __data: Array<Bool>;
  private var _data: Array<Bool>;
 
  public function new(): Void;

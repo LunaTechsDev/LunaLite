@@ -10,6 +10,7 @@ import rm.types.RPG.EquipItem;
  * The window for selecting an equipment item on the equipment screen.
  * @class Window_EquipItem
  */
+@:expose("Window_EquipItem")
 @:native("Window_EquipItem")
 extern class Window_EquipItem {
  private var _actor: Game_Actor;

@@ -10,6 +10,7 @@ import pixi.core.renderers.canvas.CanvasRenderer;
 import pixi.core.renderers.webgl.Renderer;
 import pixi.core.sprites.Sprite;
 
+@:expose("Sprite")
 @:native("Sprite")
 extern class Sprite extends pixi.core.sprites.Sprite {
  /**

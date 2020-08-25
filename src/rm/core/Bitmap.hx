@@ -8,6 +8,7 @@ import js.html.CanvasElement;
 /**
  * Allows you to map pixels to the screen or draw rectangles.
  */
+@:expose("Bitmap")
 @:native("Bitmap")
 extern class Bitmap {
  /**

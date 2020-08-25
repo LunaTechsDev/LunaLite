@@ -7,6 +7,7 @@ package rm.windows;
  * The window for selecting a block of switches/variables on the debug screen.
  * @class Window_DebugRange
  */
+@:expose("Window_DebugRange")
 @:native("Window_DebugRange")
 extern class Window_DebugRange extends Window_Selectable {
  private static var lastTopRow: Int;

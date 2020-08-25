@@ -11,6 +11,8 @@ import rm.core.Rectangle;
  * The window for displaying the status of party members on the battle screen.
  * @class Window_BattleStatus
  */
+@:expose("Window_BattleStatus")
+@:native("Window_BattleStatus")
 extern class Window_BattleStatus extends Window_Selectable {
  public function new();
 
@@ -95,6 +97,15 @@ extern class Window_BattleStatus extends Window_Selectable {
   actor: Game_Actor): Void;
 }
 #else
+
+/**
+ * -----------------------------------------------------------------------------
+ * Window_BattleStatus
+ *
+ * The window for displaying the status of party members on the battle screen.
+ * @class Window_BattleStatus
+ */
+@:expose("Window_BattleStatus")
 @:native("Window_BattleStatus")
 extern class Window_BattleStatus extends Window_StatusBase {
  public function new(rect: Rectangle);

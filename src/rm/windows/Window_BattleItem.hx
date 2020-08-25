@@ -10,6 +10,7 @@ import rm.types.RPG.UsableItem;
  * The window for selecting an item to use on the battle screen.
  * @class Window_BattleItem
  */
+@expose("Window_BattleItem")
 @:native("Window_BattleItem")
 extern class Window_BattleItem extends Window_ItemList {
  #if compileMV

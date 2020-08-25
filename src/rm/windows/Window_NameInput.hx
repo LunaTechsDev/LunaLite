@@ -7,6 +7,7 @@ package rm.windows;
  * The window for selecting text characters on the name input screen.
  * @class Window_NameInputt
  */
+@:expose("Window_NameInput")
 @:native("Window_NameInput")
 extern class Window_NameInput extends Window_Selectable {
  public static var LATIN1: Array<String>;

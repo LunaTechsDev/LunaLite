@@ -2,6 +2,7 @@ package rm.sprites;
 
 import rm.objects.Game_Battler;
 
+@:expose("Sprite_Battler")
 @:native("Sprite_Battler")
 extern class Sprite_Battler extends Sprite_Base {
  private var _battler: Game_Battler;

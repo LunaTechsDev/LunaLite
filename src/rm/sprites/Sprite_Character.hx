@@ -11,6 +11,7 @@ import rm.core.Sprite;
  *
  * The sprite for displaying a character.
  */
+@:expose("Sprite_Character")
 @:native("Sprite_Character")
 extern class Sprite_Character extends Sprite_Base {
  /**

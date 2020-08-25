@@ -4,6 +4,7 @@ import rm.core.Rectangle;
 import rm.objects.Game_Actor;
 import rm.types.RPG;
 
+@:expose("Window_Status")
 @:native("Window_Status")
 #if compileMV
 extern class Window_Status extends Window_Selectable {

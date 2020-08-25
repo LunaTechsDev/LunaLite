@@ -8,6 +8,7 @@ import rm.core.Sprite;
  *
  * The sprite for displaying the timer.
  */
+@:expose("Sprite_Timer")
 @:native("Sprite_Timer")
 extern class Sprite_Timer extends Sprite {
  private var _seconds: Int;

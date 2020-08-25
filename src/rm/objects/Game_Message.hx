@@ -1,24 +1,68 @@
 package rm.objects;
 
+import rm.types.LunaTea.ChoicePositionType;
+import rm.types.LunaTea.ChocieBackgroundType;
+import rm.types.LunaTea.ChoiceCancelType;
+import rm.types.LunaTea.ChoiceDefaultType;
+import rm.types.LunaTea.MessagePositionType;
+import rm.types.LunaTea.MessageBackgroundType;
+
+@:expose("Game_Message")
 @:native("Game_Message")
 extern class Game_Message {
+ @:native("_texts")
+ public var __texts: Array<String>;
  private var _texts: Array<String>;
+ @:native("_choices")
+ public var __choices: Array<String>;
  private var _choices: Array<String>;
+ @:native("_faceName")
+ public var __faceName: String; // TODO: add validation here
  private var _faceName: String;
+ @:native("_faceIndex")
+ public var __faceIndex: Int;
  private var _faceIndex: Int;
- private var _background: Int;
- private var _positionType: Int;
- private var _choiceDefaultType: Int;
- private var _choiceCancelType: Int;
- private var _choiceBackground: Int;
- private var _choicePostionType: Int;
+ @:native("_background")
+ public var __background: MessageBackgroundType;
+ private var _background: MessageBackgroundType;
+ @:native("_positionType")
+ public var __positionType: MessagePositionType;
+ private var _positionType: MessagePositionType;
+ @:native("_choiceDefaultType")
+ public var __choiceDefaultType: ChoiceDefaultType;
+ private var _choiceDefaultType: ChoiceDefaultType;
+ @:native("_choiceCancelType")
+ public var __choiceCancelType: ChoiceCancelType;
+ private var _choiceCancelType: ChoiceCancelType;
+ @:native("_choiceBackground")
+ public var __choiceBackground: ChocieBackgroundType;
+ private var _choiceBackground: ChocieBackgroundType;
+ @:native("_choicePositionType")
+ public var __choicePositionType: ChoicePositionType;
+ private var _choicePostionType: ChoicePositionType;
+ @:native("_numInputVariableId")
+ public var __numInputVariableId: Int;
  private var _numInputVariableId: Int;
+ @:native("_numInputMaxDigits")
+ public var __numInputMaxDigits: Int;
  private var _numInputMaxDigits: Int;
+ @:native("_itemChoiceVariableId")
+ public var __itemChoiceVariableId: Int;
  private var _itemChoiceVariableId: Int;
+ @:native("_itemChoiceItypeId")
+ public var __itemChoiceItypeId: Int;
  private var _itemChoiceItypeId: Int;
+ @:native("_scrollMode")
+ public var __scrollMode: Bool;
  private var _scrollMode: Bool;
+ @:native("_scrollSpeed")
+ public var __scrollSpeed: Int;
  private var _scrollSpeed: Int;
+ @:native("_scrollNoFast")
+ public var __scrollNoFast: Bool;
  private var _scrollNoFast: Bool;
+ @:native("_choiceCallback")
+ public var __choiceCallback: (n: Int) -> Void;
  private var _choiceCallback: (n: Int) -> Void;
 
  public function new(): Void;

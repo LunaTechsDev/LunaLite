@@ -8,8 +8,11 @@ package rm.objects;
  * other than the front character, displayed in the party.
  * @class Game_Follower
  */
+@:expose("Game_Follower")
 @:native("Game_Follower")
 extern class Game_Follower extends Game_Character {
+ @:native("_memberIndex")
+ public var __memberIndex: Int;
  private var _memberIndex: Int;
 
  public function new(memberIndex: Int);

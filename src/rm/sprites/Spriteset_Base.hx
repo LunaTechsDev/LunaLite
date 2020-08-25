@@ -11,6 +11,7 @@ import rm.core.Sprite;
  *
  * The superdeclare class of Spriteset_Map and Spriteset_Battle.
  */
+@:expose("Spriteset_Base")
 @:native("Spriteset_Base")
 extern class Spriteset_Base extends Sprite {
  private var _tone: Array<Int>;

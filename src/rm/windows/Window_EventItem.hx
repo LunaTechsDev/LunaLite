@@ -9,6 +9,7 @@ import rm.types.RPG.BaseItem;
  * The window used for the event command [Select Item].
  * @class Window_EventItem
  */
+@:expose("Window_EventItem")
 @:native("Window_EventItem")
 extern class Window_EventItem extends Window_ItemList {
  private var _messageWindow: Window_Message;

@@ -11,7 +11,8 @@ class FnMacros {
   return macro $b{exprs};
  }
 
- public static macro function destruct(entity: Expr, fieldNames: Array<ExprOf<String>>): Expr {
+ public static macro function destruct(entity: Expr,
+   fieldNames: Array<ExprOf<String>>): Expr {
   var pos = Context.currentPos();
   var localVars = Context.getLocalVars();
   var classFields = Context.getLocalClass().get().fields;
@@ -33,7 +34,8 @@ class FnMacros {
      //  localVars.clear();
     }
    case _:
-    return Context.error("Object type expected instead of" + tentity.getName(), pos); // Do nothing
+    return Context.error("Object type expected instead of"
+     + tentity.getName(), pos); // Do nothing
   }
 
   // for (element in entity) {

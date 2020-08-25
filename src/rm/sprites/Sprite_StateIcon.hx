@@ -9,6 +9,7 @@ import rm.core.Sprite;
  *
  * The sprite for displaying state icons.
  */
+@:expose("Sprite_StateIcon")
 @:native("Sprite_StateIcon")
 extern class Sprite_StateIcon extends Sprite {
  private static var _iconWidth: Int;

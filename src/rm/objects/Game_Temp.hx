@@ -5,11 +5,20 @@ package rm.objects;
  * included in the save data.
  * @class Game_Temp
  */
+@:expose("Game_Temp")
 @:native("Game_Temp")
 extern class Game_Temp {
+ @:native("_isPlaytest")
+ public var __isPlaytest: Bool;
  private var _isPlaytest: Bool;
+ @:native("_commonEventId")
+ public var __commonEventId: Int;
  private var _commonEventId: Int;
+ @:native("_destinationX")
+ public var __destinationX: Int;
  private var _destinationX: Int;
+ @:native("_destinationY")
+ public var __destionationY: Int;
  private var _destinationY: Int;
  public function new(): Void;
 

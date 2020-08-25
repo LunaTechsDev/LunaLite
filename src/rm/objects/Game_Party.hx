@@ -8,6 +8,7 @@ import js.lib.Object;
  * The game object for the party. Contains information
  * such as gold and items.
  */
+@:expose("Game_Party")
 @:native("Game_Party")
 extern class Game_Party extends Game_Unit {
  public static var ABILITY_ENCOUNTER_HALF: Int;

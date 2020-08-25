@@ -4,6 +4,7 @@ import rm.core.Rectangle;
 
 typedef Info = {key: String};
 
+@:expose("Window_SavefileList")
 @:native("Window_SavefileList")
 extern class Window_SavefileList extends Window_Selectable {
  private var _mode: String;

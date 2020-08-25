@@ -13,6 +13,7 @@ import rm.types.RPG.Skill;
  * The window for selecting a skill on the skill screen.
  * @class Window_SkillList
  */
+@:expose("Window_SkillList")
 @:native("Window_SkillList")
 extern class Window_SkillList extends Window_Selectable {
  @native("_actor")

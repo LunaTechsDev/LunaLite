@@ -6,6 +6,7 @@ import rm.windows.Window_GameEnd;
 /**
  * Scene class of the game end screen.
  */
+@:expose("Scene_GameEnd")
 @:native("Scene_GameEnd")
 extern class Scene_GameEnd extends Scene_MenuBase {
  private var _commandWindow: Window_GameEnd;

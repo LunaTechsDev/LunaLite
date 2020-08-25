@@ -10,6 +10,7 @@ import rm.objects.Game_Actor;
  * The window for selecting a target actor on the battle screen.
  * @class Window_BattleActor
  */
+@:expose("Window_BattleActor")
 @:native("Window_BattleActor")
 extern class Window_BattleActor extends Window_BattleStatus {
  #if compileMV

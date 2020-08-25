@@ -1,5 +1,6 @@
 package rm.windows;
 
+@:expose("Window_MenuCommand")
 @:native("Window_MenuCommand")
 extern class Window_MenuCommand extends Window_Command {
  public function new(x: Int, y: Int): Void;

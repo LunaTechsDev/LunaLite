@@ -15,6 +15,7 @@ import js.html.CanvasElement;
  *
  * @class Graphics
  */
+@:expose("Graphics")
 @:native("Graphics")
 extern class Graphics {
  /**

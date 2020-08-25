@@ -6,6 +6,7 @@ import rm.windows.Window_Status;
 /**
  * Scene class of the status screen in RPGMakerMV.
  */
+@:expose("Scene_Status")
 @:native("Scene_Status")
 extern class Scene_Status extends Scene_MenuBase {
  private var _statusWindow: Window_Status;

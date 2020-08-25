@@ -7,6 +7,7 @@ package rm.windows;
  * The window for displaying the map name on the map screen.
  * @class Window_MapName
  */
+@:expose("Window_MapName")
 @:native("Window_MapName")
 extern class Window_MapName extends Window_Base {
  private var _showCount: Int;

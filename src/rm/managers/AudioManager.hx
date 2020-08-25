@@ -7,6 +7,7 @@ import rm.types.RM;
 /**
  * Static class that handles BGM, BGS, ME, and SE.
  */
+@:expose("AudioManager")
 @:native("AudioManager")
 extern class AudioManager {
  private static var _bgmVolume: Int;

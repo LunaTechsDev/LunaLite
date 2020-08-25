@@ -15,6 +15,7 @@ import rm.windows.Window_Gold;
 /**
  * Scene class of the shop screen.
  */
+@:expose("Scene_Shop")
 @:native("Scene_Shop")
 extern class Scene_Shop extends Scene_MenuBase {
  private var _goods: Array<Array<Any>>;

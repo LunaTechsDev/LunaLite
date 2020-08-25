@@ -9,6 +9,7 @@ import rm.windows.Window_ScrollText;
 /**
  * The scene class for the map screen.
  */
+@:expose("Scene_Map")
 @:native("Scene_Map")
 extern class Scene_Map extends Scene_Base {
  private var _waitCount: Int;

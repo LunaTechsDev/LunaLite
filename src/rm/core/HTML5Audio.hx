@@ -2,21 +2,50 @@ package rm.core;
 
 import js.html.AudioElement;
 
+@:expose("HTML5Audio")
 @:native("HTML5Audio")
 extern class HTML5Audio {
+ @:native("_initialized")
+ public var __initialized: Bool;
  private var _initialized: Bool;
+ @:native("_unlocked")
+ public var __unlocked: Bool;
  private var _unlocked: Bool;
+ @:native("_audioElement")
+ public var __audioElement: AudioElement;
  private var _audioElement: AudioElement;
+ @:native("_gainTweenInterval")
+ public var __gainTweenInterval: Int;
  private var _gainTweenInterval: Int;
+ @:native("_tweenGain")
+ public var __tweenGain: Int;
  private var _tweenGain: Int;
+ @:native("_tweenTargetGain")
+ public var __tweenTargetGain: Int;
  private var _tweenTargetGain: Int;
+ @:native("_tweenGainStep")
+ public var __tweenGainStep: Int;
  private var _tweenGainStep: Int;
+ @:native("_staticSePath")
+ public var __staticSePath: Bool;
  private var _staticSePath: Bool;
+ @:native("_volume")
+ public var __volume: Int;
  private var _volume: Int;
+ @:native("_loadListeners")
+ public var __loadListeners: Array<() -> Void>;
  private var _loadListeners: Array<() -> Void>;
+ @:native("_hasError")
+ public var __hasError: Bool;
  private var _hasError: Bool;
+ @:native("__autoPlay")
+ public var __autoPlay: Bool;
  private var _autoPlay: Bool;
+ @:native("_isLoading")
+ public var __isLoading: Bool;
  private var _isLoading: Bool;
+ @:native("_buffered")
+ public var __buffered: Bool;
  private var _buffered: Bool;
 
  /**

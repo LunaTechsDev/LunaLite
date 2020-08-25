@@ -5,9 +5,10 @@ import rm.core.Stage;
 import rm.windows.Window_Base;
 import haxe.extern.EitherType;
 
+@:expose("Scene_Base")
 @:native("Scene_Base")
 extern class Scene_Base extends Stage {
- #if !compileMV 
+ #if !compileMV
  private var _started: Bool;
  #end
  private var _active: Bool;
@@ -65,7 +66,7 @@ extern class Scene_Base extends Stage {
   */
  public function isBusy(): Bool;
 
- #if !compileMV 
+ #if !compileMV
  public function isStarted(): Bool;
  public function isFading(): Bool;
  public function createColorFilter(): Void;

@@ -11,11 +11,16 @@ import rm.types.RPG;
  * The game object declare class for a troop and the battle-related data.
  * @class Game_Troop
  */
+@:expose("Game_Temp")
 @:native("Game_Troop")
 extern class Game_Troop extends Game_Unit {
  public static var LETTER_TABLE_HALF: Array<String>;
  public static var LETTER_TABLE_FULL: Array<String>;
+ @:native("_interpreter")
+ public var __interpreter: Game_Interpreter;
  private var _interpreter: Game_Interpreter;
+ @:native("_troopId")
+ public var __troopId: Int;
  private var _troopId: Int;
 
  public function new(): Void;

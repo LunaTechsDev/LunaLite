@@ -11,6 +11,7 @@ import rm.types.RPG.BaseItem;
  * screen.
  * @class Window_ShopNumber
  */
+@:expose("Window_ShopNumber")
 @:native("Window_ShopNumber")
 extern class Window_ShopNumber extends Window_Selectable {
  /**

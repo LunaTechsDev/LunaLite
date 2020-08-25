@@ -7,6 +7,7 @@ import rm.types.RPG.AudioFile;
  * The game object class representing system data.
  * @class Game_System
  */
+@:expose("Game_System")
 @:native("Game_System")
 extern class Game_System {
  private var _saveEnabled: Bool;

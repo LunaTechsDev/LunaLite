@@ -2,6 +2,7 @@ package rm.windows;
 
 import haxe.extern.EitherType;
 
+@:expose("Window_Options")
 @:native("Window_Options")
 extern class Window_Options extends Window_Command {
  public function new();

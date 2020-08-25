@@ -10,6 +10,7 @@ import rm.objects.Game_Actor;
  * The window for selecting an equipment slot on the equipment screen.
  * @class Window_EquipSlot
  */
+@:expose("Window_EquipSlot")
 @:native("Window_EquipSlot")
 extern class Window_EquipSlot extends Window_Selectable {
  private var _actor: Game_Actor;

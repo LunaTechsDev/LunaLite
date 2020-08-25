@@ -8,6 +8,7 @@ import rm.objects.Game_Picture;
  * aliased as $gameScreen.
  * @class Game_Screen
  */
+@:expose("Game_Screen")
 @:native("Game_Screen")
 extern class Game_Screen {
  private var _shake: Int;

@@ -7,6 +7,7 @@ package rm.core;
  *
  * @class JsonEx
  */
+@:expose("JsonEx")
 @:native("JsonEx")
 extern class JsonEx {
  /**

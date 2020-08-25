@@ -10,6 +10,8 @@ import rm.core.Rectangle;
  * is handled as a window for convenience.
  * @class Window_ScrollText
  */
+@:expose("Window_ScrollText")
+@:native("Window_ScrollText")
 extern class Window_ScrollText extends Window_Base {
  private var _text: String;
  private var _allTextHeight: Int;

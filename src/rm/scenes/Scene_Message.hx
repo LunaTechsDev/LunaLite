@@ -10,6 +10,7 @@ import rm.windows.Window_Base;
 import haxe.extern.EitherType;
 
 #if !compileMV
+@:expose("Scene_Message")
 @:native("Scene_Message")
 extern class Scene_Message extends Scene_Base {
  public var isMessageWindowClosing: Bool;

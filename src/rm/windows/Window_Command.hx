@@ -2,6 +2,7 @@ package rm.windows;
 
 import rm.core.Rectangle;
 
+@:expose("Window_Command")
 @:native("Window_Command")
 extern class Window_Command extends Window_Selectable {
  #if compileMV

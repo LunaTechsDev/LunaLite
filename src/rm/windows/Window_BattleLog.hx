@@ -16,6 +16,7 @@ import rm.types.LunaTea.BuffId;
  * handled as a window for convenience.
  * @class Window_BattleLog
  */
+@:expose("Window_BattleLog")
 @:native("Window_BattleLog")
 extern class Window_BattleLog extends Window_Base {
  private var _lines: Array<String>;

@@ -3,6 +3,7 @@ package rm.core;
 import pixi.core.renderers.webgl.Renderer;
 import pixi.core.renderers.canvas.CanvasRenderer;
 
+@:expose("TilingSprite")
 @:native("TilingSprite")
 extern class TilingSprite extends pixi.extras.TilingSprite {
  /**

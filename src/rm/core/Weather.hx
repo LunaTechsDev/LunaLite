@@ -2,6 +2,7 @@ package rm.core;
 
 import pixi.core.display.Container;
 
+@:expose("Weather")
 @:native("Weather")
 extern class Weather extends Container {
  /**

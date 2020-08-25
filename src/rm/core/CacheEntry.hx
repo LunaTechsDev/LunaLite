@@ -1,5 +1,6 @@
 package rm.core;
 
+@:expose("CacheEntry")
 @:native("CacheEntry")
 extern class CacheEntry {
  /**

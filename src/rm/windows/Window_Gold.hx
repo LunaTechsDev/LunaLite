@@ -1,5 +1,6 @@
 package rm.windows;
 
+@:expose("Window_Gold")
 @:native("Window_Gold")
 extern class Window_Gold extends Window_Base {
  public function new(x: Int, y: Int): Void;
