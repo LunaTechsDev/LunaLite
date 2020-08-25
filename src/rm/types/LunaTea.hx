@@ -286,6 +286,7 @@ enum abstract Frames(Int) from Int to Int {
 @:forward
 @:forwardStatics
 enum abstract Money(Int) from Int to Int {
+ public inline var base = -1;
 }
 
 @:forward

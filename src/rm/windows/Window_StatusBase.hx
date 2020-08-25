@@ -44,10 +44,11 @@ extern class Window_StatusBase extends Window_Selectable {
 
  /**
   * Creates an inner sprite using a sprite class of your choosing..
+  * Should pass in a class without actually instantiating it.
   * @param key
   * @param spriteClass
   */
- public function createInnerSprite<T>(key: String, spriteClass: Class<T>): T;
+ public function createInnerSprite<T>(key: String, spriteClass: T): T;
 
  /**
   * Places the time gauages within the status window.
