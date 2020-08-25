@@ -28,8 +28,12 @@ extern class Window_SavefileList extends Window_Selectable {
  private var _autosave: Bool;
  #end
 
-
+ #if !compileMV
+ public function new(rect: Rectangle);
+ #else
  public function new(x: Int, y: Int, width: Int, height: Int);
+ #end
+
 
  /**
   * Sets the mode of the save file window.
