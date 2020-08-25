@@ -9,6 +9,7 @@ typedef Info = {key: String};
 extern class Window_SavefileList extends Window_Selectable {
  private var _mode: String;
 
+ #if !compileMV
  /**
   * Whether ornot the auto save feature is enabled
   *
@@ -25,6 +26,8 @@ extern class Window_SavefileList extends Window_Selectable {
   * @memberof Window_SavefileList
   */
  private var _autosave: Bool;
+ #end
+
 
  public function new(x: Int, y: Int, width: Int, height: Int);
 
