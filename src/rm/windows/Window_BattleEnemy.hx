@@ -11,7 +11,7 @@ import rm.objects.Game_Enemy;
  * @class Window_BattleEnemy
  */
 @:expose("Window_BattleEnemy")
-@native("Window_BattleEnemy")
+@:native("Window_BattleEnemy")
 extern class Window_BattleEnemy extends Window_Selectable {
  private var _enemies: Array<Game_Enemy>;
 

@@ -7,7 +7,7 @@ import js.lib.Date;
 extern class Scene_Boot extends Scene_Base {
  private var _startDate: Date;
 
- @native("_databaseLoaded")
+ @:native("_databaseLoaded")
  public var __databaseLoaded: Bool;
  private var _databaseLoaded: Bool;
 

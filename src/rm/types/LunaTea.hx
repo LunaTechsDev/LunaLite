@@ -3,31 +3,37 @@ package rm.types;
 @:forward
 @:forwardStatics
 enum abstract StateId(Int) from Int to Int {
+ public inline var base = -1;
 }
 
 @:forward
 @:forwardStatics
 enum abstract BuffId(Int) from Int to Int {
+ public inline var base = -1;
 }
 
 @:forward
 @:forwardStatics
 enum abstract ParameterId(Int) from Int to Int {
+ public inline var base = -1;
 }
 
 @:forward
 @:forwardStatics
 enum abstract EquipTypeId(Int) from Int to Int {
+ public inline var base = -1;
 }
 
 @:forward
 @:forwardStatics
 enum abstract SkillId(Int) from Int to Int {
+ public inline var base = -1;
 }
 
 @:forward
 @:forwardStatics // TODO: Add Action States from MV
 enum abstract ActionState(String) from String to String {
+ public inline var base = "";
 }
 
 @:forward
@@ -77,16 +83,19 @@ enum abstract BalloonId(Int) from Int to Int {
 @:forward
 @:forwardStatics
 enum abstract AnimationSpeed(Int) from Int to Int {
+ public inline var base = -1;
 }
 
 @:forward
 @:forwardStatics
 enum abstract WeaponImageId(Int) from Int to Int {
+ public inline var base = -1;
 }
 
 @:forward
 @:forwardStatics
 enum abstract AnimationId(Int) from Int to Int {
+ public inline var base = -1;
 }
 
 /**
@@ -265,11 +274,13 @@ enum abstract DamageColorType(Int) from Int to Int {
 @:forward
 @:forwardStatics
 enum abstract WaitMode(Int) from Int to Int {
+ public inline var base = -1;
 }
 
 @:forward
 @:forwardStatics
 enum abstract Frames(Int) from Int to Int {
+ public inline var base = -1;
 }
 
 @:forward
@@ -289,49 +300,59 @@ enum abstract GaugeType(String) from String to String {
 @:forward
 @:forwardStatics
 enum abstract SkillTypeId(Int) from Int to Int {
+ public inline var base = -1;
 }
 
 @:forward
 @:forwardStatics
 enum abstract BattleResult(Int) from Int to Int {
+ public inline var base = -1;
 }
 
 @:forward
 @:forwardStatics
 enum abstract Direction(Int) from Int to Int {
+ public inline var base = -1;
 }
 
 @:forward
 @:forwardStatics
 enum abstract EventTrigger(Int) from Int to Int {
+ public inline var base = -1;
 }
 
 @:forward
 @:forwardStatics
 enum abstract MessageBackgroundType(Int) from Int to Int {
+ public inline var base = -1;
 }
 
 @:forward
 @:forwardStatics
 enum abstract MessagePositionType(Int) from Int to Int {
+ public inline var base = -1;
 }
 
 @:forward
 @:forwardStatics
 enum abstract ChoiceDefaultType(Int) from Int to Int {
+ public inline var base = -1;
 }
 
 @:forward
 @:forwardStatics
 enum abstract ChoiceCancelType(Int) from Int to Int {
+ public inline var base = -1;
 }
 
 @:forward
 @:forwardStatics
 enum abstract ChocieBackgroundType(Int) from Int to Int {
+ public inline var base = -1;
 }
 
 @:forward
 @:forwardStatics
 enum abstract ChoicePositionType(Int) from Int to Int {
+ public inline var base = -1;
 }

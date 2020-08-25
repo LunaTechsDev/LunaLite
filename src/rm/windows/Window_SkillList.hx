@@ -16,7 +16,7 @@ import rm.types.RPG.Skill;
 @:expose("Window_SkillList")
 @:native("Window_SkillList")
 extern class Window_SkillList extends Window_Selectable {
- @native("_actor")
+ @:native("_actor")
  public var __actor: Game_Actor;
  private var _actor: Game_Actor;
  @:native("_stypeId")

@@ -14,7 +14,7 @@ extern class Game_Item {
  @:native("_dataClass")
  public var __dataClass: String;
  private var _dataClass: String;
- @native("_itemId")
+ @:native("_itemId")
  public var __itemId: Int;
  private var _itemId: Int;
 

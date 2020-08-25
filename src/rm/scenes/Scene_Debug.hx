@@ -6,7 +6,7 @@ import rm.core.Rectangle;
  * Scene class of the debug menu screen.
  */
 @:expose("Scene_Debug")
-@native("Scene_Debug")
+@:native("Scene_Debug")
 extern class Scene_Debug extends Scene_MenuBase {
  /**
   * Creates the range window.
