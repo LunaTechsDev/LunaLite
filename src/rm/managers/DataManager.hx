@@ -137,7 +137,22 @@ extern class DataManager {
  public static function saveGame(savefileId: Int): Bool;
 
  public static function loadGame(savefileId: Int): Bool;
+ #if !compileMV
+ public static function isMapObject(object: Dynamic): Bool;
+ /**
+  * Saves the RPGMakerMV game given a savefileId.
+  * Returns true if successful.
+  * @static
+  * @param {number} savefileId
+  * @returns {Bool}
+  * @memberof DataManager
+  */
+ public static function saveGame(savefileId: Int): Promise<Any>;
 
+ public static function loadGame(savefileId: Int): Promise<Any>;
+
+ public static function makeSavename(savefileId: Int): String;
+#end
  /**
   * Returns the last accessed save fileId upon
   * saving or loading the game.
