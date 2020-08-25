@@ -4023,6 +4023,7 @@ export class DataManager {
 	 * @memberof DataManager
 	 */
 	static maxSavefiles(): number;
+	static isMapObject(object: any): boolean;
 	/**
 	 * Saves the RPGMakerMV game given a savefileId.
 	 * Returns true if successful.
@@ -4031,8 +4032,9 @@ export class DataManager {
 	 * @returns {Bool}
 	 * @memberof DataManager
 	 */
-	static saveGame(savefileId: number): boolean;
-	static loadGame(savefileId: number): boolean;
+	static saveGame(savefileId: number): Promise<any>;
+	static loadGame(savefileId: number): Promise<any>;
+	static makeSavename(savefileId: number): string;
 	/**
 	 * Returns the last accessed save fileId upon
 	 * saving or loading the game.
@@ -4517,6 +4519,29 @@ export class SoundManager {
  */
 export class StorageManager {
 	protected constructor();
+	static saveObject(saveName: string, object: any): Promise<any>;
+	static loadObject(object: any): Promise<any>;
+	static objectToJson(object: any): Promise<any>;
+	static jsonToObject(json: JSON): Promise<any>;
+	static jsonToZip(json: JSON): Promise<any>;
+	static zipToJson(zip: any): Promise<any>;
+	static saveZip(saveName: string, zip: any): Promise<any>;
+	static loadZip(saveName: string, zip: any): Promise<any>;
+	static saveToForage(saveName: string): Promise<any>;
+	static loadFromForage(saveName: string): Promise<any>;
+	static forageExists(saveName: string): boolean;
+	static removeForage(saveName: string): Promise<any>;
+	static updateForageKeys(): Promise<any>;
+	static forageKeysUpdated(): boolean;
+	static fsMkdir(path: string): void;
+	static fsRename(oldPath: string, newPath: string): void;
+	static fsUnlink(path: string): void;
+	static fsReadFile(path: string): void;
+	static fsWriteFile(path: string, data: any): void;
+	static fileDirectoryPath(): string;
+	static filePath(): string;
+	static forageKey(): string;
+	static forageTestKey(): string;
 	static save(savefileId: number, json: string): void;
 	static load(savefileId: number): string;
 	static exists(savefileId: number): boolean;
@@ -17630,7 +17655,7 @@ export namespace rm.windows {
 }
 
 export class Window_SavefileList extends Window_Selectable {
-	constructor(x: number, y: number, width: number, height: number);
+	constructor(rect: Rectangle);
 	/**
 	 * Whether ornot the auto save feature is enabled
 	 *
