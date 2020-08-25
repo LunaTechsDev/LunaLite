@@ -1,0 +1,29 @@
+{
+  "name": "lunalite",
+  "version": "1.0.0",
+  "description": "> Documentation for the RPGMakerMV & MZ Platform",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "createdefs": "node combine-definitions.js", 
+    "createdocsmv": "typedoc --mode file --includeDeclarations --ignoreCompilerErrors --name 'LunaLite-MV' -out docs/ definitions/lunalite-pixi-mv.d.ts",
+    "createdocsmz": "typedoc --mode file --includeDeclarations --ignoreCompilerErrors --name 'Lunalite-MZ' --out docs/ definitions/lunalite-pixi-mz.d.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LunaTechsDev/LunaLite.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LunaTechsDev/LunaLite/issues"
+  },
+  "homepage": "https://github.com/LunaTechsDev/LunaLite#readme",
+  "dependencies": {
+    "typedoc": "^0.18.0",
+    "typescript": "^4.0.2"
+  }
+}

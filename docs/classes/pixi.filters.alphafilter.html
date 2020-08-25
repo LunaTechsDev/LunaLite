@@ -1,0 +1,736 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>AlphaFilter | Lunalite-MZ</title>
+	<meta name="description" content="Documentation for Lunalite-MZ">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">Lunalite-MZ</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/pixi.html">PIXI</a>
+				</li>
+				<li>
+					<a href="../modules/pixi.filters.html">filters</a>
+				</li>
+				<li>
+					<a href="pixi.filters.alphafilter.html">AlphaFilter</a>
+				</li>
+			</ul>
+			<h1>Class AlphaFilter</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Simplest filter - applies alpha.</p>
+					</div>
+					<p>Use this instead of Container&#39;s alpha property to avoid visual layering of individual elements.
+						AlphaFilter applies alpha evenly across the entire display object and any opaque elements it contains.
+					If elements are not opaque, they will blend with each other anyway.</p>
+					<p>Very handy if you want to use common features of all filters:</p>
+					<ol>
+						<li><p>Assign a blendMode to this filter, blend all elements inside display object with background.</p>
+						</li>
+						<li><p>To use clipping in display coordinates, assign a filterArea to the same container that has this filter.</p>
+						</li>
+					</ol>
+					<dl class="tsd-comment-tags">
+						<dt>memberof</dt>
+						<dd><p>PIXI.filters</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<a href="pixi.filter.html" class="tsd-signature-type">Filter</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">AlphaFilter</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="pixi.filters.alphafilter.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="pixi.filters.alphafilter.html#alpha" class="tsd-kind-icon">alpha</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="pixi.filters.alphafilter.html#autofit" class="tsd-kind-icon">auto<wbr>Fit</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="pixi.filters.alphafilter.html#blendmode" class="tsd-kind-icon">blend<wbr>Mode</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="pixi.filters.alphafilter.html#enabled" class="tsd-kind-icon">enabled</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="pixi.filters.alphafilter.html#legacy" class="tsd-kind-icon">legacy</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="pixi.filters.alphafilter.html#padding" class="tsd-kind-icon">padding</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="pixi.filters.alphafilter.html#program" class="tsd-kind-icon">program</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="pixi.filters.alphafilter.html#resolution" class="tsd-kind-icon">resolution</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="pixi.filters.alphafilter.html#state" class="tsd-kind-icon">state</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="pixi.filters.alphafilter.html#uniforms" class="tsd-kind-icon">uniforms</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-static"><a href="pixi.filters.alphafilter.html#source_key_map" class="tsd-kind-icon">SOURCE_<wbr>KEY_<wbr>MAP</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="pixi.filters.alphafilter.html#defaultfragmentsrc" class="tsd-kind-icon">default<wbr>Fragment<wbr>Src</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="pixi.filters.alphafilter.html#defaultvertexsrc" class="tsd-kind-icon">default<wbr>Vertex<wbr>Src</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="pixi.filters.alphafilter.html#apply" class="tsd-kind-icon">apply</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="pixi.filters.alphafilter.html#from" class="tsd-kind-icon">from</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Alpha<wbr>Filter<span class="tsd-signature-symbol">(</span>alpha<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="pixi.filters.alphafilter.html" class="tsd-signature-type">AlphaFilter</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="pixi.filter.html">Filter</a>.<a href="pixi.filter.html#constructor">constructor</a></p>
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:60</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> alpha: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="pixi.filters.alphafilter.html" class="tsd-signature-type">AlphaFilter</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="alpha" class="tsd-anchor"></a>
+					<h3>alpha</h3>
+					<div class="tsd-signature tsd-kind-icon">alpha<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in definitions/lunalite-pixi-mz.d.ts:68</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Coefficient for alpha multiplication</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>member</dt>
+							<dd><p>{number}</p>
+							</dd>
+							<dt>default</dt>
+							<dd><p>1</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+					<a name="autofit" class="tsd-anchor"></a>
+					<h3>auto<wbr>Fit</h3>
+					<div class="tsd-signature tsd-kind-icon">auto<wbr>Fit<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Overrides <a href="pixi.filter.html">Filter</a>.<a href="pixi.filter.html#autofit">autoFit</a></p>
+						<ul>
+							<li>Defined in definitions/lunalite-pixi-mz.d.ts:96</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>If enabled, PixiJS will fit the filter area into boundaries for better performance.
+							Switch it off if it does not work for specific shader.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>member</dt>
+							<dd><p>{boolean} PIXI.Filter#autoFit</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+					<a name="blendmode" class="tsd-anchor"></a>
+					<h3>blend<wbr>Mode</h3>
+					<div class="tsd-signature tsd-kind-icon">blend<wbr>Mode<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Overrides <a href="pixi.filter.html">Filter</a>.<a href="pixi.filter.html#blendmode">blendMode</a></p>
+						<ul>
+							<li>Defined in definitions/lunalite-pixi-mz.d.ts:126</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Sets the blendmode of the filter</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>member</dt>
+							<dd><p>{number}</p>
+							</dd>
+							<dt>default</dt>
+							<dd><p>PIXI.BLEND_MODES.NORMAL</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+					<a name="enabled" class="tsd-anchor"></a>
+					<h3>enabled</h3>
+					<div class="tsd-signature tsd-kind-icon">enabled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Overrides <a href="pixi.filter.html">Filter</a>.<a href="pixi.filter.html#enabled">enabled</a></p>
+						<ul>
+							<li>Defined in definitions/lunalite-pixi-mz.d.ts:89</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>If enabled is true the filter is applied, if false it will not.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>member</dt>
+							<dd><p>{boolean} PIXI.Filter#enabled</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+					<a name="legacy" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> legacy</h3>
+					<div class="tsd-signature tsd-kind-icon">legacy<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Overrides <a href="pixi.filter.html">Filter</a>.<a href="pixi.filter.html#legacy">legacy</a></p>
+						<ul>
+							<li>Defined in definitions/lunalite-pixi-mz.d.ts:102</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Legacy filters use position and uvs from attributes</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>member</dt>
+							<dd><p>{boolean} PIXI.Filter#legacy</p>
+							</dd>
+							<dt>readonly</dt>
+							<dd></dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+					<a name="padding" class="tsd-anchor"></a>
+					<h3>padding</h3>
+					<div class="tsd-signature tsd-kind-icon">padding<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Overrides <a href="pixi.filter.html">Filter</a>.<a href="pixi.filter.html#padding">padding</a></p>
+						<ul>
+							<li>Defined in definitions/lunalite-pixi-mz.d.ts:76</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The padding of the filter. Some filters require extra space to breath such as a blur.
+								Increasing this will add extra width and height to the bounds of the object that the
+							filter is applied to.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>member</dt>
+							<dd><p>{number} PIXI.Filter#padding</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+					<a name="program" class="tsd-anchor"></a>
+					<h3>program</h3>
+					<div class="tsd-signature tsd-kind-icon">program<span class="tsd-signature-symbol">:</span> <a href="pixi.program.html" class="tsd-signature-type">Program</a></div>
+					<aside class="tsd-sources">
+						<p>Overrides <a href="pixi.filter.html">Filter</a>.<a href="pixi.filter.html#program">program</a></p>
+						<ul>
+							<li>Defined in definitions/lunalite-pixi-mz.d.ts:132</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Program that the shader uses</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>member</dt>
+							<dd><p>{PIXI.Program} PIXI.Shader#program</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+					<a name="resolution" class="tsd-anchor"></a>
+					<h3>resolution</h3>
+					<div class="tsd-signature tsd-kind-icon">resolution<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Overrides <a href="pixi.filter.html">Filter</a>.<a href="pixi.filter.html#resolution">resolution</a></p>
+						<ul>
+							<li>Defined in definitions/lunalite-pixi-mz.d.ts:83</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The resolution of the filter. Setting this to be lower will lower the quality but
+							increase the performance of the filter.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>member</dt>
+							<dd><p>{number} PIXI.Filter#resolution</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+					<a name="state" class="tsd-anchor"></a>
+					<h3>state</h3>
+					<div class="tsd-signature tsd-kind-icon">state<span class="tsd-signature-symbol">:</span> <a href="pixi.state.html" class="tsd-signature-type">State</a></div>
+					<aside class="tsd-sources">
+						<p>Overrides <a href="pixi.filter.html">Filter</a>.<a href="pixi.filter.html#state">state</a></p>
+						<ul>
+							<li>Defined in definitions/lunalite-pixi-mz.d.ts:107</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The WebGL state the filter requires to render</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>member</dt>
+							<dd><p>{PIXI.State} PIXI.Filter#state</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+					<a name="uniforms" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> uniforms</h3>
+					<div class="tsd-signature tsd-kind-icon">uniforms<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<p>Overrides <a href="pixi.filter.html">Filter</a>.<a href="pixi.filter.html#uniforms">uniforms</a></p>
+						<ul>
+							<li>Defined in definitions/lunalite-pixi-mz.d.ts:138</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Shader uniform values, shortcut for <code>uniformGroup.uniforms</code></p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>readonly</dt>
+							<dd></dd>
+							<dt>member</dt>
+							<dd><p>{object}</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-static">
+					<a name="source_key_map" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagProtected">Protected</span> SOURCE_<wbr>KEY_<wbr>MAP</h3>
+					<div class="tsd-signature tsd-kind-icon">SOURCE_<wbr>KEY_<wbr>MAP<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="tonefilter.html">ToneFilter</a>.<a href="tonefilter.html#source_key_map">SOURCE_KEY_MAP</a></p>
+						<ul>
+							<li>Defined in definitions/lunalite-pixi-mz.d.ts:2672</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Used for caching shader IDs</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>static</dt>
+							<dd></dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="defaultfragmentsrc" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> default<wbr>Fragment<wbr>Src</h3>
+					<div class="tsd-signature tsd-kind-icon">default<wbr>Fragment<wbr>Src<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="tonefilter.html">ToneFilter</a>.<a href="tonefilter.html#defaultfragmentsrc">defaultFragmentSrc</a></p>
+						<ul>
+							<li>Defined in definitions/lunalite-pixi-mz.d.ts:2664</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The default fragment shader source</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>static</dt>
+							<dd></dd>
+							<dt>constant</dt>
+							<dd></dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="defaultvertexsrc" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> default<wbr>Vertex<wbr>Src</h3>
+					<div class="tsd-signature tsd-kind-icon">default<wbr>Vertex<wbr>Src<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="tonefilter.html">ToneFilter</a>.<a href="tonefilter.html#defaultvertexsrc">defaultVertexSrc</a></p>
+						<ul>
+							<li>Defined in definitions/lunalite-pixi-mz.d.ts:2656</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The default vertex shader source</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>static</dt>
+							<dd></dd>
+							<dt>constant</dt>
+							<dd></dd>
+						</dl>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="apply" class="tsd-anchor"></a>
+					<h3>apply</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">apply<span class="tsd-signature-symbol">(</span>filterManager<span class="tsd-signature-symbol">: </span><a href="pixi.systems.filtersystem.html" class="tsd-signature-type">FilterSystem</a>, input<span class="tsd-signature-symbol">: </span><a href="pixi.rendertexture.html" class="tsd-signature-type">RenderTexture</a>, output<span class="tsd-signature-symbol">: </span><a href="pixi.rendertexture.html" class="tsd-signature-type">RenderTexture</a>, clear<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, currentState<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="pixi.filter.html">Filter</a>.<a href="pixi.filter.html#apply">apply</a></p>
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:119</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Applies the filter</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>filterManager: <a href="pixi.systems.filtersystem.html" class="tsd-signature-type">FilterSystem</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The renderer to retrieve the filter from</p>
+									</div>
+								</li>
+								<li>
+									<h5>input: <a href="pixi.rendertexture.html" class="tsd-signature-type">RenderTexture</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The input render target.</p>
+									</div>
+								</li>
+								<li>
+									<h5>output: <a href="pixi.rendertexture.html" class="tsd-signature-type">RenderTexture</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The target to output to.</p>
+									</div>
+								</li>
+								<li>
+									<h5>clear: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Should the output be cleared before rendering to it</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> currentState: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="from" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> from</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">from<span class="tsd-signature-symbol">(</span>vertexSrc<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, fragmentSrc<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, uniforms<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="pixi.shader.html" class="tsd-signature-type">Shader</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="tonefilter.html">ToneFilter</a>.<a href="tonefilter.html#from">from</a></p>
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:3898</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A short hand function to create a shader based of a vertex and fragment shader</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> vertexSrc: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> fragmentSrc: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> uniforms: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="pixi.shader.html" class="tsd-signature-type">Shader</a></h4>
+							<p>an shiny new Pixi shader!</p>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="label tsd-is-external">
+						<span>Internals</span>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_pixi_js_.html">&quot;pixi.js&quot;</a>
+					</li>
+					<li class="current tsd-kind-namespace">
+						<a href="../modules/pixi.html">PIXI</a>
+						<ul>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/pixi.accessibility.html">accessibility</a>
+							</li>
+							<li class="current tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/pixi.filters.html">filters</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/pixi.graphicsutils.html">graphics<wbr>Utils</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/pixi.groupd8.html">group<wbr>D8</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/pixi.interaction.html">interaction</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/pixi.resources.html">resources</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/pixi.settings.html">settings</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/pixi.systems.html">systems</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/pixi.utils.html">utils</a>
+							</li>
+						</ul>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/haxe.html">haxe</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/pixi.html">pixi</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/rm.html">rm</a>
+					</li>
+					<li class="label tsd-is-external">
+						<span>Externals</span>
+					</li>
+					<li class=" tsd-kind-namespace tsd-is-external">
+						<a href="../modules/css.html">CSS</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-is-external">
+						<a href="../modules/intl.html">Intl</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-is-external">
+						<a href="../modules/webassembly.html">Web<wbr>Assembly</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-namespace">
+						<a href="pixi.filters.alphafilter.html" class="tsd-kind-icon">Alpha<wbr>Filter</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+								<a href="pixi.filters.alphafilter.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="pixi.filters.alphafilter.html#alpha" class="tsd-kind-icon">alpha</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+								<a href="pixi.filters.alphafilter.html#autofit" class="tsd-kind-icon">auto<wbr>Fit</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+								<a href="pixi.filters.alphafilter.html#blendmode" class="tsd-kind-icon">blend<wbr>Mode</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+								<a href="pixi.filters.alphafilter.html#enabled" class="tsd-kind-icon">enabled</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+								<a href="pixi.filters.alphafilter.html#legacy" class="tsd-kind-icon">legacy</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+								<a href="pixi.filters.alphafilter.html#padding" class="tsd-kind-icon">padding</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+								<a href="pixi.filters.alphafilter.html#program" class="tsd-kind-icon">program</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+								<a href="pixi.filters.alphafilter.html#resolution" class="tsd-kind-icon">resolution</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+								<a href="pixi.filters.alphafilter.html#state" class="tsd-kind-icon">state</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+								<a href="pixi.filters.alphafilter.html#uniforms" class="tsd-kind-icon">uniforms</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-static">
+								<a href="pixi.filters.alphafilter.html#source_key_map" class="tsd-kind-icon">SOURCE_<wbr>KEY_<wbr>MAP</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="pixi.filters.alphafilter.html#defaultfragmentsrc" class="tsd-kind-icon">default<wbr>Fragment<wbr>Src</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="pixi.filters.alphafilter.html#defaultvertexsrc" class="tsd-kind-icon">default<wbr>Vertex<wbr>Src</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="pixi.filters.alphafilter.html#apply" class="tsd-kind-icon">apply</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="pixi.filters.alphafilter.html#from" class="tsd-kind-icon">from</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="pixi.filters.blurfilter.html" class="tsd-kind-icon">Blur<wbr>Filter</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="pixi.filters.blurfilterpass.html" class="tsd-kind-icon">Blur<wbr>Filter<wbr>Pass</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="pixi.filters.colormatrixfilter.html" class="tsd-kind-icon">Color<wbr>Matrix<wbr>Filter</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="pixi.filters.displacementfilter.html" class="tsd-kind-icon">Displacement<wbr>Filter</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="pixi.filters.fxaafilter.html" class="tsd-kind-icon">FXAAFilter</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="pixi.filters.noisefilter.html" class="tsd-kind-icon">Noise<wbr>Filter</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

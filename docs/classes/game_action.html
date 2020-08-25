@@ -1,0 +1,2784 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Game_Action | Lunalite-MZ</title>
+	<meta name="description" content="Documentation for Lunalite-MZ">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">Lunalite-MZ</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="game_action.html">Game_Action</a>
+				</li>
+			</ul>
+			<h1>Class Game_Action</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Game_Action
+						The game object class representing a battle action.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">Game_Action</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="game_action.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="game_action.html#effect_add_buff" class="tsd-kind-icon">EFFECT_<wbr>ADD_<wbr>BUFF</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="game_action.html#effect_add_debuff" class="tsd-kind-icon">EFFECT_<wbr>ADD_<wbr>DEBUFF</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="game_action.html#effect_add_state" class="tsd-kind-icon">EFFECT_<wbr>ADD_<wbr>STATE</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="game_action.html#effect_common_event" class="tsd-kind-icon">EFFECT_<wbr>COMMON_<wbr>EVENT</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="game_action.html#effect_gain_tp" class="tsd-kind-icon">EFFECT_<wbr>GAIN_<wbr>TP</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="game_action.html#effect_grow" class="tsd-kind-icon">EFFECT_<wbr>GROW</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="game_action.html#effect_learn_skill" class="tsd-kind-icon">EFFECT_<wbr>LEARN_<wbr>SKILL</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="game_action.html#effect_recover_hp" class="tsd-kind-icon">EFFECT_<wbr>RECOVER_<wbr>HP</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="game_action.html#effect_recover_mp" class="tsd-kind-icon">EFFECT_<wbr>RECOVER_<wbr>MP</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="game_action.html#effect_remove_buff" class="tsd-kind-icon">EFFECT_<wbr>REMOVE_<wbr>BUFF</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="game_action.html#effect_remove_debuff" class="tsd-kind-icon">EFFECT_<wbr>REMOVE_<wbr>DEBUFF</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="game_action.html#effect_remove_state" class="tsd-kind-icon">EFFECT_<wbr>REMOVE_<wbr>STATE</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="game_action.html#effect_special" class="tsd-kind-icon">EFFECT_<wbr>SPECIAL</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="game_action.html#hittype_certain" class="tsd-kind-icon">HITTYPE_<wbr>CERTAIN</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="game_action.html#hittype_magical" class="tsd-kind-icon">HITTYPE_<wbr>MAGICAL</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="game_action.html#hittype_physical" class="tsd-kind-icon">HITTYPE_<wbr>PHYSICAL</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="game_action.html#special_effect_escape" class="tsd-kind-icon">SPECIAL_<wbr>EFFECT_<wbr>ESCAPE</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#apply" class="tsd-kind-icon">apply</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#applycritical" class="tsd-kind-icon">apply<wbr>Critical</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#applyglobal" class="tsd-kind-icon">apply<wbr>Global</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#applyguard" class="tsd-kind-icon">apply<wbr>Guard</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#applyitemeffect" class="tsd-kind-icon">apply<wbr>Item<wbr>Effect</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#applyitemusereffect" class="tsd-kind-icon">apply<wbr>Item<wbr>User<wbr>Effect</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#applyvariance" class="tsd-kind-icon">apply<wbr>Variance</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#calcelementrate" class="tsd-kind-icon">calc<wbr>Element<wbr>Rate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#checkdamagetype" class="tsd-kind-icon">check<wbr>Damage<wbr>Type</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#checkitemscope" class="tsd-kind-icon">check<wbr>Item<wbr>Scope</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#clear" class="tsd-kind-icon">clear</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#confusiontarget" class="tsd-kind-icon">confusion<wbr>Target</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#deciderandomtarget" class="tsd-kind-icon">decide<wbr>Random<wbr>Target</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#elementsmaxrate" class="tsd-kind-icon">elements<wbr>Max<wbr>Rate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#evaldamageformula" class="tsd-kind-icon">eval<wbr>Damage<wbr>Formula</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#evaluate" class="tsd-kind-icon">evaluate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#evaluatewithtarget" class="tsd-kind-icon">evaluate<wbr>With<wbr>Target</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#executedamage" class="tsd-kind-icon">execute<wbr>Damage</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#executehpdamage" class="tsd-kind-icon">execute<wbr>HpDamage</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#executempdamage" class="tsd-kind-icon">execute<wbr>MpDamage</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#friendsunit" class="tsd-kind-icon">friends<wbr>Unit</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#gaindrainedhp" class="tsd-kind-icon">gain<wbr>Drained<wbr>Hp</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#gaindrainedmp" class="tsd-kind-icon">gain<wbr>Drained<wbr>Mp</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#hasitemanyvalideffects" class="tsd-kind-icon">has<wbr>Item<wbr>Any<wbr>Valid<wbr>Effects</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#isattack" class="tsd-kind-icon">is<wbr>Attack</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#iscertainhit" class="tsd-kind-icon">is<wbr>Certain<wbr>Hit</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#isdamage" class="tsd-kind-icon">is<wbr>Damage</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#isdrain" class="tsd-kind-icon">is<wbr>Drain</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#isforall" class="tsd-kind-icon">is<wbr>For<wbr>All</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#isfordeadfriend" class="tsd-kind-icon">is<wbr>For<wbr>Dead<wbr>Friend</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#isforfriend" class="tsd-kind-icon">is<wbr>For<wbr>Friend</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#isforone" class="tsd-kind-icon">is<wbr>For<wbr>One</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#isforopponent" class="tsd-kind-icon">is<wbr>For<wbr>Opponent</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#isforrandom" class="tsd-kind-icon">is<wbr>For<wbr>Random</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#isforuser" class="tsd-kind-icon">is<wbr>For<wbr>User</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#isguard" class="tsd-kind-icon">is<wbr>Guard</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#ishpeffect" class="tsd-kind-icon">is<wbr>HpEffect</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#ishprecover" class="tsd-kind-icon">is<wbr>HpRecover</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#isitem" class="tsd-kind-icon">is<wbr>Item</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#ismagicskill" class="tsd-kind-icon">is<wbr>Magic<wbr>Skill</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#ismagical" class="tsd-kind-icon">is<wbr>Magical</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#ismpeffect" class="tsd-kind-icon">is<wbr>MpEffect</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#ismprecover" class="tsd-kind-icon">is<wbr>MpRecover</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#isphysical" class="tsd-kind-icon">is<wbr>Physical</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#isrecover" class="tsd-kind-icon">is<wbr>Recover</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#isskill" class="tsd-kind-icon">is<wbr>Skill</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#isvalid" class="tsd-kind-icon">is<wbr>Valid</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#item" class="tsd-kind-icon">item</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#itemcnt" class="tsd-kind-icon">item<wbr>Cnt</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#itemcri" class="tsd-kind-icon">item<wbr>Cri</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#itemeffectaddattackstate" class="tsd-kind-icon">item<wbr>Effect<wbr>Add<wbr>Attack<wbr>State</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#itemeffectaddbuff" class="tsd-kind-icon">item<wbr>Effect<wbr>Add<wbr>Buff</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#itemeffectadddebuff" class="tsd-kind-icon">item<wbr>Effect<wbr>Add<wbr>Debuff</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#itemeffectaddnormalstate" class="tsd-kind-icon">item<wbr>Effect<wbr>Add<wbr>Normal<wbr>State</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#itemeffectaddstate" class="tsd-kind-icon">item<wbr>Effect<wbr>Add<wbr>State</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#itemeffectcommonevent" class="tsd-kind-icon">item<wbr>Effect<wbr>Common<wbr>Event</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#itemeffectgaintp" class="tsd-kind-icon">item<wbr>Effect<wbr>Gain<wbr>Tp</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#itemeffectgrow" class="tsd-kind-icon">item<wbr>Effect<wbr>Grow</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#itemeffectlearnskill" class="tsd-kind-icon">item<wbr>Effect<wbr>Learn<wbr>Skill</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#itemeffectrecoverhp" class="tsd-kind-icon">item<wbr>Effect<wbr>Recover<wbr>Hp</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#itemeffectrecovermp" class="tsd-kind-icon">item<wbr>Effect<wbr>Recover<wbr>Mp</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#itemeffectremovebuff" class="tsd-kind-icon">item<wbr>Effect<wbr>Remove<wbr>Buff</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#itemeffectremovedebuff" class="tsd-kind-icon">item<wbr>Effect<wbr>Remove<wbr>Debuff</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#itemeffectremovestate" class="tsd-kind-icon">item<wbr>Effect<wbr>Remove<wbr>State</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#itemeffectspecial" class="tsd-kind-icon">item<wbr>Effect<wbr>Special</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#itemeva" class="tsd-kind-icon">item<wbr>Eva</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#itemhit" class="tsd-kind-icon">item<wbr>Hit</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#itemmrf" class="tsd-kind-icon">item<wbr>Mrf</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#itemtargetcandidates" class="tsd-kind-icon">item<wbr>Target<wbr>Candidates</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#lukeffectrate" class="tsd-kind-icon">luk<wbr>Effect<wbr>Rate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#makedamagevalue" class="tsd-kind-icon">make<wbr>Damage<wbr>Value</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#makesuccess" class="tsd-kind-icon">make<wbr>Success</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#maketargets" class="tsd-kind-icon">make<wbr>Targets</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#needsselection" class="tsd-kind-icon">needs<wbr>Selection</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#numrepeats" class="tsd-kind-icon">num<wbr>Repeats</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#numtargets" class="tsd-kind-icon">num<wbr>Targets</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#opponentsunit" class="tsd-kind-icon">opponents<wbr>Unit</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#prepare" class="tsd-kind-icon">prepare</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#repeattargets" class="tsd-kind-icon">repeat<wbr>Targets</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#setattack" class="tsd-kind-icon">set<wbr>Attack</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#setconfusion" class="tsd-kind-icon">set<wbr>Confusion</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#setenemyaction" class="tsd-kind-icon">set<wbr>Enemy<wbr>Action</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#setguard" class="tsd-kind-icon">set<wbr>Guard</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#setitem" class="tsd-kind-icon">set<wbr>Item</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#setitemobject" class="tsd-kind-icon">set<wbr>Item<wbr>Object</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#setskill" class="tsd-kind-icon">set<wbr>Skill</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#setsubject" class="tsd-kind-icon">set<wbr>Subject</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#settarget" class="tsd-kind-icon">set<wbr>Target</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#speed" class="tsd-kind-icon">speed</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#subject" class="tsd-kind-icon">subject</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#targetsforfriends" class="tsd-kind-icon">targets<wbr>For<wbr>Friends</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#targetsforopponents" class="tsd-kind-icon">targets<wbr>For<wbr>Opponents</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#testapply" class="tsd-kind-icon">test<wbr>Apply</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="game_action.html#testitemeffect" class="tsd-kind-icon">test<wbr>Item<wbr>Effect</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Game_<wbr><wbr>Action<span class="tsd-signature-symbol">(</span>subject<span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a>, forcing<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="game_action.html" class="tsd-signature-type">Game_Action</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29116</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>subject: <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></h5>
+								</li>
+								<li>
+									<h5>forcing: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="game_action.html" class="tsd-signature-type">Game_Action</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="effect_add_buff" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> EFFECT_<wbr>ADD_<wbr>BUFF</h3>
+					<div class="tsd-signature tsd-kind-icon">EFFECT_<wbr>ADD_<wbr>BUFF<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in definitions/lunalite-pixi-mz.d.ts:29217</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="effect_add_debuff" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> EFFECT_<wbr>ADD_<wbr>DEBUFF</h3>
+					<div class="tsd-signature tsd-kind-icon">EFFECT_<wbr>ADD_<wbr>DEBUFF<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in definitions/lunalite-pixi-mz.d.ts:29218</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="effect_add_state" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> EFFECT_<wbr>ADD_<wbr>STATE</h3>
+					<div class="tsd-signature tsd-kind-icon">EFFECT_<wbr>ADD_<wbr>STATE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in definitions/lunalite-pixi-mz.d.ts:29215</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="effect_common_event" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> EFFECT_<wbr>COMMON_<wbr>EVENT</h3>
+					<div class="tsd-signature tsd-kind-icon">EFFECT_<wbr>COMMON_<wbr>EVENT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in definitions/lunalite-pixi-mz.d.ts:29224</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="effect_gain_tp" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> EFFECT_<wbr>GAIN_<wbr>TP</h3>
+					<div class="tsd-signature tsd-kind-icon">EFFECT_<wbr>GAIN_<wbr>TP<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in definitions/lunalite-pixi-mz.d.ts:29214</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="effect_grow" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> EFFECT_<wbr>GROW</h3>
+					<div class="tsd-signature tsd-kind-icon">EFFECT_<wbr>GROW<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in definitions/lunalite-pixi-mz.d.ts:29222</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="effect_learn_skill" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> EFFECT_<wbr>LEARN_<wbr>SKILL</h3>
+					<div class="tsd-signature tsd-kind-icon">EFFECT_<wbr>LEARN_<wbr>SKILL<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in definitions/lunalite-pixi-mz.d.ts:29223</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="effect_recover_hp" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> EFFECT_<wbr>RECOVER_<wbr>HP</h3>
+					<div class="tsd-signature tsd-kind-icon">EFFECT_<wbr>RECOVER_<wbr>HP<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in definitions/lunalite-pixi-mz.d.ts:29212</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="effect_recover_mp" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> EFFECT_<wbr>RECOVER_<wbr>MP</h3>
+					<div class="tsd-signature tsd-kind-icon">EFFECT_<wbr>RECOVER_<wbr>MP<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in definitions/lunalite-pixi-mz.d.ts:29213</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="effect_remove_buff" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> EFFECT_<wbr>REMOVE_<wbr>BUFF</h3>
+					<div class="tsd-signature tsd-kind-icon">EFFECT_<wbr>REMOVE_<wbr>BUFF<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in definitions/lunalite-pixi-mz.d.ts:29219</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="effect_remove_debuff" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> EFFECT_<wbr>REMOVE_<wbr>DEBUFF</h3>
+					<div class="tsd-signature tsd-kind-icon">EFFECT_<wbr>REMOVE_<wbr>DEBUFF<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in definitions/lunalite-pixi-mz.d.ts:29220</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="effect_remove_state" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> EFFECT_<wbr>REMOVE_<wbr>STATE</h3>
+					<div class="tsd-signature tsd-kind-icon">EFFECT_<wbr>REMOVE_<wbr>STATE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in definitions/lunalite-pixi-mz.d.ts:29216</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="effect_special" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> EFFECT_<wbr>SPECIAL</h3>
+					<div class="tsd-signature tsd-kind-icon">EFFECT_<wbr>SPECIAL<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in definitions/lunalite-pixi-mz.d.ts:29221</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="hittype_certain" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> HITTYPE_<wbr>CERTAIN</h3>
+					<div class="tsd-signature tsd-kind-icon">HITTYPE_<wbr>CERTAIN<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in definitions/lunalite-pixi-mz.d.ts:29226</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="hittype_magical" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> HITTYPE_<wbr>MAGICAL</h3>
+					<div class="tsd-signature tsd-kind-icon">HITTYPE_<wbr>MAGICAL<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in definitions/lunalite-pixi-mz.d.ts:29228</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="hittype_physical" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> HITTYPE_<wbr>PHYSICAL</h3>
+					<div class="tsd-signature tsd-kind-icon">HITTYPE_<wbr>PHYSICAL<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in definitions/lunalite-pixi-mz.d.ts:29227</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="special_effect_escape" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> SPECIAL_<wbr>EFFECT_<wbr>ESCAPE</h3>
+					<div class="tsd-signature tsd-kind-icon">SPECIAL_<wbr>EFFECT_<wbr>ESCAPE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in definitions/lunalite-pixi-mz.d.ts:29225</li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="apply" class="tsd-anchor"></a>
+					<h3>apply</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">apply<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29179</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="applycritical" class="tsd-anchor"></a>
+					<h3>apply<wbr>Critical</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">apply<wbr>Critical<span class="tsd-signature-symbol">(</span>damage<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29184</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>damage: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="applyglobal" class="tsd-anchor"></a>
+					<h3>apply<wbr>Global</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">apply<wbr>Global<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29211</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="applyguard" class="tsd-anchor"></a>
+					<h3>apply<wbr>Guard</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">apply<wbr>Guard<span class="tsd-signature-symbol">(</span>damage<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, target<span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29186</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>damage: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>target: <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="applyitemeffect" class="tsd-anchor"></a>
+					<h3>apply<wbr>Item<wbr>Effect</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">apply<wbr>Item<wbr>Effect<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a>, effect<span class="tsd-signature-symbol">: </span><a href="../modules/rm.types.html#effect" class="tsd-signature-type">Effect</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29192</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></h5>
+								</li>
+								<li>
+									<h5>effect: <a href="../modules/rm.types.html#effect" class="tsd-signature-type">Effect</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="applyitemusereffect" class="tsd-anchor"></a>
+					<h3>apply<wbr>Item<wbr>User<wbr>Effect</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">apply<wbr>Item<wbr>User<wbr>Effect<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29209</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="applyvariance" class="tsd-anchor"></a>
+					<h3>apply<wbr>Variance</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">apply<wbr>Variance<span class="tsd-signature-symbol">(</span>damage<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, variance<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29185</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>damage: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>variance: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="calcelementrate" class="tsd-anchor"></a>
+					<h3>calc<wbr>Element<wbr>Rate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">calc<wbr>Element<wbr>Rate<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29182</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="checkdamagetype" class="tsd-anchor"></a>
+					<h3>check<wbr>Damage<wbr>Type</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">check<wbr>Damage<wbr>Type<span class="tsd-signature-symbol">(</span>list<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29144</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>list: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="checkitemscope" class="tsd-anchor"></a>
+					<h3>check<wbr>Item<wbr>Scope</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">check<wbr>Item<wbr>Scope<span class="tsd-signature-symbol">(</span>list<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29134</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>list: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="clear" class="tsd-anchor"></a>
+					<h3>clear</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">clear<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29118</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="confusiontarget" class="tsd-anchor"></a>
+					<h3>confusion<wbr>Target</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">confusion<wbr>Target<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29165</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="deciderandomtarget" class="tsd-anchor"></a>
+					<h3>decide<wbr>Random<wbr>Target</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">decide<wbr>Random<wbr>Target<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29158</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="elementsmaxrate" class="tsd-anchor"></a>
+					<h3>elements<wbr>Max<wbr>Rate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">elements<wbr>Max<wbr>Rate<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a>, elements<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29183</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></h5>
+								</li>
+								<li>
+									<h5>elements: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="evaldamageformula" class="tsd-anchor"></a>
+					<h3>eval<wbr>Damage<wbr>Formula</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">eval<wbr>Damage<wbr>Formula<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29181</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="evaluate" class="tsd-anchor"></a>
+					<h3>evaluate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">evaluate<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29168</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="evaluatewithtarget" class="tsd-anchor"></a>
+					<h3>evaluate<wbr>With<wbr>Target</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">evaluate<wbr>With<wbr>Target<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29170</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="executedamage" class="tsd-anchor"></a>
+					<h3>execute<wbr>Damage</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">execute<wbr>Damage<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29187</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></h5>
+								</li>
+								<li>
+									<h5>value: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="executehpdamage" class="tsd-anchor"></a>
+					<h3>execute<wbr>HpDamage</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">execute<wbr>HpDamage<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29188</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></h5>
+								</li>
+								<li>
+									<h5>value: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="executempdamage" class="tsd-anchor"></a>
+					<h3>execute<wbr>MpDamage</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">execute<wbr>MpDamage<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29189</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></h5>
+								</li>
+								<li>
+									<h5>value: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="friendsunit" class="tsd-anchor"></a>
+					<h3>friends<wbr>Unit</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">friends<wbr>Unit<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="game_unit.html" class="tsd-signature-type">Game_Unit</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29121</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="game_unit.html" class="tsd-signature-type">Game_Unit</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="gaindrainedhp" class="tsd-anchor"></a>
+					<h3>gain<wbr>Drained<wbr>Hp</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">gain<wbr>Drained<wbr>Hp<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29190</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="gaindrainedmp" class="tsd-anchor"></a>
+					<h3>gain<wbr>Drained<wbr>Mp</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">gain<wbr>Drained<wbr>Mp<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29191</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="hasitemanyvalideffects" class="tsd-anchor"></a>
+					<h3>has<wbr>Item<wbr>Any<wbr>Valid<wbr>Effects</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">has<wbr>Item<wbr>Any<wbr>Valid<wbr>Effects<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29172</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="isattack" class="tsd-anchor"></a>
+					<h3>is<wbr>Attack</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Attack<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29155</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="iscertainhit" class="tsd-anchor"></a>
+					<h3>is<wbr>Certain<wbr>Hit</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Certain<wbr>Hit<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29152</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="isdamage" class="tsd-anchor"></a>
+					<h3>is<wbr>Damage</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Damage<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29147</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="isdrain" class="tsd-anchor"></a>
+					<h3>is<wbr>Drain</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Drain<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29149</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="isforall" class="tsd-anchor"></a>
+					<h3>is<wbr>For<wbr>All</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>For<wbr>All<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29141</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="isfordeadfriend" class="tsd-anchor"></a>
+					<h3>is<wbr>For<wbr>Dead<wbr>Friend</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>For<wbr>Dead<wbr>Friend<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29137</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="isforfriend" class="tsd-anchor"></a>
+					<h3>is<wbr>For<wbr>Friend</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>For<wbr>Friend<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29136</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="isforone" class="tsd-anchor"></a>
+					<h3>is<wbr>For<wbr>One</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>For<wbr>One<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29139</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="isforopponent" class="tsd-anchor"></a>
+					<h3>is<wbr>For<wbr>Opponent</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>For<wbr>Opponent<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29135</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="isforrandom" class="tsd-anchor"></a>
+					<h3>is<wbr>For<wbr>Random</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>For<wbr>Random<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29140</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="isforuser" class="tsd-anchor"></a>
+					<h3>is<wbr>For<wbr>User</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>For<wbr>User<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29138</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="isguard" class="tsd-anchor"></a>
+					<h3>is<wbr>Guard</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Guard<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29156</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="ishpeffect" class="tsd-anchor"></a>
+					<h3>is<wbr>HpEffect</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>HpEffect<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29145</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="ishprecover" class="tsd-anchor"></a>
+					<h3>is<wbr>HpRecover</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>HpRecover<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29150</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="isitem" class="tsd-anchor"></a>
+					<h3>is<wbr>Item</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Item<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29132</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="ismagicskill" class="tsd-anchor"></a>
+					<h3>is<wbr>Magic<wbr>Skill</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Magic<wbr>Skill<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29157</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="ismagical" class="tsd-anchor"></a>
+					<h3>is<wbr>Magical</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Magical<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29154</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="ismpeffect" class="tsd-anchor"></a>
+					<h3>is<wbr>MpEffect</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>MpEffect<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29146</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="ismprecover" class="tsd-anchor"></a>
+					<h3>is<wbr>MpRecover</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>MpRecover<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29151</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="isphysical" class="tsd-anchor"></a>
+					<h3>is<wbr>Physical</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Physical<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29153</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="isrecover" class="tsd-anchor"></a>
+					<h3>is<wbr>Recover</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Recover<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29148</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="isskill" class="tsd-anchor"></a>
+					<h3>is<wbr>Skill</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Skill<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29131</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="isvalid" class="tsd-anchor"></a>
+					<h3>is<wbr>Valid</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Valid<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29161</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="item" class="tsd-anchor"></a>
+					<h3>item</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">item<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/rm.types.html#usableitem" class="tsd-signature-type">UsableItem</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29130</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/rm.types.html#usableitem" class="tsd-signature-type">UsableItem</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="itemcnt" class="tsd-anchor"></a>
+					<h3>item<wbr>Cnt</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">item<wbr>Cnt<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29174</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="itemcri" class="tsd-anchor"></a>
+					<h3>item<wbr>Cri</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">item<wbr>Cri<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29178</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="itemeffectaddattackstate" class="tsd-anchor"></a>
+					<h3>item<wbr>Effect<wbr>Add<wbr>Attack<wbr>State</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">item<wbr>Effect<wbr>Add<wbr>Attack<wbr>State<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a>, effect<span class="tsd-signature-symbol">: </span><a href="../modules/rm.types.html#effect" class="tsd-signature-type">Effect</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29197</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></h5>
+								</li>
+								<li>
+									<h5>effect: <a href="../modules/rm.types.html#effect" class="tsd-signature-type">Effect</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="itemeffectaddbuff" class="tsd-anchor"></a>
+					<h3>item<wbr>Effect<wbr>Add<wbr>Buff</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">item<wbr>Effect<wbr>Add<wbr>Buff<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a>, effect<span class="tsd-signature-symbol">: </span><a href="../modules/rm.types.html#effect" class="tsd-signature-type">Effect</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29200</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></h5>
+								</li>
+								<li>
+									<h5>effect: <a href="../modules/rm.types.html#effect" class="tsd-signature-type">Effect</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="itemeffectadddebuff" class="tsd-anchor"></a>
+					<h3>item<wbr>Effect<wbr>Add<wbr>Debuff</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">item<wbr>Effect<wbr>Add<wbr>Debuff<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a>, effect<span class="tsd-signature-symbol">: </span><a href="../modules/rm.types.html#effect" class="tsd-signature-type">Effect</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29201</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></h5>
+								</li>
+								<li>
+									<h5>effect: <a href="../modules/rm.types.html#effect" class="tsd-signature-type">Effect</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="itemeffectaddnormalstate" class="tsd-anchor"></a>
+					<h3>item<wbr>Effect<wbr>Add<wbr>Normal<wbr>State</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">item<wbr>Effect<wbr>Add<wbr>Normal<wbr>State<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a>, effect<span class="tsd-signature-symbol">: </span><a href="../modules/rm.types.html#effect" class="tsd-signature-type">Effect</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29198</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></h5>
+								</li>
+								<li>
+									<h5>effect: <a href="../modules/rm.types.html#effect" class="tsd-signature-type">Effect</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="itemeffectaddstate" class="tsd-anchor"></a>
+					<h3>item<wbr>Effect<wbr>Add<wbr>State</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">item<wbr>Effect<wbr>Add<wbr>State<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a>, effect<span class="tsd-signature-symbol">: </span><a href="../modules/rm.types.html#effect" class="tsd-signature-type">Effect</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29196</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></h5>
+								</li>
+								<li>
+									<h5>effect: <a href="../modules/rm.types.html#effect" class="tsd-signature-type">Effect</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="itemeffectcommonevent" class="tsd-anchor"></a>
+					<h3>item<wbr>Effect<wbr>Common<wbr>Event</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">item<wbr>Effect<wbr>Common<wbr>Event<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a>, effect<span class="tsd-signature-symbol">: </span><a href="../modules/rm.types.html#effect" class="tsd-signature-type">Effect</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29207</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></h5>
+								</li>
+								<li>
+									<h5>effect: <a href="../modules/rm.types.html#effect" class="tsd-signature-type">Effect</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="itemeffectgaintp" class="tsd-anchor"></a>
+					<h3>item<wbr>Effect<wbr>Gain<wbr>Tp</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">item<wbr>Effect<wbr>Gain<wbr>Tp<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a>, effect<span class="tsd-signature-symbol">: </span><a href="../modules/rm.types.html#effect" class="tsd-signature-type">Effect</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29195</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></h5>
+								</li>
+								<li>
+									<h5>effect: <a href="../modules/rm.types.html#effect" class="tsd-signature-type">Effect</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="itemeffectgrow" class="tsd-anchor"></a>
+					<h3>item<wbr>Effect<wbr>Grow</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">item<wbr>Effect<wbr>Grow<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a>, effect<span class="tsd-signature-symbol">: </span><a href="../modules/rm.types.html#effect" class="tsd-signature-type">Effect</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29205</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></h5>
+								</li>
+								<li>
+									<h5>effect: <a href="../modules/rm.types.html#effect" class="tsd-signature-type">Effect</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="itemeffectlearnskill" class="tsd-anchor"></a>
+					<h3>item<wbr>Effect<wbr>Learn<wbr>Skill</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">item<wbr>Effect<wbr>Learn<wbr>Skill<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a>, effect<span class="tsd-signature-symbol">: </span><a href="../modules/rm.types.html#effect" class="tsd-signature-type">Effect</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29206</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></h5>
+								</li>
+								<li>
+									<h5>effect: <a href="../modules/rm.types.html#effect" class="tsd-signature-type">Effect</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="itemeffectrecoverhp" class="tsd-anchor"></a>
+					<h3>item<wbr>Effect<wbr>Recover<wbr>Hp</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">item<wbr>Effect<wbr>Recover<wbr>Hp<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a>, effect<span class="tsd-signature-symbol">: </span><a href="../modules/rm.types.html#effect" class="tsd-signature-type">Effect</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29193</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></h5>
+								</li>
+								<li>
+									<h5>effect: <a href="../modules/rm.types.html#effect" class="tsd-signature-type">Effect</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="itemeffectrecovermp" class="tsd-anchor"></a>
+					<h3>item<wbr>Effect<wbr>Recover<wbr>Mp</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">item<wbr>Effect<wbr>Recover<wbr>Mp<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a>, effect<span class="tsd-signature-symbol">: </span><a href="../modules/rm.types.html#effect" class="tsd-signature-type">Effect</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29194</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></h5>
+								</li>
+								<li>
+									<h5>effect: <a href="../modules/rm.types.html#effect" class="tsd-signature-type">Effect</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="itemeffectremovebuff" class="tsd-anchor"></a>
+					<h3>item<wbr>Effect<wbr>Remove<wbr>Buff</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">item<wbr>Effect<wbr>Remove<wbr>Buff<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a>, effect<span class="tsd-signature-symbol">: </span><a href="../modules/rm.types.html#effect" class="tsd-signature-type">Effect</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29202</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></h5>
+								</li>
+								<li>
+									<h5>effect: <a href="../modules/rm.types.html#effect" class="tsd-signature-type">Effect</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="itemeffectremovedebuff" class="tsd-anchor"></a>
+					<h3>item<wbr>Effect<wbr>Remove<wbr>Debuff</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">item<wbr>Effect<wbr>Remove<wbr>Debuff<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a>, effect<span class="tsd-signature-symbol">: </span><a href="../modules/rm.types.html#effect" class="tsd-signature-type">Effect</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29203</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></h5>
+								</li>
+								<li>
+									<h5>effect: <a href="../modules/rm.types.html#effect" class="tsd-signature-type">Effect</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="itemeffectremovestate" class="tsd-anchor"></a>
+					<h3>item<wbr>Effect<wbr>Remove<wbr>State</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">item<wbr>Effect<wbr>Remove<wbr>State<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a>, effect<span class="tsd-signature-symbol">: </span><a href="../modules/rm.types.html#effect" class="tsd-signature-type">Effect</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29199</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></h5>
+								</li>
+								<li>
+									<h5>effect: <a href="../modules/rm.types.html#effect" class="tsd-signature-type">Effect</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="itemeffectspecial" class="tsd-anchor"></a>
+					<h3>item<wbr>Effect<wbr>Special</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">item<wbr>Effect<wbr>Special<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a>, effect<span class="tsd-signature-symbol">: </span><a href="../modules/rm.types.html#effect" class="tsd-signature-type">Effect</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29204</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></h5>
+								</li>
+								<li>
+									<h5>effect: <a href="../modules/rm.types.html#effect" class="tsd-signature-type">Effect</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="itemeva" class="tsd-anchor"></a>
+					<h3>item<wbr>Eva</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">item<wbr>Eva<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29177</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="itemhit" class="tsd-anchor"></a>
+					<h3>item<wbr>Hit</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">item<wbr>Hit<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29176</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="itemmrf" class="tsd-anchor"></a>
+					<h3>item<wbr>Mrf</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">item<wbr>Mrf<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29175</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="itemtargetcandidates" class="tsd-anchor"></a>
+					<h3>item<wbr>Target<wbr>Candidates</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">item<wbr>Target<wbr>Candidates<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29169</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="lukeffectrate" class="tsd-anchor"></a>
+					<h3>luk<wbr>Effect<wbr>Rate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">luk<wbr>Effect<wbr>Rate<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29210</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="makedamagevalue" class="tsd-anchor"></a>
+					<h3>make<wbr>Damage<wbr>Value</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">make<wbr>Damage<wbr>Value<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a>, critical<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29180</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></h5>
+								</li>
+								<li>
+									<h5>critical: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="makesuccess" class="tsd-anchor"></a>
+					<h3>make<wbr>Success</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">make<wbr>Success<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29208</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="maketargets" class="tsd-anchor"></a>
+					<h3>make<wbr>Targets</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">make<wbr>Targets<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29163</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="needsselection" class="tsd-anchor"></a>
+					<h3>needs<wbr>Selection</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">needs<wbr>Selection<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29142</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="numrepeats" class="tsd-anchor"></a>
+					<h3>num<wbr>Repeats</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">num<wbr>Repeats<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29133</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="numtargets" class="tsd-anchor"></a>
+					<h3>num<wbr>Targets</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">num<wbr>Targets<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29143</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="opponentsunit" class="tsd-anchor"></a>
+					<h3>opponents<wbr>Unit</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">opponents<wbr>Unit<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="game_unit.html" class="tsd-signature-type">Game_Unit</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29122</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="game_unit.html" class="tsd-signature-type">Game_Unit</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="prepare" class="tsd-anchor"></a>
+					<h3>prepare</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">prepare<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29160</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="repeattargets" class="tsd-anchor"></a>
+					<h3>repeat<wbr>Targets</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">repeat<wbr>Targets<span class="tsd-signature-symbol">(</span>targets<span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29164</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>targets: <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setattack" class="tsd-anchor"></a>
+					<h3>set<wbr>Attack</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Attack<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29124</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setconfusion" class="tsd-anchor"></a>
+					<h3>set<wbr>Confusion</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Confusion<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29159</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setenemyaction" class="tsd-anchor"></a>
+					<h3>set<wbr>Enemy<wbr>Action</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Enemy<wbr>Action<span class="tsd-signature-symbol">(</span>action<span class="tsd-signature-symbol">: </span><a href="../modules/rm.types.html#enemyaction" class="tsd-signature-type">EnemyAction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29123</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>action: <a href="../modules/rm.types.html#enemyaction" class="tsd-signature-type">EnemyAction</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setguard" class="tsd-anchor"></a>
+					<h3>set<wbr>Guard</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Guard<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29125</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setitem" class="tsd-anchor"></a>
+					<h3>set<wbr>Item</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Item<span class="tsd-signature-symbol">(</span>itemId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29127</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>itemId: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setitemobject" class="tsd-anchor"></a>
+					<h3>set<wbr>Item<wbr>Object</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Item<wbr>Object<span class="tsd-signature-symbol">(</span>object<span class="tsd-signature-symbol">: </span><a href="../modules/rm.types.html#usableitem" class="tsd-signature-type">UsableItem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29128</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>object: <a href="../modules/rm.types.html#usableitem" class="tsd-signature-type">UsableItem</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setskill" class="tsd-anchor"></a>
+					<h3>set<wbr>Skill</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Skill<span class="tsd-signature-symbol">(</span>skillId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29126</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>skillId: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setsubject" class="tsd-anchor"></a>
+					<h3>set<wbr>Subject</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Subject<span class="tsd-signature-symbol">(</span>subject<span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29119</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>subject: <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="settarget" class="tsd-anchor"></a>
+					<h3>set<wbr>Target</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Target<span class="tsd-signature-symbol">(</span>targetIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29129</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>targetIndex: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="speed" class="tsd-anchor"></a>
+					<h3>speed</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">speed<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29162</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="subject" class="tsd-anchor"></a>
+					<h3>subject</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">subject<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29120</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="targetsforfriends" class="tsd-anchor"></a>
+					<h3>targets<wbr>For<wbr>Friends</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">targets<wbr>For<wbr>Friends<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29167</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="targetsforopponents" class="tsd-anchor"></a>
+					<h3>targets<wbr>For<wbr>Opponents</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">targets<wbr>For<wbr>Opponents<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29166</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="testapply" class="tsd-anchor"></a>
+					<h3>test<wbr>Apply</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">test<wbr>Apply<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29171</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="testitemeffect" class="tsd-anchor"></a>
+					<h3>test<wbr>Item<wbr>Effect</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">test<wbr>Item<wbr>Effect<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="game_battler.html" class="tsd-signature-type">Game_Battler</a>, effect<span class="tsd-signature-symbol">: </span><a href="../modules/rm.types.html#effect" class="tsd-signature-type">Effect</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:29173</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></h5>
+								</li>
+								<li>
+									<h5>effect: <a href="../modules/rm.types.html#effect" class="tsd-signature-type">Effect</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class">
+						<a href="game_action.html" class="tsd-kind-icon">Game_<wbr><wbr>Action</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="game_action.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="game_action.html#effect_add_buff" class="tsd-kind-icon">EFFECT_<wbr>ADD_<wbr>BUFF</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="game_action.html#effect_add_debuff" class="tsd-kind-icon">EFFECT_<wbr>ADD_<wbr>DEBUFF</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="game_action.html#effect_add_state" class="tsd-kind-icon">EFFECT_<wbr>ADD_<wbr>STATE</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="game_action.html#effect_common_event" class="tsd-kind-icon">EFFECT_<wbr>COMMON_<wbr>EVENT</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="game_action.html#effect_gain_tp" class="tsd-kind-icon">EFFECT_<wbr>GAIN_<wbr>TP</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="game_action.html#effect_grow" class="tsd-kind-icon">EFFECT_<wbr>GROW</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="game_action.html#effect_learn_skill" class="tsd-kind-icon">EFFECT_<wbr>LEARN_<wbr>SKILL</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="game_action.html#effect_recover_hp" class="tsd-kind-icon">EFFECT_<wbr>RECOVER_<wbr>HP</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="game_action.html#effect_recover_mp" class="tsd-kind-icon">EFFECT_<wbr>RECOVER_<wbr>MP</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="game_action.html#effect_remove_buff" class="tsd-kind-icon">EFFECT_<wbr>REMOVE_<wbr>BUFF</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="game_action.html#effect_remove_debuff" class="tsd-kind-icon">EFFECT_<wbr>REMOVE_<wbr>DEBUFF</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="game_action.html#effect_remove_state" class="tsd-kind-icon">EFFECT_<wbr>REMOVE_<wbr>STATE</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="game_action.html#effect_special" class="tsd-kind-icon">EFFECT_<wbr>SPECIAL</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="game_action.html#hittype_certain" class="tsd-kind-icon">HITTYPE_<wbr>CERTAIN</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="game_action.html#hittype_magical" class="tsd-kind-icon">HITTYPE_<wbr>MAGICAL</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="game_action.html#hittype_physical" class="tsd-kind-icon">HITTYPE_<wbr>PHYSICAL</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="game_action.html#special_effect_escape" class="tsd-kind-icon">SPECIAL_<wbr>EFFECT_<wbr>ESCAPE</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#apply" class="tsd-kind-icon">apply</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#applycritical" class="tsd-kind-icon">apply<wbr>Critical</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#applyglobal" class="tsd-kind-icon">apply<wbr>Global</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#applyguard" class="tsd-kind-icon">apply<wbr>Guard</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#applyitemeffect" class="tsd-kind-icon">apply<wbr>Item<wbr>Effect</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#applyitemusereffect" class="tsd-kind-icon">apply<wbr>Item<wbr>User<wbr>Effect</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#applyvariance" class="tsd-kind-icon">apply<wbr>Variance</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#calcelementrate" class="tsd-kind-icon">calc<wbr>Element<wbr>Rate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#checkdamagetype" class="tsd-kind-icon">check<wbr>Damage<wbr>Type</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#checkitemscope" class="tsd-kind-icon">check<wbr>Item<wbr>Scope</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#clear" class="tsd-kind-icon">clear</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#confusiontarget" class="tsd-kind-icon">confusion<wbr>Target</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#deciderandomtarget" class="tsd-kind-icon">decide<wbr>Random<wbr>Target</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#elementsmaxrate" class="tsd-kind-icon">elements<wbr>Max<wbr>Rate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#evaldamageformula" class="tsd-kind-icon">eval<wbr>Damage<wbr>Formula</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#evaluate" class="tsd-kind-icon">evaluate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#evaluatewithtarget" class="tsd-kind-icon">evaluate<wbr>With<wbr>Target</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#executedamage" class="tsd-kind-icon">execute<wbr>Damage</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#executehpdamage" class="tsd-kind-icon">execute<wbr>HpDamage</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#executempdamage" class="tsd-kind-icon">execute<wbr>MpDamage</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#friendsunit" class="tsd-kind-icon">friends<wbr>Unit</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#gaindrainedhp" class="tsd-kind-icon">gain<wbr>Drained<wbr>Hp</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#gaindrainedmp" class="tsd-kind-icon">gain<wbr>Drained<wbr>Mp</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#hasitemanyvalideffects" class="tsd-kind-icon">has<wbr>Item<wbr>Any<wbr>Valid<wbr>Effects</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#isattack" class="tsd-kind-icon">is<wbr>Attack</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#iscertainhit" class="tsd-kind-icon">is<wbr>Certain<wbr>Hit</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#isdamage" class="tsd-kind-icon">is<wbr>Damage</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#isdrain" class="tsd-kind-icon">is<wbr>Drain</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#isforall" class="tsd-kind-icon">is<wbr>For<wbr>All</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#isfordeadfriend" class="tsd-kind-icon">is<wbr>For<wbr>Dead<wbr>Friend</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#isforfriend" class="tsd-kind-icon">is<wbr>For<wbr>Friend</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#isforone" class="tsd-kind-icon">is<wbr>For<wbr>One</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#isforopponent" class="tsd-kind-icon">is<wbr>For<wbr>Opponent</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#isforrandom" class="tsd-kind-icon">is<wbr>For<wbr>Random</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#isforuser" class="tsd-kind-icon">is<wbr>For<wbr>User</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#isguard" class="tsd-kind-icon">is<wbr>Guard</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#ishpeffect" class="tsd-kind-icon">is<wbr>HpEffect</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#ishprecover" class="tsd-kind-icon">is<wbr>HpRecover</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#isitem" class="tsd-kind-icon">is<wbr>Item</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#ismagicskill" class="tsd-kind-icon">is<wbr>Magic<wbr>Skill</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#ismagical" class="tsd-kind-icon">is<wbr>Magical</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#ismpeffect" class="tsd-kind-icon">is<wbr>MpEffect</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#ismprecover" class="tsd-kind-icon">is<wbr>MpRecover</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#isphysical" class="tsd-kind-icon">is<wbr>Physical</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#isrecover" class="tsd-kind-icon">is<wbr>Recover</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#isskill" class="tsd-kind-icon">is<wbr>Skill</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#isvalid" class="tsd-kind-icon">is<wbr>Valid</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#item" class="tsd-kind-icon">item</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#itemcnt" class="tsd-kind-icon">item<wbr>Cnt</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#itemcri" class="tsd-kind-icon">item<wbr>Cri</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#itemeffectaddattackstate" class="tsd-kind-icon">item<wbr>Effect<wbr>Add<wbr>Attack<wbr>State</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#itemeffectaddbuff" class="tsd-kind-icon">item<wbr>Effect<wbr>Add<wbr>Buff</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#itemeffectadddebuff" class="tsd-kind-icon">item<wbr>Effect<wbr>Add<wbr>Debuff</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#itemeffectaddnormalstate" class="tsd-kind-icon">item<wbr>Effect<wbr>Add<wbr>Normal<wbr>State</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#itemeffectaddstate" class="tsd-kind-icon">item<wbr>Effect<wbr>Add<wbr>State</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#itemeffectcommonevent" class="tsd-kind-icon">item<wbr>Effect<wbr>Common<wbr>Event</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#itemeffectgaintp" class="tsd-kind-icon">item<wbr>Effect<wbr>Gain<wbr>Tp</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#itemeffectgrow" class="tsd-kind-icon">item<wbr>Effect<wbr>Grow</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#itemeffectlearnskill" class="tsd-kind-icon">item<wbr>Effect<wbr>Learn<wbr>Skill</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#itemeffectrecoverhp" class="tsd-kind-icon">item<wbr>Effect<wbr>Recover<wbr>Hp</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#itemeffectrecovermp" class="tsd-kind-icon">item<wbr>Effect<wbr>Recover<wbr>Mp</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#itemeffectremovebuff" class="tsd-kind-icon">item<wbr>Effect<wbr>Remove<wbr>Buff</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#itemeffectremovedebuff" class="tsd-kind-icon">item<wbr>Effect<wbr>Remove<wbr>Debuff</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#itemeffectremovestate" class="tsd-kind-icon">item<wbr>Effect<wbr>Remove<wbr>State</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#itemeffectspecial" class="tsd-kind-icon">item<wbr>Effect<wbr>Special</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#itemeva" class="tsd-kind-icon">item<wbr>Eva</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#itemhit" class="tsd-kind-icon">item<wbr>Hit</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#itemmrf" class="tsd-kind-icon">item<wbr>Mrf</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#itemtargetcandidates" class="tsd-kind-icon">item<wbr>Target<wbr>Candidates</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#lukeffectrate" class="tsd-kind-icon">luk<wbr>Effect<wbr>Rate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#makedamagevalue" class="tsd-kind-icon">make<wbr>Damage<wbr>Value</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#makesuccess" class="tsd-kind-icon">make<wbr>Success</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#maketargets" class="tsd-kind-icon">make<wbr>Targets</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#needsselection" class="tsd-kind-icon">needs<wbr>Selection</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#numrepeats" class="tsd-kind-icon">num<wbr>Repeats</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#numtargets" class="tsd-kind-icon">num<wbr>Targets</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#opponentsunit" class="tsd-kind-icon">opponents<wbr>Unit</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#prepare" class="tsd-kind-icon">prepare</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#repeattargets" class="tsd-kind-icon">repeat<wbr>Targets</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#setattack" class="tsd-kind-icon">set<wbr>Attack</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#setconfusion" class="tsd-kind-icon">set<wbr>Confusion</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#setenemyaction" class="tsd-kind-icon">set<wbr>Enemy<wbr>Action</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#setguard" class="tsd-kind-icon">set<wbr>Guard</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#setitem" class="tsd-kind-icon">set<wbr>Item</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#setitemobject" class="tsd-kind-icon">set<wbr>Item<wbr>Object</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#setskill" class="tsd-kind-icon">set<wbr>Skill</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#setsubject" class="tsd-kind-icon">set<wbr>Subject</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#settarget" class="tsd-kind-icon">set<wbr>Target</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#speed" class="tsd-kind-icon">speed</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#subject" class="tsd-kind-icon">subject</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#targetsforfriends" class="tsd-kind-icon">targets<wbr>For<wbr>Friends</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#targetsforopponents" class="tsd-kind-icon">targets<wbr>For<wbr>Opponents</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#testapply" class="tsd-kind-icon">test<wbr>Apply</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="game_action.html#testitemeffect" class="tsd-kind-icon">test<wbr>Item<wbr>Effect</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
