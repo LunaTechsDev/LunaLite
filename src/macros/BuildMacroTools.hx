@@ -66,39 +66,34 @@ class BuildMacroTools {
   });
   return fields;
  }
-
- macro public static function rmClass(original: Dynamic): Array<Field> {
-  var pos = Context.currentPos();
-  var fields = Context.getBuildFields();
-  var aliasedFields = _getFieldsToAlias(fields);
-
-  for (field in aliasedFields) {
-   var originalFunc = field.kind.getParameters();
-   var originalExpr = originalFunc[0].expr;
-   var methodName = field.name;
-   var proto = 'Fn.getPrProp($original, $methodName);';
-   var self = 'Fn.self;';
-
-   var exprs = [macro {var __alias = $v{proto}},
-    macro {var __self = $v{self}}
-   ];
-   var newFunc: Function = {
-    args: [],
-    ret: null,
-    expr: macro $b{exprs}
-   }
-
-   fields.push({
-    name: '${methodName}',
-    access: [Access.APublic, Access.AStatic,
-     Access.AInline],
-    kind: FieldType.FFun(newFunc),
-    pos: field.pos
-   });
-   // Remove old field
-   fields.splice(fields.indexOf(field), 1);
-  }
-
-  return fields;
- }
+ //  macro public static function rmClass(original: Dynamic): Array<Field> {
+ //   var pos = Context.currentPos();
+ //   var fields = Context.getBuildFields();
+ //   var aliasedFields = _getFieldsToAlias(fields);
+ //   for (field in aliasedFields) {
+ //    var originalFunc = field.kind.getParameters();
+ //    var originalExpr = originalFunc[0].expr;
+ //    var methodName = field.name;
+ //    var proto = 'Fn.getPrProp($original, $methodName);';
+ //    var self = 'Fn.self;';
+ //    var exprs = [macro {var __alias = $v{proto}},
+ //     macro {var __self = $v{self}}
+ //    ];
+ //    var newFunc: Function = {
+ //     args: [],
+ //     ret: null,
+ //     expr: macro $b{exprs}
+ //    }
+ //    fields.push({
+ //     name: '${methodName}',
+ //     access: [Access.APublic, Access.AStatic,
+ //      Access.AInline],
+ //     kind: FieldType.FFun(newFunc),
+ //     pos: field.pos
+ //    });
+ //    // Remove old field
+ //    fields.splice(fields.indexOf(field), 1);
+ //   }
+ //   return fields;
+ //  }
 }
