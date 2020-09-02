@@ -64,12 +64,12 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<a href="#read-this" id="read-this" style="color: inherit; text-decoration: none;">
-					<h1>Read This!</h1>
+				<a href="#lunalite" id="lunalite" style="color: inherit; text-decoration: none;">
+					<h1>LunaLite</h1>
 				</a>
-				<p><strong>These files are not meant to be edited by hand.</strong>
-					If you need to make modifications, the respective files should be changed within the repository&#39;s top-level <code>src</code> directory.
-				Running <code>gulp LKG</code> will then appropriately update the files in this directory.</p>
+				<blockquote>
+					<p>Documentation for the RPGMakerMV &amp; MZ Platform</p>
+				</blockquote>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -278,7 +278,7 @@
 						<a href="classes/scene_gameend.html" class="tsd-kind-icon">Scene_<wbr><wbr>Game<wbr>End</a>
 					</li>
 					<li class=" tsd-kind-class">
-						<a href="classes/scene_gameover.html" class="tsd-kind-icon">Scene_<wbr><wbr>Game<wbr>Over</a>
+						<a href="classes/scene_gameover.html" class="tsd-kind-icon">Scene_<wbr><wbr>Gameover</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/scene_item.html" class="tsd-kind-icon">Scene_<wbr><wbr>Item</a>
@@ -699,6 +699,9 @@
 					</li>
 					<li class=" tsd-kind-interface tsd-is-external">
 						<a href="interfaces/assignednodesoptions.html" class="tsd-kind-icon">Assigned<wbr>Nodes<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/attackmotion.html" class="tsd-kind-icon">Attack<wbr>Motion</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-is-external">
 						<a href="interfaces/attr.html" class="tsd-kind-icon">Attr</a>
@@ -2059,6 +2062,9 @@
 					<li class=" tsd-kind-interface tsd-is-external">
 						<a href="interfaces/msstream.html" class="tsd-kind-icon">MSStream</a>
 					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/map.html" class="tsd-kind-icon">Map</a>
+					</li>
 					<li class=" tsd-kind-interface tsd-is-external">
 						<a href="interfaces/math.html" class="tsd-kind-icon">Math</a>
 					</li>
@@ -2214,6 +2220,9 @@
 					</li>
 					<li class=" tsd-kind-interface tsd-is-external">
 						<a href="interfaces/messageporteventmap.html" class="tsd-kind-icon">Message<wbr>Port<wbr>Event<wbr>Map</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/metadata.html" class="tsd-kind-icon">Meta<wbr>Data</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-is-external">
 						<a href="interfaces/midipermissiondescriptor.html" class="tsd-kind-icon">Midi<wbr>Permission<wbr>Descriptor</a>
@@ -3673,8 +3682,17 @@
 					<li class=" tsd-kind-interface tsd-is-external">
 						<a href="interfaces/syntaxerrorconstructor.html" class="tsd-kind-icon">Syntax<wbr>Error<wbr>Constructor</a>
 					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/system.html" class="tsd-kind-icon">System</a>
+					</li>
 					<li class=" tsd-kind-interface tsd-is-external">
 						<a href="interfaces/templatestringsarray.html" class="tsd-kind-icon">Template<wbr>Strings<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/terms.html" class="tsd-kind-icon">Terms</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/testbattler.html" class="tsd-kind-icon">Test<wbr>Battler</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-is-external">
 						<a href="interfaces/text.html" class="tsd-kind-icon">Text</a>
@@ -4447,6 +4465,9 @@
 					<li class=" tsd-kind-type-alias tsd-is-external">
 						<a href="globals.html#mswebviewpermissiontype" class="tsd-kind-icon">MSWeb<wbr>View<wbr>Permission<wbr>Type</a>
 					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#mapinfo" class="tsd-kind-icon">Map<wbr>Info</a>
+					</li>
 					<li class=" tsd-kind-type-alias tsd-is-external">
 						<a href="globals.html#mediadevicekind" class="tsd-kind-icon">Media<wbr>Device<wbr>Kind</a>
 					</li>
@@ -4833,6 +4854,96 @@
 					</li>
 					<li class=" tsd-kind-type-alias tsd-is-external">
 						<a href="globals.html#webkiturl" class="tsd-kind-icon">webkitURL</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#_dataactors" class="tsd-kind-icon">$data<wbr>Actors</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#_dataanimations" class="tsd-kind-icon">$data<wbr>Animations</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#_dataarmors" class="tsd-kind-icon">$data<wbr>Armors</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#_dataclasses" class="tsd-kind-icon">$data<wbr>Classes</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#_datacommonevents" class="tsd-kind-icon">$data<wbr>Common<wbr>Events</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#_dataenemies" class="tsd-kind-icon">$data<wbr>Enemies</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#_dataitems" class="tsd-kind-icon">$data<wbr>Items</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#_datamap" class="tsd-kind-icon">$data<wbr>Map</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#_datamapinfos" class="tsd-kind-icon">$data<wbr>Map<wbr>Infos</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#_dataskills" class="tsd-kind-icon">$data<wbr>Skills</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#_datastates" class="tsd-kind-icon">$data<wbr>States</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#_datasystem" class="tsd-kind-icon">$data<wbr>System</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#_datatilesets" class="tsd-kind-icon">$data<wbr>Tilesets</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#_datatroops" class="tsd-kind-icon">$data<wbr>Troops</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#_dataweapons" class="tsd-kind-icon">$data<wbr>Weapons</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#_gameactors" class="tsd-kind-icon">$game<wbr>Actors</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#_gamemap" class="tsd-kind-icon">$game<wbr>Map</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#_gamemessage" class="tsd-kind-icon">$game<wbr>Message</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#_gameparty" class="tsd-kind-icon">$game<wbr>Party</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#_gameplayer" class="tsd-kind-icon">$game<wbr>Player</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#_gamescreen" class="tsd-kind-icon">$game<wbr>Screen</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#_gameselfswitches" class="tsd-kind-icon">$game<wbr>Self<wbr>Switches</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#_gameswitches" class="tsd-kind-icon">$game<wbr>Switches</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#_gamesystem" class="tsd-kind-icon">$game<wbr>System</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#_gametemp" class="tsd-kind-icon">$game<wbr>Temp</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#_gametimer" class="tsd-kind-icon">$game<wbr>Timer</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#_gametroop" class="tsd-kind-icon">$game<wbr>Troop</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#_gamevariables" class="tsd-kind-icon">$game<wbr>Variables</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#_plugins" class="tsd-kind-icon">$plugins</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#_testevent" class="tsd-kind-icon">$test<wbr>Event</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-is-external">
 						<a href="globals.html#abortcontroller" class="tsd-kind-icon">Abort<wbr>Controller</a>
@@ -7505,11 +7616,18 @@
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
 			</ul>
 			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
 			</ul>
 		</div>
 	</div>
