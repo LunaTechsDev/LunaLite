@@ -27423,6 +27423,15 @@ export class Utils {
 	 * @return {String} CSS color string
 	 */
 	static rgbToCssColor(r: number, g: number, b: number): string;
+	static isSupportPassiveEvent(): boolean;
+	static generateRuntimeId(): number;
+	/**
+	 * Encodes a URI component without escaping slash characters.
+	 *
+	 * @param {string} str - The input string.
+	 * @returns {string} Encoded string.
+	 */
+	static encodeURI(str: string): string;
 }
 
 export class Weather extends PIXI.Container {
@@ -27790,6 +27799,24 @@ export namespace rm.types {
  */
 export class AudioManager {
 	protected constructor();
+	static _bgmVolume: number;
+	static _bgsVolume: number;
+	static _meVolume: number;
+	static _seVolume: number;
+	static _currentBgm: rm.types.AudioParameters;
+	static _currentBgs: rm.types.AudioParameters;
+	static _bgmBuffer: HTML5Audio;
+	static _bgsBuffer: HTML5Audio;
+	static _meBuffer: HTML5Audio;
+	static _seBuffers: HTML5Audio[];
+	static _staticBuffers: HTML5Audio[];
+	static _replayFadeTime: number;
+	static _path: string;
+	static _blobUrl: string;
+	static bgmVolume: number;
+	static bgsVolume: number;
+	static meVolume: number;
+	static seVolume: number;
 	static playBgm(bgm: rm.types.AudioParameters, pos?: number): void;
 	static replayBgm(bgm: rm.types.AudioParameters): void;
 	static isCurrentBgm(bgm: rm.types.AudioParameters): boolean;
@@ -27998,6 +28025,7 @@ export namespace rm.types {
 
 export class ColorManager {
 	protected constructor();
+	_windowSkin: Bitmap;
 	/**
 	 * Loads the window skin into ColorManager.
 	 */
@@ -28593,10 +28621,29 @@ export class ImageManager {
 }
 
 export namespace rm.types {
+	/**
+	 * Plugin Settings for RPGMakerMV/MZ
+	 */
 	export type PluginSettings = {
+		/**
+		 * Plugin Description
+		 */
 		description: string;
+		/**
+		 * Plugin Name
+		 */
 		name: string;
-		parameters: {key: string};
+		/**
+		 * Plugin Parameters in a map/dictionary like syntax.
+		 * Example:
+		 * ```js
+		 * parameters["TextSpeed"]
+		 * ```
+		 */
+		parameters: { [key: string]: any };
+		/**
+		 * Plugin Status On/Off
+		 */
 		status: string;
 	}
 }
@@ -28606,6 +28653,9 @@ export namespace rm.types {
  */
 export class PluginManager {
 	protected constructor();
+	static _path: string;
+	static _scripts: string[];
+	static _errorUrls: string[];
 	static setup(plugins: rm.types.PluginSettings[]): void;
 	static checkErrors(): void;
 	/**
@@ -28831,6 +28881,8 @@ export class StorageManager {
 
 /**
  * The static class that handles terms and messages.
+ * This is linked to the terms and information
+ * contained within the editor.
  */
 export class TextManager {
 	protected constructor();
@@ -29115,6 +29167,11 @@ export namespace rm.types {
  */
 export class Game_Action {
 	constructor(subject: Game_Battler, forcing: boolean);
+	_subjectActorId: number;
+	_subjectEnemyIndex: number;
+	_targetIndex: number;
+	_forcing: boolean;
+	_item: Game_Item;
 	clear(): void;
 	setSubject(subject: Game_Battler): void;
 	subject(): Game_Battler;
@@ -29226,18 +29283,6 @@ export class Game_Action {
 	static HITTYPE_CERTAIN: number;
 	static HITTYPE_PHYSICAL: number;
 	static HITTYPE_MAGICAL: number;
-}
-
-export namespace rm.types {
-	export const enum StateId {
-		base = -1,
-	}
-}
-
-export namespace rm.types {
-	export const enum BuffId {
-		base = -1,
-	}
 }
 
 export namespace haxe.display {
@@ -29408,11 +29453,11 @@ export class Game_ActionResult {
 	hpDamage: number;
 	mpDamage: number;
 	tpDamage: number;
-	addedStates: rm.types.StateId[];
-	removedStates: rm.types.StateId[];
-	addedBuffs: rm.types.StateId[];
-	addedDebuffs: rm.types.BuffId[];
-	removedBuffs: rm.types.BuffId[];
+	addedStates: number[];
+	removedStates: number[];
+	addedBuffs: number[];
+	addedDebuffs: number[];
+	removedBuffs: number[];
 	initialize(): void;
 	/**
 	 * Clears the game action result.
@@ -29442,10 +29487,10 @@ export class Game_ActionResult {
 	 * @memberof Game_ActionResult
 	 */
 	isHit(): boolean;
-	isStateAdded(stateId: rm.types.StateId): boolean;
-	pushAddedState(stateId: rm.types.StateId): void;
-	isStateRemoved(stateId: rm.types.StateId): boolean;
-	pushRemovedState(stateId: rm.types.StateId): void;
+	isStateAdded(stateId: number): boolean;
+	pushAddedState(stateId: number): void;
+	isStateRemoved(stateId: number): boolean;
+	pushRemovedState(stateId: number): void;
 	/**
 	 * Returns true if the a buff is added to the specified param
 	 * from the action result.
@@ -29453,23 +29498,1144 @@ export class Game_ActionResult {
 	 * @returns {Bool}
 	 * @memberof Game_ActionResult
 	 */
-	isBuffAdded(paramId: rm.types.BuffId): boolean;
-	pushAddedBuff(paramId: rm.types.BuffId): void;
-	isDebuffAdded(paramId: rm.types.BuffId): boolean;
-	pushAddedDebuff(paramId: rm.types.BuffId): void;
-	isBuffRemoved(paramId: rm.types.BuffId): boolean;
-	pushRemovedBuff(paramId: rm.types.BuffId): void;
-}
-
-export class Game_BattlerBase {
-	constructor();
-	initialize(): void;
+	isBuffAdded(paramId: number): boolean;
+	pushAddedBuff(paramId: number): void;
+	isDebuffAdded(paramId: number): boolean;
+	pushAddedDebuff(paramId: number): void;
+	isBuffRemoved(paramId: number): boolean;
+	pushRemovedBuff(paramId: number): void;
 }
 
 export namespace rm.types {
-	export const enum WeaponImageId {
-		base = -1,
+	/**
+	 * The data class for skills.
+	 */
+	export type Skill = {
+		/**
+		 * The animation ID.
+		 */
+		animationId: number;
+		/**
+		 * Damage (RPG.Damage).
+		 */
+		damage: rm.types.Damage;
+		/**
+		 * The description text.
+		 */
+		description: string;
+		/**
+		 * A list of use effects. An RPG.Effect array.
+		 */
+		effects: rm.types.Effect[];
+		/**
+		 * The type of hit.
+		 *
+		 * 0: Certain hit
+		 * 1: Physical attack
+		 * 2: Magical attack
+		 */
+		hitType: number;
+		/**
+		 * The icon number.
+		 */
+		iconIndex: number;
+		/**
+		 * The item ID.
+		 */
+		id: number;
+		/**
+		 * The use message.
+		 */
+		message1: string;
+		/**
+		 * The use message.
+		 */
+		message2: string;
+		meta: Object;
+		/**
+		 * Number of MP consumed.
+		 */
+		mpCost: number;
+		/**
+		 * The item name.
+		 */
+		name: string;
+		note: string;
+		/**
+		 * When the item/skill may be used.
+		 *
+		 * 0: Always
+		 * 1: Only in battle
+		 * 2: Only from the menu
+		 * 3: Never
+		 */
+		occasion: number;
+		/**
+		 * The number of repeats.
+		 */
+		repeats: number;
+		/**
+		 * Weapon type required.
+		 */
+		requiredWtypeId1: number;
+		/**
+		 * Weapon type required.
+		 */
+		requiredWtypeId2: number;
+		/**
+		 * The scope of effects.
+		 *
+		 * 0: None
+		 * 1: One Enemy
+		 * 2: All Enemies
+		 * 3: One Random Enemy
+		 * 4: Two Random Enemies
+		 * 5: Three Random Enemies
+		 * 6: Four Random Enemies
+		 * 7: One Ally
+		 * 8: All Allies
+		 * 9: One Ally (Dead)
+		 * 10: All Allies (Dead)
+		 * 11: The User
+		 */
+		scope: number;
+		/**
+		 * The speed correction.
+		 */
+		speed: number;
+		/**
+		 * Skill type ID.
+		 */
+		stypeId: number;
+		/**
+		 * The success rate.
+		 */
+		successRate: number;
+		/**
+		 * Number of TP consumed
+		 */
+		tpCost: number;
+		/**
+		 * The number of TP gained.
+		 */
+		tpGain: number;
 	}
+}
+
+export namespace rm.types {
+	/**
+	 * The data class for items.
+	 */
+	export type Item = {
+		/**
+		 * The animation ID.
+		 */
+		animationId: number;
+		/**
+		 * The truth value indicating whether the item disappears when used.
+		 */
+		consumable: boolean;
+		/**
+		 * Damage (RPG.Damage).
+		 */
+		damage: rm.types.Damage;
+		/**
+		 * The description text.
+		 */
+		description: string;
+		/**
+		 * A list of use effects. An RPG.Effect array.
+		 */
+		effects: rm.types.Effect[];
+		/**
+		 * The type of hit.
+		 *
+		 * 0: Certain hit
+		 * 1: Physical attack
+		 * 2: Magical attack
+		 */
+		hitType: number;
+		/**
+		 * The icon number.
+		 */
+		iconIndex: number;
+		/**
+		 * The item ID.
+		 */
+		id: number;
+		/**
+		 * The item type ID.
+		 *
+		 * 1: Regular item
+		 * 2: Key item
+		 */
+		itypeId: number;
+		meta: Object;
+		/**
+		 * The item name.
+		 */
+		name: string;
+		note: string;
+		/**
+		 * When the item/skill may be used.
+		 *
+		 * 0: Always
+		 * 1: Only in battle
+		 * 2: Only from the menu
+		 * 3: Never
+		 */
+		occasion: number;
+		/**
+		 * The item's price.
+		 */
+		price: number;
+		/**
+		 * The number of repeats.
+		 */
+		repeats: number;
+		/**
+		 * The scope of effects.
+		 *
+		 * 0: None
+		 * 1: One Enemy
+		 * 2: All Enemies
+		 * 3: One Random Enemy
+		 * 4: Two Random Enemies
+		 * 5: Three Random Enemies
+		 * 6: Four Random Enemies
+		 * 7: One Ally
+		 * 8: All Allies
+		 * 9: One Ally (Dead)
+		 * 10: All Allies (Dead)
+		 * 11: The User
+		 */
+		scope: number;
+		/**
+		 * The speed correction.
+		 */
+		speed: number;
+		/**
+		 * The success rate.
+		 */
+		successRate: number;
+		/**
+		 * The number of TP gained.
+		 */
+		tpGain: number;
+	}
+}
+
+export namespace rm.types {
+	/**
+	 * A superclass of weapons and armor.
+	 */
+	export type EquipItem = {
+		/**
+		 * The description text.
+		 */
+		description: string;
+		/**
+		 * The type of weapon or armor.
+		 *
+		 * 0: Weapon
+		 * 1: Shield
+		 * 2: Head
+		 * 3: Body
+		 * 4: Accessory
+		 */
+		etypeId: number;
+		/**
+		 * The icon number.
+		 */
+		iconIndex: number;
+		/**
+		 * The item ID.
+		 */
+		id: number;
+		meta: Object;
+		/**
+		 * The item name.
+		 */
+		name: string;
+		note: string;
+		/**
+		 * The amount of parameter change. An array of integers using the following IDs as subscripts:
+		 *
+		 * 0: Maximum hit points
+		 * 1: Maximum magic points
+		 * 2: Attack power
+		 * 3: Defense power
+		 * 4: Magic attack power
+		 * 5: Magic defense power
+		 * 6: Agility
+		 * 7: Luck
+		 */
+		params: number[];
+		/**
+		 * The price of the weapon or armor.
+		 */
+		price: number;
+		/**
+		 * The array of Trait data.
+		 */
+		traits: rm.types.Trait[];
+	}
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * Game_BattlerBase
+ *
+ * The superdeclare class of Game_Battler. It mainly contains parameters calculation.
+ * @class Game_BattlerBase
+ */
+export class Game_BattlerBase {
+	constructor();
+	initialize(): void;
+	_hp: number;
+	_mp: number;
+	_tp: number;
+	_hidden: boolean;
+	_paramPlus: number[];
+	_states: number[];
+	/**
+	 * [stateId: Int]:Int
+	 * }
+	 * Access using number/integer
+	 */
+	_stateTurns: { [key: string]: any };
+	_buffs: number[];
+	_buffTurns: number[];
+	/**
+	 * [read-only] Hit Points
+	 */
+	readonly hp: number;
+	/**
+	 * [read-only] Magic Points
+	 */
+	readonly mp: number;
+	/**
+	 * [read-only] Tactical Points
+	 */
+	readonly tp: number;
+	/**
+	 * [read-only] Maximum Hit Points - param 0
+	 */
+	readonly mhp: number;
+	/**
+	 * [read-only] Maximum Magic Points - param 1
+	 */
+	readonly mmp: number;
+	/**
+	 * [read-only] ATtacK power - param 2
+	 */
+	readonly atk: number;
+	/**
+	 * [read-only] DEFense power - param 3
+	 */
+	readonly def: number;
+	/**
+	 * [read-only] Magic Attack power - param 4
+	 */
+	readonly mat: number;
+	/**
+	 * [read-only] Magic Defense power - param 5
+	 */
+	readonly mdf: number;
+	/**
+	 * [read-only] Agility - param 6
+	 */
+	readonly agi: number;
+	/**
+	 * [read-only] LucK - param 7
+	 */
+	readonly luk: number;
+	/**
+	 * [read-only] HIT rate -xparam 0
+	 */
+	readonly hit: number;
+	/**
+	 * [read-only] EVAsion rate
+	 */
+	readonly eva: number;
+	/**
+	 * [read-only] CRItical rate
+	 */
+	readonly cri: number;
+	/**
+	 * [read-only] Critical EVasion rate
+	 */
+	readonly cev: number;
+	/**
+	 * [read-only] Magic EVasion rate
+	 */
+	readonly mev: number;
+	/**
+	 * [read-only] Magic ReFlection rate
+	 */
+	readonly mrf: number;
+	/**
+	 * [read-only] CouNTer attack rate
+	 */
+	readonly cnt: number;
+	/**
+	 * [read-only] Hp ReGeneration rate
+	 */
+	readonly hrg: number;
+	/**
+	 * [read-only] Mp ReGeneration rate
+	 */
+	readonly mrg: number;
+	/**
+	 * [read-only] Tp ReGeneration rate
+	 */
+	readonly trg: number;
+	/**
+	 * [read-only] TarGet Rate
+	 */
+	readonly tgr: number;
+	/**
+	 * [read-only] Ggweqrtg*xzuaRD effect rate
+	 */
+	readonly grd: number;
+	/**
+	 * [read-only] RECovery effect rate
+	 */
+	readonly rec: number;
+	/**
+	 * [read-only] PHArmacology
+	 */
+	readonly pha: number;
+	/**
+	 * [read-only] Mp Cost Rate
+	 */
+	readonly mcr: number;
+	/**
+	 * [read-only] Tp Charge Rate
+	 */
+	readonly tcr: number;
+	/**
+	 * [read-only] Physical Damage Rate
+	 */
+	readonly pdr: number;
+	/**
+	 * [read-only] Magical Damage Rate
+	 */
+	readonly mdr: number;
+	/**
+	 * [read-only] Floor Damage Rate
+	 */
+	readonly fdr: number;
+	/**
+	 * [read-only] EXperience Rate
+	 */
+	readonly exr: number;
+	initMembers(): void;
+	/**
+	 * Clears any modifications to
+	 * the base parameters.
+	 */
+	clearParamPlus(): void;
+	/**
+	 * Clears states applied to the actors.
+	 */
+	clearStates(): void;
+	/**
+	 * Erases the current state from the game battler given the
+	 * stateId in the editor database.
+	 * @param {number} stateId
+	 * @memberof Game_BattlerBase
+	 */
+	eraseState(stateId: number): void;
+	/**
+	 * Returns true if the battler is affected by the specified state given
+	 * the state id.
+	 * @param {number} stateId
+	 * @returns {Bool}
+	 * @memberof Game_BattlerBase
+	 */
+	isStateAffected(stateId: number): boolean;
+	isDeathStateAffected(): boolean;
+	/**
+	 * Returns the death state id.
+	 *
+	 * @returns {number}
+	 * @memberof Game_BattlerBase
+	 */
+	deathStateId(): number;
+	/**
+	 * Resets the state count of the specified state, given the state id.
+	 *
+	 * @param {number} stateId
+	 * @memberof Game_BattlerBase
+	 */
+	resetStateCounts(stateId: number): void;
+	/**
+	 * Returns true if the state, given the state id is expired.
+	 *
+	 * @param {number} stateId
+	 * @returns {Bool}
+	 * @memberof Game_BattlerBase
+	 */
+	isStateExpired(stateId: number): boolean;
+	updateStateTurns(): void;
+	/**
+	 * Clears buffs from the battler.
+	 *
+	 * @memberof Game_BattlerBase
+	 */
+	clearBuffs(): void;
+	eraseBuff(paramId: number): void;
+	/**
+	 * Returns the length of the buff.
+	 *
+	 * @returns {number}
+	 * @memberof Game_BattlerBase
+	 */
+	buffLength(): number;
+	/**
+	 * Buffs the current parameter id.
+	 *
+	 * @param {number} paramId
+	 * @returns {number}
+	 * @memberof Game_BattlerBase
+	 */
+	buff(paramId: number): number;
+	isBuffAffected(paramId: number): boolean;
+	isDebuffAffected(paramId: number): boolean;
+	isBuffOrDebuffAffected(paramId: number): boolean;
+	isMaxBuffAffected(paramId: number): boolean;
+	isMaxDebuffAffected(paramId: number): boolean;
+	increaseBuff(paramId: number): void;
+	decreaseBuff(paramId: number): void;
+	overwriteBuffTurns(paramId: number, turns: number): void;
+	isBuffExpired(paramId: number): boolean;
+	/**
+	 * Updates the buff turns on battler.
+	 *
+	 * @memberof Game_BattlerBase
+	 */
+	updateBuffTurns(): void;
+	/**
+	 * Kills the battler.
+	 *
+	 * @memberof Game_BattlerBase
+	 */
+	die(): void;
+	/**
+	 * Revives the battler.
+	 *
+	 * @memberof Game_BattlerBase
+	 */
+	revive(): void;
+	/**
+	 * Returns the states applied to the battler.
+	 *
+	 * @returns {Array<RPG.State>}
+	 * @memberof Game_BattlerBase
+	 */
+	states(): rm.types.State[];
+	/**
+	 * Returns the array of state icons attached to the battler;
+	 * this is determined by the active states on the battler.
+	 * @returns {Array<number>}
+	 * @memberof Game_BattlerBase
+	 */
+	stateIcons(): number[];
+	/**
+	 * Returns the array of buff icons attached to the battler;
+	 * this is determined by the active buffs on the battler.
+	 * @returns {Array<number>}
+	 * @memberof Game_BattlerBase
+	 */
+	buffIcons(): number[];
+	buffIconIndex(buffLevel: number, paramId: number): number;
+	/**
+	 * Returns all of the icons attached to the battler.
+	 *
+	 * @returns {Array<number>}
+	 * @memberof Game_BattlerBase
+	 */
+	allIcons(): number[];
+	/**
+	 * Returns the trait object to the user
+	 * @return Array<any>
+	 */
+	traitObjects(): any[];
+	/**
+	 * Returns all the traits of the battler.
+	 *
+	 * @returns {Array<RPG.Trait>}
+	 * @memberof Game_BattlerBase
+	 */
+	allTraits(): rm.types.Trait[];
+	traits(code: number): rm.types.Trait[];
+	traitsWithId(code: number, traitId: number): rm.types.Trait[];
+	traitsPi(code: number, traitId: number): number;
+	traitsSum(code: number, traitId: number): number;
+	traitsSumAll(code: number): number;
+	traitsSet(code: number): number[];
+	/**
+	 * Returns the base parameters of the battler; this is determined by their
+	 * current level and the paramId given.
+	 * @param {number} paramId
+	 * @returns {number}
+	 * @memberof Game_BattlerBase
+	 */
+	paramBase(paramId: number): number;
+	paramPlus(paramId: number): number;
+	paramMin(paramId: number): number;
+	paramMax(paramId: number): number;
+	paramRate(paramId: number): number;
+	paramBuffRate(paramId: number): number;
+	/**
+	 * Returns a standard parameter, given a paramId;
+	 * standard parameters include: HP, MP, Atk, M.Atk, Def, M.Def, Luck, Agility.
+	 * @param {number} paramId
+	 * @returns {number}
+	 * @memberof Game_BattlerBase
+	 */
+	param(paramId: number): number;
+	/**
+	 * Returns the Extra parameter, given a  x parameter id.
+	 * These include
+	 * Hit rate
+	 * Evasion rate
+	 * Critical rate
+	 * Magic evasion rate
+	 * Magic reflection rate
+	 * Counter attack rate
+	 * Hp regeneration rate
+	 * Mp regeneration rate
+	 * Tp regeneration rate
+	 * @param xparamId
+	 * @return Int
+	 */
+	xparam(xparamId: number): number;
+	sparam(sparamId: number): number;
+	elementRate(elementId: number): number;
+	debuffRate(paramId: number): number;
+	stateRate(stateId: number): number;
+	stateResistSet(): number[];
+	isStateResist(stateId: number): boolean;
+	/**
+	 * Returns the attack elements of the battler
+	 * as a list of numbers.
+	 * @returns {Array<number>}
+	 * @memberof Game_BattlerBase
+	 */
+	attackElements(): number[];
+	/**
+	 * Returns the attack states of the battler as a
+	 * list of numbers.
+	 * @returns {Array<number>}
+	 * @memberof Game_BattlerBase
+	 */
+	attackStates(): number[];
+	attackStatesRate(stateId: number): void;
+	/**
+	 * Returns the attack speed of the battler.
+	 *
+	 * @returns {number}
+	 * @memberof Game_BattlerBase
+	 */
+	attackSpeed(): number;
+	/**
+	 * Returns the number of attacks available to the battler.
+	 *
+	 * @returns {number}
+	 * @memberof Game_BattlerBase
+	 */
+	attackTimesAdd(): number;
+	/**
+	 * Returns an array of integers
+	 * representing skill type ids.
+	 * @return Array<Int>
+	 */
+	addedSkillTypes(): number[];
+	isSkillTypeSealed(skilltypeId: number): boolean;
+	addedSkills(): number[];
+	isSkillSealed(skillId: number): boolean;
+	isEquipWtypeOk(weaponTypeId: number): boolean;
+	isEquipAtypeOk(armorTypeId: number): boolean;
+	isEquipTypeLocked(equipmentTypeId: number): boolean;
+	isEquipTypeSealed(equipmentTypeId: number): boolean;
+	/**
+	 * Returns the battler slot type of a trait.
+	 *
+	 * @returns {number}
+	 * @memberof Game_BattlerBase
+	 */
+	slotType(): number;
+	/**
+	 * Returns true if the battler dual wields.
+	 *
+	 * @returns {Bool}
+	 * @memberof Game_BattlerBase
+	 */
+	isDualWield(): boolean;
+	actionPlusSet(): number[];
+	/**
+	 * Takes a special flag
+	 * @param flagId
+	 * @return Bool
+	 */
+	specialFlag(flagId: number): boolean;
+	/**
+	 * Returns the collapse type of the battler.
+	 * This is represented as an Int.
+	 * @returns {Int}
+	 * @memberof Game_BattlerBase
+	 */
+	collapseType(): number;
+	partyAbility(abilityId: number): boolean;
+	/**
+	 * Returns true if the battler is set to battle automatically.
+	 *
+	 * @returns {Bool}
+	 * @memberof Game_BattlerBase
+	 */
+	isAutoBattle(): boolean;
+	/**
+	 * Returns true if the battler is guarding.
+	 *
+	 * @returns {Bool}
+	 * @memberof Game_BattlerBase
+	 */
+	isGuard(): boolean;
+	isSubstitute(): boolean;
+	/**
+	 * Returns true if tp is preserved between battles.
+	 *
+	 * @returns {Bool}
+	 * @memberof Game_BattlerBase
+	 */
+	isPreserveTp(): boolean;
+	addParam(paramId: number, value: number): void;
+	/**
+	 * Sets the battler hp.
+	 *
+	 * @param {number} hp
+	 * @memberof Game_BattlerBase
+	 */
+	setHp(hp: number): void;
+	/**
+	 * Sets the battler mp.
+	 *
+	 * @param {number} mp
+	 * @memberof Game_BattlerBase
+	 */
+	setMp(mp: number): void;
+	/**
+	 * Sets the battler tp.
+	 *
+	 * @param {number} tp
+	 * @memberof Game_BattlerBase
+	 */
+	setTp(tp: number): void;
+	/**
+	 * Returns the maximum tp of the battler.
+	 *
+	 * @returns {number}
+	 * @memberof Game_BattlerBase
+	 */
+	maxTp(): number;
+	/**
+	 * Refreshes the battler.
+	 *
+	 * @memberof Game_BattlerBase
+	 */
+	refresh(): void;
+	/**
+	 * Recovers the battler from all states and restores the
+	 * battler to maximum hp and mp.
+	 * @memberof Game_BattlerBase
+	 */
+	recoverAll(): void;
+	/**
+	 * Returns the percentage of the battler's hp left as a float.
+	 *
+	 * @returns {number}
+	 * @memberof Game_BattlerBase
+	 */
+	hpRate(): number;
+	/**
+	 * Returns the percentage of the battler's mp left as a float.
+	 *
+	 * @returns {number}
+	 * @memberof Game_BattlerBase
+	 */
+	mpRate(): number;
+	/**
+	 * Returns the percentage of the battler's tp left as a float.
+	 *
+	 * @returns {number}
+	 * @memberof Game_BattlerBase
+	 */
+	tpRate(): number;
+	/**
+	 * Hides the game battler.
+	 *
+	 * @memberof Game_BattlerBase
+	 */
+	hide(): void;
+	/**
+	 * Shows the game battler.
+	 *
+	 * @memberof Game_BattlerBase
+	 */
+	appear(): void;
+	/**
+	 * Returns true if the game battler is hidden.
+	 *
+	 * @returns {Bool}
+	 * @memberof Game_BattlerBase
+	 */
+	isHidden(): boolean;
+	/**
+	 * Returns true if the game battler is not hidden.
+	 *
+	 * @returns {Bool}
+	 * @memberof Game_BattlerBase
+	 */
+	isAppeared(): boolean;
+	/**
+	 * Returns true if the battler is dead.
+	 *
+	 * @returns {Bool}
+	 * @memberof Game_BattlerBase
+	 */
+	isDead(): boolean;
+	/**
+	 * Returns true if the battler is alive.
+	 *
+	 * @returns {Bool}
+	 * @memberof Game_BattlerBase
+	 */
+	isAlive(): boolean;
+	/**
+	 * Returns true if the battler is dying.
+	 *
+	 * @returns {Bool}
+	 * @memberof Game_BattlerBase
+	 */
+	isDying(): boolean;
+	/**
+	 * Returns true if the game battler is restricted.
+	 *
+	 * @returns {Bool}
+	 * @memberof Game_BattlerBase
+	 */
+	isRestricted(): boolean;
+	/**
+	 * Returns true if the battler can input actions.
+	 *
+	 * @returns {Bool}
+	 * @memberof Game_BattlerBase
+	 */
+	canInput(): boolean;
+	canMove(): boolean;
+	/**
+	 * Returns true if the battler is confused.
+	 *
+	 * @returns {Bool}
+	 * @memberof Game_BattlerBase
+	 */
+	isConfused(): boolean;
+	/**
+	 * Returns the confusion level of the battler.
+	 *
+	 * @returns {number}
+	 * @memberof Game_BattlerBase
+	 */
+	confusionLevel(): number;
+	/**
+	 * Returns true if the battler is an actor.
+	 *
+	 * @returns {Bool}
+	 * @memberof Game_BattlerBase
+	 */
+	isActor(): boolean;
+	/**
+	 * Returns true if the battler is an enemy.
+	 *
+	 * @returns {Bool}
+	 * @memberof Game_BattlerBase
+	 */
+	isEnemy(): boolean;
+	/**
+	 * Sorts the states attached to the battler.
+	 *
+	 * @memberof Game_BattlerBase
+	 */
+	sortStates(): void;
+	/**
+	 * Returns the number of the restriction.
+	 *
+	 * @returns {number}
+	 * @memberof Game_BattlerBase
+	 */
+	restriction(): number;
+	/**
+	 * Adds a new state given a state id to the battler.
+	 *
+	 * @param {number} stateId
+	 * @memberof Game_BattlerBase
+	 */
+	addNewState(stateId: number): void;
+	/**
+	 * Handler for when the battler is restricted.
+	 *
+	 * @memberof Game_BattlerBase
+	 */
+	onRestrict(): void;
+	mostImportantStateText(): string;
+	stateMotionIndex(): number;
+	stateOverlayIndex(): number;
+	/**
+	 * Returns true if the skill is a weapon type
+	 * oriented skill.
+	 * @param {RPG.Skill} skill
+	 * @returns {Bool}
+	 * @memberof Game_BattlerBase
+	 */
+	isSkillWtypeOk(skill: rm.types.Skill): boolean;
+	/**
+	 * Returns the mp cost of the skill.
+	 *
+	 * @param {RPG.Skill} skill
+	 * @returns {number}
+	 * @memberof Game_BattlerBase
+	 */
+	skillMpCost(skill: rm.types.Skill): number;
+	/**
+	 * Returns the tp cost of the skill.
+	 *
+	 * @param {RPG.Skill} skill
+	 * @returns {number}
+	 * @memberof Game_BattlerBase
+	 */
+	skillTpCost(skill: rm.types.Skill): number;
+	/**
+	 * Returns true if the battler can pay the cost
+	 * of the specified skill.
+	 * @param {RPG.Skill} skill
+	 * @returns {Bool}
+	 * @memberof Game_BattlerBase
+	 */
+	canPaySkillCost(skill: rm.types.Skill): boolean;
+	/**
+	 * Pays the cost of the skill when activating the skill.
+	 *
+	 * @param {RPG.Skill} skill
+	 * @memberof Game_BattlerBase
+	 */
+	paySkillCost(skill: rm.types.Skill): void;
+	/**
+	 * Returns true if the item occasion is okay.
+	 *
+	 * @param {RPG.UsableItem} item
+	 * @returns {Bool}
+	 * @memberof Game_BattlerBase
+	 */
+	isOccasionOk(item: rm.types.UsableItem): boolean;
+	meetsUsableItemConditions(item: rm.types.UsableItem): boolean;
+	/**
+	 * Returns true if the battler meets the skill conditions.
+	 *
+	 * @param {RPG.Skill} skill
+	 * @returns {Bool}
+	 * @memberof Game_BattlerBase
+	 */
+	meetsSkillConditions(skill: rm.types.Skill): boolean;
+	/**
+	 * Returns true if the battler meets the item conditions.
+	 *
+	 * @param {RPG.Item} item
+	 * @returns {Bool}
+	 * @memberof Game_BattlerBase
+	 */
+	meetsItemConditions(item: rm.types.Item): boolean;
+	/**
+	 * Returns true if the battler can use the item.
+	 *
+	 * @param {RPG.UsableItem} item
+	 * @returns {Bool}
+	 * @memberof Game_BattlerBase
+	 */
+	canUse(item: rm.types.UsableItem): boolean;
+	/**
+	 * Returns true if the battler can equip the item.
+	 *
+	 * @param {RPG.EquipItem} item
+	 * @returns {Bool}
+	 * @memberof Game_BattlerBase
+	 */
+	canEquip(item: rm.types.EquipItem): boolean;
+	/**
+	 * Returns true if the battler can equip a weapon.
+	 *
+	 * @param {RPG.EquipItem} item
+	 * @returns {Bool}
+	 * @memberof Game_BattlerBase
+	 */
+	canEquipWeapon(item: rm.types.EquipItem): boolean;
+	/**
+	 * Returns true if the battler can equip armor.
+	 *
+	 * @param {RPG.EquipItem} item
+	 * @returns {Bool}
+	 * @memberof Game_BattlerBase
+	 */
+	canEquipArmor(item: rm.types.EquipItem): boolean;
+	/**
+	 * Returns the attack skill id in the database.
+	 *
+	 * @returns {number}
+	 * @memberof Game_BattlerBase
+	 */
+	attackSkillid(): number;
+	/**
+	 * Returns the guard skill id in the database.
+	 *
+	 * @returns {number}
+	 * @memberof Game_BattlerBase
+	 */
+	guardSkillId(): number;
+	/**
+	 * Returns true if the battler can attack.
+	 *
+	 * @returns {Bool}
+	 * @memberof Game_BattlerBase
+	 */
+	canAttack(): boolean;
+	/**
+	 * Returns true if the battler can guard.
+	 *
+	 * @returns {Bool}
+	 * @memberof Game_BattlerBase
+	 */
+	canGuard(): boolean;
+	/**
+	 * Trait element rate; default to 11.
+	 */
+	static TRAIT_ELEMENT_RATE: number;
+	/**
+	 * Debuff Rate; default to 12.
+	 */
+	static TRAIT_DEBUFF_RATE: number;
+	/**
+	 * Trait state rate; default to 13.
+	 */
+	static TRAIT_STATE_RATE: number;
+	/**
+	 * Trait state resist; default to 14.
+	 */
+	static TRAIT_STATE_RESIST: number;
+	/**
+	 * Trait param; default to 21.
+	 */
+	static TRAIT_PARAM: number;
+	/**
+	 * Trait x param; default to 22.
+	 */
+	static TRAIT_XPARAM: number;
+	/**
+	 * Trait s param; default to 23.
+	 */
+	static TRAIT_SPARAM: number;
+	/**
+	 * Trait attack element; default to 31.
+	 */
+	static TRAIT_ATTACK_ELEMENT: number;
+	/**
+	 * Trait attack state; default to 32.
+	 */
+	static TRAIT_ATTACK_STATE: number;
+	/**
+	 * Trait attack speed; default to 33.
+	 */
+	static TRAIT_ATTACK_SPEED: number;
+	/**
+	 * Trait attack times; default to 34.
+	 */
+	static TRAIT_ATTACK_TIMES: number;
+	/**
+	 * Trait Stype(Skill type ) add; default to 41.
+	 */
+	static TRAIT_STYPE_ADD: number;
+	/**
+	 * Trait Stype(Skill type) seal; default to 42.
+	 */
+	static TRAIT_STYPE_SEAL: number;
+	/**
+	 * Trait Skill add; default to 43.
+	 */
+	static TRAIT_SKILL_ADD: number;
+	/**
+	 * Trait skill  seal; default to 44.
+	 */
+	static TRAIT_SKILL_SEAL: number;
+	/**
+	 * Trait WType(equip weapon type); default to 51.
+	 */
+	static TRAIT_EQUIP_WTYPE: number;
+	/**
+	 * Trait AType(Equip armor type); default to 52.
+	 */
+	static TRAIT_EQUIP_ATYPE: number;
+	/**
+	 * Trait equipment lock; default to 53.
+	 */
+	static TRAIT_EQUIP_LOCK: number;
+	/**
+	 * Trait equipment seal; default to 54.
+	 */
+	static TRAIT_EQUIP_SEAL: number;
+	/**
+	 * Trait slot type;default to 55.
+	 */
+	static TRAIT_SLOT_TYPE: number;
+	/**
+	 * Trait action plus; default to 61.
+	 */
+	static TRAIT_ACTION_PLUS: number;
+	/**
+	 * Trait special flag; default to 62.
+	 */
+	static TRAIT_SPECIAL_FLAG: number;
+	/**
+	 * Trait collapse type; default to 63.
+	 */
+	static TRAIT_COLLAPSE_TYPE: number;
+	/**
+	 * Trait party ability; default to 64.
+	 */
+	static TRAIT_PARTY_ABILITY: number;
+	/**
+	 * Flag ID auto battle; default to 0;
+	 */
+	static FLAG_ID_AUTO_BATTLE: number;
+	/**
+	 * Flag ID guard; default to 1.
+	 */
+	static FLAG_ID_GUARD: number;
+	/**
+	 * Flag Id substitude; default to 2.
+	 */
+	static FLAG_ID_SUBSTITUTE: number;
+	/**
+	 * Flag id preserve type; default to 3.
+	 */
+	static FLAG_ID_PRESERVE_TP: number;
+	/**
+	 * Icon buff start, default to 32.
+	 */
+	static ICON_BUFF_START: number;
+	/**
+	 * Icon debuff start; default to 48.
+	 */
+	static ICON_DEBUFF_START: number;
 }
 
 export namespace rm.types {
@@ -29481,19 +30647,35 @@ export namespace rm.types {
 }
 
 export namespace rm.types {
+	export const enum MotionType {
+		WALK = "walk",
+		WAIT = "wait",
+		CHANT = "chant",
+		GUARD = "guard",
+		DAMAGE = "damage",
+		EVADE = "evade",
+		THRUST = "thrust",
+		MISSLE = "missle",
+		SKILL = "SKILL",
+		SPELL = "spell",
+		ITEM = "item",
+		ESCAPE = "escape",
+		VICTORY = "victory",
+		DYING = "dying",
+		ABNORMAL = "abnormal",
+		SLEEP = "sleep",
+		DEAD = "dead",
+	}
+}
+
+export namespace rm.types {
+	export const enum WeaponImageId {
+		base = -1,
+	}
+}
+
+export namespace rm.types {
 	export const enum AnimationId {
-		base = -1,
-	}
-}
-
-export namespace rm.types {
-	export const enum ParameterId {
-		base = -1,
-	}
-}
-
-export namespace rm.types {
-	export const enum SkillId {
 		base = -1,
 	}
 }
@@ -29506,6 +30688,18 @@ export namespace rm.types {
 
 export class Game_Battler extends Game_BattlerBase {
 	protected constructor();
+	_actions: Game_Action[];
+	_speed: number;
+	_result: Game_ActionResult;
+	_actionState: string;
+	_lastTargetIndex: number;
+	_animations: rm.types.BattlerAnimation[];
+	_damagePopup: boolean;
+	_effectType: string;
+	_motionType: rm.types.MotionType;
+	_weaponImageId: number;
+	_motionRefresh: boolean;
+	_selected: boolean;
 	/**
 	 * Returns the name of the battler.
 	 *
@@ -29698,7 +30892,7 @@ export class Game_Battler extends Game_BattlerBase {
 	 * @param {number} stateId
 	 * @memberof Game_Battler
 	 */
-	addState(stateId: rm.types.StateId): void;
+	addState(stateId: number): void;
 	/**
 	 * Returns true if the specified state given the state id
 	 * is addable.
@@ -29706,7 +30900,7 @@ export class Game_Battler extends Game_BattlerBase {
 	 * @returns {Bool}
 	 * @memberof Game_Battler
 	 */
-	isStateAddable(stateId: rm.types.StateId): boolean;
+	isStateAddable(stateId: number): boolean;
 	/**
 	 * Returns true if the specified state given the state id
 	 * restricts.
@@ -29715,7 +30909,7 @@ export class Game_Battler extends Game_BattlerBase {
 	 * @returns {Bool}
 	 * @memberof Game_Battler
 	 */
-	isStateRestrict(stateId: rm.types.StateId): boolean;
+	isStateRestrict(stateId: number): boolean;
 	/**
 	 * Handler for when theb attler is restricted.
 	 *
@@ -29728,7 +30922,7 @@ export class Game_Battler extends Game_BattlerBase {
 	 * @param {number} stateId
 	 * @memberof Game_Battler
 	 */
-	removeState(stateId: rm.types.StateId): void;
+	removeState(stateId: number): void;
 	/**
 	 * Has the battler escape from battle; plays a sound on escaping.
 	 *
@@ -29742,7 +30936,7 @@ export class Game_Battler extends Game_BattlerBase {
 	 * @param {number} turns
 	 * @memberof Game_Battler
 	 */
-	addBuff(paramId: rm.types.ParameterId, turns: number): void;
+	addBuff(paramId: number, turns: number): void;
 	/**
 	 * Adds a debuff to the battler for the specified number of turns
 	 * on the selected parameter.
@@ -29750,8 +30944,8 @@ export class Game_Battler extends Game_BattlerBase {
 	 * @param {number} turns
 	 * @memberof Game_Battler
 	 */
-	addDebuff(paramId: rm.types.ParameterId, turns: number): void;
-	removeBuff(paramId: rm.types.ParameterId): void;
+	addDebuff(paramId: number, turns: number): void;
+	removeBuff(paramId: number): void;
 	removeBattleStates(): void;
 	/**
 	 * Removes all buffs from the battler.
@@ -29806,7 +31000,7 @@ export class Game_Battler extends Game_BattlerBase {
 	 * @param target
 	 */
 	setLastTarget(target: Game_Battler): void;
-	forceAction(skillId: rm.types.SkillId, targetIndex: number): void;
+	forceAction(skillId: number, targetIndex: number): void;
 	/**
 	 * Has theb attler use the given item.
 	 *
@@ -30100,63 +31294,6 @@ export namespace rm.types {
 
 export namespace rm.types {
 	/**
-	 * A superclass of weapons and armor.
-	 */
-	export type EquipItem = {
-		/**
-		 * The description text.
-		 */
-		description: string;
-		/**
-		 * The type of weapon or armor.
-		 *
-		 * 0: Weapon
-		 * 1: Shield
-		 * 2: Head
-		 * 3: Body
-		 * 4: Accessory
-		 */
-		etypeId: number;
-		/**
-		 * The icon number.
-		 */
-		iconIndex: number;
-		/**
-		 * The item ID.
-		 */
-		id: number;
-		meta: Object;
-		/**
-		 * The item name.
-		 */
-		name: string;
-		note: string;
-		/**
-		 * The amount of parameter change. An array of integers using the following IDs as subscripts:
-		 *
-		 * 0: Maximum hit points
-		 * 1: Maximum magic points
-		 * 2: Attack power
-		 * 3: Defense power
-		 * 4: Magic attack power
-		 * 5: Magic defense power
-		 * 6: Agility
-		 * 7: Luck
-		 */
-		params: number[];
-		/**
-		 * The price of the weapon or armor.
-		 */
-		price: number;
-		/**
-		 * The array of Trait data.
-		 */
-		traits: rm.types.Trait[];
-	}
-}
-
-export namespace rm.types {
-	/**
 	 * The data class for weapons.
 	 */
 	export type Weapon = {
@@ -30283,122 +31420,6 @@ export namespace rm.types {
 
 export namespace rm.types {
 	/**
-	 * The data class for skills.
-	 */
-	export type Skill = {
-		/**
-		 * The animation ID.
-		 */
-		animationId: number;
-		/**
-		 * Damage (RPG.Damage).
-		 */
-		damage: rm.types.Damage;
-		/**
-		 * The description text.
-		 */
-		description: string;
-		/**
-		 * A list of use effects. An RPG.Effect array.
-		 */
-		effects: rm.types.Effect[];
-		/**
-		 * The type of hit.
-		 *
-		 * 0: Certain hit
-		 * 1: Physical attack
-		 * 2: Magical attack
-		 */
-		hitType: number;
-		/**
-		 * The icon number.
-		 */
-		iconIndex: number;
-		/**
-		 * The item ID.
-		 */
-		id: number;
-		/**
-		 * The use message.
-		 */
-		message1: string;
-		/**
-		 * The use message.
-		 */
-		message2: string;
-		meta: Object;
-		/**
-		 * Number of MP consumed.
-		 */
-		mpCost: number;
-		/**
-		 * The item name.
-		 */
-		name: string;
-		note: string;
-		/**
-		 * When the item/skill may be used.
-		 *
-		 * 0: Always
-		 * 1: Only in battle
-		 * 2: Only from the menu
-		 * 3: Never
-		 */
-		occasion: number;
-		/**
-		 * The number of repeats.
-		 */
-		repeats: number;
-		/**
-		 * Weapon type required.
-		 */
-		requiredWtypeId1: number;
-		/**
-		 * Weapon type required.
-		 */
-		requiredWtypeId2: number;
-		/**
-		 * The scope of effects.
-		 *
-		 * 0: None
-		 * 1: One Enemy
-		 * 2: All Enemies
-		 * 3: One Random Enemy
-		 * 4: Two Random Enemies
-		 * 5: Three Random Enemies
-		 * 6: Four Random Enemies
-		 * 7: One Ally
-		 * 8: All Allies
-		 * 9: One Ally (Dead)
-		 * 10: All Allies (Dead)
-		 * 11: The User
-		 */
-		scope: number;
-		/**
-		 * The speed correction.
-		 */
-		speed: number;
-		/**
-		 * Skill type ID.
-		 */
-		stypeId: number;
-		/**
-		 * The success rate.
-		 */
-		successRate: number;
-		/**
-		 * Number of TP consumed
-		 */
-		tpCost: number;
-		/**
-		 * The number of TP gained.
-		 */
-		tpGain: number;
-	}
-}
-
-export namespace rm.types {
-	/**
 	 * The data class for a class's [Skills to Learn].
 	 */
 	export type ClassLearning = {
@@ -30476,6 +31497,28 @@ export namespace rm.types {
 
 export class Game_Actor extends Game_Battler {
 	constructor(actorId: number);
+	_actorId: number;
+	_name: string;
+	_nickname: string;
+	_profile: string;
+	_classId: number;
+	_level: number;
+	_characterName: string;
+	_characterIndex: number;
+	_faceName: string;
+	_faceIndex: number;
+	_battlerName: string;
+	_exp: Object;
+	/**
+	 * Skill Ids
+	 */
+	_skills: number[];
+	_equips: Game_Item[];
+	_actionInputIndex: number;
+	_lastMenuSkill: Game_Item;
+	_lastBattleSkill: Game_Item;
+	_lastCommandSymbol: string;
+	_stateSteps: Object;
 	/**
 	 * [read-only]
 	 */
@@ -30842,11 +31885,18 @@ export class Game_Actor extends Game_Battler {
 	hasNoWeapons(): boolean;
 	/**
 	 * Returns the element id of barehanded attacks.
+	 * By default this is 1.
 	 *
 	 * @returns {Int}
 	 * @memberof Game_Actor
 	 */
 	bareHandsElementId(): number;
+	/**
+	 * Returns the base value of the parameter.
+	 * @param paramId
+	 * @return Int
+	 */
+	paramBase(paramId: number): number;
 	/**
 	 * Returns the first attack animation id.
 	 *
@@ -31127,10 +32177,20 @@ export class Game_Actor extends Game_Battler {
 	 * @memberof Game_Actor
 	 */
 	setLastCommandSymbol(symbol: string): void;
+	/**
+	 * Returns true if the item effect  has a special effect from game action.
+	 * @param item
+	 * @return Bool
+	 */
+	testEscape(item: rm.types.BaseItem): boolean;
 }
 
 export class Game_Actors {
 	constructor();
+	/**
+	 * List of all Game_Actor in the database.
+	 */
+	_data: Game_Actor[];
 	initialize(): void;
 	/**
 	 * Returns the actor with the specified id.
@@ -31613,6 +32673,12 @@ export namespace rm.types {
  */
 export class Game_Character extends Game_CharacterBase {
 	protected constructor();
+	_moveRouteForcing: boolean;
+	_moveRoute: rm.types.MoveRoute;
+	_moveRouteIndex: number;
+	_originalMoveRoute: rm.types.MoveRoute;
+	_originalMoveRouteIndex: number;
+	_waitCount: number;
 	initMembers(): void;
 	/**
 	 * Memorizes the movement route.
@@ -32648,6 +33714,21 @@ export class Game_Followers {
  */
 export class Game_Interpreter {
 	constructor(depth: number);
+	_depth: number;
+	_branch: Object;
+	_params: any[];
+	_indent: number;
+	_frameCount: number;
+	_freezeChecker: number;
+	_mapId: number;
+	_eventId: number;
+	_list: rm.types.EventCommand[];
+	_index: number;
+	_waitCount: number;
+	_waitMode: string;
+	_comments: string;
+	_character: Game_Event;
+	_childInterpreter: Game_Interpreter;
 	checkOverflow(): void;
 	/**
 	 * Clears the interpreter.
@@ -34241,115 +35322,33 @@ export class Game_Unit {
 	substituteBattler(): Game_Battler;
 }
 
-export namespace rm.types {
-	/**
-	 * The data class for items.
-	 */
-	export type Item = {
-		/**
-		 * The animation ID.
-		 */
-		animationId: number;
-		/**
-		 * The truth value indicating whether the item disappears when used.
-		 */
-		consumable: boolean;
-		/**
-		 * Damage (RPG.Damage).
-		 */
-		damage: rm.types.Damage;
-		/**
-		 * The description text.
-		 */
-		description: string;
-		/**
-		 * A list of use effects. An RPG.Effect array.
-		 */
-		effects: rm.types.Effect[];
-		/**
-		 * The type of hit.
-		 *
-		 * 0: Certain hit
-		 * 1: Physical attack
-		 * 2: Magical attack
-		 */
-		hitType: number;
-		/**
-		 * The icon number.
-		 */
-		iconIndex: number;
-		/**
-		 * The item ID.
-		 */
-		id: number;
-		/**
-		 * The item type ID.
-		 *
-		 * 1: Regular item
-		 * 2: Key item
-		 */
-		itypeId: number;
-		meta: Object;
-		/**
-		 * The item name.
-		 */
-		name: string;
-		note: string;
-		/**
-		 * When the item/skill may be used.
-		 *
-		 * 0: Always
-		 * 1: Only in battle
-		 * 2: Only from the menu
-		 * 3: Never
-		 */
-		occasion: number;
-		/**
-		 * The item's price.
-		 */
-		price: number;
-		/**
-		 * The number of repeats.
-		 */
-		repeats: number;
-		/**
-		 * The scope of effects.
-		 *
-		 * 0: None
-		 * 1: One Enemy
-		 * 2: All Enemies
-		 * 3: One Random Enemy
-		 * 4: Two Random Enemies
-		 * 5: Three Random Enemies
-		 * 6: Four Random Enemies
-		 * 7: One Ally
-		 * 8: All Allies
-		 * 9: One Ally (Dead)
-		 * 10: All Allies (Dead)
-		 * 11: The User
-		 */
-		scope: number;
-		/**
-		 * The speed correction.
-		 */
-		speed: number;
-		/**
-		 * The success rate.
-		 */
-		successRate: number;
-		/**
-		 * The number of TP gained.
-		 */
-		tpGain: number;
-	}
-}
-
 /**
  * The game object for the party. Contains information
  * such as gold and items.
  */
 export class Game_Party extends Game_Unit {
 	protected constructor();
+	_gold: number;
+	_steps: number;
+	_lastItem: Game_Item;
+	_menuActorId: number;
+	_targetActorId: number;
+	_actors: Game_Actor[];
+	/**
+	 * Data structure.
+	 * [ItemId:Int] : Int
+	 */
+	_items: { [key: string]: any };
+	/**
+	 * Data structure.
+	 * [weaponId:Int] : Int
+	 */
+	_weapons: { [key: string]: any };
+	/**
+	 * Data structure.
+	 * [armorId:Int] : Int
+	 */
+	_armors: { [key: string]: any };
 	/**
 	 * Returns all party members.
 	 *
@@ -34715,6 +35714,39 @@ export class Game_Party extends Game_Unit {
  */
 export class Game_Picture {
 	constructor();
+	/**
+	 * _name property of the current picture.
+	 *
+	 * @protected
+	 * @type {string}
+	 * @memberof Game_Picture
+	 */
+	_name: string;
+	_origin: number;
+	_x: number;
+	_y: number;
+	_scaleX: number;
+	_scaleY: number;
+	_opacity: number;
+	/**
+	 * Blend Mode, accepts an integer.
+	 */
+	_blendMode: number;
+	_targetX: number;
+	_targetY: number;
+	_targetScaleX: number;
+	_targetScaleY: number;
+	_targetOpacity: number;
+	_duration: number;
+	/**
+	 * Tone of the picture, in RGB format.
+	 * 0 - 255, for all three tone elements.
+	 */
+	_tone: number[];
+	_toneTarget: number[];
+	_toneDuration: number;
+	_angle: number;
+	_rotationSpeed: number;
 	initialize(): void;
 	/**
 	 * Returns the name of the game picture.
@@ -34834,6 +35866,18 @@ export class Game_Picture {
  */
 export class Game_Player extends Game_Character {
 	protected constructor();
+	_vehicleType: string;
+	_vehicleGettingOn: boolean;
+	_vehicleGettingOff: boolean;
+	_dashing: boolean;
+	_needsMapReload: boolean;
+	_transferring: boolean;
+	_newX: number;
+	_newY: number;
+	_newDirection: rm.types.Direction;
+	_fadeType: number;
+	_followers: Game_Followers;
+	_encounterCount: number;
 	/**
 	 * Clears the transfer information for the player.
 	 *
@@ -35781,6 +36825,8 @@ export class Game_Temp {
  */
 export class Game_Timer {
 	constructor();
+	_frames: number;
+	_working: boolean;
 	initialize(): void;
 	/**
 	 * Updates the game timer.
@@ -36914,7 +37960,7 @@ export class Scene_GameEnd extends Scene_MenuBase {
 /**
  * Scene class of the game over screen.
  */
-export class Scene_GameOver extends Scene_Base {
+export class Scene_Gameover extends Scene_Base {
 	protected constructor();
 	adjustBackground(): void;
 	stop(): void;
@@ -37853,6 +38899,26 @@ export namespace rm.types {
 export class Sprite_Base extends Sprite {
 	constructor();
 	/**
+	 * The animation sprites assigned to the
+	 * sprite object.
+	 * @protected
+	 * @type {Array<Sprite_Animation>}
+	 * @memberof Sprite_Base
+	 */
+	_animationSprites: Sprite_Animation[];
+	/**
+	 * The target that will have the animations applied
+	 * to it.
+	 * @protected
+	 * @type {Sprite_Base}
+	 * @memberof Sprite_Base
+	 */
+	_effectTarget: Sprite_Base;
+	/**
+	 * Determines sprite's visibility
+	 */
+	_hiding: boolean;
+	/**
 	 * Initializes the sprite.
 	 *
 	 * @memberof Sprite_Base
@@ -37899,6 +38965,15 @@ export class Sprite_Base extends Sprite {
 
 export class Sprite_Battler extends Sprite_Base {
 	protected constructor();
+	_battler: Game_Battler;
+	_homeX: number;
+	_homeY: number;
+	_offsetX: number;
+	_offsetY: number;
+	_targetOffsetX: number;
+	_targetOffsetY: number;
+	_movementDuration: number;
+	_selectionEffectCount: number;
 	initMembers(): void;
 	setHome(x: number, y: number): void;
 	/**
@@ -37944,6 +39019,15 @@ export class Sprite_Actor extends Sprite_Battler {
 	 * @memberof Sprite_Actor
 	 */
 	constructor(battler?: Game_Actor);
+	_battlerName: string;
+	_motion: rm.types.Motion;
+	_motionCount: number;
+	_pattern: rm.types.CharacterPattern;
+	_mainSprite: Sprite_Base;
+	_shadowSprite: Sprite;
+	_weaponSprite: Sprite_Weapon;
+	_stateSprite: Sprite_StateOverlay;
+	_actor: Game_Actor;
 	initialize(battler?: Game_Actor): void;
 	/**
 	 * Creates the main sprite of the sprite actor.
@@ -38067,6 +39151,28 @@ export class Sprite_Actor extends Sprite_Battler {
  */
 export class Sprite_Animation extends Sprite {
 	protected constructor();
+	/**
+	 * {
+	 * key: Animation
+	 * };
+	 */
+	_checker1: { [key: string]: any };
+	_target: Sprite_Base;
+	_animation: rm.types.Animation;
+	_mirror: boolean;
+	_delay: number;
+	_rate: number;
+	_duration: number;
+	_flashColor: number[];
+	_flashDuration: number;
+	_screenFlashDuration: number;
+	_hidingDuration: number;
+	_bitmap1: Bitmap;
+	_bitmap2: Bitmap;
+	_cellSprites: Sprite[];
+	_screenFlashSprite: ScreenSprite;
+	_duplicated: boolean;
+	_reduceArtifacts: boolean;
 	initMembers(): void;
 	setup(target: Sprite_Base, animation: rm.types.Animation, mirror: boolean, delay: number): void;
 	/**
@@ -38179,6 +39285,13 @@ export class Sprite_Animation extends Sprite {
 	 * @memberof Sprite_Animation
 	 */
 	startHiding(duration: number): void;
+	/**
+	 * Structure
+	 * {
+	 * key: Animation
+	 * };
+	 */
+	static _checker2: { [key: string]: any };
 }
 
 /**
@@ -38189,6 +39302,8 @@ export class Sprite_Animation extends Sprite {
  */
 export class Sprite_Balloon extends Sprite_Base {
 	protected constructor();
+	_balloonId: rm.types.BalloonId;
+	_duration: number;
 	initMembers(): void;
 	loadBitmap(): void;
 	setup(balloonId: rm.types.BalloonId): void;
@@ -38242,6 +39357,10 @@ export class Sprite_Balloon extends Sprite_Base {
  */
 export class Sprite_Button extends Sprite {
 	protected constructor();
+	_touching: boolean;
+	_coldFrame: Rectangle;
+	_hotFrame: Rectangle;
+	_clickHandler: () => void;
 	/**
 	 * Update method, which checks if the sprite is being touched and updates
 	 * the current frame.
@@ -38335,6 +39454,27 @@ export class Sprite_Character extends Sprite_Base {
 	 * @memberof Sprite_Character
 	 */
 	constructor(character: Game_Character);
+	/**
+	 * The Game_Character object assigned
+	 * to the sprite.
+	 * @private var
+	 * @type {Game_Character}
+	 * @memberof Sprite_Character
+	 */
+	_character: Game_Character;
+	_balloonDuration: number;
+	_tilesetId: number;
+	_upperBody: Sprite;
+	_lowerBody: Sprite;
+	_bushDepth: number;
+	/**
+	 * The current balloon sprite
+	 * assigned to the sprite.
+	 * @private var
+	 * @type {Sprite_Balloon}
+	 * @memberof Sprite_Character
+	 */
+	_balloonSprite: Sprite_Balloon;
 	initialize(character: Game_Character): void;
 	initMembers(): void;
 	/**
@@ -38472,6 +39612,13 @@ export class Sprite_Character extends Sprite_Base {
  */
 export class Sprite_Damage extends Sprite {
 	protected constructor();
+	__duration: number;
+	/**
+	 * Array of 3 numbers of RGB
+	 */
+	_flashColor: number[];
+	_flashDuration: number;
+	_damageBitmap: Bitmap;
 	setup(target: Game_Actor): void;
 	setupCriticalEffect(): void;
 	/**
@@ -38532,6 +39679,7 @@ export class Sprite_Damage extends Sprite {
  */
 export class Sprite_Destination extends Sprite {
 	protected constructor();
+	_frameCount: number;
 	/**
 	 * Creates the destination bitmap of the destination sprite.
 	 *
@@ -38560,6 +39708,14 @@ export class Sprite_Destination extends Sprite {
  */
 export class Sprite_Enemy extends Sprite_Battler {
 	constructor(battler: Game_Enemy);
+	_enemy: Game_Enemy;
+	_appeared: boolean;
+	_battlerName: string;
+	_battlerHue: number;
+	_effectType: string;
+	_effectDuration: number;
+	_shake: number;
+	_stateIconSprite: Sprite_StateIcon;
 	initialize(battler: Game_Enemy): void;
 	createStateIconSprite(): void;
 	/**
@@ -38684,6 +39840,9 @@ export class Sprite_Enemy extends Sprite_Battler {
  */
 export class Sprite_Picture {
 	constructor(pictureId: number);
+	_pictureId: number;
+	_pictureName: string;
+	_isPicture: boolean;
 	picture(): Game_Picture;
 	updateBitmap(): void;
 	updateOrigin(): void;
@@ -38702,6 +39861,10 @@ export class Sprite_Picture {
  */
 export class Sprite_StateIcon extends Sprite {
 	protected constructor();
+	_battler: Game_Battler;
+	_iconIndex: number;
+	_animationCount: number;
+	_animationIndex: number;
 	/**
 	 * Initializes the sprite state icon properties.
 	 *
@@ -38738,6 +39901,10 @@ export class Sprite_StateIcon extends Sprite {
  */
 export class Sprite_StateOverlay extends Sprite_Base {
 	protected constructor();
+	_battler: Game_Battler;
+	_overlayIndex: number;
+	_animationCount: number;
+	_pattern: number;
 	/**
 	 * Initialize the overlay sprite properties.
 	 *
@@ -38774,6 +39941,7 @@ export class Sprite_StateOverlay extends Sprite_Base {
  */
 export class Sprite_Timer extends Sprite {
 	protected constructor();
+	_seconds: number;
 	/**
 	 * Creates the bitmap of the sprite timer.
 	 *
@@ -38821,6 +39989,9 @@ export class Sprite_Timer extends Sprite {
  */
 export class Sprite_Weapon extends Sprite_Base {
 	protected constructor();
+	_weaponImageId: rm.types.WeaponImageId;
+	_animaationCount: number;
+	_pattern: number;
 	/**
 	 * Initializes the members of the weapon sprite object.
 	 *
@@ -38864,6 +40035,15 @@ export class Sprite_Weapon extends Sprite_Base {
  */
 export class Spriteset_Base extends Sprite {
 	protected constructor();
+	_tone: number[];
+	_baseSprite: Sprite;
+	_blackScreen: ScreenSprite;
+	_toneFilter: ToneFilter;
+	_toneSprite: ToneSprite;
+	_pictureContainer: Sprite;
+	_timerSprite: Sprite_Timer;
+	_flashSprite: ScreenSprite;
+	_fadeSprite: ScreenSprite;
 	/**
 	 * Creates the lower layer including the base sprites.
 	 *
@@ -38953,6 +40133,13 @@ export class Spriteset_Base extends Sprite {
  */
 export class Spriteset_Battle extends Spriteset_Base {
 	protected constructor();
+	_battlebackLocated: boolean;
+	_backgroundSprite: Sprite;
+	_battleField: Sprite;
+	_back1Sprite: TilingSprite;
+	_back2Sprite: TilingSprite;
+	_enemySprites: Sprite_Enemy[];
+	_actorSprites: Sprite_Actor[];
 	/**
 	 * Creates the background of the battle spriteset.
 	 *
@@ -39142,6 +40329,14 @@ export class Spriteset_Battle extends Spriteset_Base {
  */
 export class Spriteset_Map extends Spriteset_Base {
 	protected constructor();
+	_parallax: TilingSprite;
+	_tilemap: Tilemap | ShaderTilemap;
+	_tileset: rm.types.Tileset;
+	_characterSprites: Sprite_Character[];
+	_shadowSprite: Sprite;
+	_destinationSprite: Sprite_Destination;
+	_weather: Weather;
+	_parallaxName: string;
 	/**
 	 * Hides the map spriteset character sprites.
 	 *
@@ -40977,14 +42172,20 @@ export class Window_BattleLog extends Window_Base {
 	displayAddedStates(target: Game_Battler): void;
 	displayRemovedStates(target: Game_Battler): void;
 	displayChangedBuffs(target: Game_Battler): void;
-	displayBuffs(target: Game_Battler, buffs: rm.types.BuffId[], fmt: string): void;
+	/**
+	 *
+	 * @param target
+	 * @param buffs list of integers representing buff Ids
+	 * @param fmt
+	 */
+	displayBuffs(target: Game_Battler, buffs: number[], fmt: string): void;
 	makeHpDamageText(target: Game_Battler): void;
 	makeMpDamageText(target: Game_Battler): string;
 	makeTpDamageText(target: Game_Battler): string;
 }
 
 export namespace rm.types {
-	export const enum SkillTypeId {
+	export const enum SkillTypeIdA {
 		base = -1,
 	}
 }
@@ -40999,7 +42200,10 @@ export namespace rm.types {
 export class Window_SkillList extends Window_Selectable {
 	constructor(rect: Rectangle);
 	_actor: Game_Actor;
-	_stypeId: rm.types.SkillTypeId;
+	/**
+	 * Returns the Skill Type Id, which is an Int.
+	 */
+	_stypeId: rm.types.SkillTypeIdA;
 	_data: rm.types.Skill[];
 	initialize(rect: Rectangle): void;
 	/**
@@ -41018,10 +42222,10 @@ export class Window_SkillList extends Window_Selectable {
 	/**
 	 * Sets the skill type id of the skill list window.
 	 *
-	 * @param {number} stypeId
+	 * @param {number} stypeId - Integer
 	 * @memberof Window_SkillList
 	 */
-	setStypeId(stypeId: rm.types.SkillTypeId): void;
+	setStypeId(stypeId: rm.types.SkillTypeIdA): void;
 	/**
 	 * Returns the current skill at the window index
 	 * loaded from the databse.
@@ -41277,12 +42481,7 @@ export class Window_Gold extends Window_Base {
 }
 
 export class Window_Help extends Window_Base {
-	/**
-	 * Creates an instance of Window_Help.
-	 * @param {number} numLines
-	 * @memberof Window_Help
-	 */
-	constructor(numLines: number);
+	constructor(rect: Rectangle);
 	/**
 	 * Sets the _text property of the window;
 	 * this text will be displayed within the window.
@@ -42290,7 +43489,7 @@ export class Window_ShopStatus extends Window_Base {
 	 * @returns {number}
 	 * @memberof Window_ShopStatus
 	 */
-	paramId(): rm.types.ParameterId;
+	paramId(): number;
 	/**
 	 * Returns the current item equiped by the given actor when
 	 * the respective equipment Id is passed.
@@ -42473,9 +43672,576 @@ export class Window_Status extends Window_StatusBase {
  * @class Window_TitleCommand
  */
 export class Window_TitleCommand extends Window_Command {
-	constructor();
+	protected constructor();
 	updatePlacement(): void;
 	isContinueEnabled(): boolean;
 	initCommandPosition(): void;
 	selectLast(): void;
 }
+
+
+interface AttackMotion {
+  /**
+   * The type of the motion.
+   */
+  type: number;
+
+  /**
+   * The ID of the weapon image.
+   */
+  weaponImageId: number;
+}
+
+interface Terms {
+  /**
+   * The basic status. A string array with the following subscripts:
+   *
+   * 0: Level
+   * 1: Level (short)
+   * 2: HP
+   * 3: HP (short)
+   * 4: MP
+   * 5: MP (short)
+   * 6: TP
+   * 7: TP (short)
+   * 8: EXP
+   * 9: EXP (short)
+   */
+  basic: Array<string>;
+
+  /**
+   * Parameters. A string array with the following subscripts:
+   *
+   * 0: Maximum hit points
+   * 1: Maximum magic points
+   * 2: Attack power
+   * 3: Defense power
+   * 4: Magic attack power
+   * 5: Magic defense power
+   * 6: Agility
+   * 7: Luck
+   * 8: Hit
+   * 9: Evasion
+   */
+  params: Array<string>;
+
+  /**
+   * 0: Fight
+   * 1: Escape
+   * 2: Attack
+   * 3: Defend
+   * 4: Item
+   * 5: Skill
+   * 6: Equip
+   * 7: Status
+   * 8: Sort
+   * 9: Save
+   * 10: Exit Game
+   * 11: Option
+   * 12: Weapon
+   * 13: Armor
+   * 14: Key Item
+   * 15: Change Equipment
+   * 16: Ultimate Equipment
+   * 17: Remove All
+   * 18: New Game
+   * 19: Continue
+   * 20: (not used)
+   * 21: Go to Title
+   * 22: Cancel
+   * 23: (not used)
+   * 24: Buy
+   * 25: Sell
+   */
+  commands: Array<string>;
+
+  /**
+   * The messages.
+   */
+  messages: {[key: string]: string};
+}
+
+interface TestBattler {
+  /**
+   * The actor ID.
+   */
+  actorId: number;
+
+  /**
+   * The actor's level.
+   */
+  level: number;
+
+  /**
+   * The actor's equipment. An array of weapon IDs or armor IDs with the following subscripts:
+   *
+   * 0: Weapon
+   * 1: Shield
+   * 2: Head
+   * 3: Body
+   * 4: Accessory
+   */
+  equips: Array<number>;
+}
+
+ type MapInfo = {
+    /**
+     * The map name.
+     */
+    name: string;
+   
+    /**
+     * The parent map ID.
+     */
+     parentId: number;
+   
+    /**
+     * The map tree display order, which is used internally.
+     */
+     order: number;
+   }
+
+    interface MetaData {
+    /**
+     * The text of the note.
+     */
+    note: string;
+
+    /**
+     * The Meta.
+     */
+    meta: {[key: string]: any};
+}
+
+/**
+ * The data class for maps.
+ */
+ interface Map extends MetaData {
+    /**
+     * The map's display name.
+     */
+    displayName: string;
+
+    /**
+     * The map's tile set.
+     */
+    tilesetId: number;
+
+    /**
+     * The map's width.
+     */
+    width: number;
+
+    /**
+     * The map's height.
+     */
+    height: number;
+
+    /**
+     * The scroll type (0: No Loop, 1: Vertical Loop, 2: Horizontal Loop, 3: Both Loop).
+     */
+    scrollType: number;
+
+    /**
+     * The truth value indicating whether the battle background specification is enabled.
+     */
+    specifyBattleback: boolean;
+
+    /**
+     * The file name of the floor graphic if the battle background specification is enabled.
+     */
+    battleback1Name: string;
+
+    /**
+     * The file name of the wall graphic if the battle background specification is enabled.
+     */
+    battleback2_name: string;
+
+    /**
+     * The truth value indicating whether BGM autoswitching is enabled.
+     */
+    autoplayBgm: boolean;
+
+    /**
+     * The name of that BGM (RPG.AudioFile) if BGM autoswitching is enabled.
+     */
+    bgm: rm.types.AudioFile;
+
+    /**
+     * The truth value indicating whether BGS autoswitching is enabled.
+     */
+    autoplayBgs: boolean;
+
+    /**
+     * The name of that BGS (RPG.AudioFile) if BGS autoswitching is enabled.
+     */
+    bgs: rm.types.AudioFile;
+
+    /**
+     * The truth value of the [Disable Dashing] option.
+     */
+    disableDashing: boolean;
+
+    /**
+     * An encounter list. A RPG.Map.Encounter ID array.
+     */
+    encounterList: Array<rm.types.MapEncounter>;
+
+    /**
+     * The average number of steps between encounters.
+     */
+    encounterStep: number;
+
+    /**
+     * The file name of the parallax background's graphic.
+     */
+    parallaxName: string;
+
+    /**
+     * The truth value of the [Loop Horizontal] option for the parallax background.
+     */
+    parallaxLoopX: boolean;
+
+    /**
+     * The truth value of the [Loop Vertical] option for the parallax background.
+     */
+    parallaxLoopY: boolean;
+
+    /**
+     * The automatic x-axis scrolling speed for the parallax background.
+     */
+    parallaxSx: number;
+
+    /**
+     * The automatic y-axis scrolling speed for the parallax background.
+     */
+    parallaxSy: number;
+
+    /**
+     * The truth value of the [Show in the Editor] option for the parallax background.
+     */
+    parallaxShow: boolean;
+
+    /**
+     * The map data. A 3-dimensional tile ID array (Table).
+     */
+    data: Array<number>;
+
+    /**
+     * The array of RPG.Event data.
+     */
+    events: Array<Event>;
+}
+
+interface System {
+  /**
+   * The game title.
+   */
+  gameTitle: string;
+
+  /**
+   * A random number used for update checks. The number changes every time data is saved in RPG Maker.
+   */
+  versionId: number;
+
+  /**
+   * The locale string such as "ja_JP" and "en_US".
+   */
+  locale: string;
+
+  /**
+   * The initial party. An array of actor IDs.
+   */
+  partyMembers: Array<number>;
+
+  /**
+   * The unit of currency.
+   */
+  currencyUnit: string;
+
+  /**
+   * The window color.
+   */
+  windowTone: Array<number>;
+
+  /**
+   * The array of System.AttackMotion data.
+   */
+  attackMotions: Array<rm.types.Motion>;
+
+  /**
+   * A list of elements. A string array using element IDs as subscripts, with the element in the 0 position being nil.
+   */
+  elements: Array<string>;
+
+  /**
+   * he equipment type. A string array with the following subscripts:
+   * 1: Weapon
+   * 2: Shield
+   * 3: Head
+   * 4: Body
+   * 5: Accessory
+   */
+  equipTypes: Array<string>;
+
+  /**
+   * A list of skill types. A string array using skill type IDs as subscripts, with the element in the 0 position being nil.
+   */
+  skillTypes: Array<string>;
+
+  /**
+   * A list of weapon types. A string array using weapon type IDs as subscripts, with the element in the 0 position being nil.
+   */
+  weaponTypes: Array<string>;
+
+  /**
+   * A list of armor types. A string array using armor type IDs as subscripts, with the element in the 0 position being nil.
+   */
+  armorTypes: Array<string>;
+
+  /**
+   * A switch name list. A string array using switch IDs as subscripts, with the element in the 0 position being nil.
+   */
+  switches: Array<string>;
+
+  /**
+   * A variable name list. A string array using variable IDs as subscripts, with the element in the 0 position being nil.
+   */
+  variables: Array<string>;
+
+  /**
+   * Boat settings (RPG.System.Vehicle).
+   */
+  boat: rm.types.SystemVehicle;
+
+  /**
+   * Ship settings (RPG.System.Vehicle).
+   */
+  ship: rm.types.SystemVehicle;
+
+  /**
+   * Airship settings (RPG.System.Vehicle).
+   */
+  airship: rm.types.SystemVehicle;
+
+  /**
+   * The file name of the title (background) graphic.
+   */
+  title1Name: string;
+
+  /**
+   * The file name of the title (frame) graphic.
+   */
+  title2Name: string;
+
+  /**
+   * The truth value of the [Draw Game Title] option.
+   */
+  optDrawTitle: boolean;
+
+  /**
+   * The truth value of the [Start Transparent] option.
+   */
+  optTransparent: boolean;
+
+  /**
+   * The truth value of the [Show Player Followers] option.
+   */
+  optFollowers: boolean;
+
+  /**
+   * The truth value of the [K.O. by Slip Damage] option.
+   */
+  optSlipDeath: boolean;
+
+  /**
+   * The truth value of the [K.O. by Floor Damage] option.
+   */
+  optFloorDeath: boolean;
+
+  /**
+   * The truth value of the [Display TP in Battle] option.
+   */
+  optDisplayTp: boolean;
+
+  /**
+   * The truth value of the [Reserve Members' EXP] option.
+   */
+  optExtraExp: boolean;
+
+  /**
+   * The truth value of the [use side-view battle] option.
+   */
+  optSideView: boolean;
+
+  /**
+   * The title BGM (RPG.AudioFile).
+   */
+  titleBgm: rm.types.AudioFile;
+
+  /**
+   * The battle BGM (RPG.AudioFile).
+   */
+  battleBgm: rm.types.AudioFile;
+
+  /**
+   * The battle end ME (RPG.AudioFile).
+   */
+  battleEndMe: rm.types.AudioFile;
+
+  /**
+   * The gameover ME (RPG.AudioFile).
+   */
+  gameoverMe: rm.types.AudioFile;
+
+  /**
+   * Sound effects. An RPG.SE array.
+   */
+  sounds: Array<rm.types.AudioFile>;
+
+  /**
+   * The map ID of the player's initial position.
+   */
+  startMapId: number;
+
+  /**
+   * The map's x-coordinate of the player's initial position.
+   */
+  startX: number;
+
+  /**
+   * The map's y-coordinate of the player's initial position.
+   */
+  startY: number;
+
+  /**
+   * Terms (RPG.System.Terms).
+   */
+  terms: Terms;
+
+  /**
+   * Party settings for battle tests. An RPG.System.TestBattler array.
+   */
+  testBattlers: Array<TestBattler>;
+
+  /**
+   * The enemy troop ID for battle tests.
+   */
+  testTroopId: number;
+
+  /**
+   * The file name of the battle background (floor) graphic for use in editing enemy troops and battle tests.
+   */
+  battleback1Name: string;
+
+  /**
+   * The file name of the battle background (wall) graphic for use in editing enemy troops and battle tests.
+   */
+  battleback2Name: string;
+
+  /**
+   * The battler graphic file name for use in editing animations.
+   */
+  battlerName: string;
+
+  /**
+   * The adjustment value for the battler graphic's hue (0..360) for use in editing animations.
+   */
+  battlerHue: number;
+
+  /**
+   * The ID of the map currently being edited. For internal use.
+   */
+  editMapId: number;
+}
+
+   
+
+/** @global RPGMaker Plugin's Object */
+declare var $plugins: Array<rm.types.PluginSettings>;
+/** @global RPGMakerMV Actor data. */
+declare var $dataActors: Array<rm.types.Actor>;
+/** @global RPGMakerMV Class data. */
+declare var $dataClasses: Array<rm.types.RPGClass>;
+/** @global RPGMakerMV Skill data. */
+declare var $dataSkills: Array<rm.types.Skill>;
+/** @global RPGMakerMV Item data. */
+declare var $dataItems: Array<rm.types.Item>;
+/** @global RPGMakerMV Weapon data. */
+declare var $dataWeapons: Array<rm.types.Weapon>;
+/** @global RPGMakerMV Armor data. */
+declare var $dataArmors: Array<rm.types.Armor>;
+/** @global RPGMakerMV Enemy data. */
+declare var $dataEnemies: Array<rm.types.Enemy>;
+/** @global RPGMakerMV Troop data. */
+declare var $dataTroops: Array<rm.types.Troop>;
+/** @global RPGMakerMV State data. */
+declare var $dataStates: Array<rm.types.State>;
+/** @global RPGMakerMV Animation data. */
+declare var $dataAnimations: Array<rm.types.Animation>;
+/** @global RPGMakerMV Tileset data. */
+declare var $dataTilesets: Array<rm.types.Tileset>;
+/** @global RPGMakerMV CommonEvent data. */
+declare var $dataCommonEvents: Array<rm.types.CommonEvent>;
+/** @global RPGMakerMV System data. */
+declare var $dataSystem: System;
+/** @global RPGMakerMV MapInfo data. */
+declare var $dataMapInfos: Array<MapInfo>;
+/** @global RPGMakerMV Map data for the current map. */
+declare var $dataMap: Map;
+/** @global RPGMakerMV Temporary game data; not saved with the game. */
+declare var $gameTemp: Game_Temp;
+/** @global RPGMakerMV Game System data; saved with the game.
+ * @type {Game_Temp}
+*/
+declare var $gameSystem: Game_System;
+/** @global RPGMakerMV Game Screen; contains properties and methods
+ * for adjusting the game screen.
+ * @type {Game_Screen}
+ */
+declare var $gameScreen: Game_Screen;
+declare var $gameTimer: Game_Timer;
+/** @global RPGMakerMV Game Message; contains properties and methods
+ * for displaying messages in the game message window. 
+ * @type {Game_Message}
+*/
+declare var $gameMessage: Game_Message;
+/** @global RPGMakerMV Game Switches; contains properties and methods
+ * for modifying in game switches while the game is running.
+ * These are boolean values: true or false.
+ * @type {Game_Switches}
+ */
+declare var $gameSwitches: Game_Switches;
+/** @global RPGMakerMV Game Variables; contains properties and methods
+ * for modifying the values of game variables.
+ * The variables can contain anything.
+ * @type {Game_Variables}
+ */
+declare var $gameVariables: Game_Variables;
+declare var $gameSelfSwitches: Game_SelfSwitches;
+declare var $gameActors: Game_Actors;
+/** @global RPGmakerMV Game Party; contains properties and methods
+ * for interacting with the game party. Some of the methods include
+ * number of party members, etc.
+ * @type {Game_Party}
+ */
+declare var $gameParty: Game_Party;
+/** @global RPGMakerMV Game Troop; contains properties and methods
+ * for interacting with the game troops. Some of the methods include
+ * enemy data, enemy names, etc.
+ * @type {Game_Troop}
+ */
+declare var $gameTroop: Game_Troop;
+/** @global RPGMakerMV Game Map; contains properties and methods
+ * for interacting with the game map. Some of these methods include
+ * interacting with the map's game_interpreter, and event information.
+ * @type {Game_Map}
+ */
+declare var $gameMap: Game_Map;
+/** @global RPGMakerMV Game Player; contains properties and methods
+ * for interacting with the game player. Some of these methods
+ * include interacting with the player's position and move route.
+ * @type {Game_Player}
+ */
+declare var $gamePlayer: Game_Player;
+declare var $testEvent: Array<rm.types.EventCommand>;
