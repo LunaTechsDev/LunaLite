@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "createdefs": "node combine-definitions.js",
+    "createdefs": "node combine-definitions.js", 
     "createdocsmv": "typedoc --mode file --readme READMEMV.md --includeDeclarations --ignoreCompilerErrors --name 'LunaLite-MV' -out docs/ definitions/lunalite-pixi-mv.d.ts",
     "createdocsmz": "typedoc --mode file --readme READMEMZ.md --includeDeclarations --ignoreCompilerErrors --name 'Lunalite-MZ' --out docs/ definitions/lunalite-pixi-mz.d.ts"
   },
